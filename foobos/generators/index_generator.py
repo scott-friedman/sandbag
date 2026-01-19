@@ -41,69 +41,110 @@ def generate_index(
     html = f'''<!DOCTYPE html>
 <html>
 <head>
-<title>The List (updated {update_date})</title>
+<title>foobos - Boston Concert List</title>
+<style>
+body {{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #FFFFFF;
+  color: #000000;
+  text-align: center;
+  padding: 40px 20px;
+}}
+.site-title {{
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}}
+.nav-links {{
+  margin: 20px 0;
+}}
+.nav-links a {{
+  color: #4B0082;
+  text-decoration: none;
+  font-size: 18px;
+}}
+.nav-links a:hover {{
+  text-decoration: underline;
+}}
+.content {{
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 40px;
+}}
+.section-title {{
+  font-weight: bold;
+  margin-top: 20px;
+}}
+.band-list, .venue-list {{
+  font-size: 14px;
+  line-height: 1.8;
+}}
+hr {{
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 30px 0;
+}}
+.footer {{
+  margin-top: 40px;
+  font-size: 12px;
+  color: #666;
+}}
+a {{
+  color: #4B0082;
+}}
+a:visited {{
+  color: #800080;
+}}
+</style>
 </head>
-<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080">
+<body>
 
-<h2><i>The List (updated {update_date})</i></h2>
+<div class="site-title">foobos</div>
 
-<p>
-This is a Boston version of the legendary <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>. This was all foopee's idea, I've tried to clone it for Boston. Please <a href="mailto:sf@scottfriedman.ooo">send me mail</a> if you have questions or corrections related to the list content.
-</p>
+<div class="nav-links">
+[ <a href="by-date.0.html">concerts by date</a> ]<br>
+[ <a href="by-band.html">concerts by band</a> ]<br>
+[ <a href="by-club.html">concerts by venue</a> ]<br>
+[ <a href="clubs.html">club info</a> ]
+</div>
 
-<p>
-Here's what the symbols at the end of each listing might mean:
-</p>
-
-<pre>
-  *     recommendable shows                 a/a   all ages
-  $     will probably sell out              @     pit warning
-  ^     under 21 must buy drink tickets     #     no ins/outs
-</pre>
+<div class="content">
 
 <hr>
 
-<p>
-<b>Jan 19, 2026</b> Auto-updates daily from Ticketmaster, venue calendars, and other aggregators.<br>
-<b>Jan 19, 2026</b> The List has gone live! Boston's own version of the legendary <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>.<br>
+<p style="text-align: center; font-size: 14px;">
+Boston's version of the legendary <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>.<br>
+Updated {update_date}. <a href="mailto:sf@scottfriedman.ooo">Contact</a>.
 </p>
 
 <hr>
 
-<p>
-<b>Concerts By Date</b><br>
+<p class="section-title">Quick Links - By Date</p>
 {week_links}
-</p>
 
-<p>
-<b>Concerts By Band</b><br>
+<p class="section-title">All Bands</p>
+<div class="band-list">
 {bands_list}
-</p>
+</div>
 
-<p>
-<b>Concerts By Venue</b><br>
+<p class="section-title">All Venues</p>
+<div class="venue-list">
 {venues_list}
-</p>
-
-<p>
-<b>Club Listing</b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="clubs.html">Club addresses and info</a>
-</p>
+</div>
 
 <hr>
 
-<p>
+<div class="footer">
 <span id="visitor-count">Visitors: loading...</span>
-</p>
+</div>
+
+</div>
 
 <script>
 (function() {{
-  // Bot detection: check for common bot indicators
   function isBot() {{
-    // Check for webdriver (headless browsers)
     if (navigator.webdriver) return true;
-
-    // Check user agent for common bot patterns
     var ua = navigator.userAgent.toLowerCase();
     var botPatterns = [
       'bot', 'crawl', 'spider', 'slurp', 'mediapartners',
@@ -118,45 +159,29 @@ Here's what the symbols at the end of each listing might mean:
     for (var i = 0; i < botPatterns.length; i++) {{
       if (ua.indexOf(botPatterns[i]) !== -1) return true;
     }}
-
-    // Check for missing browser features that real browsers have
     if (!window.localStorage || !window.sessionStorage) return true;
     if (!document.addEventListener) return true;
-
     return false;
   }}
-
-  // Check if already counted this session
   function alreadyCounted() {{
-    try {{
-      return sessionStorage.getItem('foobos_counted') === 'true';
-    }} catch(e) {{
-      return false;
-    }}
+    try {{ return sessionStorage.getItem('foobos_counted') === 'true'; }}
+    catch(e) {{ return false; }}
   }}
-
   function markCounted() {{
-    try {{
-      sessionStorage.setItem('foobos_counted', 'true');
-    }} catch(e) {{}}
+    try {{ sessionStorage.setItem('foobos_counted', 'true'); }} catch(e) {{}}
   }}
-
-  // Increment and display counter
   function countVisit() {{
     if (isBot() || alreadyCounted()) {{
-      // Still fetch the current count to display, but don't increment
       fetch('https://api.counterapi.dev/v1/foobos-list/visits')
         .then(function(r) {{ return r.json(); }})
         .then(function(data) {{
           document.getElementById('visitor-count').textContent = 'Visitors: ' + data.count;
         }})
         .catch(function() {{
-          document.getElementById('visitor-count').textContent = 'Visitors: --';
+          document.getElementById('visitor-count').textContent = '';
         }});
       return;
     }}
-
-    // Real human visitor - increment the counter
     fetch('https://api.counterapi.dev/v1/foobos-list/visits/up')
       .then(function(r) {{ return r.json(); }})
       .then(function(data) {{
@@ -164,33 +189,25 @@ Here's what the symbols at the end of each listing might mean:
         markCounted();
       }})
       .catch(function() {{
-        document.getElementById('visitor-count').textContent = 'Visitors: --';
+        document.getElementById('visitor-count').textContent = '';
       }});
   }}
-
-  // Wait for human interaction before counting
   var counted = false;
   function onHumanInteraction() {{
     if (counted) return;
     counted = true;
     countVisit();
-    // Remove listeners after first interaction
     document.removeEventListener('scroll', onHumanInteraction);
     document.removeEventListener('mousemove', onHumanInteraction);
     document.removeEventListener('click', onHumanInteraction);
     document.removeEventListener('touchstart', onHumanInteraction);
     document.removeEventListener('keydown', onHumanInteraction);
   }}
-
-  // Set up interaction listeners
   document.addEventListener('scroll', onHumanInteraction);
   document.addEventListener('mousemove', onHumanInteraction);
   document.addEventListener('click', onHumanInteraction);
   document.addEventListener('touchstart', onHumanInteraction);
   document.addEventListener('keydown', onHumanInteraction);
-
-  // Fallback: count after 3 seconds if page is visible and focused
-  // This catches users who read without interacting
   setTimeout(function() {{
     if (!counted && document.visibilityState === 'visible' && document.hasFocus()) {{
       onHumanInteraction();
@@ -218,9 +235,9 @@ def _generate_week_links(start_date: datetime) -> str:
         week_start = start_date + timedelta(weeks=week_num)
         week_start, week_end = get_week_range(week_start)
         label = get_week_label(week_start, week_end)
-        lines.append(f'&nbsp;&nbsp;&nbsp;&nbsp;<a href="by-date.{week_num}.html">{label}</a><br>')
+        lines.append(f'<a href="by-date.{week_num}.html">{label}</a>')
 
-    return "\n".join(lines)
+    return " | ".join(lines)
 
 
 def _generate_bands_list(band_info: Dict[str, Tuple[str, int]]) -> str:
