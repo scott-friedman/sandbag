@@ -9,10 +9,7 @@ import logging
 from ..config import (
     TICKETMASTER_API_KEY,
     TICKETMASTER_BASE_URL,
-    BOSTON_DMA,
     WEEKS_AHEAD,
-    PUNK_GENRES,
-    EXCLUDE_GENRES,
     VENUE_TICKETMASTER_IDS
 )
 from ..models import Concert
@@ -73,8 +70,8 @@ class TicketmasterFetcher(BaseFetcher):
         start_date = datetime.now()
         end_date = start_date + timedelta(weeks=WEEKS_AHEAD)
 
-        # Use lat/long + radius for precise Boston area filtering
-        # Boston coordinates: 42.3601, -71.0589
+        # Use lat/long for Boston area (42.3601, -71.0589) with 50-mile radius
+        # Note: DMA 11 returns 0 results despite being "Greater Boston Area" in docs
         params = {
             "apikey": TICKETMASTER_API_KEY,
             "latlong": "42.3601,-71.0589",
