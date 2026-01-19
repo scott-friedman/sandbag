@@ -405,16 +405,50 @@ class AXSVenuesScraper(BaseScraper):
         - div.title for event name
         - time[datetime] for date/time
         - field--name-field-event-venue-title for venue
+
+        Handles pagination by fetching multiple pages until no more events.
         """
         concerts = []
         use_page_venue = venue_config.get("use_page_venue", False)
+        base_url = venue_config["url"]
+        max_pages = 20  # Safety limit
 
-        view = soup.find(class_="view-events")
-        if not view:
-            logger.debug("No view-events container found on Berklee page")
-            return concerts
+        for page_num in range(max_pages):
+            # Fetch page (page 0 is the initial soup we already have)
+            if page_num == 0:
+                page_soup = soup
+            else:
+                page_url = f"{base_url}?page={page_num}"
+                try:
+                    page_soup = self._get_soup(page_url)
+                except Exception as e:
+                    logger.debug(f"Error fetching Berklee page {page_num}: {e}")
+                    break
 
-        rows = view.find_all(class_="views-row")
+            view = page_soup.find(class_="view-events")
+            if not view:
+                logger.debug("No view-events container found on Berklee page")
+                break
+
+            rows = view.find_all(class_="views-row")
+            if not rows:
+                # No more events on this page
+                break
+
+            page_concerts = self._parse_berklee_rows(rows, venue_id, venue_config, use_page_venue)
+            concerts.extend(page_concerts)
+
+            logger.debug(f"Berklee page {page_num}: found {len(page_concerts)} events")
+
+            # If we got fewer than 10, we're probably on the last page
+            if len(rows) < 10:
+                break
+
+        return concerts
+
+    def _parse_berklee_rows(self, rows, venue_id: str, venue_config: Dict, use_page_venue: bool) -> List[Concert]:
+        """Parse event rows from a single Berklee page."""
+        concerts = []
 
         for row in rows:
             try:
