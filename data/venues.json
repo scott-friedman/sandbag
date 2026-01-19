@@ -80,6 +80,16 @@
       "notes": "Key DIY/punk venue"
     },
     {
+      "id": "sallyobriens",
+      "name": "Sally O'Brien's",
+      "location": "Somerville",
+      "address": "335 Somerville Ave, Somerville, MA 02143",
+      "phone": "(617) 666-3589",
+      "website": "https://www.sallyobriensbar.com",
+      "capacity": 75,
+      "notes": "Live music venue in Union Square"
+    },
+    {
       "id": "midway",
       "name": "The Midway Cafe",
       "location": "Jamaica Plain",

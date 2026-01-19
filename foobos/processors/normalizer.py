@@ -112,9 +112,13 @@ def _normalize_venue_id_with_name(venue_id: str, venue_name: str) -> str:
     venue_id_lower = venue_id.lower().strip()
     venue_name_lower = (venue_name or "").lower().strip()
 
-    # Direct O'Brien's normalization (catch all variants)
-    if "brien" in venue_id_lower:
+    # Direct O'Brien's Pub normalization (catch variants but NOT Sally O'Brien's)
+    if "brien" in venue_id_lower and "sally" not in venue_id_lower:
         return "obriens"
+
+    # Sally O'Brien's should remain separate
+    if "sallyobrien" in venue_id_lower or "sally_obrien" in venue_id_lower:
+        return "sallyobriens"
 
     # Handle Middle East variants by looking at the venue name
     if "middleeast" in venue_id_lower or "middle_east" in venue_id_lower or "middle-east" in venue_id_lower:
@@ -297,9 +301,14 @@ def _normalize_venue_name(name: str) -> str:
         # Midway
         "midway cafe": "Midway Cafe",
 
-        # O'Brien's
+        # O'Brien's Pub (Allston)
         "o'brien's pub": "O'Brien's Pub",
         "obriens": "O'Brien's Pub",
+
+        # Sally O'Brien's (Somerville) - different venue!
+        "sally o'brien's": "Sally O'Brien's",
+        "sallyobriens": "Sally O'Brien's",
+        "sally obriens": "Sally O'Brien's",
 
         # Rockwell
         "the rockwell": "The Rockwell",
