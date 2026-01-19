@@ -23,6 +23,7 @@ from foobos.fetchers.scrapers import (
     SongkickVenuesScraper,
     BSOScraper,
     PloughAndStarsScraper,
+    BostonShowsScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre
 from foobos.generators import generate_all_html
@@ -169,6 +170,16 @@ def cmd_fetch(args):
         all_concerts.extend(plough_concerts)
     except Exception as e:
         logger.error(f"Plough and Stars scrape failed: {e}")
+
+    # Boston Shows (bostonshows.org - comprehensive Greater Boston calendar)
+    try:
+        logger.info("Scraping Boston Shows...")
+        boston_shows_scraper = BostonShowsScraper()
+        boston_shows_concerts = boston_shows_scraper.fetch()
+        logger.info(f"Boston Shows: {len(boston_shows_concerts)} concerts")
+        all_concerts.extend(boston_shows_concerts)
+    except Exception as e:
+        logger.error(f"Boston Shows scrape failed: {e}")
 
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 
