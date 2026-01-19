@@ -85,22 +85,13 @@ BOSTON_VENUES = {
         "capacity": 300,
         "parser": "json_ld",
     },
-    # Berklee venues - performances page only (not recitals/masterclasses)
-    "berklee_bpc": {
-        "name": "Berklee Performance Center",
+    # Berklee performances - scrapes all venues from their performances page
+    "berklee": {
+        "name": "Berklee",  # Will be overridden by actual venue from page
         "location": "Boston",
         "url": "https://www.berklee.edu/events/performances",
-        "capacity": 1215,
         "parser": "berklee",
-        "venue_filter": "Berklee Performance Center",
-    },
-    "cafe939": {
-        "name": "Cafe 939",
-        "location": "Boston",
-        "url": "https://www.berklee.edu/events/performances",
-        "capacity": 200,
-        "parser": "berklee",
-        "venue_filter": "Red Room at Cafe 939",
+        "use_page_venue": True,  # Use venue name from the page, not this config
     },
 }
 
@@ -416,7 +407,7 @@ class AXSVenuesScraper(BaseScraper):
         - field--name-field-event-venue-title for venue
         """
         concerts = []
-        venue_filter = venue_config.get("venue_filter", "")
+        use_page_venue = venue_config.get("use_page_venue", False)
 
         view = soup.find(class_="view-events")
         if not view:
@@ -435,15 +426,20 @@ class AXSVenuesScraper(BaseScraper):
                 if not event_name or len(event_name) < 3:
                     continue
 
-                # Get venue - filter to specific venue if configured
+                # Get venue from page
                 venue_field = row.find(class_="field--name-field-event-venue-title")
                 event_venue = ""
                 if venue_field:
                     event_venue = self._clean_text(venue_field.get_text().replace("Venue Title", ""))
 
-                # Skip if venue filter is set and doesn't match
-                if venue_filter and venue_filter.lower() not in event_venue.lower():
-                    continue
+                # Determine venue name and ID
+                if use_page_venue and event_venue:
+                    actual_venue_name = event_venue
+                    # Normalize venue ID from name
+                    actual_venue_id = self._berklee_venue_to_id(event_venue)
+                else:
+                    actual_venue_name = venue_config["name"]
+                    actual_venue_id = venue_id
 
                 # Get date/time
                 time_elem = row.find("time")
@@ -494,8 +490,8 @@ class AXSVenuesScraper(BaseScraper):
 
                 concerts.append(Concert(
                     date=event_date,
-                    venue_id=venue_id,
-                    venue_name=venue_config["name"],
+                    venue_id=actual_venue_id,
+                    venue_name=actual_venue_name,
                     venue_location=venue_config["location"],
                     bands=bands,
                     age_requirement="a/a",  # Berklee events are typically all ages
@@ -513,6 +509,32 @@ class AXSVenuesScraper(BaseScraper):
                 continue
 
         return concerts
+
+    def _berklee_venue_to_id(self, venue_name: str) -> str:
+        """Convert Berklee venue name to a normalized venue ID."""
+        # Map common Berklee venue names to IDs
+        venue_map = {
+            "berklee performance center": "berklee_bpc",
+            "red room at cafe 939": "cafe939",
+            "cafe 939": "cafe939",
+            "berk recital hall": "berk_recital",
+            "david friend recital hall": "david_friend_recital",
+            "seully hall": "seully_hall",
+            "studio 401": "studio_401",
+            "online": "berklee_online",
+        }
+
+        name_lower = venue_name.lower().strip()
+
+        # Check for exact or partial matches
+        for key, vid in venue_map.items():
+            if key in name_lower:
+                return vid
+
+        # Fallback: generate ID from name
+        vid = name_lower.replace(" ", "_").replace("'", "").replace(".", "")
+        vid = ''.join(c for c in vid if c.isalnum() or c == '_')
+        return vid[:30]
 
     def _parse_event_page(self, soup: BeautifulSoup, venue_id: str, venue_config: Dict) -> List[Concert]:
         """Parse events from common HTML patterns."""
