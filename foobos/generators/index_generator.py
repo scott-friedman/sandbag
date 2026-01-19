@@ -117,7 +117,7 @@ def _generate_bands_list(band_info: Dict[str, Tuple[str, int]]) -> str:
     """Generate alphabetical band list with hyperlinks, separated by asterisks.
 
     Format: * Band1 * Band2 * Band3 *
-    Each band links to its anchor on the appropriate by-band.X.html page.
+    Each band links to its anchor on the single by-band.html page.
     """
     if not band_info:
         return ""
@@ -127,8 +127,8 @@ def _generate_bands_list(band_info: Dict[str, Tuple[str, int]]) -> str:
 
     links = []
     for band in sorted_bands:
-        anchor, page_num = band_info[band]
-        link = f'<a href="by-band.{page_num}.html#{anchor}">{band}</a>'
+        anchor, _ = band_info[band]
+        link = f'<a href="by-band.html#{anchor}">{band}</a>'
         links.append(link)
 
     # Join with asterisks
@@ -139,7 +139,7 @@ def _generate_venues_list(venue_info: Dict[str, Tuple[str, str, int]]) -> str:
     """Generate alphabetical venue list with hyperlinks, separated by asterisks.
 
     Format: * Venue1, City * Venue2, City *
-    Each venue links to its anchor on the appropriate by-club.X.html page.
+    Each venue links to its anchor on the single by-club.html page.
     """
     if not venue_info:
         return ""
@@ -156,8 +156,8 @@ def _generate_venues_list(venue_info: Dict[str, Tuple[str, str, int]]) -> str:
     sorted_venues = sorted(venue_info.items(), key=sort_key)
 
     links = []
-    for venue_id, (display_name, anchor, page_num) in sorted_venues:
-        link = f'<a href="by-club.{page_num}.html#{anchor}">{display_name}</a>'
+    for venue_id, (display_name, anchor, _) in sorted_venues:
+        link = f'<a href="by-club.html#{anchor}">{display_name}</a>'
         links.append(link)
 
     # Join with asterisks

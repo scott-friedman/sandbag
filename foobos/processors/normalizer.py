@@ -49,10 +49,10 @@ def _normalize_concert(concert: Concert) -> Concert:
     if not concert.bands:
         return None
 
-    # Normalize venue
-    concert.venue_id = _normalize_venue_id(concert.venue_id)
+    # Normalize venue - use name to help determine correct ID
+    concert.venue_id = _normalize_venue_id_with_name(concert.venue_id, concert.venue_name)
     concert.venue_name = _normalize_venue_name(concert.venue_name)
-    concert.venue_location = _normalize_location(concert.venue_location)
+    concert.venue_location = _normalize_location(concert.venue_location, concert.venue_id)
 
     # Normalize time
     concert.time = _normalize_time(concert.time)
@@ -102,6 +102,37 @@ def _normalize_band_name(name: str) -> str:
     return name.strip()
 
 
+def _normalize_venue_id_with_name(venue_id: str, venue_name: str) -> str:
+    """Normalize venue ID, using venue name to disambiguate similar IDs."""
+    if not venue_id:
+        return "unknown"
+
+    # Normalize apostrophes first (handle multiple Unicode apostrophe variants)
+    venue_id = venue_id.replace("\u2019", "'").replace("\u2018", "'").replace("`", "'")
+    venue_id_lower = venue_id.lower().strip()
+    venue_name_lower = (venue_name or "").lower().strip()
+
+    # Direct O'Brien's normalization (catch all variants)
+    if "brien" in venue_id_lower:
+        return "obriens"
+
+    # Handle Middle East variants by looking at the venue name
+    if "middleeast" in venue_id_lower or "middle_east" in venue_id_lower or "middle-east" in venue_id_lower:
+        if "upstairs" in venue_name_lower:
+            return "middleeast_up"
+        elif "downstairs" in venue_name_lower:
+            return "middleeast_down"
+        elif "corner" in venue_name_lower or "bakery" in venue_name_lower:
+            return "middleeast_corner"
+        elif "zuzu" in venue_name_lower:
+            return "middleeast_zuzu"
+        else:
+            return "middleeast"
+
+    # Fall back to standard normalization
+    return _normalize_venue_id(venue_id)
+
+
 def _normalize_venue_id(venue_id: str) -> str:
     """Normalize venue ID to standard slug."""
     if not venue_id:
@@ -109,24 +140,72 @@ def _normalize_venue_id(venue_id: str) -> str:
 
     venue_id = venue_id.lower().strip()
 
-    # Standard mappings
+    # Normalize apostrophes and special characters
+    venue_id = venue_id.replace("'", "'").replace("'", "'")  # Curly to straight
+
+    # Standard mappings - consolidate duplicates
     id_map = {
+        # Middle East variants
         "middle_east": "middleeast",
         "middle-east": "middleeast",
         "themiddleeast": "middleeast",
+        "middle_east_-_upstairs": "middleeast_up",
+        "middle_east_-_downstairs": "middleeast_down",
+        "middle_east-_downstairs": "middleeast_down",
+        "middle_east_-_corner/bakery": "middleeast_corner",
+        "middle_east_-_zuzu": "middleeast_zuzu",
+
+        # Paradise variants
         "paradise_rock_club": "paradise",
         "paradise_rock": "paradise",
         "paradiserock": "paradise",
+        "paradise_rock_club_presented_b": "paradise",
+
+        # Sinclair variants
         "sinclair_cambridge": "sinclair",
         "thesinclair": "sinclair",
-        "great_scott": "greatscott",
-        "greatscottboston": "greatscott",
-        "brighton_music_hall": "brighton",
-        "brightonmusic": "brighton",
-        "house_of_blues": "hob",
-        "houseofblues": "hob",
+        "the_sinclair_music_hall": "sinclair",
+
+        # Royale variants
+        "royale_boston": "royale",
+
+        # Roadrunner variants
+        "roadrunner-boston": "roadrunner",
+
+        # Lizard Lounge variants
+        "lizard_lounge": "lizardlounge",
+
+        # House of Blues variants
+        "house_of_blues": "hob_boston",
+        "houseofblues": "hob_boston",
+        "citizens_house_of_blues_boston": "hob_boston",
+        "hob": "hob_boston",  # Fix Orlando issue
+
+        # O'Brien's variants (note the curly apostrophe and straight apostrophe)
         "obriens_pub": "obriens",
         "obrien": "obriens",
+        "o'brien's_pub": "obriens",
+        "o'brien's_pub": "obriens",
+
+        # Crystal Ballroom variants
+        "crystal_ballroom_at_somerville": "crystal",
+
+        # Jungle variants
+        "jungle_tix": "jungle",
+
+        # Brighton Music Hall
+        "brighton_music_hall": "brighton",
+        "brightonmusic": "brighton",
+        "brighton_music_hall_presented_": "brighton",
+
+        # Orpheum Theatre
+        "orpheum_theatre_presented_by_c": "orpheum",
+
+        # Great Scott
+        "great_scott": "greatscott",
+        "greatscottboston": "greatscott",
+
+        # Midway Cafe
         "midway_cafe": "midway",
         "midwaycafe": "midway",
     }
@@ -139,38 +218,96 @@ def _normalize_venue_name(name: str) -> str:
     if not name:
         return "Unknown Venue"
 
-    # Standard venue names
+    # Standard venue names - consolidate duplicates
     name_map = {
+        # Middle East variants
         "middle east": "Middle East",
         "middle east downstairs": "Middle East Downstairs",
         "middle east upstairs": "Middle East Upstairs",
+        "the middle east upstairs": "Middle East Upstairs",
+        "the middle east downstairs": "Middle East Downstairs",
+        "the middle east corner bar": "Middle East Corner",
+        "middle east - downstairs": "Middle East Downstairs",
+        "middle east- downstairs": "Middle East Downstairs",
+        "middle east - upstairs": "Middle East Upstairs",
+        "middle east - corner/bakery": "Middle East Corner",
+        "middle east - zuzu": "Middle East ZuZu",
+
+        # Paradise
         "paradise rock club": "Paradise Rock Club",
         "paradise": "Paradise Rock Club",
+        "paradise rock club presented by citizens": "Paradise Rock Club",
+
+        # Sinclair
         "the sinclair": "The Sinclair",
         "sinclair": "The Sinclair",
-        "great scott": "Great Scott",
-        "brighton music hall": "Brighton Music Hall",
-        "house of blues": "House of Blues",
-        "house of blues boston": "House of Blues",
+        "the sinclair music hall": "The Sinclair",
+
+        # Royale
         "royale": "Royale",
         "royale boston": "Royale",
+
+        # Roadrunner
+        "roadrunner": "Roadrunner",
+        "roadrunner-boston": "Roadrunner",
+
+        # Lizard Lounge
+        "lizard lounge": "Lizard Lounge",
+
+        # House of Blues
+        "house of blues": "House of Blues",
+        "house of blues boston": "House of Blues",
+        "citizens house of blues boston": "House of Blues",
+
+        # Brighton Music Hall
+        "brighton music hall": "Brighton Music Hall",
+        "brighton music hall presented by citizens": "Brighton Music Hall",
+
+        # Orpheum
         "orpheum": "Orpheum Theatre",
         "orpheum theatre": "Orpheum Theatre",
+        "orpheum theatre presented by citizens": "Orpheum Theatre",
+
+        # Great Scott
+        "great scott": "Great Scott",
+
+        # Crystal Ballroom
+        "crystal ballroom": "Crystal Ballroom",
+        "crystal ballroom at somerville theatre": "Crystal Ballroom",
+
+        # Jungle
+        "jungle": "Jungle",
+        "jungle  tix": "Jungle",
+
+        # Midway
         "midway cafe": "Midway Cafe",
+
+        # O'Brien's
         "o'brien's pub": "O'Brien's Pub",
         "obriens": "O'Brien's Pub",
+
+        # Rockwell
+        "the rockwell": "The Rockwell",
     }
 
     name_lower = name.lower().strip()
     return name_map.get(name_lower, name)
 
 
-def _normalize_location(location: str) -> str:
+def _normalize_location(location: str, venue_id: str = None) -> str:
     """Normalize city/location name."""
     if not location:
         return "Boston"
 
     location = location.strip()
+
+    # Fix known wrong locations based on venue
+    if venue_id:
+        venue_location_fixes = {
+            "hob_boston": "Boston",  # House of Blues often has wrong Orlando location
+        }
+        if venue_id in venue_location_fixes:
+            return venue_location_fixes[venue_id]
 
     # Standard locations
     loc_map = {
@@ -188,6 +325,7 @@ def _normalize_location(location: str) -> str:
         "worcester": "Worcester",
         "providence": "Providence",
         "providence, ri": "Providence",
+        "orlando": "Boston",  # Fix wrong Orlando locations
     }
 
     return loc_map.get(location.lower(), location)
