@@ -117,7 +117,7 @@ def _generate_week_page(week_num: int, concerts: List[Concert], reference_date: 
 <hr>
 <p>{date_shortcuts}</p>
 
-<p>[ <a href="index.html">Top of The List</a> | <a href="mailto:foobos@example.com">Graham Spencer</a> ]</p>
+<p>[ <a href="index.html">Back</a> | <a href="mailto:foobos@example.com">Email Me</a> ]</p>
 
 </body>
 </html>
