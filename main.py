@@ -28,6 +28,8 @@ from foobos.fetchers.scrapers import (
     ChevalierTheatreScraper,
     TheBebopScraper,
     TheCabotScraper,
+    PalladiumScraper,
+    ScullersJazzScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre, filter_past_events
 from foobos.generators import generate_all_html
@@ -224,6 +226,26 @@ def cmd_fetch(args):
         all_concerts.extend(cabot_concerts)
     except Exception as e:
         logger.error(f"The Cabot scrape failed: {e}")
+
+    # The Palladium (Worcester - requires Playwright for JS rendering)
+    try:
+        logger.info("Scraping The Palladium...")
+        palladium_scraper = PalladiumScraper()
+        palladium_concerts = palladium_scraper.fetch()
+        logger.info(f"The Palladium: {len(palladium_concerts)} concerts")
+        all_concerts.extend(palladium_concerts)
+    except Exception as e:
+        logger.error(f"The Palladium scrape failed: {e}")
+
+    # Scullers Jazz Club (Boston - requires Playwright for JS rendering)
+    try:
+        logger.info("Scraping Scullers Jazz Club...")
+        scullers_scraper = ScullersJazzScraper()
+        scullers_concerts = scullers_scraper.fetch()
+        logger.info(f"Scullers Jazz: {len(scullers_concerts)} concerts")
+        all_concerts.extend(scullers_concerts)
+    except Exception as e:
+        logger.error(f"Scullers Jazz scrape failed: {e}")
 
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 

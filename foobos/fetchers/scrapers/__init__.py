@@ -15,6 +15,8 @@ from .sally_obriens import SallyOBriensScraper
 from .chevalier_theatre import ChevalierTheatreScraper
 from .the_bebop import TheBebopScraper
 from .the_cabot import TheCabotScraper
+from .palladium import PalladiumScraper
+from .scullers_jazz import ScullersJazzScraper
 
 __all__ = [
     "BaseScraper",
@@ -34,4 +36,6 @@ __all__ = [
     "ChevalierTheatreScraper",
     "TheBebopScraper",
     "TheCabotScraper",
+    "PalladiumScraper",
+    "ScullersJazzScraper",
 ]
