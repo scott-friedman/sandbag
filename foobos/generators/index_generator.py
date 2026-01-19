@@ -47,11 +47,11 @@ def generate_index(
 <h2><i>The List (updated {update_date})</i></h2>
 
 <p>
-This is a WWW version of the excellent <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>. All of the idea is foopee's, I've just cloned it for Boston. Please <a href="mailto:{SITE_EMAIL}">send me mail</a> if you have questions or corrections related to the list content. My program automatically pulls info into HTML, so please let me know if there is a problem. You can <a href="mailto:{SITE_EMAIL}">contact me</a> if there's anything else you need.
+This is a Boston version of the legendary <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>. This was all foopee's idea, I've tried to clone it for Boston. Please <a href="mailto:s_friedman+foobos@outlook.com">send me mail</a> if you have questions or corrections related to the list content.
 </p>
 
 <p>
-Here's what the symbols at the end of each listing mean:
+Here's what the symbols at the end of each listing might mean:
 </p>
 
 <pre>
@@ -63,8 +63,8 @@ Here's what the symbols at the end of each listing mean:
 <hr>
 
 <p>
-<b>{update_date}:</b> The List has gone live! Boston's own version of the legendary <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>.<br>
-<b>{update_date}:</b> Auto-updates daily from Ticketmaster, venue calendars, and punk scene aggregators.<br>
+<b>Jan 19, 2026</b> Auto-updates daily from Ticketmaster, venue calendars, and other aggregators.<br>
+<b>Jan 19, 2026</b> The List has gone live! Boston's own version of the legendary <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>.<br>
 </p>
 
 <hr>
