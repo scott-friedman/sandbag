@@ -97,9 +97,9 @@ body {
 
     logger.info("Generated fool.html")
 
-    # Copy the-fool.png to output directory
+    # Copy the-fool.png to output directory (skip if same location)
     src_img = Path(PROJECT_ROOT) / "the-fool.png"
     dst_img = Path(OUTPUT_DIR) / "the-fool.png"
-    if src_img.exists():
+    if src_img.exists() and src_img.resolve() != dst_img.resolve():
         shutil.copy2(src_img, dst_img)
         logger.info("Copied the-fool.png to output")
