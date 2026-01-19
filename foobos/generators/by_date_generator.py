@@ -74,7 +74,9 @@ def _generate_week_page(week_num: int, concerts: List[Concert], reference_date: 
             day_label = current_date.strftime("%a %b %-d")
             html += f'<li><b>{day_label}</b>\n<ul>\n'
 
-            for concert in day_concerts:
+            # Sort by venue name alphabetically
+            sorted_concerts = sorted(day_concerts, key=lambda c: (c.venue_name or "").lower())
+            for concert in sorted_concerts:
                 line = format_concert_line(concert)
                 html += f'<li>{line}</li>\n'
 
