@@ -1,0 +1,208 @@
+{
+  "venues": [
+    {
+      "id": "middleeast",
+      "name": "Middle East",
+      "location": "Cambridge",
+      "address": "472-480 Massachusetts Ave, Cambridge, MA 02139",
+      "phone": "(617) 864-3278",
+      "website": "https://mideastclub.com",
+      "capacity": 575,
+      "rooms": ["Downstairs", "Upstairs", "Corner", "Zuzu"],
+      "ticketmaster_id": "KovZpZAJeldA"
+    },
+    {
+      "id": "paradise",
+      "name": "Paradise Rock Club",
+      "location": "Boston",
+      "address": "967 Commonwealth Ave, Boston, MA 02215",
+      "phone": "(617) 562-8800",
+      "website": "https://crossroadspresents.com/paradise-rock-club",
+      "capacity": 933,
+      "ticketmaster_id": "KovZpZAJek7A"
+    },
+    {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge",
+      "address": "52 Church St, Cambridge, MA 02138",
+      "phone": "(617) 547-5200",
+      "website": "https://sinclaircambridge.com",
+      "capacity": 525,
+      "ticketmaster_id": "KovZpZAJekdA"
+    },
+    {
+      "id": "greatscott",
+      "name": "Great Scott",
+      "location": "Allston",
+      "address": "1222 Commonwealth Ave, Boston, MA 02134",
+      "capacity": 240,
+      "notes": "Closed 2020, reopened location TBD"
+    },
+    {
+      "id": "brightonmusichall",
+      "name": "Brighton Music Hall",
+      "location": "Allston",
+      "address": "158 Brighton Ave, Allston, MA 02134",
+      "phone": "(617) 779-0140",
+      "website": "https://crossroadspresents.com/brighton-music-hall",
+      "capacity": 450,
+      "ticketmaster_id": "KovZpZAJelJA"
+    },
+    {
+      "id": "royale",
+      "name": "Royale",
+      "location": "Boston",
+      "address": "279 Tremont St, Boston, MA 02116",
+      "phone": "(617) 338-7699",
+      "website": "https://royaleboston.com",
+      "capacity": 1200,
+      "ticketmaster_id": "KovZpZAJe61A"
+    },
+    {
+      "id": "palladium",
+      "name": "The Palladium",
+      "location": "Worcester",
+      "address": "261 Main St, Worcester, MA 01608",
+      "phone": "(508) 797-9696",
+      "website": "https://thepalladium.net",
+      "capacity": 2000,
+      "rooms": ["Mainstage", "Upstairs"],
+      "ticketmaster_id": "KovZpZAJeAaA"
+    },
+    {
+      "id": "obriens",
+      "name": "O'Brien's Pub",
+      "location": "Allston",
+      "address": "3 Harvard Ave, Allston, MA 02134",
+      "phone": "(617) 782-6245",
+      "capacity": 100,
+      "notes": "Key DIY/punk venue"
+    },
+    {
+      "id": "midway",
+      "name": "The Midway Cafe",
+      "location": "Jamaica Plain",
+      "address": "3496 Washington St, Jamaica Plain, MA 02130",
+      "phone": "(617) 524-9038",
+      "website": "https://midwaycafe.com",
+      "capacity": 100,
+      "notes": "Long-running punk/queer venue"
+    },
+    {
+      "id": "oncesomerville",
+      "name": "ONCE Somerville",
+      "location": "Somerville",
+      "address": "156 Highland Ave, Somerville, MA 02143",
+      "website": "https://oncesomerville.com",
+      "capacity": 400
+    },
+    {
+      "id": "crystalballroom",
+      "name": "Crystal Ballroom",
+      "location": "Somerville",
+      "address": "55 Davis Square, Somerville, MA 02144",
+      "capacity": 400
+    },
+    {
+      "id": "cit",
+      "name": "Cuisine en Locale",
+      "location": "Somerville",
+      "address": "156 Highland Ave, Somerville, MA 02143",
+      "capacity": 200,
+      "notes": "DIY all-ages space"
+    },
+    {
+      "id": "bignight",
+      "name": "Big Night Live",
+      "location": "Boston",
+      "address": "110 Causeway St, Boston, MA 02114",
+      "website": "https://bignightlive.com",
+      "capacity": 1500,
+      "ticketmaster_id": "KovZpakA7e"
+    },
+    {
+      "id": "roadrunner",
+      "name": "Roadrunner",
+      "location": "Boston",
+      "address": "89 Guest St, Boston, MA 02135",
+      "website": "https://roadrunnerboston.com",
+      "capacity": 3500,
+      "ticketmaster_id": "KovZpakS6e"
+    },
+    {
+      "id": "mgh",
+      "name": "MGM Music Hall",
+      "location": "Boston",
+      "address": "2 Lansdowne St, Boston, MA 02215",
+      "website": "https://mgmmusichall.com",
+      "capacity": 5000,
+      "ticketmaster_id": "KovZ917ALf7"
+    },
+    {
+      "id": "td",
+      "name": "TD Garden",
+      "location": "Boston",
+      "address": "100 Legends Way, Boston, MA 02114",
+      "website": "https://tdgarden.com",
+      "capacity": 19580,
+      "ticketmaster_id": "KovZpZAE6elA"
+    },
+    {
+      "id": "orpheum",
+      "name": "Orpheum Theatre",
+      "location": "Boston",
+      "address": "1 Hamilton Pl, Boston, MA 02108",
+      "capacity": 2700,
+      "ticketmaster_id": "KovZpZAJellA"
+    },
+    {
+      "id": "houseoflues",
+      "name": "House of Blues",
+      "location": "Boston",
+      "address": "15 Lansdowne St, Boston, MA 02215",
+      "phone": "(888) 693-2583",
+      "website": "https://houseofblues.com/boston",
+      "capacity": 2425,
+      "ticketmaster_id": "KovZpZAJekAA"
+    },
+    {
+      "id": "sonia",
+      "name": "Sonia",
+      "location": "Cambridge",
+      "address": "10 Brookline St, Cambridge, MA 02139",
+      "capacity": 350,
+      "notes": "Above Middle East"
+    },
+    {
+      "id": "lilypad",
+      "name": "The Lilypad",
+      "location": "Cambridge",
+      "address": "1353 Cambridge St, Cambridge, MA 02139",
+      "capacity": 75,
+      "notes": "Intimate experimental/noise venue"
+    },
+    {
+      "id": "thetamworth",
+      "name": "The Tamworth Lyceum",
+      "location": "Tamworth",
+      "address": "3 Depot Rd, Tamworth, NH 03886",
+      "capacity": 200,
+      "notes": "NH venue - punk-friendly"
+    },
+    {
+      "id": "thechannel",
+      "name": "The Channel",
+      "location": "Boston",
+      "address": "25 Necco St, Boston, MA",
+      "notes": "CLOSED - Historic punk venue"
+    },
+    {
+      "id": "therathskeller",
+      "name": "The Rat",
+      "location": "Boston",
+      "address": "528 Commonwealth Ave, Boston, MA",
+      "notes": "CLOSED - Legendary punk venue 1974-1997"
+    }
+  ]
+}
