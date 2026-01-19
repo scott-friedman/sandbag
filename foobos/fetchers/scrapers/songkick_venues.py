@@ -32,6 +32,41 @@ SONGKICK_VENUES = [
         "songkick_id": "4447493",
         "age": "a/a",
     },
+    {
+        "name": "City Winery Boston",
+        "id": "citywinery",
+        "location": "Boston",
+        "songkick_id": "3548799",
+        "age": "21+",
+    },
+    {
+        "name": "Club Passim",
+        "id": "clubpassim",
+        "location": "Cambridge",
+        "songkick_id": "10659",
+        "age": "a/a",
+    },
+    {
+        "name": "The Lilypad",
+        "id": "lilypad",
+        "location": "Cambridge",
+        "songkick_id": "71389",
+        "age": "a/a",
+    },
+    {
+        "name": "ONCE Somerville",
+        "id": "once_somerville",
+        "location": "Somerville",
+        "songkick_id": "3078734",
+        "age": "18+",
+    },
+    {
+        "name": "ONCE at Boynton Yards",
+        "id": "once_boynton",
+        "location": "Somerville",
+        "songkick_id": "4409048",
+        "age": "18+",
+    },
 ]
 
 
