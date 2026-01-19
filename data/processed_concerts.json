@@ -31,7 +31,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.934247"
+    "last_updated": "2026-01-19T01:52:54.789867"
   },
   {
     "id": "e39b1c81e81a",
@@ -59,7 +59,7 @@
       "alternative",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.934288"
+    "last_updated": "2026-01-19T01:52:54.789907"
   },
   {
     "id": "558188a3eb2d",
@@ -91,7 +91,7 @@
       "rock",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:11.934362"
+    "last_updated": "2026-01-19T01:52:54.789982"
   },
   {
     "id": "60bf95ba1656",
@@ -122,7 +122,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.203086"
+    "last_updated": "2026-01-19T01:52:31.117793"
   },
   {
     "id": "51c413ac308d",
@@ -147,7 +147,59 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/vibzzz-all-night/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662060"
+    "last_updated": "2026-01-19T01:52:41.619393"
+  },
+  {
+    "id": "00f05e5b9fbd",
+    "date": "2026-01-23T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "WonkyWilla",
+      "TwoPercent",
+      "Sarge"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.053001"
+  },
+  {
+    "id": "015068a3f4b2",
+    "date": "2026-01-23T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Glitter Boys"
+    ],
+    "age_requirement": "21+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "9:30pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.053326"
   },
   {
     "id": "a914b7688ed5",
@@ -178,7 +230,33 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.934412"
+    "last_updated": "2026-01-19T01:52:54.790035"
+  },
+  {
+    "id": "c3dc11873299",
+    "date": "2026-01-24T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "LaMP ft. Russ Lawton",
+      "Scott Metzger & Ray Paczkowski"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.053652"
   },
   {
     "id": "b038229b7c54",
@@ -207,7 +285,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.934620"
+    "last_updated": "2026-01-19T01:52:54.790249"
   },
   {
     "id": "0b20230faae7",
@@ -236,7 +314,7 @@
       "alternative",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.935195"
+    "last_updated": "2026-01-19T01:52:54.790796"
   },
   {
     "id": "aa2068bb29a7",
@@ -265,7 +343,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.935330"
+    "last_updated": "2026-01-19T01:52:54.790925"
   },
   {
     "id": "43b5302bf35a",
@@ -290,7 +368,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/monaleo-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662200"
+    "last_updated": "2026-01-19T01:52:41.619515"
   },
   {
     "id": "367a0ed91306",
@@ -318,7 +396,7 @@
       "folk",
       "indie folk"
     ],
-    "last_updated": "2026-01-19T01:43:11.935584"
+    "last_updated": "2026-01-19T01:52:54.791183"
   },
   {
     "id": "70708d466ca6",
@@ -346,7 +424,7 @@
       "alternative",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.935669"
+    "last_updated": "2026-01-19T01:52:54.791267"
   },
   {
     "id": "4fcdbf71e0c3",
@@ -376,7 +454,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.203678"
+    "last_updated": "2026-01-19T01:52:31.118424"
   },
   {
     "id": "f395ba3cf09e",
@@ -401,7 +479,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/margo-price/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662245"
+    "last_updated": "2026-01-19T01:52:41.619558"
   },
   {
     "id": "df69b2431a11",
@@ -430,7 +508,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.935841"
+    "last_updated": "2026-01-19T01:52:54.791442"
   },
   {
     "id": "3b7882a81f5e",
@@ -458,7 +536,7 @@
       "folk",
       "indie folk"
     ],
-    "last_updated": "2026-01-19T01:43:11.935897"
+    "last_updated": "2026-01-19T01:52:54.791497"
   },
   {
     "id": "9193f90d1e6c",
@@ -483,7 +561,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/the-record-company-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662266"
+    "last_updated": "2026-01-19T01:52:41.619582"
   },
   {
     "id": "dd7724f6bdec",
@@ -512,7 +590,7 @@
       "folk",
       "indie folk"
     ],
-    "last_updated": "2026-01-19T01:43:11.936164"
+    "last_updated": "2026-01-19T01:52:54.791766"
   },
   {
     "id": "13ab9436f600",
@@ -537,7 +615,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/peter-mcpoland-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662276"
+    "last_updated": "2026-01-19T01:52:41.619592"
   },
   {
     "id": "e334e5f82ba0",
@@ -562,7 +640,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/boots-n-beats/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662287"
+    "last_updated": "2026-01-19T01:52:41.619601"
   },
   {
     "id": "1f1bc21dcac1",
@@ -592,7 +670,7 @@
       "metal",
       "nu-metal"
     ],
-    "last_updated": "2026-01-19T01:43:11.936801"
+    "last_updated": "2026-01-19T01:52:54.792399"
   },
   {
     "id": "e255a38d9feb",
@@ -618,7 +696,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/michael-shannon-jason-narducy-and-friends-play-r-e-m-s-lifes-rich-pageant/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662312"
+    "last_updated": "2026-01-19T01:52:41.619626"
   },
   {
     "id": "f54fbe5b0e92",
@@ -648,7 +726,7 @@
       "rock",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:11.937051"
+    "last_updated": "2026-01-19T01:52:54.792665"
   },
   {
     "id": "c31a3eefe7b1",
@@ -677,7 +755,7 @@
       "folk",
       "indie folk"
     ],
-    "last_updated": "2026-01-19T01:43:11.937074"
+    "last_updated": "2026-01-19T01:52:54.792692"
   },
   {
     "id": "9deb8b6759d8",
@@ -706,7 +784,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.937406"
+    "last_updated": "2026-01-19T01:52:54.793001"
   },
   {
     "id": "e1ff0020c3bd",
@@ -731,7 +809,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/evan-honer/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662365"
+    "last_updated": "2026-01-19T01:52:41.619667"
   },
   {
     "id": "ee42500773f6",
@@ -762,7 +840,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.937438"
+    "last_updated": "2026-01-19T01:52:54.793031"
   },
   {
     "id": "8b8c158ae324",
@@ -792,7 +870,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.937493"
+    "last_updated": "2026-01-19T01:52:54.793088"
   },
   {
     "id": "64eddf3fd9f8",
@@ -820,7 +898,7 @@
       "rock",
       "blues-rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.937521"
+    "last_updated": "2026-01-19T01:52:54.793115"
   },
   {
     "id": "44b87021adab",
@@ -848,7 +926,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.937637"
+    "last_updated": "2026-01-19T01:52:54.793241"
   },
   {
     "id": "f755b5fea7cd",
@@ -873,7 +951,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/mindchatter/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662401"
+    "last_updated": "2026-01-19T01:52:41.619685"
   },
   {
     "id": "86e19046d9a7",
@@ -904,7 +982,7 @@
       "metal",
       "nu-metal"
     ],
-    "last_updated": "2026-01-19T01:43:11.937692"
+    "last_updated": "2026-01-19T01:52:54.793295"
   },
   {
     "id": "97b32766d886",
@@ -932,7 +1010,7 @@
       "metal",
       "death metal/black metal"
     ],
-    "last_updated": "2026-01-19T01:43:11.937773"
+    "last_updated": "2026-01-19T01:52:54.793374"
   },
   {
     "id": "1aebe79e4272",
@@ -960,7 +1038,7 @@
       "indie folk",
       "folk"
     ],
-    "last_updated": "2026-01-19T01:43:11.937796"
+    "last_updated": "2026-01-19T01:52:54.793401"
   },
   {
     "id": "26ac777a2e32",
@@ -988,7 +1066,7 @@
       "folk",
       "indie folk"
     ],
-    "last_updated": "2026-01-19T01:43:11.937935"
+    "last_updated": "2026-01-19T01:52:54.793535"
   },
   {
     "id": "0a95c4755bea",
@@ -1013,7 +1091,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/prospa/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662419"
+    "last_updated": "2026-01-19T01:52:41.619693"
   },
   {
     "id": "e9b0bde4117e",
@@ -1042,7 +1120,7 @@
       "rock",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:11.938085"
+    "last_updated": "2026-01-19T01:52:54.793696"
   },
   {
     "id": "ec4d03bc3a0b",
@@ -1072,7 +1150,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.938108"
+    "last_updated": "2026-01-19T01:52:54.793718"
   },
   {
     "id": "0b78838b732b",
@@ -1101,7 +1179,7 @@
       "folk",
       "indie folk"
     ],
-    "last_updated": "2026-01-19T01:43:11.938209"
+    "last_updated": "2026-01-19T01:52:54.793803"
   },
   {
     "id": "77b92adbb9c8",
@@ -1126,7 +1204,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/gogol-bordello-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662455"
+    "last_updated": "2026-01-19T01:52:41.619715"
   },
   {
     "id": "be064dc17ce6",
@@ -1156,7 +1234,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.938289"
+    "last_updated": "2026-01-19T01:52:54.793883"
   },
   {
     "id": "9e9fe38f1903",
@@ -1186,7 +1264,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.938319"
+    "last_updated": "2026-01-19T01:52:54.793914"
   },
   {
     "id": "a20aea02a0e2",
@@ -1217,7 +1295,7 @@
       "metal",
       "nu-metal"
     ],
-    "last_updated": "2026-01-19T01:43:11.938448"
+    "last_updated": "2026-01-19T01:52:54.794052"
   },
   {
     "id": "76927dd6c651",
@@ -1242,7 +1320,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/21146/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662475"
+    "last_updated": "2026-01-19T01:52:41.619726"
   },
   {
     "id": "7b96f4c3a7f2",
@@ -1270,7 +1348,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.938618"
+    "last_updated": "2026-01-19T01:52:54.794212"
   },
   {
     "id": "89fa52b050e7",
@@ -1298,7 +1376,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.938648"
+    "last_updated": "2026-01-19T01:52:54.794240"
   },
   {
     "id": "81fdd509c8a5",
@@ -1327,7 +1405,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.938702"
+    "last_updated": "2026-01-19T01:52:54.794309"
   },
   {
     "id": "56033432a6b3",
@@ -1352,7 +1430,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/we-touch-grass-anime-rave/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662500"
+    "last_updated": "2026-01-19T01:52:41.619738"
   },
   {
     "id": "9221e6a396c8",
@@ -1380,7 +1458,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.938735"
+    "last_updated": "2026-01-19T01:52:54.794338"
   },
   {
     "id": "0cb1952dc08f",
@@ -1405,7 +1483,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/machine-girl/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662518"
+    "last_updated": "2026-01-19T01:52:41.619753"
   },
   {
     "id": "b38a619cba50",
@@ -1433,7 +1511,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.938789"
+    "last_updated": "2026-01-19T01:52:54.794392"
   },
   {
     "id": "16dd90330a32",
@@ -1463,7 +1541,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.204018"
+    "last_updated": "2026-01-19T01:52:31.118808"
   },
   {
     "id": "6ebeb6260594",
@@ -1488,7 +1566,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/two-feet/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662553"
+    "last_updated": "2026-01-19T01:52:41.619765"
   },
   {
     "id": "5f269ce9acbc",
@@ -1518,7 +1596,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.938890"
+    "last_updated": "2026-01-19T01:52:54.794490"
   },
   {
     "id": "f48ab1aaaf39",
@@ -1548,7 +1626,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.204115"
+    "last_updated": "2026-01-19T01:52:31.118913"
   },
   {
     "id": "165f25c6cfd3",
@@ -1576,7 +1654,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.939074"
+    "last_updated": "2026-01-19T01:52:54.794689"
   },
   {
     "id": "61ccde4b6fef",
@@ -1601,7 +1679,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/starjunk-95/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662634"
+    "last_updated": "2026-01-19T01:52:41.619817"
   },
   {
     "id": "ff22c8bd0c4f",
@@ -1629,7 +1707,7 @@
       "rock",
       "rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.939425"
+    "last_updated": "2026-01-19T01:52:54.795032"
   },
   {
     "id": "0c68837b2b21",
@@ -1658,7 +1736,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.939602"
+    "last_updated": "2026-01-19T01:52:54.795215"
   },
   {
     "id": "41707fc0cdd2",
@@ -1683,7 +1761,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/sarah-kinsley-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662688"
+    "last_updated": "2026-01-19T01:52:41.619872"
   },
   {
     "id": "a286def99b20",
@@ -1711,7 +1789,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.939633"
+    "last_updated": "2026-01-19T01:52:54.795247"
   },
   {
     "id": "abec079e65e5",
@@ -1740,7 +1818,7 @@
       "rock",
       "rock & roll"
     ],
-    "last_updated": "2026-01-19T01:43:11.939663"
+    "last_updated": "2026-01-19T01:52:54.795280"
   },
   {
     "id": "29aceefcdd0f",
@@ -1768,7 +1846,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.939723"
+    "last_updated": "2026-01-19T01:52:54.795337"
   },
   {
     "id": "76b762c4f248",
@@ -1797,7 +1875,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.939751"
+    "last_updated": "2026-01-19T01:52:54.795366"
   },
   {
     "id": "494d7914fb95",
@@ -1826,7 +1904,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.939833"
+    "last_updated": "2026-01-19T01:52:54.795451"
   },
   {
     "id": "ea0c715a8eba",
@@ -1855,7 +1933,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.939863"
+    "last_updated": "2026-01-19T01:52:54.795484"
   },
   {
     "id": "8708cc88833b",
@@ -1883,7 +1961,7 @@
       "rock",
       "classic rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.939909"
+    "last_updated": "2026-01-19T01:52:54.795536"
   },
   {
     "id": "a0fb50741ddd",
@@ -1908,7 +1986,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/oklou/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662700"
+    "last_updated": "2026-01-19T01:52:41.619882"
   },
   {
     "id": "dd0dd533e2bc",
@@ -1939,7 +2017,7 @@
       "metal",
       "nu-metal"
     ],
-    "last_updated": "2026-01-19T01:43:11.939964"
+    "last_updated": "2026-01-19T01:52:54.795600"
   },
   {
     "id": "b02d3273eb52",
@@ -1969,7 +2047,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.939986"
+    "last_updated": "2026-01-19T01:52:54.795627"
   },
   {
     "id": "67c4614826f4",
@@ -1998,7 +2076,7 @@
       "alternative",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.940011"
+    "last_updated": "2026-01-19T01:52:54.795654"
   },
   {
     "id": "d7c73269ddae",
@@ -2026,7 +2104,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.940112"
+    "last_updated": "2026-01-19T01:52:54.795756"
   },
   {
     "id": "a4a9f951130a",
@@ -2054,7 +2132,7 @@
       "rock",
       "rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.940212"
+    "last_updated": "2026-01-19T01:52:54.795850"
   },
   {
     "id": "0222919cdc3b",
@@ -2083,7 +2161,7 @@
       "rock",
       "rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.940244"
+    "last_updated": "2026-01-19T01:52:54.795882"
   },
   {
     "id": "487992a9fcfe",
@@ -2114,7 +2192,7 @@
       "rock",
       "hard rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.940301"
+    "last_updated": "2026-01-19T01:52:54.795938"
   },
   {
     "id": "5bdd33cbfce8",
@@ -2144,7 +2222,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.940335"
+    "last_updated": "2026-01-19T01:52:54.795976"
   },
   {
     "id": "87de65a380ff",
@@ -2173,7 +2251,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.940365"
+    "last_updated": "2026-01-19T01:52:54.796005"
   },
   {
     "id": "7b6b9ecf700c",
@@ -2198,7 +2276,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/the-paper-kites/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662715"
+    "last_updated": "2026-01-19T01:52:41.619893"
   },
   {
     "id": "764df4954219",
@@ -2228,7 +2306,7 @@
       "metal",
       "nu-metal"
     ],
-    "last_updated": "2026-01-19T01:43:11.940791"
+    "last_updated": "2026-01-19T01:52:54.796459"
   },
   {
     "id": "d44728ecb00b",
@@ -2258,7 +2336,7 @@
       "rock",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.940843"
+    "last_updated": "2026-01-19T01:52:54.796510"
   },
   {
     "id": "2620631a87b0",
@@ -2286,7 +2364,7 @@
       "rock",
       "classic rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.940890"
+    "last_updated": "2026-01-19T01:52:54.796560"
   },
   {
     "id": "f0a4dd82e85e",
@@ -2314,7 +2392,7 @@
       "rock",
       "classic rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.940941"
+    "last_updated": "2026-01-19T01:52:54.796620"
   },
   {
     "id": "b4e15d8fe569",
@@ -2342,7 +2420,7 @@
       "alternative",
       "alternative rock"
     ],
-    "last_updated": "2026-01-19T01:43:11.940991"
+    "last_updated": "2026-01-19T01:52:54.796675"
   },
   {
     "id": "7ed54de4fba9",
@@ -2373,7 +2451,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.202247"
+    "last_updated": "2026-01-19T01:52:31.116873"
   },
   {
     "id": "1cf62716f929",
@@ -2403,7 +2481,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.202812"
+    "last_updated": "2026-01-19T01:52:31.117488"
   },
   {
     "id": "40d23bfb9eac",
@@ -2433,7 +2511,34 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.203356"
+    "last_updated": "2026-01-19T01:52:31.118069"
+  },
+  {
+    "id": "c93d739fc40f",
+    "date": "2026-02-02T00:00:00",
+    "day_of_week": "Mon",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Seahaven",
+      "Flycatcher",
+      "Spin"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.055815"
   },
   {
     "id": "cc5782a50391",
@@ -2463,7 +2568,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.203613"
+    "last_updated": "2026-01-19T01:52:31.118354"
   },
   {
     "id": "816df345911d",
@@ -2488,7 +2593,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/badflower-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662211"
+    "last_updated": "2026-01-19T01:52:41.619527"
   },
   {
     "id": "ba296a64dbaf",
@@ -2513,7 +2618,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/layton-giordani/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662224"
+    "last_updated": "2026-01-19T01:52:41.619539"
   },
   {
     "id": "8febabaaefbe",
@@ -2543,7 +2648,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.203730"
+    "last_updated": "2026-01-19T01:52:31.118487"
   },
   {
     "id": "83f2238791ba",
@@ -2573,7 +2678,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.203920"
+    "last_updated": "2026-01-19T01:52:31.118699"
   },
   {
     "id": "ae2cc120edf7",
@@ -2603,7 +2708,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.203971"
+    "last_updated": "2026-01-19T01:52:31.118755"
   },
   {
     "id": "96e3046f2d22",
@@ -2633,7 +2738,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.204065"
+    "last_updated": "2026-01-19T01:52:31.118859"
   },
   {
     "id": "0f359cc0bda6",
@@ -2658,7 +2763,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/kishi-bashi-4/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662567"
+    "last_updated": "2026-01-19T01:52:41.619774"
   },
   {
     "id": "c93cf0fc7dc4",
@@ -2683,7 +2788,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/the-martinez-brothers-north-america-tour-2026/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662595"
+    "last_updated": "2026-01-19T01:52:41.619794"
   },
   {
     "id": "001d5094febd",
@@ -2713,7 +2818,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.204220"
+    "last_updated": "2026-01-19T01:52:31.119023"
   },
   {
     "id": "5321fb0d33cf",
@@ -2743,7 +2848,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T01:43:12.204274"
+    "last_updated": "2026-01-19T01:52:31.119081"
   },
   {
     "id": "402edfc95f3c",
@@ -2769,7 +2874,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/the-serpents-tour-starring-nymphia-wind-and-plastique-tiara/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662126"
+    "last_updated": "2026-01-19T01:52:41.619457"
   },
   {
     "id": "82fab04b417a",
@@ -2794,7 +2899,33 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/alleycvt/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662141"
+    "last_updated": "2026-01-19T01:52:41.619473"
+  },
+  {
+    "id": "71cdb885ce1c",
+    "date": "2026-01-29T00:00:00",
+    "day_of_week": "Thu",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Dean Johnson",
+      "Lily Seabird"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.054276"
   },
   {
     "id": "505d0d08e601",
@@ -2819,7 +2950,57 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/sudan-archives/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662170"
+    "last_updated": "2026-01-19T01:52:41.619485"
+  },
+  {
+    "id": "981fd16efaa5",
+    "date": "2026-01-30T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Bandsplain LIVE at Something in the Way Fest"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.054590"
+  },
+  {
+    "id": "ec6545d7c7f7",
+    "date": "2026-01-30T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Glitter Boys"
+    ],
+    "age_requirement": "21+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "9:30pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.054899"
   },
   {
     "id": "7b8147c555d0",
@@ -2844,7 +3025,33 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/max-styler/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662181"
+    "last_updated": "2026-01-19T01:52:41.619495"
+  },
+  {
+    "id": "287e51962136",
+    "date": "2026-01-31T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "hyperLinkedin: a girl edm",
+      "hyperpop party"
+    ],
+    "age_requirement": "21+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.055202"
   },
   {
     "id": "3530b829a75c",
@@ -2869,7 +3076,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/szn4/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662233"
+    "last_updated": "2026-01-19T01:52:41.619548"
   },
   {
     "id": "a7159095debf",
@@ -2894,7 +3101,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/loyle-carner/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662257"
+    "last_updated": "2026-01-19T01:52:41.619570"
   },
   {
     "id": "8b4ebee4e390",
@@ -2919,7 +3126,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/amber-mark/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662326"
+    "last_updated": "2026-01-19T01:52:41.619636"
   },
   {
     "id": "605128631054",
@@ -2944,7 +3151,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/quarters/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662338"
+    "last_updated": "2026-01-19T01:52:41.619645"
   },
   {
     "id": "deca0b0e7f63",
@@ -2969,7 +3176,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/kettama/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662351"
+    "last_updated": "2026-01-19T01:52:41.619657"
   },
   {
     "id": "c4366154d513",
@@ -2994,7 +3201,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/sweet-pill/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662381"
+    "last_updated": "2026-01-19T01:52:41.619676"
   },
   {
     "id": "2a085f01a834",
@@ -3019,7 +3226,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/matt-berninger/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662438"
+    "last_updated": "2026-01-19T01:52:41.619705"
   },
   {
     "id": "391f8601dbe9",
@@ -3044,7 +3251,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/the-growlers-3/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662616"
+    "last_updated": "2026-01-19T01:52:41.619807"
   },
   {
     "id": "101c6b89d44c",
@@ -3069,7 +3276,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/jose-gonzalez/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662653"
+    "last_updated": "2026-01-19T01:52:41.619837"
   },
   {
     "id": "f85a822baf74",
@@ -3095,7 +3302,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/pattie-gonia-save-her-feat-sequoia-and-vera/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662675"
+    "last_updated": "2026-01-19T01:52:41.619860"
   },
   {
     "id": "329c1f1eb966",
@@ -3120,7 +3327,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/searows/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662725"
+    "last_updated": "2026-01-19T01:52:41.619908"
   },
   {
     "id": "62c0f3ba6799",
@@ -3145,7 +3352,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/christos-mastoras-meaisses/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662739"
+    "last_updated": "2026-01-19T01:52:41.619925"
   },
   {
     "id": "eb5647cab188",
@@ -3170,7 +3377,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/melodys-echo-chamber/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662758"
+    "last_updated": "2026-01-19T01:52:41.619938"
   },
   {
     "id": "97518b6a9707",
@@ -3195,7 +3402,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/revolver-presents-thornhill-the-mercia-tour/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662778"
+    "last_updated": "2026-01-19T01:52:41.619952"
   },
   {
     "id": "45c0f5dab19a",
@@ -3220,7 +3427,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/hol-presented-by-ground-control/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662795"
+    "last_updated": "2026-01-19T01:52:41.619965"
   },
   {
     "id": "4b5252d19097",
@@ -3245,7 +3452,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/inji/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662806"
+    "last_updated": "2026-01-19T01:52:41.619974"
   },
   {
     "id": "b66c943ec0a3",
@@ -3270,7 +3477,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/chance-pena/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662823"
+    "last_updated": "2026-01-19T01:52:41.619987"
   },
   {
     "id": "c195f2fb304f",
@@ -3295,7 +3502,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/21445/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662848"
+    "last_updated": "2026-01-19T01:52:41.619999"
   },
   {
     "id": "d813ba714d97",
@@ -3321,7 +3528,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/benjamin-tod-and-the-inline-six/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662864"
+    "last_updated": "2026-01-19T01:52:41.620015"
   },
   {
     "id": "02714d89d170",
@@ -3346,6 +3553,290 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/bethel-music/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T01:43:29.662888"
+    "last_updated": "2026-01-19T01:52:41.620024"
+  },
+  {
+    "id": "73f05717be7b",
+    "date": "2026-01-22T00:00:00",
+    "day_of_week": "Thu",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Stephen Kellogg",
+      "Homecoming",
+      "gutter sinatra"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.052619"
+  },
+  {
+    "id": "5f6b545465ee",
+    "date": "2026-01-25T00:00:00",
+    "day_of_week": "Sun",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Racing Mount Pleasant"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.053952"
+  },
+  {
+    "id": "f868f6bdbcb5",
+    "date": "2026-02-01T00:00:00",
+    "day_of_week": "Sun",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Jonah Kagen",
+      "Anna Graves"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.055497"
+  },
+  {
+    "id": "be137c399442",
+    "date": "2026-02-03T00:00:00",
+    "day_of_week": "Tue",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Sprints",
+      "My Transparent Eye"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.056103"
+  },
+  {
+    "id": "eb5f79affc06",
+    "date": "2026-02-04T00:00:00",
+    "day_of_week": "Wed",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Antarctigo Vespucci",
+      "Golden Apples"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.056398"
+  },
+  {
+    "id": "d3c32f936abe",
+    "date": "2026-02-05T00:00:00",
+    "day_of_week": "Thu",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Electric Guest",
+      "Snacktime"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.056698"
+  },
+  {
+    "id": "2accff2dfc0c",
+    "date": "2026-02-06T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Summer Salt",
+      "Boyscott",
+      "Wabie"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.056989"
+  },
+  {
+    "id": "ab267d701d89",
+    "date": "2026-02-06T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Glitter Boys"
+    ],
+    "age_requirement": "21+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "9:30pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.057290"
+  },
+  {
+    "id": "8f34d6efdfa6",
+    "date": "2026-02-07T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Koo Koo"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "12pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.057579"
+  },
+  {
+    "id": "f5baa0ce2989",
+    "date": "2026-02-07T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Kashus Culpepper",
+      "Sela Campbell"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7:30pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.057880"
+  },
+  {
+    "id": "6dae131820f1",
+    "date": "2026-02-08T00:00:00",
+    "day_of_week": "Sun",
+    "venue": {
+      "id": "sinclair",
+      "name": "The Sinclair",
+      "location": "Cambridge"
+    },
+    "bands": [
+      "Dan Deacon"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "scrape:boston_venues",
+    "source_url": "https://www.sinclaircambridge.com/events/",
+    "genre_tags": [],
+    "last_updated": "2026-01-19T01:52:42.058168"
   }
 ]

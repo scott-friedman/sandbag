@@ -28,29 +28,19 @@ logger = logging.getLogger(__name__)
 
 # Venue configurations - using venue websites
 BOSTON_VENUES = {
-    "roadrunner": {
-        "name": "Roadrunner",
-        "location": "Boston",
-        "url": "https://roadrunnerboston.com/events/",
-        "capacity": 3500,
-    },
     "royale": {
         "name": "Royale",
         "location": "Boston",
         "url": "https://royaleboston.com/events/",
         "capacity": 1200,
-    },
-    "bignightlive": {
-        "name": "Big Night Live",
-        "location": "Boston",
-        "url": "https://bignightlive.com/events/",
-        "capacity": 1500,
+        "parser": "json_ld",
     },
     "sinclair": {
         "name": "The Sinclair",
         "location": "Cambridge",
-        "url": "https://www.sinclaircambridge.com/events",
+        "url": "https://www.sinclaircambridge.com/events/",
         "capacity": 525,
+        "parser": "sinclair",
     },
 }
 
@@ -96,20 +86,160 @@ class AXSVenuesScraper(BaseScraper):
     def _scrape_venue(self, venue_id: str, venue_config: Dict) -> List[Concert]:
         """Scrape events from a venue website."""
         concerts = []
+        parser_type = venue_config.get("parser", "json_ld")
 
         try:
             soup = self._get_soup(venue_config["url"])
 
-            # Try JSON-LD first (most reliable)
-            json_ld_concerts = self._parse_json_ld(soup, venue_id, venue_config)
-            concerts.extend(json_ld_concerts)
+            if parser_type == "sinclair":
+                concerts = self._parse_sinclair(soup, venue_id, venue_config)
+            elif parser_type == "json_ld":
+                concerts = self._parse_json_ld(soup, venue_id, venue_config)
 
-            # If no JSON-LD, try common event page patterns
+            # Fallback to generic parsing if no results
             if not concerts:
                 concerts = self._parse_event_page(soup, venue_id, venue_config)
 
         except Exception as e:
             logger.debug(f"Error scraping {venue_config['name']}: {e}")
+
+        return concerts
+
+    def _parse_sinclair(self, soup: BeautifulSoup, venue_id: str, venue_config: Dict) -> List[Concert]:
+        """Parse events from The Sinclair's event page format.
+
+        The Sinclair uses semantic HTML without class-based event markers:
+        - Links to /events/detail/[ID] indicate event items
+        - h3/h4 tags contain artist names
+        - Date/time in format "Sun, Jan 18, 2026 Doors 6:30 PM"
+        - Age requirement as plain text ("All Ages", "18 & Over", "21 & Over")
+        """
+        concerts = []
+        current_year = datetime.now().year
+        seen_events = set()  # Track by artist+date to avoid duplicates
+
+        # Find all links to event detail pages
+        event_links = soup.find_all("a", href=re.compile(r"/events/detail/"))
+
+        for link in event_links:
+            try:
+                # Get the parent container that holds event info
+                # Go up to find a container with the full event details
+                container = link.find_parent("div")
+                if not container:
+                    continue
+
+                # Look for a larger container that has the date info
+                # Keep going up until we find one with date text
+                text = container.get_text()
+                while container and not re.search(r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\s+\d{1,2}', text):
+                    parent = container.find_parent("div")
+                    if parent:
+                        container = parent
+                        text = container.get_text()
+                    else:
+                        break
+
+                if not container:
+                    continue
+
+                full_text = container.get_text()
+
+                # Extract artist name from h3 or h4
+                artist_elem = container.find(["h3", "h4"])
+                if not artist_elem:
+                    # Try the link text itself
+                    artist_elem = link
+
+                event_name = self._clean_text(artist_elem.get_text())
+                if not event_name or len(event_name) < 2:
+                    continue
+
+                # Skip non-event links (like "Buy Tickets")
+                if event_name.lower() in ["buy tickets", "more info", "details", "view"]:
+                    continue
+
+                # Extract date - format: "Sun, Jan 18, 2026" or "Jan 18, 2026"
+                date_match = re.search(
+                    r'(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?,?\s*(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\s+(\d{1,2}),?\s*(\d{4})?',
+                    full_text
+                )
+                if not date_match:
+                    continue
+
+                month_str = date_match.group(1)
+                day = date_match.group(2)
+                year = date_match.group(3) or str(current_year)
+                date_text = f"{month_str} {day}, {year}"
+
+                event_date = parse_date(date_text, default_year=current_year)
+                if not event_date:
+                    continue
+
+                # Skip past events
+                if event_date.date() < datetime.now().date():
+                    continue
+
+                # Create unique key to avoid duplicates
+                event_key = f"{event_name.lower()}_{event_date.date()}"
+                if event_key in seen_events:
+                    continue
+                seen_events.add(event_key)
+
+                # Extract time - format: "Doors 6:30 PM" or just "8:00 PM"
+                show_time = "8pm"
+                time_match = re.search(r'(?:Doors\s+)?(\d{1,2}):?(\d{2})?\s*(AM|PM|am|pm)', full_text)
+                if time_match:
+                    hour = time_match.group(1)
+                    minutes = time_match.group(2) or "00"
+                    ampm = time_match.group(3).lower()
+                    if minutes == "00":
+                        show_time = f"{hour}{ampm}"
+                    else:
+                        show_time = f"{hour}:{minutes}{ampm}"
+
+                # Extract age requirement
+                age_req = "a/a"
+                text_lower = full_text.lower()
+                if "21 & over" in text_lower or "21+ " in text_lower or "21+" in text_lower:
+                    age_req = "21+"
+                elif "18 & over" in text_lower or "18+ " in text_lower or "18+" in text_lower:
+                    age_req = "18+"
+                elif "all ages" in text_lower:
+                    age_req = "a/a"
+
+                # Get supporting acts - look for additional h4 elements
+                bands = self._parse_event_name(event_name)
+                support_elems = container.find_all("h4")
+                for elem in support_elems:
+                    support_text = self._clean_text(elem.get_text())
+                    if support_text and support_text != event_name:
+                        # Check it's not a date or other metadata
+                        if not re.search(r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)', support_text):
+                            support_bands = self._split_bands(support_text)
+                            for band in support_bands:
+                                if band and band not in bands:
+                                    bands.append(band)
+
+                concerts.append(Concert(
+                    date=event_date,
+                    venue_id=venue_id,
+                    venue_name=venue_config["name"],
+                    venue_location=venue_config["location"],
+                    bands=bands,
+                    age_requirement=age_req,
+                    price_advance=None,
+                    price_door=None,
+                    time=show_time,
+                    flags=[],
+                    source=self.source_name,
+                    source_url=venue_config["url"],
+                    genre_tags=[]
+                ))
+
+            except Exception as e:
+                logger.debug(f"Error parsing Sinclair event: {e}")
+                continue
 
         return concerts
 
