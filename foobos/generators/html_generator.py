@@ -111,7 +111,7 @@ def html_nav_links(current: str = "") -> str:
 
 def html_back_link() -> str:
     """Generate back to index link."""
-    return '<p><a href="index.html">Back to The List</a></p>'
+    return '<p><a href="list.html">Back to The List</a></p>'
 
 
 # Re-export helpers for backwards compatibility

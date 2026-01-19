@@ -93,11 +93,11 @@ Here's what the symbols at the end of each listing might mean:
 </html>
 '''
 
-    output_path = Path(OUTPUT_DIR) / "index.html"
+    output_path = Path(OUTPUT_DIR) / "list.html"
     with open(output_path, "w") as f:
         f.write(html)
 
-    logger.info(f"Generated index.html")
+    logger.info(f"Generated list.html")
 
 
 def _generate_week_links(start_date: datetime) -> str:
