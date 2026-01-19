@@ -47,7 +47,7 @@ def generate_index(
 <h2><i>The List (updated {update_date})</i></h2>
 
 <p>
-This is a Boston version of the legendary <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>. This was all foopee's idea, I've tried to clone it for Boston. Please <a href="mailto:s_friedman+foobos@outlook.com">send me mail</a> if you have questions or corrections related to the list content.
+This is a Boston version of the legendary <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>. This was all foopee's idea, I've tried to clone it for Boston. Please <a href="mailto:sf@scottfriedman.ooo">send me mail</a> if you have questions or corrections related to the list content.
 </p>
 
 <p>
