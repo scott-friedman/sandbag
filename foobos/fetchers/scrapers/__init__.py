@@ -11,6 +11,7 @@ from .songkick_venues import SongkickVenuesScraper
 from .bso import BSOScraper
 from .plough_and_stars import PloughAndStarsScraper
 from .boston_shows import BostonShowsScraper
+from .sally_obriens import SallyOBriensScraper
 
 __all__ = [
     "BaseScraper",
@@ -26,4 +27,5 @@ __all__ = [
     "BSOScraper",
     "PloughAndStarsScraper",
     "BostonShowsScraper",
+    "SallyOBriensScraper",
 ]

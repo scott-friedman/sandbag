@@ -24,6 +24,7 @@ from foobos.fetchers.scrapers import (
     BSOScraper,
     PloughAndStarsScraper,
     BostonShowsScraper,
+    SallyOBriensScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre, filter_past_events
 from foobos.generators import generate_all_html
@@ -180,6 +181,16 @@ def cmd_fetch(args):
         all_concerts.extend(boston_shows_concerts)
     except Exception as e:
         logger.error(f"Boston Shows scrape failed: {e}")
+
+    # Sally O'Brien's (Somerville bar with live music)
+    try:
+        logger.info("Scraping Sally O'Brien's...")
+        sally_scraper = SallyOBriensScraper()
+        sally_concerts = sally_scraper.fetch()
+        logger.info(f"Sally O'Brien's: {len(sally_concerts)} concerts")
+        all_concerts.extend(sally_concerts)
+    except Exception as e:
+        logger.error(f"Sally O'Brien's scrape failed: {e}")
 
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 
