@@ -23,7 +23,6 @@ from foobos.fetchers.scrapers import (
     SongkickVenuesScraper,
     BSOScraper,
     PloughAndStarsScraper,
-    BostonShowsScraper,
     SallyOBriensScraper,
     ChevalierTheatreScraper,
     TheBebopScraper,
@@ -176,16 +175,6 @@ def cmd_fetch(args):
         all_concerts.extend(plough_concerts)
     except Exception as e:
         logger.error(f"Plough and Stars scrape failed: {e}")
-
-    # Boston Shows (bostonshows.org - comprehensive Greater Boston calendar)
-    try:
-        logger.info("Scraping Boston Shows...")
-        boston_shows_scraper = BostonShowsScraper()
-        boston_shows_concerts = boston_shows_scraper.fetch()
-        logger.info(f"Boston Shows: {len(boston_shows_concerts)} concerts")
-        all_concerts.extend(boston_shows_concerts)
-    except Exception as e:
-        logger.error(f"Boston Shows scrape failed: {e}")
 
     # Sally O'Brien's (Somerville bar with live music)
     try:

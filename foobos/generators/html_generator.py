@@ -15,6 +15,7 @@ from .by_date_generator import generate_by_date_pages
 from .by_club_generator import generate_by_club_pages
 from .by_band_generator import generate_by_band_pages
 from .clubs_generator import generate_clubs_page
+from .landing_generator import generate_landing_page
 
 logger = logging.getLogger(__name__)
 
@@ -41,6 +42,7 @@ def generate_all_html(concerts: List[Concert]) -> None:
     # Generate other pages
     generate_by_date_pages(concerts)
     generate_clubs_page()
+    generate_landing_page()
 
     # Save concert data as JSON for reference
     _save_concerts_json(concerts)
