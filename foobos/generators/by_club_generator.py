@@ -55,6 +55,15 @@ def _venue_to_anchor(venue_id: str) -> str:
     return anchor[:30]
 
 
+def _band_to_anchor(band: str) -> str:
+    """Convert band name to HTML anchor (must match by_band_generator)."""
+    anchor = band.lower()
+    anchor = anchor.replace(" ", "_").replace("'", "").replace(".", "").replace(",", "")
+    anchor = anchor.replace("&", "and").replace("$", "s")
+    anchor = ''.join(c for c in anchor if c.isalnum() or c == '_')
+    return anchor[:40]
+
+
 def _generate_club_page(venues: Dict[str, List[Concert]]) -> None:
     """Generate the single by-club.html page in foopee format."""
     html = '''<!DOCTYPE html>
@@ -101,8 +110,13 @@ def _generate_club_page(venues: Dict[str, List[Concert]]) -> None:
 
         for concert in concerts:
             date_str = concert.date.strftime("%b %-d")
-            # Escape band names to prevent XSS
-            bands_str = ", ".join(escape(band) for band in concert.bands)
+            # Create individual band links with anchors
+            band_links = []
+            for band in concert.bands:
+                band_escaped = escape(band)
+                band_anchor = _band_to_anchor(band)
+                band_links.append(f'<a href="by-band.html#{band_anchor}">{band_escaped}</a>')
+            bands_str = ", ".join(band_links)
 
             # Build details string - escape all scraped data
             details_parts = []
@@ -122,7 +136,7 @@ def _generate_club_page(venues: Dict[str, List[Concert]]) -> None:
             # Add flags - escape to prevent XSS
             flags_str = " ".join(escape(flag) for flag in concert.flags) if concert.flags else ""
 
-            line = f'<li><b>{date_str}</b> <a href="by-band.html">{bands_str}</a> {details}'
+            line = f'<li><b>{date_str}</b> {bands_str} {details}'
             if flags_str:
                 line += f" {flags_str}"
             line += '</li>\n'
