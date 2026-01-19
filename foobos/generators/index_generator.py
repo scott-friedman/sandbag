@@ -1,9 +1,10 @@
 """
 Generate index.html - main landing page.
+Matches foopee.com format with alphabetical band/venue listings.
 """
 
 from datetime import datetime, timedelta
-from typing import List
+from typing import List, Dict, Tuple
 import logging
 from pathlib import Path
 
@@ -14,15 +15,27 @@ from ..utils.date_utils import get_week_range, get_week_label
 logger = logging.getLogger(__name__)
 
 
-def generate_index(concerts: List[Concert]) -> None:
-    """Generate the main index.html page."""
+def generate_index(
+    concerts: List[Concert],
+    band_info: Dict[str, Tuple[str, int]] = None,
+    venue_info: Dict[str, Tuple[str, str, int]] = None
+) -> None:
+    """Generate the main index.html page.
+
+    Args:
+        concerts: List of concerts
+        band_info: Dict mapping band_name -> (anchor, page_num)
+        venue_info: Dict mapping venue_id -> (display_name, anchor, page_num)
+    """
     today = datetime.now()
     update_date = today.strftime("%-m/%-d/%Y")
 
     # Calculate week ranges for navigation
     week_links = _generate_week_links(today)
-    club_links = _generate_club_links()
-    band_links = _generate_band_links()
+
+    # Generate alphabetical lists
+    bands_list = _generate_bands_list(band_info) if band_info else ""
+    venues_list = _generate_venues_list(venue_info) if venue_info else ""
 
     html = f'''<!DOCTYPE html>
 <html>
@@ -62,13 +75,13 @@ Here's what the symbols at the end of each listing mean:
 </p>
 
 <p>
-<b>Concerts By Club</b><br>
-{club_links}
+<b>Concerts By Band</b><br>
+{bands_list}
 </p>
 
 <p>
-<b>Concerts By Band</b><br>
-{band_links}
+<b>Concerts By Venue</b><br>
+{venues_list}
 </p>
 
 <p>
@@ -100,16 +113,52 @@ def _generate_week_links(start_date: datetime) -> str:
     return "\n".join(lines)
 
 
-def _generate_club_links() -> str:
-    """Generate club section links."""
-    return '''&nbsp;&nbsp;&nbsp;&nbsp;<a href="by-club.0.html">Clubs starting with A-G</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="by-club.1.html">Clubs starting with H-O</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="by-club.2.html">Clubs starting with P-Z</a>'''
+def _generate_bands_list(band_info: Dict[str, Tuple[str, int]]) -> str:
+    """Generate alphabetical band list with hyperlinks, separated by asterisks.
+
+    Format: * Band1 * Band2 * Band3 *
+    Each band links to its anchor on the appropriate by-band.X.html page.
+    """
+    if not band_info:
+        return ""
+
+    # Sort bands alphabetically (case-insensitive)
+    sorted_bands = sorted(band_info.keys(), key=lambda x: x.lower())
+
+    links = []
+    for band in sorted_bands:
+        anchor, page_num = band_info[band]
+        link = f'<a href="by-band.{page_num}.html#{anchor}">{band}</a>'
+        links.append(link)
+
+    # Join with asterisks
+    return "* " + " * ".join(links) + " *"
 
 
-def _generate_band_links() -> str:
-    """Generate band section links."""
-    return '''&nbsp;&nbsp;&nbsp;&nbsp;<a href="by-band.0.html">Bands starting with #-D</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="by-band.1.html">Bands starting with E-L</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="by-band.2.html">Bands starting with M-R</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="by-band.3.html">Bands starting with S-Z</a>'''
+def _generate_venues_list(venue_info: Dict[str, Tuple[str, str, int]]) -> str:
+    """Generate alphabetical venue list with hyperlinks, separated by asterisks.
+
+    Format: * Venue1, City * Venue2, City *
+    Each venue links to its anchor on the appropriate by-club.X.html page.
+    """
+    if not venue_info:
+        return ""
+
+    # Sort venues alphabetically by display name (case-insensitive)
+    # Handle "The " prefix for sorting
+    def sort_key(item):
+        venue_id, (display_name, anchor, page_num) = item
+        name = display_name
+        if name.lower().startswith("the "):
+            return name[4:].lower()
+        return name.lower()
+
+    sorted_venues = sorted(venue_info.items(), key=sort_key)
+
+    links = []
+    for venue_id, (display_name, anchor, page_num) in sorted_venues:
+        link = f'<a href="by-club.{page_num}.html#{anchor}">{display_name}</a>'
+        links.append(link)
+
+    # Join with asterisks
+    return "* " + " * ".join(links) + " *"

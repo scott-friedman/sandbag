@@ -1,8 +1,9 @@
 """
 Generate by-band.X.html pages - concerts organized by band.
+Matches foopee.com format: band header with bulleted shows underneath.
 """
 
-from typing import List, Dict, Set
+from typing import List, Dict, Set, Tuple
 import logging
 from pathlib import Path
 from collections import defaultdict
@@ -13,23 +14,31 @@ from ..config import OUTPUT_DIR
 logger = logging.getLogger(__name__)
 
 
-def generate_by_band_pages(concerts: List[Concert]) -> None:
-    """Generate all by-band.X.html pages."""
+def generate_by_band_pages(concerts: List[Concert]) -> Tuple[int, Dict[str, Tuple[str, int]]]:
+    """Generate all by-band.X.html pages.
+
+    Returns:
+        Tuple of (page_count, band_info_dict)
+        band_info_dict maps band_name -> (anchor, page_num)
+    """
     # Group concerts by band
     by_band: Dict[str, List[Concert]] = defaultdict(list)
 
     for concert in concerts:
         for band in concert.bands:
-            if band:
+            if band and len(band) > 1:  # Skip single characters
                 by_band[band].append(concert)
 
     # Sort bands into pages by first letter
     # Page 0: #-D, Page 1: E-L, Page 2: M-R, Page 3: S-Z
     pages: Dict[int, Dict[str, List[Concert]]] = {0: {}, 1: {}, 2: {}, 3: {}}
+    band_info: Dict[str, Tuple[str, int]] = {}  # band_name -> (anchor, page_num)
 
-    for band, band_concerts in sorted(by_band.items(), key=lambda x: x[0].lower()):
+    for band, band_concerts in by_band.items():
         page_num = _band_to_page_num(band)
+        anchor = _band_to_anchor(band)
         pages[page_num][band] = sorted(band_concerts, key=lambda c: c.date)
+        band_info[band] = (anchor, page_num)
 
     # Generate each page
     page_labels = ["#-D", "E-L", "M-R", "S-Z"]
@@ -37,6 +46,8 @@ def generate_by_band_pages(concerts: List[Concert]) -> None:
         _generate_band_page(page_num, page_labels[page_num], bands)
 
     logger.info(f"Generated 4 by-band pages")
+
+    return 4, band_info
 
 
 def _band_to_page_num(band: str) -> int:
@@ -59,13 +70,15 @@ def _band_to_page_num(band: str) -> int:
 def _band_to_anchor(band: str) -> str:
     """Convert band name to HTML anchor."""
     anchor = band.lower()
-    anchor = anchor.replace(" ", "").replace("'", "").replace(".", "").replace(",", "")
+    anchor = anchor.replace(" ", "_").replace("'", "").replace(".", "").replace(",", "")
     anchor = anchor.replace("&", "and").replace("$", "s")
-    return anchor[:30]
+    # Remove other special characters
+    anchor = ''.join(c for c in anchor if c.isalnum() or c == '_')
+    return anchor[:40]
 
 
 def _generate_band_page(page_num: int, label: str, bands: Dict[str, List[Concert]]) -> None:
-    """Generate a single by-band.X.html page."""
+    """Generate a single by-band.X.html page in foopee format."""
     html = f'''<!DOCTYPE html>
 <html>
 <head>
@@ -89,29 +102,45 @@ def _generate_band_page(page_num: int, label: str, bands: Dict[str, List[Concert
 
         anchor = _band_to_anchor(band)
 
+        # Band header (bold) with anchor
+        html += f'<ul>\n'
+        html += f'<li><a name="{anchor}"><b>{band}</b></a>\n'
+        html += '<ul>\n'
+
         for concert in concerts:
-            date_str = concert.date.strftime("%a %b %-d")
-            venue_short = concert.venue_name.split(",")[0]  # Just venue name, no city
+            date_str = concert.date.strftime("%b %-d")
+            venue_str = f"{concert.venue_name}, {concert.venue_location}"
 
-            # Show other bands on the bill
-            other_bands = [b for b in concert.bands if b != band]
-            with_str = f"w/ {', '.join(other_bands)}" if other_bands else ""
+            # Build details string
+            details_parts = []
+            if concert.age_requirement and concert.age_requirement != "a/a":
+                details_parts.append(concert.age_requirement)
+            else:
+                details_parts.append("a/a")
 
-            details = f"{concert.age_requirement} {concert.price_display} {concert.time}".strip()
-            flags_str = " ".join(concert.flags)
+            if concert.price_display:
+                details_parts.append(concert.price_display)
 
-            line = f'<p><a name="{anchor}"><b>{band}</b></a> - {date_str} [{venue_short}]'
-            if with_str:
-                line += f" {with_str}"
-            line += f" {details}"
+            if concert.time:
+                details_parts.append(concert.time)
+
+            details = " ".join(details_parts)
+
+            # Add flags
+            flags_str = " ".join(concert.flags) if concert.flags else ""
+
+            line = f'<li><b>{date_str}</b> <a href="by-club.0.html">{venue_str}</a> {details}'
             if flags_str:
                 line += f" {flags_str}"
-            line += "</p>\n"
+            line += '</li>\n'
 
             html += line
 
-    html += '''
-<hr>
+        html += '</ul>\n'
+        html += '</li>\n'
+        html += '</ul>\n\n'
+
+    html += '''<hr>
 
 <p><a href="index.html">Back to The List</a></p>
 

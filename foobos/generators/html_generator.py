@@ -31,11 +31,15 @@ def generate_all_html(concerts: List[Concert]) -> None:
     # Sort concerts by date
     concerts = sorted(concerts, key=lambda c: c.date)
 
-    # Generate each section
-    generate_index(concerts)
+    # Generate by-club and by-band first to get anchor info for index
+    _, venue_info = generate_by_club_pages(concerts)
+    _, band_info = generate_by_band_pages(concerts)
+
+    # Generate index with band/venue lists
+    generate_index(concerts, band_info, venue_info)
+
+    # Generate other pages
     generate_by_date_pages(concerts)
-    generate_by_club_pages(concerts)
-    generate_by_band_pages(concerts)
     generate_clubs_page()
 
     # Save concert data as JSON for reference
