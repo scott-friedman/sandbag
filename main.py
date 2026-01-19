@@ -24,8 +24,14 @@ from foobos.fetchers.scrapers import (
     BSOScraper,
     PloughAndStarsScraper,
     BostonShowsScraper,
+    SallyOBriensScraper,
+    ChevalierTheatreScraper,
+    TheBebopScraper,
+    TheCabotScraper,
+    PalladiumScraper,
+    ScullersJazzScraper,
 )
-from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre
+from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre, filter_past_events
 from foobos.generators import generate_all_html
 from foobos.utils.cache import clear_cache
 
@@ -181,6 +187,66 @@ def cmd_fetch(args):
     except Exception as e:
         logger.error(f"Boston Shows scrape failed: {e}")
 
+    # Sally O'Brien's (Somerville bar with live music)
+    try:
+        logger.info("Scraping Sally O'Brien's...")
+        sally_scraper = SallyOBriensScraper()
+        sally_concerts = sally_scraper.fetch()
+        logger.info(f"Sally O'Brien's: {len(sally_concerts)} concerts")
+        all_concerts.extend(sally_concerts)
+    except Exception as e:
+        logger.error(f"Sally O'Brien's scrape failed: {e}")
+
+    # Chevalier Theatre (Medford theater)
+    try:
+        logger.info("Scraping Chevalier Theatre...")
+        chevalier_scraper = ChevalierTheatreScraper()
+        chevalier_concerts = chevalier_scraper.fetch()
+        logger.info(f"Chevalier Theatre: {len(chevalier_concerts)} concerts")
+        all_concerts.extend(chevalier_concerts)
+    except Exception as e:
+        logger.error(f"Chevalier Theatre scrape failed: {e}")
+
+    # The Bebop (Boston South End jazz/soul venue)
+    try:
+        logger.info("Scraping The Bebop...")
+        bebop_scraper = TheBebopScraper()
+        bebop_concerts = bebop_scraper.fetch()
+        logger.info(f"The Bebop: {len(bebop_concerts)} concerts")
+        all_concerts.extend(bebop_concerts)
+    except Exception as e:
+        logger.error(f"The Bebop scrape failed: {e}")
+
+    # The Cabot (Beverly theater)
+    try:
+        logger.info("Scraping The Cabot...")
+        cabot_scraper = TheCabotScraper()
+        cabot_concerts = cabot_scraper.fetch()
+        logger.info(f"The Cabot: {len(cabot_concerts)} concerts")
+        all_concerts.extend(cabot_concerts)
+    except Exception as e:
+        logger.error(f"The Cabot scrape failed: {e}")
+
+    # The Palladium (Worcester - requires Playwright for JS rendering)
+    try:
+        logger.info("Scraping The Palladium...")
+        palladium_scraper = PalladiumScraper()
+        palladium_concerts = palladium_scraper.fetch()
+        logger.info(f"The Palladium: {len(palladium_concerts)} concerts")
+        all_concerts.extend(palladium_concerts)
+    except Exception as e:
+        logger.error(f"The Palladium scrape failed: {e}")
+
+    # Scullers Jazz Club (Boston - requires Playwright for JS rendering)
+    try:
+        logger.info("Scraping Scullers Jazz Club...")
+        scullers_scraper = ScullersJazzScraper()
+        scullers_concerts = scullers_scraper.fetch()
+        logger.info(f"Scullers Jazz: {len(scullers_concerts)} concerts")
+        all_concerts.extend(scullers_concerts)
+    except Exception as e:
+        logger.error(f"Scullers Jazz scrape failed: {e}")
+
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 
     # Save raw data
@@ -223,6 +289,10 @@ def cmd_process(args):
     logger.info("Filtering by genre...")
     concerts = filter_by_genre(concerts, strict=args.strict if hasattr(args, 'strict') else False)
 
+    # Remove past events (only keep today and future)
+    logger.info("Removing past events...")
+    concerts = filter_past_events(concerts)
+
     logger.info(f"Processed concerts: {len(concerts)}")
 
     # Save processed data
@@ -251,6 +321,10 @@ def cmd_generate(args):
 
     concerts = [Concert.from_dict(d) for d in processed_data]
     logger.info(f"Loaded {len(concerts)} processed concerts")
+
+    # Filter out past events (in case processed data contains stale entries)
+    concerts = filter_past_events(concerts)
+    logger.info(f"After date filter: {len(concerts)} concerts")
 
     # Generate HTML
     logger.info("Generating HTML...")

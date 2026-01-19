@@ -11,6 +11,12 @@ from .songkick_venues import SongkickVenuesScraper
 from .bso import BSOScraper
 from .plough_and_stars import PloughAndStarsScraper
 from .boston_shows import BostonShowsScraper
+from .sally_obriens import SallyOBriensScraper
+from .chevalier_theatre import ChevalierTheatreScraper
+from .the_bebop import TheBebopScraper
+from .the_cabot import TheCabotScraper
+from .palladium import PalladiumScraper
+from .scullers_jazz import ScullersJazzScraper
 
 __all__ = [
     "BaseScraper",
@@ -26,4 +32,10 @@ __all__ = [
     "BSOScraper",
     "PloughAndStarsScraper",
     "BostonShowsScraper",
+    "SallyOBriensScraper",
+    "ChevalierTheatreScraper",
+    "TheBebopScraper",
+    "TheCabotScraper",
+    "PalladiumScraper",
+    "ScullersJazzScraper",
 ]
