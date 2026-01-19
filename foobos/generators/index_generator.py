@@ -89,6 +89,115 @@ Here's what the symbols at the end of each listing might mean:
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="clubs.html">Club addresses and info</a>
 </p>
 
+<hr>
+
+<p>
+<span id="visitor-count">Visitors: loading...</span>
+</p>
+
+<script>
+(function() {{
+  // Bot detection: check for common bot indicators
+  function isBot() {{
+    // Check for webdriver (headless browsers)
+    if (navigator.webdriver) return true;
+
+    // Check user agent for common bot patterns
+    var ua = navigator.userAgent.toLowerCase();
+    var botPatterns = [
+      'bot', 'crawl', 'spider', 'slurp', 'mediapartners',
+      'headless', 'phantom', 'selenium', 'puppeteer', 'playwright',
+      'wget', 'curl', 'python', 'java', 'perl', 'ruby',
+      'scrapy', 'httpclient', 'nutch', 'dataprovider', 'feedfetcher',
+      'facebookexternalhit', 'twitterbot', 'linkedinbot', 'embedly',
+      'quora link preview', 'showyoubot', 'outbrain', 'pinterest',
+      'applebot', 'yandex', 'baiduspider', 'duckduckbot', 'bingbot', 'googlebot',
+      'ia_archiver', 'archive.org_bot'
+    ];
+    for (var i = 0; i < botPatterns.length; i++) {{
+      if (ua.indexOf(botPatterns[i]) !== -1) return true;
+    }}
+
+    // Check for missing browser features that real browsers have
+    if (!window.localStorage || !window.sessionStorage) return true;
+    if (!document.addEventListener) return true;
+
+    return false;
+  }}
+
+  // Check if already counted this session
+  function alreadyCounted() {{
+    try {{
+      return sessionStorage.getItem('foobos_counted') === 'true';
+    }} catch(e) {{
+      return false;
+    }}
+  }}
+
+  function markCounted() {{
+    try {{
+      sessionStorage.setItem('foobos_counted', 'true');
+    }} catch(e) {{}}
+  }}
+
+  // Increment and display counter
+  function countVisit() {{
+    if (isBot() || alreadyCounted()) {{
+      // Still fetch the current count to display, but don't increment
+      fetch('https://api.counterapi.dev/v1/foobos-list/visits')
+        .then(function(r) {{ return r.json(); }})
+        .then(function(data) {{
+          document.getElementById('visitor-count').textContent = 'Visitors: ' + data.count;
+        }})
+        .catch(function() {{
+          document.getElementById('visitor-count').textContent = 'Visitors: --';
+        }});
+      return;
+    }}
+
+    // Real human visitor - increment the counter
+    fetch('https://api.counterapi.dev/v1/foobos-list/visits/up')
+      .then(function(r) {{ return r.json(); }})
+      .then(function(data) {{
+        document.getElementById('visitor-count').textContent = 'Visitors: ' + data.count;
+        markCounted();
+      }})
+      .catch(function() {{
+        document.getElementById('visitor-count').textContent = 'Visitors: --';
+      }});
+  }}
+
+  // Wait for human interaction before counting
+  var counted = false;
+  function onHumanInteraction() {{
+    if (counted) return;
+    counted = true;
+    countVisit();
+    // Remove listeners after first interaction
+    document.removeEventListener('scroll', onHumanInteraction);
+    document.removeEventListener('mousemove', onHumanInteraction);
+    document.removeEventListener('click', onHumanInteraction);
+    document.removeEventListener('touchstart', onHumanInteraction);
+    document.removeEventListener('keydown', onHumanInteraction);
+  }}
+
+  // Set up interaction listeners
+  document.addEventListener('scroll', onHumanInteraction);
+  document.addEventListener('mousemove', onHumanInteraction);
+  document.addEventListener('click', onHumanInteraction);
+  document.addEventListener('touchstart', onHumanInteraction);
+  document.addEventListener('keydown', onHumanInteraction);
+
+  // Fallback: count after 3 seconds if page is visible and focused
+  // This catches users who read without interacting
+  setTimeout(function() {{
+    if (!counted && document.visibilityState === 'visible' && document.hasFocus()) {{
+      onHumanInteraction();
+    }}
+  }}, 3000);
+}})();
+</script>
+
 </body>
 </html>
 '''
