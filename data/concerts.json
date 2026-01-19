@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-01-19T03:32:37.643339",
-    "total_concerts": 156,
+    "last_updated": "2026-01-19T03:40:58.489752",
+    "total_concerts": 218,
     "generated_by": "foobos"
   },
   "concerts": [
@@ -37,7 +37,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.133615"
+      "last_updated": "2026-01-19T03:39:31.197573"
     },
     {
       "id": "83bde85eab9a",
@@ -71,7 +71,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.133806"
+      "last_updated": "2026-01-19T03:39:31.197761"
     },
     {
       "id": "175800ec3f93",
@@ -106,7 +106,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.133937"
+      "last_updated": "2026-01-19T03:39:31.197903"
     },
     {
       "id": "cb30f4f6d6f0",
@@ -140,7 +140,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.134063"
+      "last_updated": "2026-01-19T03:39:31.198024"
     },
     {
       "id": "eff55fffe880",
@@ -173,7 +173,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.134194"
+      "last_updated": "2026-01-19T03:39:31.198142"
     },
     {
       "id": "9307d4c18ad7",
@@ -206,7 +206,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.134298"
+      "last_updated": "2026-01-19T03:39:31.198238"
     },
     {
       "id": "eafcd723b0c7",
@@ -240,7 +240,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.134405"
+      "last_updated": "2026-01-19T03:39:31.198342"
     },
     {
       "id": "ce491bc47a1c",
@@ -270,7 +270,35 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.354741"
+      "last_updated": "2026-01-19T03:39:33.958896"
+    },
+    {
+      "id": "e32a419ff5d5",
+      "date": "2026-01-20T00:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "Boston Speakers Series\u2013Ken Burns"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/boston-speakers-series-ken-burns",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.500630"
     },
     {
       "id": "51c981dd3dcf",
@@ -295,7 +323,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/deadword-theater-no-exit-by-jean-paul-sartre/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925240"
+      "last_updated": "2026-01-19T03:39:42.863813"
     },
     {
       "id": "0a082733992f",
@@ -326,7 +354,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.354997"
+      "last_updated": "2026-01-19T03:39:33.959163"
     },
     {
       "id": "0a86e7712d67",
@@ -357,7 +385,63 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.355145"
+      "last_updated": "2026-01-19T03:39:33.959292"
+    },
+    {
+      "id": "0448f00ce69a",
+      "date": "2026-01-21T00:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "Boston Speakers Series\u2013Ken Burns"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/boston-speakers-series-ken-burns",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.500799"
+    },
+    {
+      "id": "845b09fa6fe4",
+      "date": "2026-01-21T00:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "\u201cThis Is America\u201d | E Pluribus Unum: From Many, One"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/jan21-gandelsman-this-is-america",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.501122"
     },
     {
       "id": "4ddf70dbe630",
@@ -382,7 +466,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/deadword-theater-no-exit-by-jean-paul-sartre-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925303"
+      "last_updated": "2026-01-19T03:39:42.863876"
     },
     {
       "id": "c761a0b32983",
@@ -408,7 +492,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/duke-levine-the-super-sweet-sounds-of-the-70s-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.271952"
+      "last_updated": "2026-01-19T03:39:41.594722"
     },
     {
       "id": "fa41acd130ab",
@@ -434,7 +518,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/fresh-wips-june-and-bryce/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925342"
+      "last_updated": "2026-01-19T03:39:42.863914"
     },
     {
       "id": "86eeeba0b83e",
@@ -468,7 +552,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.134546"
+      "last_updated": "2026-01-19T03:39:31.198485"
     },
     {
       "id": "73f05717be7b",
@@ -495,7 +579,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.987614"
+      "last_updated": "2026-01-19T03:39:32.530132"
     },
     {
       "id": "6315eb736398",
@@ -525,7 +609,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.355281"
+      "last_updated": "2026-01-19T03:39:33.959399"
     },
     {
       "id": "66bf1b424e85",
@@ -557,7 +641,63 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.355391"
+      "last_updated": "2026-01-19T03:39:33.959509"
+    },
+    {
+      "id": "61dc98a08097",
+      "date": "2026-01-22T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "American Road Trip, Part 1: Photography | E Pluribus Unum: From Many, One"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/american-road-trip-part-1-photography",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.501448"
+    },
+    {
+      "id": "dd901060b5c7",
+      "date": "2026-01-22T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "An All-John Williams Program with Emanuel Ax and Gil Shaham | E Pluribus Unum: From Many, One"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7:30pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/jan-22-25-john-williams-prog",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.501810"
     },
     {
       "id": "717d561aa0ef",
@@ -582,7 +722,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/sharp-pins/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925373"
+      "last_updated": "2026-01-19T03:39:42.863944"
     },
     {
       "id": "12f234cc5ce6",
@@ -607,7 +747,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/sambalolo/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.272026"
+      "last_updated": "2026-01-19T03:39:41.594790"
     },
     {
       "id": "1f41112caf63",
@@ -641,7 +781,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.134642"
+      "last_updated": "2026-01-19T03:39:31.198582"
     },
     {
       "id": "00f05e5b9fbd",
@@ -668,7 +808,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.988035"
+      "last_updated": "2026-01-19T03:39:32.530545"
     },
     {
       "id": "015068a3f4b2",
@@ -693,7 +833,91 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.988408"
+      "last_updated": "2026-01-19T03:39:32.530923"
+    },
+    {
+      "id": "61a9872167fb",
+      "date": "2026-01-23T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "An All-John Williams Program with Emanuel Ax and Gil Shaham | E Pluribus Unum: From Many, One"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "1:30pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/jan-22-25-john-williams-prog",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.501928"
+    },
+    {
+      "id": "b936cb744f0b",
+      "date": "2026-01-23T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "Vivo Performing Arts presents Jazz at Lincoln Center Orchestra with Wynton Marsalis \"Duke in Africa\""
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/jazz-at-lincoln-center-orch-2",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.502478"
+    },
+    {
+      "id": "7a25dda5b054",
+      "date": "2026-01-23T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "Emily Wells: Regards to the End | E Pluribus Unum: From Many, One"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/emily-wells-regards-to-the-end",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.502769"
     },
     {
       "id": "127207afe7ee",
@@ -718,7 +942,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/shit-faced-shakespeare-hamlet/2026-01-23/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925403"
+      "last_updated": "2026-01-19T03:39:42.863975"
     },
     {
       "id": "87d95122a305",
@@ -743,7 +967,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/chameleon-rift-daydream/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.272072"
+      "last_updated": "2026-01-19T03:39:41.594832"
     },
     {
       "id": "e70508806590",
@@ -768,7 +992,32 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/tori-piskin-poor-little-rich-girl/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925430"
+      "last_updated": "2026-01-19T03:39:42.864003"
+    },
+    {
+      "id": "51c413ac308d",
+      "date": "2026-01-23T22:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Vibzzz All Night"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/vibzzz-all-night/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593603"
     },
     {
       "id": "155f82af885a",
@@ -803,7 +1052,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.134730"
+      "last_updated": "2026-01-19T03:39:31.198669"
     },
     {
       "id": "f4a656838a6d",
@@ -838,7 +1087,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.134817"
+      "last_updated": "2026-01-19T03:39:31.198760"
     },
     {
       "id": "c3dc11873299",
@@ -864,7 +1113,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.988764"
+      "last_updated": "2026-01-19T03:39:32.531296"
     },
     {
       "id": "b6093d7b59d7",
@@ -898,7 +1147,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.355743"
+      "last_updated": "2026-01-19T03:39:33.959862"
     },
     {
       "id": "2d467e6d39c8",
@@ -928,7 +1177,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.355857"
+      "last_updated": "2026-01-19T03:39:33.959969"
     },
     {
       "id": "b1aca05166fc",
@@ -958,7 +1207,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.355962"
+      "last_updated": "2026-01-19T03:39:33.960080"
     },
     {
       "id": "8eb8853df7d5",
@@ -989,7 +1238,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.356059"
+      "last_updated": "2026-01-19T03:39:33.960187"
     },
     {
       "id": "5b11c714ce62",
@@ -1014,11 +1263,39 @@
       "source": "scrape:boston_ska",
       "source_url": "https://www.bostonska.net/",
       "genre_tags": [
-        "ska",
         "punk",
-        "reggae"
+        "reggae",
+        "ska"
       ],
-      "last_updated": "2026-01-19T03:32:11.980901"
+      "last_updated": "2026-01-19T03:39:41.304057"
+    },
+    {
+      "id": "6fda5da14810",
+      "date": "2026-01-24T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "An All-John Williams Program with Emanuel Ax and Gil Shaham | E Pluribus Unum: From Many, One"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/jan-22-25-john-williams-prog",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.502040"
     },
     {
       "id": "f02afbc99935",
@@ -1043,7 +1320,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/shit-faced-shakespeare-hamlet-2/2026-01-24/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925456"
+      "last_updated": "2026-01-19T03:39:42.864030"
     },
     {
       "id": "a2c04f8f87d4",
@@ -1068,7 +1345,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/akiras-birthday-bash-pressure-cooker-live-w-dj-jaucques-wblk-sound/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.272130"
+      "last_updated": "2026-01-19T03:39:41.594875"
     },
     {
       "id": "5f6b545465ee",
@@ -1093,7 +1370,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.989137"
+      "last_updated": "2026-01-19T03:39:32.531639"
     },
     {
       "id": "9b877f3bb4b9",
@@ -1124,7 +1401,63 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.356183"
+      "last_updated": "2026-01-19T03:39:33.960291"
+    },
+    {
+      "id": "3f9e16f2d372",
+      "date": "2026-01-25T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "An All-John Williams Program with Emanuel Ax and Gil Shaham | E Pluribus Unum: From Many, One"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "2pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/jan-22-25-john-williams-prog",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.502178"
+    },
+    {
+      "id": "7ca80c637475",
+      "date": "2026-01-25T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "\u201cThis Is America\u201d | E Pluribus Unum: From Many, One"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "4:30pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/jan-25-gandelsman-this-is-america",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.503063"
     },
     {
       "id": "9a9aa6837286",
@@ -1149,7 +1482,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/school-of-rock-medford/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925485"
+      "last_updated": "2026-01-19T03:39:42.864060"
     },
     {
       "id": "abf56f1f152f",
@@ -1174,7 +1507,61 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/lizard-lounge-poetry-jam-2026-mvp-most-valuable-poet-finals/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.272171"
+      "last_updated": "2026-01-19T03:39:41.594911"
+    },
+    {
+      "id": "46add2184918",
+      "date": "2026-01-26T00:00:00",
+      "day_of_week": "Mon",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "\u201cThis Is America\u201d | E Pluribus Unum: From Many, One"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/jan-26-gandelsman-this-is-am",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.503375"
+    },
+    {
+      "id": "402edfc95f3c",
+      "date": "2026-01-27T19:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Serpents Tour Starring Nymphia Wind",
+        "Plastique Tiara"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/the-serpents-tour-starring-nymphia-wind-and-plastique-tiara/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593669"
     },
     {
       "id": "6ebe41f8a449",
@@ -1199,7 +1586,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/deadword-theater-no-exit-by-jean-paul-sartre-3/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925513"
+      "last_updated": "2026-01-19T03:39:42.864103"
     },
     {
       "id": "77e03722bdcd",
@@ -1230,7 +1617,35 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.356282"
+      "last_updated": "2026-01-19T03:39:33.960392"
+    },
+    {
+      "id": "29c06a3b7a13",
+      "date": "2026-01-28T00:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "\"Vibe Check\" Live with Special Guest Carlos Simon | E Pluribus Unum: From Many, One"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/vibe-check-live-with-special-guest-carlos-simon",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.503662"
     },
     {
       "id": "9ac164f20bb7",
@@ -1255,7 +1670,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/deadword-theater-no-exit-by-jean-paul-sartre-4/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925538"
+      "last_updated": "2026-01-19T03:39:42.864141"
     },
     {
       "id": "48e17eecebe8",
@@ -1281,7 +1696,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/duke-levine-the-super-sweet-sounds-of-the-70s-3/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.272206"
+      "last_updated": "2026-01-19T03:39:41.594944"
     },
     {
       "id": "71cdb885ce1c",
@@ -1307,7 +1722,88 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.989511"
+      "last_updated": "2026-01-19T03:39:32.531993"
+    },
+    {
+      "id": "b5999a5f68e5",
+      "date": "2026-01-29T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "What I Hear: Carlos Simon | E Pluribus Unum: From Many, One"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "5:30pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/2025-what-i-hear-carlos-simon",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.503944"
+    },
+    {
+      "id": "6f35b48422cb",
+      "date": "2026-01-29T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "poor hymnal and Good News Mass | E Pluribus Unum: From Many, One"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7:30pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/jan-29-31-lang-simon",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.504290"
+    },
+    {
+      "id": "82fab04b417a",
+      "date": "2026-01-29T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Alleycvt"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/alleycvt/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593688"
     },
     {
       "id": "a25bfcb88b0c",
@@ -1332,7 +1828,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/beno/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925569"
+      "last_updated": "2026-01-19T03:39:42.864167"
     },
     {
       "id": "103de5c46274",
@@ -1366,7 +1862,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.134905"
+      "last_updated": "2026-01-19T03:39:31.198849"
     },
     {
       "id": "981fd16efaa5",
@@ -1391,7 +1887,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.989877"
+      "last_updated": "2026-01-19T03:39:32.532373"
     },
     {
       "id": "ec6545d7c7f7",
@@ -1416,7 +1912,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.990230"
+      "last_updated": "2026-01-19T03:39:32.532713"
     },
     {
       "id": "023e1843b164",
@@ -1441,7 +1937,32 @@
       "source": "scrape:songkick",
       "source_url": "https://www.songkick.com/venues/4447493",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:14.212531"
+      "last_updated": "2026-01-19T03:39:43.148282"
+    },
+    {
+      "id": "505d0d08e601",
+      "date": "2026-01-30T19:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Sudan Archives"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "merged:scrape:boston_venues+scrape:bowery_boston",
+      "source_url": "https://royaleboston.com/event/sudan-archives/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593703"
     },
     {
       "id": "09cf66e8b2a5",
@@ -1467,7 +1988,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/club-delf-featuring-duke-levine-and-kevin-barry-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.272243"
+      "last_updated": "2026-01-19T03:39:41.594980"
     },
     {
       "id": "c69e44d314a3",
@@ -1492,32 +2013,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/shit-faced-shakespeare-hamlet/2026-01-30/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925597"
-    },
-    {
-      "id": "505d0d08e601",
-      "date": "2026-01-30T20:00:00",
-      "day_of_week": "Fri",
-      "venue": {
-        "id": "royale",
-        "name": "Royale",
-        "location": "Boston"
-      },
-      "bands": [
-        "Sudan Archives"
-      ],
-      "age_requirement": "18+",
-      "price": {
-        "advance": null,
-        "door": null,
-        "display": ""
-      },
-      "time": "8pm",
-      "flags": [],
-      "source": "scrape:bowery_boston",
-      "source_url": "https://www.boweryboston.com/see-all-shows",
-      "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:05.961141"
+      "last_updated": "2026-01-19T03:39:42.864195"
     },
     {
       "id": "d9c108bc7ffd",
@@ -1550,7 +2046,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.134992"
+      "last_updated": "2026-01-19T03:39:31.198944"
     },
     {
       "id": "287e51962136",
@@ -1576,7 +2072,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.990557"
+      "last_updated": "2026-01-19T03:39:32.533058"
     },
     {
       "id": "ceb8701e0d8f",
@@ -1606,7 +2102,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.356525"
+      "last_updated": "2026-01-19T03:39:33.960660"
     },
     {
       "id": "4f82e7d116c5",
@@ -1636,7 +2132,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.356646"
+      "last_updated": "2026-01-19T03:39:33.960765"
     },
     {
       "id": "3bf9de9b2619",
@@ -1664,7 +2160,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.356752"
+      "last_updated": "2026-01-19T03:39:33.960860"
     },
     {
       "id": "e299a556523f",
@@ -1689,7 +2185,35 @@
       "source": "scrape:songkick",
       "source_url": "https://www.songkick.com/venues/4503147",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:14.153583"
+      "last_updated": "2026-01-19T03:39:43.092115"
+    },
+    {
+      "id": "65d13a406e22",
+      "date": "2026-01-31T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "symphonyhall",
+        "name": "Symphony Hall",
+        "location": "Boston"
+      },
+      "bands": [
+        "poor hymnal and Good News Mass | E Pluribus Unum: From Many, One"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:bso",
+      "source_url": "https://www.bso.org/events/jan-29-31-lang-simon",
+      "genre_tags": [
+        "classical",
+        "orchestra"
+      ],
+      "last_updated": "2026-01-19T03:39:43.504408"
     },
     {
       "id": "5e8bec078437",
@@ -1716,7 +2240,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/clowning-nonsense-w-daniel-maseda/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925634"
+      "last_updated": "2026-01-19T03:39:42.864234"
     },
     {
       "id": "143d656a0b5c",
@@ -1741,7 +2265,7 @@
       "source": "scrape:bowery_boston",
       "source_url": "https://www.boweryboston.com/see-all-shows",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:05.961205"
+      "last_updated": "2026-01-19T03:39:33.543698"
     },
     {
       "id": "d14b4d6fdfda",
@@ -1766,7 +2290,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/shit-faced-shakespeare-hamlet-2/2026-01-31/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925660"
+      "last_updated": "2026-01-19T03:39:42.864262"
     },
     {
       "id": "62dded730b1a",
@@ -1792,7 +2316,32 @@
       "source": "scrape:ical_venues",
       "source_url": "https://therockwell.org/calendar/be-good-with-paulette/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.925689"
+      "last_updated": "2026-01-19T03:39:42.864292"
+    },
+    {
+      "id": "7b8147c555d0",
+      "date": "2026-01-31T22:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Max Styler"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/max-styler/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593714"
     },
     {
       "id": "f868f6bdbcb5",
@@ -1818,7 +2367,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.990897"
+      "last_updated": "2026-01-19T03:39:32.533441"
     },
     {
       "id": "aa6e51be81d5",
@@ -1843,7 +2392,7 @@
       "source": "scrape:bowery_boston",
       "source_url": "https://www.boweryboston.com/see-all-shows",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:05.961227"
+      "last_updated": "2026-01-19T03:39:33.543718"
     },
     {
       "id": "f5ead2b6792c",
@@ -1868,7 +2417,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/poetry-jam-featured-poet-tba/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561031"
+      "last_updated": "2026-01-19T03:39:41.735898"
     },
     {
       "id": "cd256e975e2d",
@@ -1902,7 +2451,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.135078"
+      "last_updated": "2026-01-19T03:39:31.199035"
     },
     {
       "id": "c93d739fc40f",
@@ -1929,7 +2478,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.991244"
+      "last_updated": "2026-01-19T03:39:32.533783"
     },
     {
       "id": "a689946bbd13",
@@ -1960,7 +2509,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.356930"
+      "last_updated": "2026-01-19T03:39:33.961035"
     },
     {
       "id": "be137c399442",
@@ -1986,7 +2535,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.991585"
+      "last_updated": "2026-01-19T03:39:32.534130"
     },
     {
       "id": "eb5f79affc06",
@@ -2012,7 +2561,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.991917"
+      "last_updated": "2026-01-19T03:39:32.534490"
     },
     {
       "id": "7a1d1269d556",
@@ -2037,7 +2586,7 @@
       "source": "scrape:songkick",
       "source_url": "https://www.songkick.com/venues/4447493",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:14.213411"
+      "last_updated": "2026-01-19T03:39:43.149146"
     },
     {
       "id": "4f18ff48d55c",
@@ -2062,7 +2611,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/the-duppy-conquerors-22/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561125"
+      "last_updated": "2026-01-19T03:39:41.735971"
     },
     {
       "id": "d3c32f936abe",
@@ -2088,7 +2637,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.992255"
+      "last_updated": "2026-01-19T03:39:32.534812"
     },
     {
       "id": "2accd4e0d556",
@@ -2118,7 +2667,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.357125"
+      "last_updated": "2026-01-19T03:39:33.961245"
     },
     {
       "id": "4acac6302983",
@@ -2143,7 +2692,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/mr-hos-orchestrotica/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561175"
+      "last_updated": "2026-01-19T03:39:41.736017"
     },
     {
       "id": "2ce0b7b733d7",
@@ -2177,7 +2726,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.135180"
+      "last_updated": "2026-01-19T03:39:31.199127"
     },
     {
       "id": "2accff2dfc0c",
@@ -2204,7 +2753,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.992580"
+      "last_updated": "2026-01-19T03:39:32.535154"
     },
     {
       "id": "ab267d701d89",
@@ -2229,7 +2778,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.992899"
+      "last_updated": "2026-01-19T03:39:32.535496"
     },
     {
       "id": "c3166962fe7c",
@@ -2259,7 +2808,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.357213"
+      "last_updated": "2026-01-19T03:39:33.961334"
     },
     {
       "id": "3655c0fc2892",
@@ -2284,7 +2833,7 @@
       "source": "scrape:songkick",
       "source_url": "https://www.songkick.com/venues/4447493",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:14.214260"
+      "last_updated": "2026-01-19T03:39:43.149977"
     },
     {
       "id": "1b73494f788d",
@@ -2309,7 +2858,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/otis-grove-featuring-mister-rourke/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561213"
+      "last_updated": "2026-01-19T03:39:41.736055"
     },
     {
       "id": "80c275a04198",
@@ -2343,7 +2892,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.135272"
+      "last_updated": "2026-01-19T03:39:31.199216"
     },
     {
       "id": "8f34d6efdfa6",
@@ -2368,7 +2917,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.993226"
+      "last_updated": "2026-01-19T03:39:32.535810"
     },
     {
       "id": "f5baa0ce2989",
@@ -2394,7 +2943,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.993549"
+      "last_updated": "2026-01-19T03:39:32.536149"
     },
     {
       "id": "b86ed274f26e",
@@ -2427,7 +2976,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.357320"
+      "last_updated": "2026-01-19T03:39:33.961443"
     },
     {
       "id": "bf600a2ac43e",
@@ -2459,7 +3008,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.357410"
+      "last_updated": "2026-01-19T03:39:33.961535"
     },
     {
       "id": "795d4af3577b",
@@ -2489,7 +3038,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.357498"
+      "last_updated": "2026-01-19T03:39:33.961621"
     },
     {
       "id": "96eae0a87a61",
@@ -2515,7 +3064,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/mc-kabir-with-krush-factory-11/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561247"
+      "last_updated": "2026-01-19T03:39:41.736113"
     },
     {
       "id": "2b1531c1efc2",
@@ -2550,7 +3099,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.135367"
+      "last_updated": "2026-01-19T03:39:31.199302"
     },
     {
       "id": "690756b44618",
@@ -2584,7 +3133,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.135457"
+      "last_updated": "2026-01-19T03:39:31.199384"
     },
     {
       "id": "6dae131820f1",
@@ -2609,7 +3158,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:04.993863"
+      "last_updated": "2026-01-19T03:39:32.536481"
     },
     {
       "id": "76d4b1f5b901",
@@ -2639,7 +3188,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.357833"
+      "last_updated": "2026-01-19T03:39:33.961975"
     },
     {
       "id": "2e25f9a6aae3",
@@ -2664,7 +3213,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/ahren-shreeve-trio/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561290"
+      "last_updated": "2026-01-19T03:39:41.736150"
     },
     {
       "id": "f78f06c5a87b",
@@ -2689,7 +3238,7 @@
       "source": "scrape:songkick",
       "source_url": "https://www.songkick.com/venues/4447493",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:14.215125"
+      "last_updated": "2026-01-19T03:39:43.150817"
     },
     {
       "id": "5f8d1a4f0f0e",
@@ -2715,7 +3264,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/hellbender-and-agent-lockhart-live-at-the-lizard-lounge/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561332"
+      "last_updated": "2026-01-19T03:39:41.736191"
     },
     {
       "id": "78cab776c9ff",
@@ -2740,7 +3289,32 @@
       "source": "scrape:songkick",
       "source_url": "https://www.songkick.com/venues/4447493",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:14.215924"
+      "last_updated": "2026-01-19T03:39:43.152684"
+    },
+    {
+      "id": "43b5302bf35a",
+      "date": "2026-02-13T18:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Monaleo"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/monaleo-2/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593737"
     },
     {
       "id": "c301de50ddbb",
@@ -2765,7 +3339,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/the-890s-5/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561360"
+      "last_updated": "2026-01-19T03:39:41.736220"
     },
     {
       "id": "4017169f0a7e",
@@ -2800,7 +3374,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.135550"
+      "last_updated": "2026-01-19T03:39:31.199469"
     },
     {
       "id": "9517b7c25bf4",
@@ -2831,7 +3405,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.357925"
+      "last_updated": "2026-01-19T03:39:33.962074"
     },
     {
       "id": "bea844f47e09",
@@ -2862,7 +3436,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.358023"
+      "last_updated": "2026-01-19T03:39:33.962184"
     },
     {
       "id": "eca04c832ecf",
@@ -2892,7 +3466,32 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.358125"
+      "last_updated": "2026-01-19T03:39:33.962274"
+    },
+    {
+      "id": "816df345911d",
+      "date": "2026-02-14T18:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Badflower"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/badflower-2/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593758"
     },
     {
       "id": "e16e52a1c020",
@@ -2917,7 +3516,32 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/jesse-dee-sings-songs-for-the-heart-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561393"
+      "last_updated": "2026-01-19T03:39:41.736254"
+    },
+    {
+      "id": "ba296a64dbaf",
+      "date": "2026-02-14T22:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Layton Giordani"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/layton-giordani/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593773"
     },
     {
       "id": "ccab7c3f69f5",
@@ -2942,7 +3566,32 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/poetry-jam-featured-poet-tba-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561418"
+      "last_updated": "2026-01-19T03:39:41.736279"
+    },
+    {
+      "id": "3530b829a75c",
+      "date": "2026-02-17T19:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "SZN4"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/szn4/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593784"
     },
     {
       "id": "647d8d2f68f8",
@@ -2968,7 +3617,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/bang-bang-experience-the-rikki-rocksteady-all-stars/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561456"
+      "last_updated": "2026-01-19T03:39:41.736317"
     },
     {
       "id": "714291198197",
@@ -2995,7 +3644,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/the-haymakers-and-friends-with-bob-cencis-orange-guitar/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561491"
+      "last_updated": "2026-01-19T03:39:41.736353"
     },
     {
       "id": "079133522d3d",
@@ -3021,7 +3670,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/reckoners-with-special-guest-tyler-james-kelly/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561525"
+      "last_updated": "2026-01-19T03:39:41.736387"
     },
     {
       "id": "7e3e71b56593",
@@ -3054,7 +3703,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.135638"
+      "last_updated": "2026-01-19T03:39:31.199554"
     },
     {
       "id": "d248feaf7838",
@@ -3085,7 +3734,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.358316"
+      "last_updated": "2026-01-19T03:39:33.962469"
     },
     {
       "id": "234be6746660",
@@ -3116,7 +3765,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.358403"
+      "last_updated": "2026-01-19T03:39:33.962557"
     },
     {
       "id": "040442dc3aa1",
@@ -3147,7 +3796,32 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.358488"
+      "last_updated": "2026-01-19T03:39:33.962644"
+    },
+    {
+      "id": "f395ba3cf09e",
+      "date": "2026-02-21T18:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Margo Price"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/margo-price/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593795"
     },
     {
       "id": "beff39db1e4c",
@@ -3173,7 +3847,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/reckoners-with-special-guest-the-rangemasters/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561559"
+      "last_updated": "2026-01-19T03:39:41.736419"
     },
     {
       "id": "0e06d0b18622",
@@ -3198,7 +3872,57 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/poetry-jam-featured-poet-tba-3/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561582"
+      "last_updated": "2026-01-19T03:39:41.736443"
+    },
+    {
+      "id": "a7159095debf",
+      "date": "2026-02-24T19:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "[canceled] Loyle Carner"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/loyle-carner/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593807"
+    },
+    {
+      "id": "9193f90d1e6c",
+      "date": "2026-02-25T18:30:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Record Company"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/the-record-company-2/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593824"
     },
     {
       "id": "ebd8e2c86b2b",
@@ -3224,7 +3948,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/an-evening-with-lyle-brewer-4/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561610"
+      "last_updated": "2026-01-19T03:39:41.736469"
     },
     {
       "id": "3aa5e2d4d788",
@@ -3249,7 +3973,7 @@
       "source": "scrape:songkick",
       "source_url": "https://www.songkick.com/venues/4503147",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:14.154489"
+      "last_updated": "2026-01-19T03:39:43.093040"
     },
     {
       "id": "3037f8e673bc",
@@ -3275,7 +3999,32 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/jon-nolan-good-co-sneaky-miles/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561640"
+      "last_updated": "2026-01-19T03:39:41.736500"
+    },
+    {
+      "id": "13ab9436f600",
+      "date": "2026-02-27T18:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Peter McPoland"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/peter-mcpoland-2/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593835"
     },
     {
       "id": "4d075285b194",
@@ -3300,7 +4049,32 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/jen-kearney-gas-station-poet-vinyl-release-the-real-deal/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.561679"
+      "last_updated": "2026-01-19T03:39:41.736539"
+    },
+    {
+      "id": "e334e5f82ba0",
+      "date": "2026-02-27T22:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Boots n Beats"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/boots-n-beats/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593849"
     },
     {
       "id": "c949a41c046e",
@@ -3333,7 +4107,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.135717"
+      "last_updated": "2026-01-19T03:39:31.199632"
     },
     {
       "id": "43ebbfef16f0",
@@ -3368,7 +4142,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.135805"
+      "last_updated": "2026-01-19T03:39:31.199714"
     },
     {
       "id": "c9c229b6239a",
@@ -3401,7 +4175,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.135886"
+      "last_updated": "2026-01-19T03:39:31.199794"
     },
     {
       "id": "ad1f546c58c0",
@@ -3430,7 +4204,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.358590"
+      "last_updated": "2026-01-19T03:39:33.962754"
     },
     {
       "id": "75d139318f15",
@@ -3465,7 +4239,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.135973"
+      "last_updated": "2026-01-19T03:39:31.199888"
     },
     {
       "id": "90f1e57d79a4",
@@ -3498,7 +4272,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.136050"
+      "last_updated": "2026-01-19T03:39:31.199967"
     },
     {
       "id": "e3d537cfc702",
@@ -3524,7 +4298,33 @@
       "source": "scrape:bowery_boston",
       "source_url": "https://www.boweryboston.com/see-all-shows",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:05.961263"
+      "last_updated": "2026-01-19T03:39:33.543752"
+    },
+    {
+      "id": "e255a38d9feb",
+      "date": "2026-03-06T19:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Michael Shannon &amp; Jason Narducy",
+        "Friends play R.E.M.\u2019s Lifes Rich Pageant"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/michael-shannon-jason-narducy-and-friends-play-r-e-m-s-lifes-rich-pageant/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593875"
     },
     {
       "id": "74bd76145bfb",
@@ -3555,7 +4355,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.358694"
+      "last_updated": "2026-01-19T03:39:33.962858"
     },
     {
       "id": "86d13f41beb2",
@@ -3581,7 +4381,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/mc-kabir-with-krush-factory-12/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.867930"
+      "last_updated": "2026-01-19T03:39:42.077976"
     },
     {
       "id": "6ba245a941c4",
@@ -3607,11 +4407,36 @@
       "source": "scrape:boston_ska",
       "source_url": "https://www.bostonska.net/",
       "genre_tags": [
-        "ska",
         "punk",
-        "reggae"
+        "reggae",
+        "ska"
       ],
-      "last_updated": "2026-01-19T03:32:11.981320"
+      "last_updated": "2026-01-19T03:39:41.304467"
+    },
+    {
+      "id": "8b4ebee4e390",
+      "date": "2026-03-08T19:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Amber Mark"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/amber-mark/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593887"
     },
     {
       "id": "2d65bf9c7698",
@@ -3636,7 +4461,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/the-reckoning-crew-8/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.868002"
+      "last_updated": "2026-01-19T03:39:42.078055"
     },
     {
       "id": "d7d54df0a95d",
@@ -3667,7 +4492,32 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.358790"
+      "last_updated": "2026-01-19T03:39:33.962952"
+    },
+    {
+      "id": "605128631054",
+      "date": "2026-03-13T18:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Quarters"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/quarters/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593896"
     },
     {
       "id": "91c38a8b4597",
@@ -3693,7 +4543,82 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/kotoko-brass-sonido-mal-maiz-live-at-the-lizard-lounge/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:12.868048"
+      "last_updated": "2026-01-19T03:39:42.078111"
+    },
+    {
+      "id": "deca0b0e7f63",
+      "date": "2026-03-13T22:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Kettama"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/kettama/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593906"
+    },
+    {
+      "id": "e1ff0020c3bd",
+      "date": "2026-03-14T20:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Evan Honer"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/evan-honer/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593916"
+    },
+    {
+      "id": "c4366154d513",
+      "date": "2026-03-17T19:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Sweet Pill"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/sweet-pill/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593925"
     },
     {
       "id": "1647a5efc9d3",
@@ -3724,7 +4649,32 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.358965"
+      "last_updated": "2026-01-19T03:39:33.963148"
+    },
+    {
+      "id": "f755b5fea7cd",
+      "date": "2026-03-19T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Mindchatter"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/mindchatter/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593935"
     },
     {
       "id": "6a0ccdabaa7c",
@@ -3752,7 +4702,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.359150"
+      "last_updated": "2026-01-19T03:39:33.963329"
     },
     {
       "id": "5f787a725e79",
@@ -3783,7 +4733,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.359246"
+      "last_updated": "2026-01-19T03:39:33.963425"
     },
     {
       "id": "d65b3e5cff71",
@@ -3810,11 +4760,11 @@
       "source": "scrape:boston_ska",
       "source_url": "https://www.bostonska.net/",
       "genre_tags": [
-        "ska",
         "punk",
-        "reggae"
+        "reggae",
+        "ska"
       ],
-      "last_updated": "2026-01-19T03:32:11.981666"
+      "last_updated": "2026-01-19T03:39:41.304842"
     },
     {
       "id": "f494a153af37",
@@ -3839,7 +4789,7 @@
       "source": "scrape:songkick",
       "source_url": "https://www.songkick.com/venues/4503147",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:14.155363"
+      "last_updated": "2026-01-19T03:39:43.093898"
     },
     {
       "id": "d1fd2cae961f",
@@ -3867,7 +4817,82 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.359341"
+      "last_updated": "2026-01-19T03:39:33.963519"
+    },
+    {
+      "id": "0a95c4755bea",
+      "date": "2026-03-21T22:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Prospa"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/prospa/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593944"
+    },
+    {
+      "id": "2a085f01a834",
+      "date": "2026-03-23T19:00:00",
+      "day_of_week": "Mon",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Matt Berninger"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/matt-berninger/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593954"
+    },
+    {
+      "id": "77b92adbb9c8",
+      "date": "2026-03-25T19:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Gogol Bordello"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/gogol-bordello-2/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593964"
     },
     {
       "id": "d5d9823fd2f8",
@@ -3892,7 +4917,7 @@
       "source": "scrape:songkick",
       "source_url": "https://www.songkick.com/venues/4503147",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:14.156202"
+      "last_updated": "2026-01-19T03:39:43.094747"
     },
     {
       "id": "dabb66fcbad7",
@@ -3922,7 +4947,32 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.359435"
+      "last_updated": "2026-01-19T03:39:33.963616"
+    },
+    {
+      "id": "76927dd6c651",
+      "date": "2026-04-01T19:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "[moved to Roadrunner] Wednesday"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/21146/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593975"
     },
     {
       "id": "e019da230ee4",
@@ -3949,11 +4999,36 @@
       "source": "scrape:boston_ska",
       "source_url": "https://www.bostonska.net/",
       "genre_tags": [
-        "ska",
         "punk",
-        "reggae"
+        "reggae",
+        "ska"
       ],
-      "last_updated": "2026-01-19T03:32:11.982010"
+      "last_updated": "2026-01-19T03:39:41.305203"
+    },
+    {
+      "id": "56033432a6b3",
+      "date": "2026-04-04T21:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "We Touch Grass: Anime Rave"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/we-touch-grass-anime-rave/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.593991"
     },
     {
       "id": "641437b0ac3f",
@@ -3979,7 +5054,7 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/mc-kabir-with-krush-factory-13/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.182435"
+      "last_updated": "2026-01-19T03:39:42.204474"
     },
     {
       "id": "63e7b1b19c11",
@@ -4009,7 +5084,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.359525"
+      "last_updated": "2026-01-19T03:39:33.963713"
     },
     {
       "id": "4e592913f69c",
@@ -4042,7 +5117,32 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.136142"
+      "last_updated": "2026-01-19T03:39:31.200043"
+    },
+    {
+      "id": "0cb1952dc08f",
+      "date": "2026-04-08T19:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Machine Girl"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/machine-girl/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594006"
     },
     {
       "id": "e16fe4616369",
@@ -4074,7 +5174,32 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.136218"
+      "last_updated": "2026-01-19T03:39:31.200131"
+    },
+    {
+      "id": "6ebeb6260594",
+      "date": "2026-04-09T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Two Feet: The Next Steps Tour"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/two-feet/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594020"
     },
     {
       "id": "752210bd6673",
@@ -4105,7 +5230,32 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.136290"
+      "last_updated": "2026-01-19T03:39:31.200206"
+    },
+    {
+      "id": "0f359cc0bda6",
+      "date": "2026-04-10T18:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Kishi Bashi"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/kishi-bashi-4/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594034"
     },
     {
       "id": "021b13c56a28",
@@ -4131,7 +5281,32 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/mattie-debbie-album-release-party/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.182516"
+      "last_updated": "2026-01-19T03:39:42.204555"
+    },
+    {
+      "id": "c93cf0fc7dc4",
+      "date": "2026-04-10T22:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Martinez Brothers \u2013 North America Tour 2026"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/the-martinez-brothers-north-america-tour-2026/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594051"
     },
     {
       "id": "872a6d6bcee1",
@@ -4165,7 +5340,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.136368"
+      "last_updated": "2026-01-19T03:39:31.200288"
     },
     {
       "id": "872a6d6bcee1",
@@ -4196,7 +5371,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.359621"
+      "last_updated": "2026-01-19T03:39:33.963807"
     },
     {
       "id": "0b215b30ba1c",
@@ -4227,7 +5402,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.359724"
+      "last_updated": "2026-01-19T03:39:33.963918"
     },
     {
       "id": "f3f01502ef3d",
@@ -4259,7 +5434,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.136458"
+      "last_updated": "2026-01-19T03:39:31.200367"
     },
     {
       "id": "2044f6365557",
@@ -4293,7 +5468,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.136537"
+      "last_updated": "2026-01-19T03:39:31.200449"
     },
     {
       "id": "4bcd74bbde77",
@@ -4318,7 +5493,158 @@
       "source": "scrape:songkick",
       "source_url": "https://www.songkick.com/venues/4503147",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:14.157056"
+      "last_updated": "2026-01-19T03:39:43.095596"
+    },
+    {
+      "id": "391f8601dbe9",
+      "date": "2026-04-16T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Growlers"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/the-growlers-3/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594065"
+    },
+    {
+      "id": "61ccde4b6fef",
+      "date": "2026-04-17T18:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Starjunk 95"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/starjunk-95/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594076"
+    },
+    {
+      "id": "101c6b89d44c",
+      "date": "2026-04-21T19:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Jos\u00e9 Gonz\u00e1lez"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/jose-gonzalez/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594105"
+    },
+    {
+      "id": "f85a822baf74",
+      "date": "2026-04-22T19:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Pattie Gonia: SAVE HER! Feat. Sequoia",
+        "Vera!"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/pattie-gonia-save-her-feat-sequoia-and-vera/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594125"
+    },
+    {
+      "id": "41707fc0cdd2",
+      "date": "2026-04-26T19:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Sarah Kinsley"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/sarah-kinsley-2/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594135"
+    },
+    {
+      "id": "a0fb50741ddd",
+      "date": "2026-04-30T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Oklou"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/oklou/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594312"
     },
     {
       "id": "3906c2e38d91",
@@ -4346,7 +5672,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T03:32:06.359876"
+      "last_updated": "2026-01-19T03:39:33.964068"
     },
     {
       "id": "be92dc1cd798",
@@ -4372,7 +5698,132 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/mc-kabir-with-krush-factory-14/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.469880"
+      "last_updated": "2026-01-19T03:39:42.493148"
+    },
+    {
+      "id": "7b6b9ecf700c",
+      "date": "2026-05-07T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Paper Kites"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/the-paper-kites/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594327"
+    },
+    {
+      "id": "329c1f1eb966",
+      "date": "2026-05-09T18:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Searows"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/searows/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594339"
+    },
+    {
+      "id": "62c0f3ba6799",
+      "date": "2026-05-10T20:30:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Christos Mastoras &amp; Melisses"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/christos-mastoras-meaisses/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594351"
+    },
+    {
+      "id": "eb5647cab188",
+      "date": "2026-05-14T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Melody&#8217;s Echo Chamber"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/melodys-echo-chamber/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594363"
+    },
+    {
+      "id": "97518b6a9707",
+      "date": "2026-05-19T18:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "REVOLVER PRESENTS: THORNHILL: The Mercia Tour"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/revolver-presents-thornhill-the-mercia-tour/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594378"
     },
     {
       "id": "3427bb0c0b44",
@@ -4406,7 +5857,32 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.136631"
+      "last_updated": "2026-01-19T03:39:31.200527"
+    },
+    {
+      "id": "45c0f5dab19a",
+      "date": "2026-06-05T22:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "HOL! Presented by Ground Control"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/hol-presented-by-ground-control/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594394"
     },
     {
       "id": "3a5020bb02a4",
@@ -4432,7 +5908,32 @@
       "source": "scrape:ical_venues",
       "source_url": "https://lizardloungeclub.com/event/mc-kabir-with-krush-factory-15/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T03:32:13.741574"
+      "last_updated": "2026-01-19T03:39:42.619924"
+    },
+    {
+      "id": "4b5252d19097",
+      "date": "2026-06-10T19:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "INJI"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/inji/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594405"
     },
     {
       "id": "bdcc36532f42",
@@ -4465,7 +5966,108 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T03:32:00.136711"
+      "last_updated": "2026-01-19T03:39:31.200604"
+    },
+    {
+      "id": "b66c943ec0a3",
+      "date": "2026-08-14T18:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "[moved to Roadrunner] Chance Pe\u00f1a"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/chance-pena/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594420"
+    },
+    {
+      "id": "c195f2fb304f",
+      "date": "2026-09-26T20:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Endless Night Boston Vampire Ball: Le Cabaret Royale"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/21445/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594438"
+    },
+    {
+      "id": "d813ba714d97",
+      "date": "2026-10-11T19:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Benjamin Tod",
+        "Inline Six"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/benjamin-tod-and-the-inline-six/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594454"
+    },
+    {
+      "id": "02714d89d170",
+      "date": "2026-10-19T18:00:00",
+      "day_of_week": "Mon",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Bethel Music"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/bethel-music/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T03:39:31.594465"
     }
   ]
 }
