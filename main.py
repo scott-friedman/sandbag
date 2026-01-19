@@ -168,7 +168,7 @@ def cmd_fetch(args):
         json.dump([c.to_dict() for c in all_concerts], f, indent=2)
     logger.info(f"Saved raw data to {raw_path}")
 
-    return all_concerts
+    return 0
 
 
 def cmd_process(args):
@@ -209,7 +209,7 @@ def cmd_process(args):
         json.dump([c.to_dict() for c in concerts], f, indent=2)
     logger.info(f"Saved processed data to {processed_path}")
 
-    return concerts
+    return 0
 
 
 def cmd_generate(args):
