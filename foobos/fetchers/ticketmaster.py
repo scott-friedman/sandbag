@@ -236,28 +236,6 @@ class TicketmasterFetcher(BaseFetcher):
         return flags
 
     def _is_relevant(self, concert: Concert) -> bool:
-        """Check if concert is relevant (punk/hardcore/metal genre)."""
-        # Check genre tags
-        for tag in concert.genre_tags:
-            tag_lower = tag.lower()
-            # Check if matches punk genres
-            for punk_genre in PUNK_GENRES:
-                if punk_genre in tag_lower:
-                    return True
-            # Check if explicitly excluded
-            for exclude in EXCLUDE_GENRES:
-                if exclude in tag_lower:
-                    return False
-
-        # Check if any band name matches priority list
-        from ..config import PRIORITY_BANDS
-        for band in concert.bands:
-            if band in PRIORITY_BANDS:
-                return True
-
-        # Default: include if genre is rock/alternative/metal (broad categories)
-        for tag in concert.genre_tags:
-            if any(g in tag.lower() for g in ["rock", "alternative", "metal", "indie"]):
-                return True
-
-        return False
+        """Check if concert is relevant. Currently includes all music events."""
+        # Include all events - no genre filtering
+        return True

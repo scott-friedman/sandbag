@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-01-19T02:26:14.592881",
-    "total_concerts": 164,
+    "last_updated": "2026-01-19T02:27:05.125480",
+    "total_concerts": 326,
     "generated_by": "foobos"
   },
   "concerts": [
@@ -34,7 +34,35 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.534823"
+      "last_updated": "2026-01-19T02:26:58.591846"
+    },
+    {
+      "id": "2b36552c6e04",
+      "date": "2026-01-18T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Magic City Hippies"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/magic-city-hippies-virginia-beach-virginia-01-18-2026/event/01006342904DBC82",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333211"
     },
     {
       "id": "1cf62716f929",
@@ -64,7 +92,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.535485"
+      "last_updated": "2026-01-19T02:26:58.592483"
     },
     {
       "id": "ce491bc47a1c",
@@ -94,7 +122,35 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.756252"
+      "last_updated": "2026-01-19T02:27:00.511775"
+    },
+    {
+      "id": "ac730c97ca2c",
+      "date": "2026-01-20T00:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Congress the"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/congress-the-band-charlottesville-virginia-01-20-2026/event/01006381000B35BF",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333282"
     },
     {
       "id": "0a082733992f",
@@ -125,7 +181,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.756418"
+      "last_updated": "2026-01-19T02:27:00.511935"
     },
     {
       "id": "0a86e7712d67",
@@ -156,7 +212,35 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.756543"
+      "last_updated": "2026-01-19T02:27:00.512053"
+    },
+    {
+      "id": "11d43c48fadd",
+      "date": "2026-01-22T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Jon Spencer"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/jon-spencer-charlottesville-virginia-01-22-2026/event/01006322D7D45F16",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333317"
     },
     {
       "id": "73f05717be7b",
@@ -183,7 +267,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.278602"
+      "last_updated": "2026-01-19T02:26:59.141689"
     },
     {
       "id": "6315eb736398",
@@ -213,7 +297,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.756650"
+      "last_updated": "2026-01-19T02:27:00.512158"
     },
     {
       "id": "66bf1b424e85",
@@ -245,7 +329,35 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.756767"
+      "last_updated": "2026-01-19T02:27:00.512260"
+    },
+    {
+      "id": "2657b06e7859",
+      "date": "2026-01-23T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "hard_rock_live_bristol",
+        "name": "Hard Rock Live Bristol",
+        "location": "Bristol"
+      },
+      "bands": [
+        "Rob Thomas"
+      ],
+      "age_requirement": "21+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/rob-thomas-benefitting-sidewalk-angels-bristol-virginia-01-23-2026/event/1B006332BBEC5698",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333356"
     },
     {
       "id": "d4b7749c44b1",
@@ -273,7 +385,63 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T02:26:07.265418"
+      "last_updated": "2026-01-19T02:26:58.333385"
+    },
+    {
+      "id": "41cd9d6faaf7",
+      "date": "2026-01-23T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Shot Thru the Heart"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/shot-thru-the-heart-a-tribute-virginia-beach-virginia-01-23-2026/event/0100635CC82FBAA0",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333415"
+    },
+    {
+      "id": "8dbe37948ce7",
+      "date": "2026-01-23T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Gia Ray / Silas Frayser - Co Bill"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/gia-ray-silas-frayser-co-bill-charlottesville-virginia-01-23-2026/event/01006391A9E4B3A3",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333441"
     },
     {
       "id": "60bf95ba1656",
@@ -304,7 +472,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.535813"
+      "last_updated": "2026-01-19T02:26:58.592799"
     },
     {
       "id": "00f05e5b9fbd",
@@ -331,7 +499,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.279029"
+      "last_updated": "2026-01-19T02:26:59.142155"
     },
     {
       "id": "015068a3f4b2",
@@ -356,7 +524,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.279402"
+      "last_updated": "2026-01-19T02:26:59.142939"
     },
     {
       "id": "51c413ac308d",
@@ -381,7 +549,35 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/vibzzz-all-night/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860490"
+      "last_updated": "2026-01-19T02:26:58.861922"
+    },
+    {
+      "id": "d3a8728c166a",
+      "date": "2026-01-24T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Fighting Jamesons"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-fighting-jamesons-virginia-beach-virginia-01-24-2026/event/0100635FEA82DF9D",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333478"
     },
     {
       "id": "c3dc11873299",
@@ -407,7 +603,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.279766"
+      "last_updated": "2026-01-19T02:26:59.143426"
     },
     {
       "id": "b6093d7b59d7",
@@ -441,7 +637,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.757110"
+      "last_updated": "2026-01-19T02:27:00.512590"
     },
     {
       "id": "2d467e6d39c8",
@@ -471,7 +667,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.757213"
+      "last_updated": "2026-01-19T02:27:00.512693"
     },
     {
       "id": "b1aca05166fc",
@@ -501,7 +697,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.757314"
+      "last_updated": "2026-01-19T02:27:00.512813"
     },
     {
       "id": "8eb8853df7d5",
@@ -532,7 +728,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.757407"
+      "last_updated": "2026-01-19T02:27:00.512909"
     },
     {
       "id": "5b11c714ce62",
@@ -557,11 +753,39 @@
       "source": "scrape:boston_ska",
       "source_url": "https://www.bostonska.net/",
       "genre_tags": [
-        "reggae",
         "punk",
+        "reggae",
         "ska"
       ],
-      "last_updated": "2026-01-19T02:26:14.547516"
+      "last_updated": "2026-01-19T02:27:05.060675"
+    },
+    {
+      "id": "3b5d0ca00924",
+      "date": "2026-01-25T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Tom Hamilton"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/tom-hamilton-band-with-special-guests-virginia-beach-virginia-01-25-2026/event/0100634D7CB337FF",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333519"
     },
     {
       "id": "5f6b545465ee",
@@ -586,7 +810,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.280113"
+      "last_updated": "2026-01-19T02:26:59.143934"
     },
     {
       "id": "9b877f3bb4b9",
@@ -617,7 +841,65 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.757514"
+      "last_updated": "2026-01-19T02:27:00.513010"
+    },
+    {
+      "id": "c5eedd2964f9",
+      "date": "2026-01-26T00:00:00",
+      "day_of_week": "Mon",
+      "venue": {
+        "id": "john_paul_jones_arena",
+        "name": "John Paul Jones Arena",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Big Time Rush",
+        "Katelyn Tarver",
+        "Stephen Kramer Glickman"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/big-time-rush-in-real-life-charlottesville-virginia-01-26-2026/event/0100634EB810AA3A",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333556"
+    },
+    {
+      "id": "19d31a47f6ff",
+      "date": "2026-01-27T00:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Josh Ritter"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/josh-ritter-charlottesville-virginia-01-27-2026/event/0100636DA9F6CB32",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333588"
     },
     {
       "id": "402edfc95f3c",
@@ -643,7 +925,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/the-serpents-tour-starring-nymphia-wind-and-plastique-tiara/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860551"
+      "last_updated": "2026-01-19T02:26:58.861990"
     },
     {
       "id": "77e03722bdcd",
@@ -674,7 +956,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.757611"
+      "last_updated": "2026-01-19T02:27:00.513109"
     },
     {
       "id": "1cac55513d87",
@@ -702,7 +984,7 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T02:26:07.265653"
+      "last_updated": "2026-01-19T02:26:58.333617"
     },
     {
       "id": "71cdb885ce1c",
@@ -728,7 +1010,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.280456"
+      "last_updated": "2026-01-19T02:26:59.144301"
     },
     {
       "id": "82fab04b417a",
@@ -753,7 +1035,92 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/alleycvt/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860569"
+      "last_updated": "2026-01-19T02:26:58.862014"
+    },
+    {
+      "id": "f87d018a29d6",
+      "date": "2026-01-30T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Thurston Howell \u2013 A Premier Yacht Rock Spectacular!"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/thurston-howell-a-premier-yacht-rock-virginia-beach-virginia-01-30-2026/event/0100636CA485B82C",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333643"
+    },
+    {
+      "id": "cadf388cdec9",
+      "date": "2026-01-30T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Cumberland Road"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/cumberland-road-charlottesville-virginia-01-30-2026/event/01006375D1B8FDD3",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333671"
+    },
+    {
+      "id": "9630f8db9a1d",
+      "date": "2026-01-30T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Chris Smither",
+        "Loudon Wainwright III"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/loudon-wainwright-iii-chris-smither-cobill-charlottesville-virginia-01-30-2026/event/010062F5295A9972",
+      "genre_tags": [
+        "blues",
+        "blues"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333691"
     },
     {
       "id": "981fd16efaa5",
@@ -778,7 +1145,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.280801"
+      "last_updated": "2026-01-19T02:26:59.144736"
     },
     {
       "id": "ec6545d7c7f7",
@@ -803,7 +1170,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.281129"
+      "last_updated": "2026-01-19T02:26:59.145157"
     },
     {
       "id": "505d0d08e601",
@@ -828,7 +1195,35 @@
       "source": "merged:scrape:boston_venues+scrape:bowery_boston",
       "source_url": "https://royaleboston.com/event/sudan-archives/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860582"
+      "last_updated": "2026-01-19T02:26:58.862035"
+    },
+    {
+      "id": "6c12e6708385",
+      "date": "2026-01-31T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Ultimate Doors"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-ultimate-doors-a-tribute-to-virginia-beach-virginia-01-31-2026/event/01006361992B89EA",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333713"
     },
     {
       "id": "287e51962136",
@@ -854,7 +1249,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.281459"
+      "last_updated": "2026-01-19T02:26:59.145521"
     },
     {
       "id": "ceb8701e0d8f",
@@ -884,7 +1279,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.757856"
+      "last_updated": "2026-01-19T02:27:00.513347"
     },
     {
       "id": "4f82e7d116c5",
@@ -914,7 +1309,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.757959"
+      "last_updated": "2026-01-19T02:27:00.513449"
     },
     {
       "id": "3bf9de9b2619",
@@ -942,7 +1337,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.758050"
+      "last_updated": "2026-01-19T02:27:00.513541"
     },
     {
       "id": "143d656a0b5c",
@@ -967,7 +1362,7 @@
       "source": "scrape:bowery_boston",
       "source_url": "https://www.boweryboston.com/see-all-shows",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:09.184633"
+      "last_updated": "2026-01-19T02:27:00.134104"
     },
     {
       "id": "7b8147c555d0",
@@ -992,7 +1387,63 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/max-styler/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860595"
+      "last_updated": "2026-01-19T02:26:58.862048"
+    },
+    {
+      "id": "7289d35b14cd",
+      "date": "2026-02-01T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "24/7 Jamz Rehearsal Studio Presents Band Showcase"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "3pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/247-jamz-rehearsal-studio-presents-band-virginia-beach-virginia-02-01-2026/event/01006396DB23E326",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333770"
+    },
+    {
+      "id": "fd036ac90098",
+      "date": "2026-02-01T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Tobacco Road"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/tobacco-road-charlottesville-virginia-02-01-2026/event/01006385DDB6A59E",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333804"
     },
     {
       "id": "f868f6bdbcb5",
@@ -1018,7 +1469,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.282886"
+      "last_updated": "2026-01-19T02:26:59.145976"
     },
     {
       "id": "aa6e51be81d5",
@@ -1043,7 +1494,7 @@
       "source": "scrape:bowery_boston",
       "source_url": "https://www.boweryboston.com/see-all-shows",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:09.184654"
+      "last_updated": "2026-01-19T02:27:00.134134"
     },
     {
       "id": "40d23bfb9eac",
@@ -1073,7 +1524,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.536116"
+      "last_updated": "2026-01-19T02:26:58.593097"
     },
     {
       "id": "c93d739fc40f",
@@ -1100,7 +1551,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.283246"
+      "last_updated": "2026-01-19T02:26:59.146376"
     },
     {
       "id": "a689946bbd13",
@@ -1131,7 +1582,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.758215"
+      "last_updated": "2026-01-19T02:27:00.513708"
     },
     {
       "id": "06a313639acb",
@@ -1162,7 +1613,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.758311"
+      "last_updated": "2026-01-19T02:27:00.513819"
     },
     {
       "id": "8375eb478f7c",
@@ -1190,7 +1641,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.265874"
+      "last_updated": "2026-01-19T02:26:58.333827"
     },
     {
       "id": "be137c399442",
@@ -1216,7 +1667,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.283591"
+      "last_updated": "2026-01-19T02:26:59.146760"
     },
     {
       "id": "eb5f79affc06",
@@ -1242,7 +1693,37 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.283941"
+      "last_updated": "2026-01-19T02:26:59.147106"
+    },
+    {
+      "id": "d7088f8e1866",
+      "date": "2026-02-05T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "salem_civic_center",
+        "name": "Salem Civic Center",
+        "location": "Salem"
+      },
+      "bands": [
+        "Sam Barber",
+        "Waylon Wyatt",
+        "Wild Horses"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/sam-barber-the-american-route-tour-salem-virginia-02-05-2026/event/01006354C56FB36B",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333849"
     },
     {
       "id": "787d371f234a",
@@ -1270,7 +1751,36 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.265928"
+      "last_updated": "2026-01-19T02:26:58.333870"
+    },
+    {
+      "id": "d6616f3cde42",
+      "date": "2026-02-05T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "the_pantheon_at_caesars_virgin",
+        "name": "The Pantheon at Caesars Virginia",
+        "location": "Danville"
+      },
+      "bands": [
+        "Musiq Soulchild",
+        "Aneesa Strings"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/musiq-soulchild-with-aneesa-strings-danville-virginia-02-05-2026/event/01006356D6D2CE10",
+      "genre_tags": [
+        "r&b",
+        "r&b"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333902"
     },
     {
       "id": "d3c32f936abe",
@@ -1296,7 +1806,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.284273"
+      "last_updated": "2026-01-19T02:26:59.147445"
     },
     {
       "id": "2accd4e0d556",
@@ -1326,7 +1836,63 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.758398"
+      "last_updated": "2026-01-19T02:27:00.513908"
+    },
+    {
+      "id": "1525d4a78e04",
+      "date": "2026-02-06T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "hard_rock_live_bristol",
+        "name": "Hard Rock Live Bristol",
+        "location": "Bristol"
+      },
+      "bands": [
+        "Concert: A Tribute To ABBA"
+      ],
+      "age_requirement": "21+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-concert-a-tribute-to-abba-bristol-virginia-02-06-2026/event/1B006374CE18E154",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333926"
+    },
+    {
+      "id": "7da2bbacdac0",
+      "date": "2026-02-06T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Captain Mike & The Shipwrecked"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/captain-mike-the-shipwrecked-a-jimmy-virginia-beach-virginia-02-06-2026/event/0100636EAB14DCDE",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333948"
     },
     {
       "id": "8293a8ed4058",
@@ -1354,7 +1920,35 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.266036"
+      "last_updated": "2026-01-19T02:26:58.333970"
+    },
+    {
+      "id": "61f078811fc6",
+      "date": "2026-02-06T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Gasolina Party"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/gasolina-party-charlottesville-virginia-02-06-2026/event/01006385C1DC1FA6",
+      "genre_tags": [
+        "latin",
+        "latin"
+      ],
+      "last_updated": "2026-01-19T02:26:58.333992"
     },
     {
       "id": "2accff2dfc0c",
@@ -1381,7 +1975,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.284610"
+      "last_updated": "2026-01-19T02:26:59.147810"
     },
     {
       "id": "ab267d701d89",
@@ -1406,7 +2000,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.284944"
+      "last_updated": "2026-01-19T02:26:59.148132"
     },
     {
       "id": "c3166962fe7c",
@@ -1436,7 +2030,95 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.758488"
+      "last_updated": "2026-01-19T02:27:00.513994"
+    },
+    {
+      "id": "6438ce81b5b3",
+      "date": "2026-02-07T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "salem_civic_center",
+        "name": "Salem Civic Center",
+        "location": "Salem"
+      },
+      "bands": [
+        "Parker McCollum",
+        "Jake Worthington",
+        "Tyler Halverson"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/parker-mccollum-salem-virginia-02-07-2026/event/0100633191731769",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334013"
+    },
+    {
+      "id": "68f5cf377422",
+      "date": "2026-02-07T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "attucks_theatre",
+        "name": "Attucks Theatre",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Rene Marie",
+        "Virginia Arts Festival"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/rene-marie-norfolk-virginia-02-07-2026/event/010062F9AE52CE33",
+      "genre_tags": [
+        "jazz",
+        "jazz"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334041"
+    },
+    {
+      "id": "44630dbccea8",
+      "date": "2026-02-07T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "paramount_theater_-_va",
+        "name": "Paramount Theater - VA",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "David Foster",
+        "Katharine McPhee"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7jxbp",
+      "genre_tags": [
+        "other",
+        "other"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334061"
     },
     {
       "id": "460eea449633",
@@ -1465,7 +2147,120 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.266209"
+      "last_updated": "2026-01-19T02:26:58.334085"
+    },
+    {
+      "id": "7b579ac87739",
+      "date": "2026-02-07T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Pink Floyd Laser Spectacular"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-pink-floyd-laser-spectacular-virginia-beach-virginia-02-07-2026/event/01006383E47B6534",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334107"
+    },
+    {
+      "id": "9ec72c326757",
+      "date": "2026-02-07T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Carbon Leaf"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/carbon-leaf-i-want-to-be-virginia-beach-virginia-02-07-2026/event/01006381A396AC09",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334128"
+    },
+    {
+      "id": "a448e6be7a85",
+      "date": "2026-02-07T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Zoso The Ultimate Led Zeppelin Experience"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/zoso-the-ultimate-led-zeppelin-experience-charlottesville-virginia-02-07-2026/event/01006333DC3D840B",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334148"
+    },
+    {
+      "id": "297f68c71b67",
+      "date": "2026-02-07T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "the_dome",
+        "name": "The Dome",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "October London",
+        "J. Brown"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/october-london-virginia-beach-virginia-02-07-2026/event/01006354DD2FC962",
+      "genre_tags": [
+        "r&b",
+        "r&b"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334168"
     },
     {
       "id": "8f34d6efdfa6",
@@ -1490,7 +2285,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.285256"
+      "last_updated": "2026-01-19T02:26:59.148459"
     },
     {
       "id": "f5baa0ce2989",
@@ -1516,7 +2311,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.285591"
+      "last_updated": "2026-01-19T02:26:59.148822"
     },
     {
       "id": "b86ed274f26e",
@@ -1549,7 +2344,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.758596"
+      "last_updated": "2026-01-19T02:27:00.514099"
     },
     {
       "id": "bf600a2ac43e",
@@ -1581,7 +2376,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.758686"
+      "last_updated": "2026-01-19T02:27:00.514191"
     },
     {
       "id": "795d4af3577b",
@@ -1611,7 +2406,35 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.758780"
+      "last_updated": "2026-01-19T02:27:00.514272"
+    },
+    {
+      "id": "34fd04972c52",
+      "date": "2026-02-08T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "american_theatre",
+        "name": "American Theatre",
+        "location": "Hampton"
+      },
+      "bands": [
+        "Unity Gospel Choir"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "3pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/unity-gospel-choir-hampton-virginia-02-08-2026/event/0100636DA55DC502",
+      "genre_tags": [
+        "religious",
+        "gospel"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334194"
     },
     {
       "id": "6dae131820f1",
@@ -1636,7 +2459,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:08.285925"
+      "last_updated": "2026-01-19T02:26:59.149159"
     },
     {
       "id": "ae7d07905261",
@@ -1668,7 +2491,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.758940"
+      "last_updated": "2026-01-19T02:27:00.514435"
     },
     {
       "id": "0137beae93fe",
@@ -1697,7 +2520,7 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T02:26:07.266388"
+      "last_updated": "2026-01-19T02:26:58.334217"
     },
     {
       "id": "76d4b1f5b901",
@@ -1727,7 +2550,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.759097"
+      "last_updated": "2026-01-19T02:27:00.514595"
     },
     {
       "id": "bfe4849b9ad3",
@@ -1756,7 +2579,35 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.266419"
+      "last_updated": "2026-01-19T02:26:58.334239"
+    },
+    {
+      "id": "c54f26c46e13",
+      "date": "2026-02-12T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Tim O'Brien"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/tim-obrien-with-jan-fabricius-charlottesville-virginia-02-12-2026/event/0100634EDF18CA9C",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334264"
     },
     {
       "id": "8d912afb00d3",
@@ -1784,7 +2635,123 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.266472"
+      "last_updated": "2026-01-19T02:26:58.334285"
+    },
+    {
+      "id": "d248e74e51db",
+      "date": "2026-02-13T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Langhorne Slim"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/langhorne-slim-the-dreamin-kind-tour-charlottesville-virginia-02-13-2026/event/0100636CDDF6F726",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334305"
+    },
+    {
+      "id": "14da0c94d8b0",
+      "date": "2026-02-13T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "scope_arena",
+        "name": "Scope Arena",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Keith Sweat",
+        "Joe",
+        "Dru Hill",
+        "Ginuwine"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-r-b-lovers-tour-norfolk-virginia-02-13-2026/event/0100631AB55D47D0",
+      "genre_tags": [
+        "r&b",
+        "r&b"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334324"
+    },
+    {
+      "id": "723f1ee471bf",
+      "date": "2026-02-13T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "On the Border"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/on-the-border-a-tribute-to-virginia-beach-virginia-02-13-2026/event/01006372CB4AEC94",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334345"
+    },
+    {
+      "id": "6efe5bb4c6b7",
+      "date": "2026-02-13T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_dome",
+        "name": "The Dome",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Miguel",
+        "Jean Dawson"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/miguel-caos-tour-virginia-beach-virginia-02-13-2026/event/01006358B92AC20E",
+      "genre_tags": [
+        "r&b",
+        "r&b"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334366"
     },
     {
       "id": "43b5302bf35a",
@@ -1809,7 +2776,149 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/monaleo-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860616"
+      "last_updated": "2026-01-19T02:26:58.862070"
+    },
+    {
+      "id": "489f7209031a",
+      "date": "2026-02-14T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "etsu_martin_center_for_the_art",
+        "name": "ETSU Martin Center for the Arts",
+        "location": "Johnson City"
+      },
+      "bands": [
+        "Black Jacket Symphony"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.etix.com/ticket/p/33066950/the-black-jacket-symphony-presents-pink-floyds-the-wall-johnson-city-etsu-martin-center-etsu-foundation-grand-hall",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334386"
+    },
+    {
+      "id": "3acc3ed1c954",
+      "date": "2026-02-14T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "hard_rock_live_bristol",
+        "name": "Hard Rock Live Bristol",
+        "location": "Bristol"
+      },
+      "bands": [
+        "David Foster",
+        "Katharine McPhee"
+      ],
+      "age_requirement": "21+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/an-intimate-evening-with-david-foster-bristol-virginia-02-14-2026/event/1B00631EA962602C",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334408"
+    },
+    {
+      "id": "4c5171e5db6b",
+      "date": "2026-02-14T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "attucks_theatre",
+        "name": "Attucks Theatre",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Church Street Jazz",
+        "Andrea Lisa"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/andrea-lisa-norfolk-virginia-02-14-2026/event/0100635C7B8E39C4",
+      "genre_tags": [
+        "jazz",
+        "jazz"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334436"
+    },
+    {
+      "id": "fee40dbe9621",
+      "date": "2026-02-14T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Back To The Start: A Tribute To Coldplay"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/back-to-the-start-a-tribute-virginia-beach-virginia-02-14-2026/event/01006367C061D222",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334457"
+    },
+    {
+      "id": "da4febf15402",
+      "date": "2026-02-14T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Legwarmers"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/totally-80s-prom-with-the-legwarmers-charlottesville-virginia-02-14-2026/event/01006378DA85E63F",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334476"
     },
     {
       "id": "cc5782a50391",
@@ -1839,7 +2948,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.536428"
+      "last_updated": "2026-01-19T02:26:58.593390"
     },
     {
       "id": "9517b7c25bf4",
@@ -1870,7 +2979,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.759187"
+      "last_updated": "2026-01-19T02:27:00.514685"
     },
     {
       "id": "bea844f47e09",
@@ -1901,7 +3010,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.759275"
+      "last_updated": "2026-01-19T02:27:00.514785"
     },
     {
       "id": "eca04c832ecf",
@@ -1931,7 +3040,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.759360"
+      "last_updated": "2026-01-19T02:27:00.514873"
     },
     {
       "id": "816df345911d",
@@ -1956,7 +3065,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/badflower-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860630"
+      "last_updated": "2026-01-19T02:26:58.862085"
     },
     {
       "id": "ba296a64dbaf",
@@ -1981,7 +3090,91 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/layton-giordani/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860642"
+      "last_updated": "2026-01-19T02:26:58.862098"
+    },
+    {
+      "id": "3868fa1d2952",
+      "date": "2026-02-15T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Symphonicity:  Come Sunday!"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "3pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/symphonicity-come-sunday-virginia-beach-virginia-02-15-2026/event/010062FD970E47FC",
+      "genre_tags": [
+        "classical",
+        "classical/vocal"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334504"
+    },
+    {
+      "id": "70a98bc062ac",
+      "date": "2026-02-15T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "harrison_opera_house",
+        "name": "Harrison Opera House",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Black Jacket Symphony"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "4pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-black-jacket-symphony-presents-pink-norfolk-virginia-02-15-2026/event/01006316BD4C79E6",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334525"
+    },
+    {
+      "id": "fd5966f43bbf",
+      "date": "2026-02-16T00:00:00",
+      "day_of_week": "Mon",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Margo Price"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/margo-price-wild-at-heart-tour-charlottesville-virginia-02-16-2026/event/01006341AF709F1B",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334545"
     },
     {
       "id": "3530b829a75c",
@@ -2006,7 +3199,315 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/szn4/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860653"
+      "last_updated": "2026-01-19T02:26:58.862108"
+    },
+    {
+      "id": "85b8fbe14d78",
+      "date": "2026-02-19T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "american_theatre",
+        "name": "American Theatre",
+        "location": "Hampton"
+      },
+      "bands": [
+        "KING AND I - 2pm - Classic Movie Nights!"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "2pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-king-and-i-2pm-classic-hampton-virginia-02-19-2026/event/0100636BA81FB5D7",
+      "genre_tags": [
+        "music"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334569"
+    },
+    {
+      "id": "c98ff84f5c08",
+      "date": "2026-02-19T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "J. Roddy Walston"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/j-roddy-walston-charlottesville-virginia-02-19-2026/event/01006385DBBEA140",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334619"
+    },
+    {
+      "id": "c218f928ac95",
+      "date": "2026-02-20T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Still Not Okay Tour: A Tribute To MCR, Paramore, and More"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-still-not-okay-tour-a-virginia-beach-virginia-02-20-2026/event/0100638EC13EC808",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334643"
+    },
+    {
+      "id": "a0537dcea0c7",
+      "date": "2026-02-20T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Almost Queen"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/almost-queen-a-tribute-to-queen-charlottesville-virginia-02-20-2026/event/0100638CDFC0F307",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334671"
+    },
+    {
+      "id": "ff2f9d815c69",
+      "date": "2026-02-20T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_dome",
+        "name": "The Dome",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Mariah the Scientist",
+        "4batz"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/mariah-the-scientist-hearts-sold-separately-virginia-beach-virginia-02-20-2026/event/01006324C525AAC2",
+      "genre_tags": [
+        "r&b",
+        "r&b"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334698"
+    },
+    {
+      "id": "efdaa10c9411",
+      "date": "2026-02-20T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Jack Wharff"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-jack-wharff-band-charlottesville-virginia-02-20-2026/event/01006367FEAE7948",
+      "genre_tags": [
+        "country",
+        "bluegrass"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334720"
+    },
+    {
+      "id": "fb742f5ceeea",
+      "date": "2026-02-21T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Drew Pace"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/drew-pace-with-special-guest-james-charlottesville-virginia-02-21-2026/event/01006397AE34B8FE",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334754"
+    },
+    {
+      "id": "338462bd5691",
+      "date": "2026-02-21T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "hard_rock_live_bristol",
+        "name": "Hard Rock Live Bristol",
+        "location": "Bristol"
+      },
+      "bands": [
+        "Blackberry Smoke"
+      ],
+      "age_requirement": "21+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/blackberry-smoke-rattle-ramble-and-roll-bristol-virginia-02-21-2026/event/1B006366ABDFAA1B",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334776"
+    },
+    {
+      "id": "31d17f5303d2",
+      "date": "2026-02-21T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Dirty Grass Players"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/dirty-grass-players-charlottesville-virginia-02-21-2026/event/0100636CAE68C4EE",
+      "genre_tags": [
+        "country",
+        "bluegrass"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334802"
+    },
+    {
+      "id": "16b65c45ef24",
+      "date": "2026-02-21T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Keb' Mo'"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/keb-mo-virginia-beach-virginia-02-21-2026/event/01006330D9247A31",
+      "genre_tags": [
+        "blues",
+        "blues"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334825"
+    },
+    {
+      "id": "99f06e042183",
+      "date": "2026-02-21T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Sploinky Rave"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/sploinky-rave-ages-18-up-virginia-beach-virginia-02-21-2026/event/010064260673CF65",
+      "genre_tags": [
+        "pop",
+        "electro pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334848"
     },
     {
       "id": "4fcdbf71e0c3",
@@ -2036,7 +3537,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.536506"
+      "last_updated": "2026-01-19T02:26:58.593466"
     },
     {
       "id": "d248feaf7838",
@@ -2067,7 +3568,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.759556"
+      "last_updated": "2026-01-19T02:27:00.515054"
     },
     {
       "id": "234be6746660",
@@ -2098,7 +3599,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.759656"
+      "last_updated": "2026-01-19T02:27:00.515139"
     },
     {
       "id": "040442dc3aa1",
@@ -2129,7 +3630,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.759755"
+      "last_updated": "2026-01-19T02:27:00.515224"
     },
     {
       "id": "f395ba3cf09e",
@@ -2154,7 +3655,36 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/margo-price/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860664"
+      "last_updated": "2026-01-19T02:26:58.862120"
+    },
+    {
+      "id": "646ff7e44889",
+      "date": "2026-02-22T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "attucks_theatre",
+        "name": "Attucks Theatre",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Cecile McLorin Salvant",
+        "Virginia Arts Festival"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "5pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/danish-radio-big-band-norfolk-virginia-02-22-2026/event/01006357AC6CB269",
+      "genre_tags": [
+        "other",
+        "other"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334869"
     },
     {
       "id": "b38bd3d89b5e",
@@ -2183,7 +3713,63 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.267114"
+      "last_updated": "2026-01-19T02:26:58.334892"
+    },
+    {
+      "id": "e527870714ab",
+      "date": "2026-02-22T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "paramount_theater_-_va",
+        "name": "Paramount Theater - VA",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Keb' Mo'"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7jPPM",
+      "genre_tags": [
+        "blues",
+        "jazz blues"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334914"
+    },
+    {
+      "id": "8002e60ec479",
+      "date": "2026-02-23T00:00:00",
+      "day_of_week": "Mon",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Runarounds"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-runarounds-charlottesville-virginia-02-23-2026/event/01006346D7AAA7C6",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.334934"
     },
     {
       "id": "c7b26880e858",
@@ -2211,7 +3797,7 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T02:26:07.267201"
+      "last_updated": "2026-01-19T02:26:58.334955"
     },
     {
       "id": "a7159095debf",
@@ -2236,7 +3822,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/loyle-carner/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860677"
+      "last_updated": "2026-01-19T02:26:58.862132"
     },
     {
       "id": "22f8fc11675a",
@@ -2264,7 +3850,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.267223"
+      "last_updated": "2026-01-19T02:26:58.334979"
     },
     {
       "id": "79c432ec9da2",
@@ -2292,7 +3878,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.267258"
+      "last_updated": "2026-01-19T02:26:58.335001"
     },
     {
       "id": "9193f90d1e6c",
@@ -2317,7 +3903,63 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/the-record-company-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860688"
+      "last_updated": "2026-01-19T02:26:58.862143"
+    },
+    {
+      "id": "31fa12fd12ab",
+      "date": "2026-02-26T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Ace Hood"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/ace-hood-the-born-rebel-tour-virginia-beach-virginia-02-26-2026/event/01006385C3862F58",
+      "genre_tags": [
+        "hip-hop/rap",
+        "trap"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335026"
+    },
+    {
+      "id": "7e8e20a2d460",
+      "date": "2026-02-26T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Rumours ATL"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/rumours-atl-charlottesville-virginia-02-26-2026/event/01006333DF4D85EB",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335046"
     },
     {
       "id": "3354c10ff05d",
@@ -2346,7 +3988,63 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.267348"
+      "last_updated": "2026-01-19T02:26:58.335066"
+    },
+    {
+      "id": "50f727369e0a",
+      "date": "2026-02-27T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Full Moon Fever"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/full-moon-fever-charlottesville-virginia-02-27-2026/event/0100637A8AB07058",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335086"
+    },
+    {
+      "id": "def9ba7827dc",
+      "date": "2026-02-27T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Beatlemania"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-cast-of-beatlemania-performing-hits-virginia-beach-virginia-02-27-2026/event/010063928BF887F2",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335113"
     },
     {
       "id": "13ab9436f600",
@@ -2371,7 +4069,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/peter-mcpoland-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860698"
+      "last_updated": "2026-01-19T02:26:58.862154"
     },
     {
       "id": "e334e5f82ba0",
@@ -2396,7 +4094,93 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/boots-n-beats/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860709"
+      "last_updated": "2026-01-19T02:26:58.862166"
+    },
+    {
+      "id": "91a09e024396",
+      "date": "2026-02-28T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Joe Pug"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/joe-pug-charlottesville-virginia-02-28-2026/event/0100632CFC547401",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335133"
+    },
+    {
+      "id": "a4fc96e1401f",
+      "date": "2026-02-28T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "hampton_coliseum",
+        "name": "Hampton Coliseum",
+        "location": "Hampton"
+      },
+      "bands": [
+        "New Edition",
+        "Boyz II Men",
+        "Toni Braxton"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/new-edition-the-new-edition-way-hampton-virginia-02-28-2026/event/0100635FE0B4D7E3",
+      "genre_tags": [
+        "r&b",
+        "r&b"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335158"
+    },
+    {
+      "id": "abf00202d310",
+      "date": "2026-02-28T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Aly & AJ"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/aly-aj-places-to-run-tour-charlottesville-virginia-02-28-2026/event/010063820AA4AD75",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335178"
     },
     {
       "id": "4c69e7ceba19",
@@ -2424,7 +4208,7 @@
         "rock",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.267523"
+      "last_updated": "2026-01-19T02:26:58.335197"
     },
     {
       "id": "8febabaaefbe",
@@ -2454,7 +4238,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.536568"
+      "last_updated": "2026-01-19T02:26:58.593542"
     },
     {
       "id": "ad1f546c58c0",
@@ -2483,7 +4267,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.759859"
+      "last_updated": "2026-01-19T02:27:00.515331"
     },
     {
       "id": "83f2238791ba",
@@ -2513,7 +4297,35 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.536800"
+      "last_updated": "2026-01-19T02:26:58.593776"
+    },
+    {
+      "id": "fc550939f707",
+      "date": "2026-03-04T00:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Larry Keel"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/larry-keel-jon-stickley-duo-charlottesville-virginia-03-04-2026/event/0100636E9C5DC454",
+      "genre_tags": [
+        "country",
+        "bluegrass"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335217"
     },
     {
       "id": "e3d537cfc702",
@@ -2539,7 +4351,120 @@
       "source": "scrape:bowery_boston",
       "source_url": "https://www.boweryboston.com/see-all-shows",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:09.184688"
+      "last_updated": "2026-01-19T02:27:00.134180"
+    },
+    {
+      "id": "f35a77cc5aea",
+      "date": "2026-03-05T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Austin Meade"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/austin-meade-with-goodbye-june-virginia-beach-virginia-03-05-2026/event/0100638EB51EB936",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335241"
+    },
+    {
+      "id": "0c9623b58e4c",
+      "date": "2026-03-06T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Sonny Landreth",
+        "Iguanas"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/louisiana-calling-ft-sonny-landreth-band-charlottesville-virginia-03-06-2026/event/010063367A8B0E40",
+      "genre_tags": [
+        "blues",
+        "blues"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335264"
+    },
+    {
+      "id": "7eea3bbbce08",
+      "date": "2026-03-06T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_pantheon_at_caesars_virgin",
+        "name": "The Pantheon at Caesars Virginia",
+        "location": "Danville"
+      },
+      "bands": [
+        "Christopher Cross"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/christopher-cross-danville-virginia-03-06-2026/event/0100636CECF2231B",
+      "genre_tags": [
+        "pop",
+        "adult contemporary"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335289"
+    },
+    {
+      "id": "6074e52d3413",
+      "date": "2026-03-06T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Four Horsemen"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-four-horsemen-march-is-for-virginia-beach-virginia-03-06-2026/event/0100639ECA01C5F0",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335313"
     },
     {
       "id": "e255a38d9feb",
@@ -2565,7 +4490,35 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/michael-shannon-jason-narducy-and-friends-play-r-e-m-s-lifes-rich-pageant/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860749"
+      "last_updated": "2026-01-19T02:26:58.862192"
+    },
+    {
+      "id": "13b36080068c",
+      "date": "2026-03-07T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Donna the Buffalo"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/donna-the-buffalo-charlottesville-virginia-03-07-2026/event/01006363715C3248",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335336"
     },
     {
       "id": "c73ccd2a7ba2",
@@ -2593,7 +4546,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.267713"
+      "last_updated": "2026-01-19T02:26:58.335357"
     },
     {
       "id": "74bd76145bfb",
@@ -2624,7 +4577,63 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.759946"
+      "last_updated": "2026-01-19T02:27:00.515421"
+    },
+    {
+      "id": "fc010d4647f1",
+      "date": "2026-03-08T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "american_theatre",
+        "name": "American Theatre",
+        "location": "Hampton"
+      },
+      "bands": [
+        "Hampton Roads Philharmonic: Young Artists Showcase Recital"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "2pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/hampton-roads-philharmonic-young-artists-showcase-hampton-virginia-03-08-2026/event/0100636DB0F8D3DE",
+      "genre_tags": [
+        "classical",
+        "classical/vocal"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335389"
+    },
+    {
+      "id": "fa7e3171c77b",
+      "date": "2026-03-08T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Shakedown Citi"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/shakedown-citi-charlottesville-virginia-03-08-2026/event/01006427D340D224",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335411"
     },
     {
       "id": "2d245509f087",
@@ -2652,7 +4661,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.267827"
+      "last_updated": "2026-01-19T02:26:58.335433"
     },
     {
       "id": "6ba245a941c4",
@@ -2678,11 +4687,11 @@
       "source": "scrape:boston_ska",
       "source_url": "https://www.bostonska.net/",
       "genre_tags": [
-        "reggae",
         "punk",
+        "reggae",
         "ska"
       ],
-      "last_updated": "2026-01-19T02:26:14.547922"
+      "last_updated": "2026-01-19T02:27:05.061079"
     },
     {
       "id": "8b4ebee4e390",
@@ -2707,7 +4716,259 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/amber-mark/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860762"
+      "last_updated": "2026-01-19T02:26:58.862203"
+    },
+    {
+      "id": "f8c041829355",
+      "date": "2026-03-10T00:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Celtic Woman"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/celtic-woman-a-new-era-virginia-beach-virginia-03-10-2026/event/0100636DC09AE62A",
+      "genre_tags": [
+        "world",
+        "world"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335458"
+    },
+    {
+      "id": "f54df9815b14",
+      "date": "2026-03-11T00:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Mia Asano"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-congregation-presents-mia-asano-spring-virginia-beach-virginia-03-11-2026/event/0100635EB362C0ED",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335482"
+    },
+    {
+      "id": "ba9e76da4b63",
+      "date": "2026-03-11T00:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Joe Bonamassa"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/joe-bonamassa-virginia-beach-virginia-03-11-2026/event/010062EAB2576252",
+      "genre_tags": [
+        "blues",
+        "blues"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335513"
+    },
+    {
+      "id": "95082d878656",
+      "date": "2026-03-12T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "eagles_nest",
+        "name": "Eagles Nest",
+        "location": "Chesapeake"
+      },
+      "bands": [
+        "Jon Langston"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/jon-langston-chesapeake-virginia-03-12-2026/event/010063810A595E88",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335537"
+    },
+    {
+      "id": "2c22a99afdee",
+      "date": "2026-03-12T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "the_pantheon_at_caesars_virgin",
+        "name": "The Pantheon at Caesars Virginia",
+        "location": "Danville"
+      },
+      "bands": [
+        "Clay Walker"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/clay-walker-doin-what-i-love-danville-virginia-03-12-2026/event/0100636CD8A2F226",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335561"
+    },
+    {
+      "id": "f3b15a498b9c",
+      "date": "2026-03-13T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "american_theatre",
+        "name": "American Theatre",
+        "location": "Hampton"
+      },
+      "bands": [
+        "Birckhead at the American Theatre"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/birckhead-at-the-american-theatre-hampton-virginia-03-13-2026/event/01006366E808F8C1",
+      "genre_tags": [
+        "jazz",
+        "jazz"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335587"
+    },
+    {
+      "id": "0cce7c8ccaee",
+      "date": "2026-03-13T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "altria_theater",
+        "name": "Altria Theater",
+        "location": "Richmond"
+      },
+      "bands": [
+        "Dancing with the Stars"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.etix.com/ticket/p/91369857",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335606"
+    },
+    {
+      "id": "36756089e789",
+      "date": "2026-03-13T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Rush Experience"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-rush-experience-virginia-beach-virginia-03-13-2026/event/010064259E5A5DB8",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335628"
+    },
+    {
+      "id": "b8c8c3435e02",
+      "date": "2026-03-13T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_pantheon_at_caesars_virgin",
+        "name": "The Pantheon at Caesars Virginia",
+        "location": "Danville"
+      },
+      "bands": [
+        "Beatles Vs. Stones"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/beatles-vs-stones-a-musical-showdown-danville-virginia-03-13-2026/event/010063669BE4B399",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335651"
     },
     {
       "id": "d7d54df0a95d",
@@ -2738,7 +4999,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.760034"
+      "last_updated": "2026-01-19T02:27:00.515509"
     },
     {
       "id": "605128631054",
@@ -2763,7 +5024,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/quarters/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860773"
+      "last_updated": "2026-01-19T02:26:58.862214"
     },
     {
       "id": "deca0b0e7f63",
@@ -2788,7 +5049,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/kettama/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860783"
+      "last_updated": "2026-01-19T02:26:58.862223"
     },
     {
       "id": "6bef036af8d1",
@@ -2818,7 +5079,63 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T02:26:07.268084"
+      "last_updated": "2026-01-19T02:26:58.335672"
+    },
+    {
+      "id": "206486a45587",
+      "date": "2026-03-14T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "scope_plaza",
+        "name": "Scope Plaza",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "RnB Block Party"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/rnb-block-party-norfolk-virginia-03-14-2026/event/01006426D734A6F6",
+      "genre_tags": [
+        "r&b",
+        "r&b"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335695"
+    },
+    {
+      "id": "416e54b1d309",
+      "date": "2026-03-14T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Lil Texas"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/lil-texas-virginia-beach-virginia-03-14-2026/event/01006385B63DF388",
+      "genre_tags": [
+        "pop",
+        "electro pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335716"
     },
     {
       "id": "e1ff0020c3bd",
@@ -2843,7 +5160,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/evan-honer/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860794"
+      "last_updated": "2026-01-19T02:26:58.862234"
     },
     {
       "id": "4ec3667ddfbb",
@@ -2871,7 +5188,120 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T02:26:07.268151"
+      "last_updated": "2026-01-19T02:26:58.335765"
+    },
+    {
+      "id": "d3b87f3348ea",
+      "date": "2026-03-15T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "moe."
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/moe-virginia-beach-virginia-03-15-2026/event/0100635CAEE4A4CA",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335793"
+    },
+    {
+      "id": "faf3510fafc4",
+      "date": "2026-03-15T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "the_dome",
+        "name": "The Dome",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Rainbow Kitten Surprise",
+        "Common People"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/rainbow-kitten-surprise-bones-north-american-virginia-beach-virginia-03-15-2026/event/01006355ADDCBD90",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335818"
+    },
+    {
+      "id": "ea7b4ca5da25",
+      "date": "2026-03-17T00:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "the_dome",
+        "name": "The Dome",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Dancing with the Stars"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/dancing-with-the-stars-live-2026-virginia-beach-virginia-03-17-2026/event/0100633D11169594",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335844"
+    },
+    {
+      "id": "569583aa0f28",
+      "date": "2026-03-17T00:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Simon & Garfunkel Story (Touring)"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-simon-garfunkel-story-touring-virginia-beach-virginia-03-17-2026/event/01006329E11146B1",
+      "genre_tags": [
+        "other",
+        "other"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335866"
     },
     {
       "id": "be7cd32e56db",
@@ -2901,7 +5331,36 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.268308"
+      "last_updated": "2026-01-19T02:26:58.335887"
+    },
+    {
+      "id": "fb6ed35cdda5",
+      "date": "2026-03-17T00:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "FIA",
+        "Johnny Suite"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/fia-the-love-me-tour-w-virginia-beach-virginia-03-17-2026/event/0100638AE3B4A776",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335914"
     },
     {
       "id": "c4366154d513",
@@ -2926,7 +5385,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/sweet-pill/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860804"
+      "last_updated": "2026-01-19T02:26:58.862244"
     },
     {
       "id": "d2221c0dd13f",
@@ -2954,7 +5413,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.268360"
+      "last_updated": "2026-01-19T02:26:58.335935"
     },
     {
       "id": "1647a5efc9d3",
@@ -2985,7 +5444,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.760207"
+      "last_updated": "2026-01-19T02:27:00.515671"
     },
     {
       "id": "f755b5fea7cd",
@@ -3010,7 +5469,92 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/mindchatter/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860814"
+      "last_updated": "2026-01-19T02:26:58.862254"
+    },
+    {
+      "id": "daed40719478",
+      "date": "2026-03-20T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Chris Botti"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/chris-botti-virginia-beach-virginia-03-20-2026/event/01006378E05DEB47",
+      "genre_tags": [
+        "jazz",
+        "jazz"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335955"
+    },
+    {
+      "id": "2f9265c37910",
+      "date": "2026-03-20T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_pantheon_at_caesars_virgin",
+        "name": "The Pantheon at Caesars Virginia",
+        "location": "Danville"
+      },
+      "bands": [
+        "Jeffrey Osborne",
+        "Will Downing"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/jeffrey-osborne-will-downing-danville-virginia-03-20-2026/event/01006384B19EF23B",
+      "genre_tags": [
+        "r&b",
+        "r&b"
+      ],
+      "last_updated": "2026-01-19T02:26:58.335980"
+    },
+    {
+      "id": "cba220fb53fd",
+      "date": "2026-03-20T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Borgeous"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/borgeous-virginia-beach-virginia-03-20-2026/event/01006315B2FC99A3",
+      "genre_tags": [
+        "pop",
+        "electro pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336000"
     },
     {
       "id": "6a0ccdabaa7c",
@@ -3038,7 +5582,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.760376"
+      "last_updated": "2026-01-19T02:27:00.515848"
     },
     {
       "id": "5f787a725e79",
@@ -3069,7 +5613,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.760473"
+      "last_updated": "2026-01-19T02:27:00.515937"
     },
     {
       "id": "d65b3e5cff71",
@@ -3096,11 +5640,40 @@
       "source": "scrape:boston_ska",
       "source_url": "https://www.bostonska.net/",
       "genre_tags": [
-        "reggae",
         "punk",
+        "reggae",
         "ska"
       ],
-      "last_updated": "2026-01-19T02:26:14.548264"
+      "last_updated": "2026-01-19T02:27:05.061429"
+    },
+    {
+      "id": "6f26b3957bf4",
+      "date": "2026-03-21T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "attucks_theatre",
+        "name": "Attucks Theatre",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Blake Aaron",
+        "Church Street Jazz"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/blake-aaron-norfolk-virginia-03-21-2026/event/0100635C7B8F39C8",
+      "genre_tags": [
+        "jazz",
+        "jazz"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336023"
     },
     {
       "id": "d1fd2cae961f",
@@ -3128,7 +5701,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.760571"
+      "last_updated": "2026-01-19T02:27:00.516028"
     },
     {
       "id": "0a95c4755bea",
@@ -3153,7 +5726,63 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/prospa/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860824"
+      "last_updated": "2026-01-19T02:26:58.862264"
+    },
+    {
+      "id": "f76dfdc85f0f",
+      "date": "2026-03-22T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Symphonicity:  The B Sides"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "3pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/symphonicity-the-b-sides-virginia-beach-virginia-03-22-2026/event/010062FD97694815",
+      "genre_tags": [
+        "classical",
+        "classical/vocal"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336048"
+    },
+    {
+      "id": "8925c8839d6a",
+      "date": "2026-03-22T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "paramount_theater_-_va",
+        "name": "Paramount Theater - VA",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Diana Krall"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7qKoM",
+      "genre_tags": [
+        "blues",
+        "jazz blues"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336070"
     },
     {
       "id": "2a085f01a834",
@@ -3178,7 +5807,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/matt-berninger/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860835"
+      "last_updated": "2026-01-19T02:26:58.862275"
     },
     {
       "id": "77b92adbb9c8",
@@ -3203,7 +5832,36 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/gogol-bordello-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860845"
+      "last_updated": "2026-01-19T02:26:58.862285"
+    },
+    {
+      "id": "522aaf386806",
+      "date": "2026-03-26T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "the_dome",
+        "name": "The Dome",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Warren Zeiders",
+        "Kolby Cooper"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/warren-zeiders-world-tour-2026-virginia-beach-virginia-03-26-2026/event/01006365B29AB6C1",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336090"
     },
     {
       "id": "f9f6671c1096",
@@ -3231,7 +5889,35 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.268539"
+      "last_updated": "2026-01-19T02:26:58.336111"
+    },
+    {
+      "id": "7ef6a4f2f816",
+      "date": "2026-03-26T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Infinity Song"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/infinity-song-world-tour-ii-continues-charlottesville-virginia-03-26-2026/event/0100638BDA6FBE70",
+      "genre_tags": [
+        "jazz",
+        "jazz"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336131"
     },
     {
       "id": "729cb3b07074",
@@ -3259,7 +5945,63 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T02:26:07.268594"
+      "last_updated": "2026-01-19T02:26:58.336163"
+    },
+    {
+      "id": "a78354efab48",
+      "date": "2026-03-28T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "the_pantheon_at_caesars_virgin",
+        "name": "The Pantheon at Caesars Virginia",
+        "location": "Danville"
+      },
+      "bands": [
+        "Cheap Trick"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/cheap-trick-all-washed-up-tour-danville-virginia-03-28-2026/event/0100636DC45FEA11",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336188"
+    },
+    {
+      "id": "23688580b1bc",
+      "date": "2026-03-28T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Lovesong: The Cure Tribute"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/an-evening-with-lovesong-the-cure-virginia-beach-virginia-03-28-2026/event/0100638FA5EFA263",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336213"
     },
     {
       "id": "dabb66fcbad7",
@@ -3289,7 +6031,35 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.760661"
+      "last_updated": "2026-01-19T02:27:00.516118"
+    },
+    {
+      "id": "40cefe5883ac",
+      "date": "2026-03-31T00:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Ryan Caraveo"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/ryan-caraveo-forever-foggy-tour-charlottesville-virginia-03-31-2026/event/010063889C2194EA",
+      "genre_tags": [
+        "hip-hop/rap",
+        "trap"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336237"
     },
     {
       "id": "76927dd6c651",
@@ -3314,7 +6084,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/21146/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860858"
+      "last_updated": "2026-01-19T02:26:58.862298"
     },
     {
       "id": "d3a4be767b1f",
@@ -3342,7 +6112,238 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T02:26:07.268713"
+      "last_updated": "2026-01-19T02:26:58.336264"
+    },
+    {
+      "id": "7fd92088f595",
+      "date": "2026-04-03T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "carpenter_theatre_at_dominion_",
+        "name": "Carpenter Theatre at Dominion Energy Center",
+        "location": "Richmond"
+      },
+      "bands": [
+        "Fab Four"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.etix.com/ticket/p/76064213/the-fab-fourtribute-to-the-beatleshelpand-the-hits-roanoke-berglund-performing-arts-theatre",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336285"
+    },
+    {
+      "id": "5ff1bb9625d8",
+      "date": "2026-04-03T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Dogs In A Pile"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/dogs-in-a-pile-charlottesville-virginia-04-03-2026/event/01006385E1BBAFAE",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336306"
+    },
+    {
+      "id": "317fb8a3ce30",
+      "date": "2026-04-03T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Hannah Cohen"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/hannah-cohen-charlottesville-virginia-04-03-2026/event/01006374B321DA31",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336331"
+    },
+    {
+      "id": "74af6dd4f2eb",
+      "date": "2026-04-04T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "scott_stadium_concerts",
+        "name": "Scott Stadium Concerts",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Luke Combs",
+        "Dierks Bentley",
+        "Ty Myers",
+        "Jake Worthington",
+        "Thelma & James"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "5pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/luke-combs-my-kinda-saturday-night-charlottesville-virginia-04-04-2026/event/01006342DA5EDBEF",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336363"
+    },
+    {
+      "id": "67de45ebdfe9",
+      "date": "2026-04-04T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "harrison_opera_house",
+        "name": "Harrison Opera House",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Fab Four"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-fab-four-tribute-to-the-norfolk-virginia-04-04-2026/event/010062C6C73D582F",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336389"
+    },
+    {
+      "id": "5f847800cb5d",
+      "date": "2026-04-04T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "attucks_theatre",
+        "name": "Attucks Theatre",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Nicholas Cole",
+        "Church Street Jazz"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/nicholas-cole-norfolk-virginia-04-04-2026/event/0100635C7B9139CE",
+      "genre_tags": [
+        "jazz",
+        "jazz"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336410"
+    },
+    {
+      "id": "38b4dc886cbd",
+      "date": "2026-04-04T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "ORCHESTRA Starring ELO Former Members"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-orchestra-starring-elo-and-elo-virginia-beach-virginia-04-04-2026/event/01006428B5FDA4AB",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336430"
+    },
+    {
+      "id": "40f9ba952ea0",
+      "date": "2026-04-04T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Reverend Horton Heat",
+        "Black Joe Lewis & the Honeybears",
+        "Pinata Protest"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/reverend-horton-heat-virginia-beach-virginia-04-04-2026/event/01006389C226F4F4",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.336455"
     },
     {
       "id": "e019da230ee4",
@@ -3369,11 +6370,11 @@
       "source": "scrape:boston_ska",
       "source_url": "https://www.bostonska.net/",
       "genre_tags": [
-        "reggae",
         "punk",
+        "reggae",
         "ska"
       ],
-      "last_updated": "2026-01-19T02:26:14.548606"
+      "last_updated": "2026-01-19T02:27:05.061776"
     },
     {
       "id": "56033432a6b3",
@@ -3398,7 +6399,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/we-touch-grass-anime-rave/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860872"
+      "last_updated": "2026-01-19T02:26:58.862311"
     },
     {
       "id": "63e7b1b19c11",
@@ -3428,7 +6429,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.760759"
+      "last_updated": "2026-01-19T02:27:00.516207"
     },
     {
       "id": "ae2cc120edf7",
@@ -3458,7 +6459,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.536858"
+      "last_updated": "2026-01-19T02:26:58.593836"
     },
     {
       "id": "6d654f1dd34f",
@@ -3486,7 +6487,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.268989"
+      "last_updated": "2026-01-19T02:26:58.346677"
     },
     {
       "id": "0cb1952dc08f",
@@ -3511,7 +6512,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/machine-girl/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860882"
+      "last_updated": "2026-01-19T02:26:58.862321"
     },
     {
       "id": "57d65ccda9b8",
@@ -3539,7 +6540,36 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.269024"
+      "last_updated": "2026-01-19T02:26:58.346743"
+    },
+    {
+      "id": "940fbe6e77be",
+      "date": "2026-04-09T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Old 97's",
+        "Lizzie No"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/old-97s-virginia-beach-virginia-04-09-2026/event/0100638AD91D8C29",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.346787"
     },
     {
       "id": "16dd90330a32",
@@ -3569,7 +6599,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.536917"
+      "last_updated": "2026-01-19T02:26:58.593892"
     },
     {
       "id": "6ebeb6260594",
@@ -3594,7 +6624,92 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/two-feet/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860896"
+      "last_updated": "2026-01-19T02:26:58.862333"
+    },
+    {
+      "id": "b6583d478f6b",
+      "date": "2026-04-10T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "salem_civic_center",
+        "name": "Salem Civic Center",
+        "location": "Salem"
+      },
+      "bands": [
+        "Roanoke Symphony Orchestra"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/roanoke-symphony-orchestra-classical-mystery-tour-salem-virginia-04-10-2026/event/010062B4D7E65B5B",
+      "genre_tags": [
+        "classical",
+        "classical/vocal"
+      ],
+      "last_updated": "2026-01-19T02:26:58.346815"
+    },
+    {
+      "id": "c8a63f1f5234",
+      "date": "2026-04-10T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Speidel, Goodrich, Goggin & Lille"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/speidel-goodrich-goggin-lille-charlottesville-virginia-04-10-2026/event/0100637478387306",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.346842"
+    },
+    {
+      "id": "b5cd4b409f60",
+      "date": "2026-04-10T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Old 97's",
+        "Lizzie No"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/old-97s-charlottesville-virginia-04-10-2026/event/0100638C7BB8794F",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.346876"
     },
     {
       "id": "96e3046f2d22",
@@ -3624,7 +6739,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.536970"
+      "last_updated": "2026-01-19T02:26:58.593947"
     },
     {
       "id": "0f359cc0bda6",
@@ -3649,7 +6764,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/kishi-bashi-4/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860907"
+      "last_updated": "2026-01-19T02:26:58.862344"
     },
     {
       "id": "c93cf0fc7dc4",
@@ -3674,7 +6789,35 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/the-martinez-brothers-north-america-tour-2026/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860926"
+      "last_updated": "2026-01-19T02:26:58.862360"
+    },
+    {
+      "id": "7706a127ad67",
+      "date": "2026-04-11T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "american_theatre",
+        "name": "American Theatre",
+        "location": "Hampton"
+      },
+      "bands": [
+        "An Evening With Susan Werner"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/an-evening-with-susan-werner-hampton-virginia-04-11-2026/event/010063673F47E98D",
+      "genre_tags": [
+        "other",
+        "other"
+      ],
+      "last_updated": "2026-01-19T02:26:58.346904"
     },
     {
       "id": "d7f7b7c17925",
@@ -3702,7 +6845,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.269180"
+      "last_updated": "2026-01-19T02:26:58.346928"
     },
     {
       "id": "f48ab1aaaf39",
@@ -3732,7 +6875,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.537030"
+      "last_updated": "2026-01-19T02:26:58.594007"
     },
     {
       "id": "872a6d6bcee1",
@@ -3763,7 +6906,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.760854"
+      "last_updated": "2026-01-19T02:27:00.516297"
     },
     {
       "id": "0b215b30ba1c",
@@ -3794,7 +6937,91 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.760951"
+      "last_updated": "2026-01-19T02:27:00.516402"
+    },
+    {
+      "id": "75692df30f50",
+      "date": "2026-04-12T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Symphonicity:  America The Beautiful"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "3pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/symphonicity-america-the-beautiful-virginia-beach-virginia-04-12-2026/event/010062FD97BB4823",
+      "genre_tags": [
+        "classical",
+        "classical/vocal"
+      ],
+      "last_updated": "2026-01-19T02:26:58.346952"
+    },
+    {
+      "id": "24cacf14fa51",
+      "date": "2026-04-12T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "attucks_theatre",
+        "name": "Attucks Theatre",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Desiree Roots with Dennis Coleman"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "5pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/desiree-roots-with-dennis-coleman-norfolk-virginia-04-12-2026/event/0100631B9CA22B7E",
+      "genre_tags": [
+        "jazz",
+        "jazz"
+      ],
+      "last_updated": "2026-01-19T02:26:58.346974"
+    },
+    {
+      "id": "09ae205bbae3",
+      "date": "2026-04-12T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Bad Suns"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/bad-suns-acceleratour-usa-2026-charlottesville-virginia-04-12-2026/event/0100638BDBB6C110",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.346993"
     },
     {
       "id": "001d5094febd",
@@ -3824,7 +7051,35 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.537138"
+      "last_updated": "2026-01-19T02:26:58.594117"
+    },
+    {
+      "id": "27912e83c7e0",
+      "date": "2026-04-15T00:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "paramount_theater_-_va",
+        "name": "Paramount Theater - VA",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Graham Nash"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7revO",
+      "genre_tags": [
+        "country",
+        "country folk"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347013"
     },
     {
       "id": "989f6fd9d4bd",
@@ -3853,7 +7108,64 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.269305"
+      "last_updated": "2026-01-19T02:26:58.347032"
+    },
+    {
+      "id": "acca30a03216",
+      "date": "2026-04-16T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "american_theatre",
+        "name": "American Theatre",
+        "location": "Hampton"
+      },
+      "bands": [
+        "SEVEN BRIDES FOR SEVEN BROTHERS - 7pm - Classic Movie Nights!"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/seven-brides-for-seven-brothers-7pm-hampton-virginia-04-16-2026/event/0100636BD6F7E5D9",
+      "genre_tags": [
+        "music",
+        "music"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347058"
+    },
+    {
+      "id": "a084c3e80be6",
+      "date": "2026-04-16T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "allianz_amphitheater_at_riverf",
+        "name": "Allianz Amphitheater at Riverfront",
+        "location": "Richmond"
+      },
+      "bands": [
+        "Alabama Shakes",
+        "Joy Oladokun"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/alabama-shakes-richmond-virginia-04-16-2026/event/01006389A5B7CA91",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347083"
     },
     {
       "id": "391f8601dbe9",
@@ -3878,7 +7190,64 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/the-growlers-3/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860938"
+      "last_updated": "2026-01-19T02:26:58.862372"
+    },
+    {
+      "id": "7c547ced88ca",
+      "date": "2026-04-17T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "john_paul_jones_arena",
+        "name": "John Paul Jones Arena",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Billy Strings"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/billy-strings-charlottesville-virginia-04-17-2026/event/01006322C3A03E99",
+      "genre_tags": [
+        "bluegrass",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347112"
+    },
+    {
+      "id": "e35dc9d180b9",
+      "date": "2026-04-17T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "allianz_amphitheater_at_riverf",
+        "name": "Allianz Amphitheater at Riverfront",
+        "location": "Richmond"
+      },
+      "bands": [
+        "Flatland Cavalry",
+        "Jack Wharff"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/flatland-cavalry-richmond-virginia-04-17-2026/event/0100638A1E354698",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347134"
     },
     {
       "id": "0689bf4c325f",
@@ -3906,7 +7275,35 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.269471"
+      "last_updated": "2026-01-19T02:26:58.347155"
+    },
+    {
+      "id": "50acc05e8c36",
+      "date": "2026-04-17T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_pantheon_at_caesars_virgin",
+        "name": "The Pantheon at Caesars Virginia",
+        "location": "Danville"
+      },
+      "bands": [
+        "Craig Morgan"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/craig-morgan-danville-virginia-04-17-2026/event/01006375EFEA94FE",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347180"
     },
     {
       "id": "61ccde4b6fef",
@@ -3931,7 +7328,119 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/starjunk-95/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860949"
+      "last_updated": "2026-01-19T02:26:58.862382"
+    },
+    {
+      "id": "75f9da862c34",
+      "date": "2026-04-18T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "john_paul_jones_arena",
+        "name": "John Paul Jones Arena",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Billy Strings"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/billy-strings-charlottesville-virginia-04-18-2026/event/01006336BC5636AC",
+      "genre_tags": [
+        "country",
+        "bluegrass"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347228"
+    },
+    {
+      "id": "167761dfb5db",
+      "date": "2026-04-18T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Jay Webb"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/jay-webb-charlottesville-virginia-04-18-2026/event/010063857FB77D4C",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347251"
+    },
+    {
+      "id": "4cb1fed2d876",
+      "date": "2026-04-18T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Daniel Donato"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/daniel-donatos-cosmic-country-virginia-beach-virginia-04-18-2026/event/010063884F45B567",
+      "genre_tags": [
+        "blues",
+        "blues"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347273"
+    },
+    {
+      "id": "740c69ce0755",
+      "date": "2026-04-18T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "the_pantheon_at_caesars_virgin",
+        "name": "The Pantheon at Caesars Virginia",
+        "location": "Danville"
+      },
+      "bands": [
+        "Los Lobos"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/los-lobos-danville-virginia-04-18-2026/event/01006390B06AA9FD",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347293"
     },
     {
       "id": "8bad211c6a1c",
@@ -3962,7 +7471,40 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T02:26:07.269650"
+      "last_updated": "2026-01-19T02:26:58.347312"
+    },
+    {
+      "id": "82f8a785a0f5",
+      "date": "2026-04-19T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "hampton_coliseum",
+        "name": "Hampton Coliseum",
+        "location": "Hampton"
+      },
+      "bands": [
+        "B2k",
+        "Bow Wow",
+        "Waka Flocka Flame",
+        "Jeremih",
+        "Pretty Ricky",
+        "Amerie"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-millennium-tour-presents-the-boys-hampton-virginia-04-19-2026/event/0100636EC38E0EE4",
+      "genre_tags": [
+        "r&b",
+        "r&b"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347336"
     },
     {
       "id": "67f90c1d4c21",
@@ -3990,7 +7532,35 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.269701"
+      "last_updated": "2026-01-19T02:26:58.347357"
+    },
+    {
+      "id": "715552f9e658",
+      "date": "2026-04-21T00:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "harrison_opera_house",
+        "name": "Harrison Opera House",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "David and Tamela Mann"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/david-and-tamela-mann-the-love-norfolk-virginia-04-21-2026/event/0100638420D49339",
+      "genre_tags": [
+        "religious",
+        "gospel"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347382"
     },
     {
       "id": "101c6b89d44c",
@@ -4015,7 +7585,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/jose-gonzalez/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860962"
+      "last_updated": "2026-01-19T02:26:58.862395"
     },
     {
       "id": "f85a822baf74",
@@ -4041,7 +7611,63 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/pattie-gonia-save-her-feat-sequoia-and-vera/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860980"
+      "last_updated": "2026-01-19T02:26:58.862415"
+    },
+    {
+      "id": "a4e8330016bf",
+      "date": "2026-04-24T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_pantheon_at_caesars_virgin",
+        "name": "The Pantheon at Caesars Virginia",
+        "location": "Danville"
+      },
+      "bands": [
+        "Styx"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/styx-danville-virginia-04-24-2026/event/0100635D1D9E4F33",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347408"
+    },
+    {
+      "id": "cd1b0312d7e9",
+      "date": "2026-04-24T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Ivy Lab"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/ivy-lab-a-farewell-tour-virginia-beach-virginia-04-24-2026/event/01006425C7449847",
+      "genre_tags": [
+        "pop",
+        "electro pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347429"
     },
     {
       "id": "2a1980d3ab25",
@@ -4069,7 +7695,63 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T02:26:07.269823"
+      "last_updated": "2026-01-19T02:26:58.347450"
+    },
+    {
+      "id": "5e79fa961175",
+      "date": "2026-04-25T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Happy Fits"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-happy-fits-virginia-beach-virginia-04-25-2026/event/01006388AFC6B836",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347470"
+    },
+    {
+      "id": "3bbc28a301cb",
+      "date": "2026-04-25T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "the_pantheon_at_caesars_virgin",
+        "name": "The Pantheon at Caesars Virginia",
+        "location": "Danville"
+      },
+      "bands": [
+        "Killer Queen"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/killer-queen-a-tribute-to-queen-danville-virginia-04-25-2026/event/01006375F046966F",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347502"
     },
     {
       "id": "41707fc0cdd2",
@@ -4094,7 +7776,91 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/sarah-kinsley-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.860991"
+      "last_updated": "2026-01-19T02:26:58.862426"
+    },
+    {
+      "id": "04a459fcd8c2",
+      "date": "2026-04-27T00:00:00",
+      "day_of_week": "Mon",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Happy Fits"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/the-happy-fits-charlottesville-virginia-04-27-2026/event/0100638B78207BF1",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347525"
+    },
+    {
+      "id": "ce121d29ae6e",
+      "date": "2026-04-28T00:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "the_broadberrys",
+        "name": "The Broadberry's ",
+        "location": "Richmond"
+      },
+      "bands": [
+        "Escape the Fate Vip"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "5pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketweb.com/event/escape-the-fate-vip-the-broadberrys-tickets/14008744?REFERRAL_ID=tmfeed",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347546"
+    },
+    {
+      "id": "a0ad7746c34f",
+      "date": "2026-04-28T00:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Leonid & Friends"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/leonid-friends-virginia-beach-virginia-04-28-2026/event/01006313C5ED3EDB",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347565"
     },
     {
       "id": "20e741395c0e",
@@ -4122,7 +7888,35 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.269977"
+      "last_updated": "2026-01-19T02:26:58.347587"
+    },
+    {
+      "id": "e7033efc3fe5",
+      "date": "2026-04-30T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "the_southern_caf\u00e9_&_music_hall",
+        "name": "The Southern Caf\u00e9 & Music Hall",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Yarn"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/yarn-charlottesville-virginia-04-30-2026/event/0100642C7DA62CA1",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347612"
     },
     {
       "id": "a0fb50741ddd",
@@ -4147,7 +7941,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/oklou/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.861002"
+      "last_updated": "2026-01-19T02:26:58.862436"
     },
     {
       "id": "3906c2e38d91",
@@ -4175,7 +7969,37 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:26:09.761090"
+      "last_updated": "2026-01-19T02:27:00.516542"
+    },
+    {
+      "id": "323e39f3976e",
+      "date": "2026-05-07T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "ting_pavilion",
+        "name": "Ting Pavilion",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Ole 60",
+        "Jack Wharff",
+        "Rob Langdon"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/ole-60-smokestack-town-tour-charlottesville-virginia-05-07-2026/event/01006378D741E348",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347633"
     },
     {
       "id": "7b6b9ecf700c",
@@ -4200,7 +8024,178 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/the-paper-kites/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.861013"
+      "last_updated": "2026-01-19T02:26:58.862445"
+    },
+    {
+      "id": "4ee869b748d2",
+      "date": "2026-05-08T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_dome",
+        "name": "The Dome",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Ole 60",
+        "Jack Wharff",
+        "Rob Langdon"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/ole-60-smokestack-town-tour-virginia-beach-virginia-05-08-2026/event/01006379C088BBD0",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347654"
+    },
+    {
+      "id": "607462427ac4",
+      "date": "2026-05-08T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "hard_rock_live_bristol",
+        "name": "Hard Rock Live Bristol",
+        "location": "Bristol"
+      },
+      "bands": [
+        "Nitty Gritty Dirt",
+        "Kathleen Edwards"
+      ],
+      "age_requirement": "21+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/nitty-gritty-dirt-band-all-the-bristol-virginia-05-08-2026/event/1B0063559F834211",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347677"
+    },
+    {
+      "id": "3c5b8ee4c1cd",
+      "date": "2026-05-08T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Waylon Wyatt"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/waylon-wyatt-everywhere-under-the-sun-charlottesville-virginia-05-08-2026/event/010064289D8E7F91",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347699"
+    },
+    {
+      "id": "4f2e0f71501d",
+      "date": "2026-05-09T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "attucks_theatre",
+        "name": "Attucks Theatre",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Virginia Arts Festival"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/attucks-jazz-orchestra-norfolk-virginia-05-09-2026/event/0100635792459478",
+      "genre_tags": [
+        "jazz",
+        "jazz"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347719"
+    },
+    {
+      "id": "97093f44af00",
+      "date": "2026-05-09T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "hard_rock_live_bristol",
+        "name": "Hard Rock Live Bristol",
+        "location": "Bristol"
+      },
+      "bands": [
+        "Brit Floyd"
+      ],
+      "age_requirement": "21+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/brit-floyd-bristol-virginia-05-09-2026/event/1B00638DDB6DBB99",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347754"
+    },
+    {
+      "id": "71e456e93a59",
+      "date": "2026-05-09T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "the_dome",
+        "name": "The Dome",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "David Lee Roth"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/a-night-with-david-lee-roth-virginia-beach-virginia-05-09-2026/event/01006391C346D7B9",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347773"
     },
     {
       "id": "329c1f1eb966",
@@ -4225,7 +8220,35 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/searows/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.861023"
+      "last_updated": "2026-01-19T02:26:58.862455"
+    },
+    {
+      "id": "9f6a7e5dd8f9",
+      "date": "2026-05-10T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "jefferson_theater",
+        "name": "Jefferson Theater",
+        "location": "Charlottesville"
+      },
+      "bands": [
+        "Arcy Drive"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/arcy-drive-the-pit-tour-spring-charlottesville-virginia-05-10-2026/event/0100636DD3ACFC6D",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347794"
     },
     {
       "id": "62c0f3ba6799",
@@ -4250,7 +8273,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/christos-mastoras-meaisses/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.861034"
+      "last_updated": "2026-01-19T02:26:58.862466"
     },
     {
       "id": "d07eaf2ec9d7",
@@ -4280,7 +8303,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.270207"
+      "last_updated": "2026-01-19T02:26:58.347813"
     },
     {
       "id": "4debe34d5af3",
@@ -4308,7 +8331,66 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.270235"
+      "last_updated": "2026-01-19T02:26:58.347837"
+    },
+    {
+      "id": "86a6b78dcda8",
+      "date": "2026-05-14T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "the_dome",
+        "name": "The Dome",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Sam Barber",
+        "Michael Marcagi",
+        "Bebe Stockwell"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/sam-barber-the-american-route-tour-virginia-beach-virginia-05-14-2026/event/01006356A605A55C",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347865"
+    },
+    {
+      "id": "cdf1d0ec47b4",
+      "date": "2026-05-14T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "salem_civic_center",
+        "name": "Salem Civic Center",
+        "location": "Salem"
+      },
+      "bands": [
+        "Jackyl",
+        "Buckcherry"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/jackyl-and-buckcherry-salem-virginia-05-14-2026/event/0100642B9F1D610A",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347890"
     },
     {
       "id": "eb5647cab188",
@@ -4333,7 +8415,93 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/melodys-echo-chamber/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.861044"
+      "last_updated": "2026-01-19T02:26:58.862477"
+    },
+    {
+      "id": "3acb86f75164",
+      "date": "2026-05-15T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Music of Queen",
+        "Virginia Arts Festival"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/music-of-queen-a-rock-symphony-virginia-beach-virginia-05-15-2026/event/0100635BD177D387",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347914"
+    },
+    {
+      "id": "056be3777eb5",
+      "date": "2026-05-16T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "elevation_27",
+        "name": "Elevation 27",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Clay Street Unit"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/clay-street-unit-virginia-beach-virginia-05-16-2026/event/01006428CF43BE1D",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347935"
+    },
+    {
+      "id": "881402675236",
+      "date": "2026-05-17T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Christian McBride",
+        "Virginia Arts Festival"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "5pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/christian-mcbride-with-ursa-major-virginia-beach-virginia-05-17-2026/event/0100635BD3AFD55D",
+      "genre_tags": [
+        "jazz",
+        "jazz"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347960"
     },
     {
       "id": "97518b6a9707",
@@ -4358,7 +8526,269 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/revolver-presents-thornhill-the-mercia-tour/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.861057"
+      "last_updated": "2026-01-19T02:26:58.862500"
+    },
+    {
+      "id": "dfa6f1d46a2c",
+      "date": "2026-05-21T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "allianz_amphitheater_at_riverf",
+        "name": "Allianz Amphitheater at Riverfront",
+        "location": "Richmond"
+      },
+      "bands": [
+        "Joe Russo's Almost Dead"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/joe-russos-almost-dead-richmond-virginia-05-21-2026/event/01006332EA7D80D1",
+      "genre_tags": [
+        "undefined",
+        "undefined"
+      ],
+      "last_updated": "2026-01-19T02:26:58.347981"
+    },
+    {
+      "id": "0f8959854747",
+      "date": "2026-05-22T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "sandler_center_for_the_perform",
+        "name": "Sandler Center For The Performing Arts",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Coffee Concert II"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10am",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/coffee-concert-ii-virginia-beach-virginia-05-22-2026/event/0100635BD5B7D6DC",
+      "genre_tags": [
+        "classical",
+        "classical/vocal"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348003"
+    },
+    {
+      "id": "75bf24b38aef",
+      "date": "2026-05-22T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "scope_arena",
+        "name": "Scope Arena",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Zach Top",
+        "Patriotic Festival"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/patriotic-festival-zach-top-norfolk-virginia-05-22-2026/event/0100634EDAB9C748",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348045"
+    },
+    {
+      "id": "794b3b836238",
+      "date": "2026-05-22T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "the_pantheon_at_caesars_virgin",
+        "name": "The Pantheon at Caesars Virginia",
+        "location": "Danville"
+      },
+      "bands": [
+        "Chicago"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/chicago-danville-virginia-05-22-2026/event/01006366C4FFDC13",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348068"
+    },
+    {
+      "id": "05d2bd2423a4",
+      "date": "2026-05-22T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "scope_arena",
+        "name": "Scope Arena",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Patriotic Festival",
+        "Zach Top",
+        "Brooks & Dunn",
+        "Red Clay Strays",
+        "Mackenzie Carpenter",
+        "Lanie Gardner",
+        "Castellows"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/patriotic-festival-3-day-pass-norfolk-virginia-05-22-2026/event/01006341A9799C26",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348094"
+    },
+    {
+      "id": "4bc0911993c0",
+      "date": "2026-05-23T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "scope_arena",
+        "name": "Scope Arena",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Brooks & Dunn",
+        "Patriotic Festival"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/patriotic-festival-brooks-dunn-norfolk-virginia-05-23-2026/event/0100634EDABCC74E",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348115"
+    },
+    {
+      "id": "a6e6383a1871",
+      "date": "2026-05-23T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "the_dome",
+        "name": "The Dome",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "SatchVai Band featuring Joe Satriani and Steve Vai",
+        "Animals As Leaders"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/satchvai-band-ft-joe-satriani-steve-virginia-beach-virginia-05-23-2026/event/01006383B55E8EAD",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348133"
+    },
+    {
+      "id": "b9696f65b6c3",
+      "date": "2026-05-24T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "scope_arena",
+        "name": "Scope Arena",
+        "location": "Norfolk"
+      },
+      "bands": [
+        "Red Clay Strays",
+        "Patriotic Festival"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/patriotic-festival-the-red-clay-strays-norfolk-virginia-05-24-2026/event/0100634EDABEC752",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348154"
+    },
+    {
+      "id": "a79661d179fc",
+      "date": "2026-05-25T00:00:00",
+      "day_of_week": "Mon",
+      "venue": {
+        "id": "allianz_amphitheater_at_riverf",
+        "name": "Allianz Amphitheater at Riverfront",
+        "location": "Richmond"
+      },
+      "bands": [
+        "Sting"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/sting-30-tour-richmond-virginia-05-25-2026/event/0100634E9BA69181",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348172"
     },
     {
       "id": "57692a26a57b",
@@ -4386,7 +8816,91 @@
         "rock",
         "classic rock"
       ],
-      "last_updated": "2026-01-19T02:26:07.270626"
+      "last_updated": "2026-01-19T02:26:58.348190"
+    },
+    {
+      "id": "2e7bd9ada664",
+      "date": "2026-05-29T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "holiday_trav-l-park",
+        "name": "Holiday Trav-L-Park",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Jo Dee Messina"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "4pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/band-aid-music-festival-jo-dee-virginia-beach-virginia-05-29-2026/event/0100636BFB641807",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348209"
+    },
+    {
+      "id": "ca4266a52eb4",
+      "date": "2026-05-30T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "holiday_trav-l-park",
+        "name": "Holiday Trav-L-Park",
+        "location": "Virginia Beach"
+      },
+      "bands": [
+        "Blackberry Smoke"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "3pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/band-aid-music-festival-blackberry-smoke-virginia-beach-virginia-05-30-2026/event/0100636BFB661819",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348226"
+    },
+    {
+      "id": "b752027658d7",
+      "date": "2026-05-30T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "american_theatre",
+        "name": "American Theatre",
+        "location": "Hampton"
+      },
+      "bands": [
+        "Wilder Horses - The Ultimate Rolling Stones Experience"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/wilder-horses-the-ultimate-rolling-stones-hampton-virginia-05-30-2026/event/010062C7D5EC749C",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348250"
     },
     {
       "id": "5321fb0d33cf",
@@ -4416,7 +8930,63 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:26:07.537213"
+      "last_updated": "2026-01-19T02:26:58.594178"
+    },
+    {
+      "id": "41a8b05b792a",
+      "date": "2026-06-03T00:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "hampton_coliseum",
+        "name": "Hampton Coliseum",
+        "location": "Hampton"
+      },
+      "bands": [
+        "Journey"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/journey-final-frontier-tour-an-evening-hampton-virginia-06-03-2026/event/01006362DC28D9EA",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348271"
+    },
+    {
+      "id": "25a93218f261",
+      "date": "2026-06-04T00:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "berglund_coliseum",
+        "name": "Berglund Coliseum",
+        "location": "Roanoke"
+      },
+      "bands": [
+        "Journey"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/journey-final-frontier-tour-an-evening-roanoke-virginia-06-04-2026/event/0100635DC05FBFDF",
+      "genre_tags": [
+        "rock",
+        "pop"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348289"
     },
     {
       "id": "45c0f5dab19a",
@@ -4441,7 +9011,35 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/hol-presented-by-ground-control/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.861069"
+      "last_updated": "2026-01-19T02:26:58.862515"
+    },
+    {
+      "id": "65a3fb3c3360",
+      "date": "2026-06-06T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "hard_rock_live_bristol",
+        "name": "Hard Rock Live Bristol",
+        "location": "Bristol"
+      },
+      "bands": [
+        "Aaron Lewis"
+      ],
+      "age_requirement": "21+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "ticketmaster",
+      "source_url": "https://www.ticketmaster.com/aaron-lewis-and-the-stateliners-2026-bristol-virginia-06-06-2026/event/1B006397986798C5",
+      "genre_tags": [
+        "country",
+        "country"
+      ],
+      "last_updated": "2026-01-19T02:26:58.348312"
     },
     {
       "id": "4b5252d19097",
@@ -4466,7 +9064,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/inji/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.861078"
+      "last_updated": "2026-01-19T02:26:58.862524"
     },
     {
       "id": "b66c943ec0a3",
@@ -4491,7 +9089,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/chance-pena/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.861091"
+      "last_updated": "2026-01-19T02:26:58.862538"
     },
     {
       "id": "c195f2fb304f",
@@ -4516,7 +9114,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/21445/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.861107"
+      "last_updated": "2026-01-19T02:26:58.862553"
     },
     {
       "id": "d813ba714d97",
@@ -4542,7 +9140,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/benjamin-tod-and-the-inline-six/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.861121"
+      "last_updated": "2026-01-19T02:26:58.862568"
     },
     {
       "id": "02714d89d170",
@@ -4567,7 +9165,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/bethel-music/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:26:07.861132"
+      "last_updated": "2026-01-19T02:26:58.862580"
     }
   ]
 }
