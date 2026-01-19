@@ -13,7 +13,13 @@ from datetime import datetime
 
 from foobos.config import OUTPUT_DIR, DATA_DIR, CACHE_DIR
 from foobos.fetchers import TicketmasterFetcher
-from foobos.fetchers.scrapers import SafeInACrowdScraper, Do617Scraper, MiddleEastScraper, AXSVenuesScraper, BoweryBostonScraper
+from foobos.fetchers.scrapers import (
+    SafeInACrowdScraper,
+    AXSVenuesScraper,
+    BoweryBostonScraper,
+    BostonGroupieNewsScraper,
+    BostonSkaScraper,
+)
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre
 from foobos.generators import generate_all_html
 from foobos.utils.cache import clear_cache
@@ -79,6 +85,26 @@ def cmd_fetch(args):
         all_concerts.extend(bowery_concerts)
     except Exception as e:
         logger.error(f"Bowery Boston scrape failed: {e}")
+
+    # Boston Groupie News (punk/rock scene, Middle East, O'Brien's, etc.)
+    try:
+        logger.info("Scraping Boston Groupie News...")
+        bgn_scraper = BostonGroupieNewsScraper()
+        bgn_concerts = bgn_scraper.fetch()
+        logger.info(f"Boston Groupie News: {len(bgn_concerts)} concerts")
+        all_concerts.extend(bgn_concerts)
+    except Exception as e:
+        logger.error(f"Boston Groupie News scrape failed: {e}")
+
+    # Boston Ska (ska/punk/reggae shows)
+    try:
+        logger.info("Scraping Boston Ska...")
+        ska_scraper = BostonSkaScraper()
+        ska_concerts = ska_scraper.fetch()
+        logger.info(f"Boston Ska: {len(ska_concerts)} concerts")
+        all_concerts.extend(ska_concerts)
+    except Exception as e:
+        logger.error(f"Boston Ska scrape failed: {e}")
 
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 

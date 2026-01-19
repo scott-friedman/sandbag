@@ -4,6 +4,8 @@ from .do617 import Do617Scraper
 from .middle_east import MiddleEastScraper
 from .axs_venues import AXSVenuesScraper
 from .bowery_boston import BoweryBostonScraper
+from .boston_groupie_news import BostonGroupieNewsScraper
+from .boston_ska import BostonSkaScraper
 
 __all__ = [
     "BaseScraper",
@@ -12,4 +14,6 @@ __all__ = [
     "MiddleEastScraper",
     "AXSVenuesScraper",
     "BoweryBostonScraper",
+    "BostonGroupieNewsScraper",
+    "BostonSkaScraper",
 ]
