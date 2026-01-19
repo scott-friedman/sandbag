@@ -3,6 +3,10 @@ Configuration for foobos concert listing generator.
 """
 
 import os
+from pathlib import Path
+
+# Project root directory (parent of foobos package)
+PROJECT_ROOT = Path(__file__).parent.parent.resolve()
 
 # API Configuration
 TICKETMASTER_API_KEY = os.environ.get("TICKETMASTER_API_KEY", "")
@@ -73,10 +77,10 @@ VENUE_TICKETMASTER_IDS = {
     "palladium": "KovZpZAEdFIA",
 }
 
-# Output configuration
-OUTPUT_DIR = "/home/user/sandbag"
-DATA_DIR = "/home/user/sandbag/data"
-CACHE_DIR = "/home/user/sandbag/data/cache"
+# Output configuration (relative to project root)
+OUTPUT_DIR = str(PROJECT_ROOT)
+DATA_DIR = str(PROJECT_ROOT / "data")
+CACHE_DIR = str(PROJECT_ROOT / "data" / "cache")
 CACHE_TTL_HOURS = 12
 
 # How many weeks ahead to fetch/display
