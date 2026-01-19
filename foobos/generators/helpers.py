@@ -50,23 +50,14 @@ def format_concert_line(concert: Concert, link_venue: bool = True, link_bands: b
 def _band_to_anchor(band: str) -> str:
     """Convert band name to HTML anchor."""
     anchor = band.lower()
-    anchor = anchor.replace(" ", "").replace("'", "").replace(".", "").replace(",", "")
+    anchor = anchor.replace(" ", "_").replace("'", "").replace(".", "").replace(",", "")
     anchor = anchor.replace("&", "and").replace("$", "s")
-    return anchor[:30]
+    # Remove other special characters except underscores
+    anchor = ''.join(c for c in anchor if c.isalnum() or c == '_')
+    return anchor[:40]
 
 
 def _band_to_page(band: str) -> str:
     """Determine which by-band page a band belongs on."""
-    if not band:
-        return "by-band.0.html"
-
-    first_char = band[0].upper()
-
-    if first_char.isdigit() or first_char < "E":
-        return "by-band.0.html"  # #-D
-    elif first_char < "M":
-        return "by-band.1.html"  # E-L
-    elif first_char < "S":
-        return "by-band.2.html"  # M-R
-    else:
-        return "by-band.3.html"  # S-Z
+    # All bands are on a single by-band.html page
+    return "by-band.html"
