@@ -7,6 +7,13 @@ from html import escape
 from ..models import Concert
 
 
+def _venue_to_anchor(venue_id: str) -> str:
+    """Convert venue ID to HTML anchor (must match by_club_generator)."""
+    anchor = venue_id.lower()
+    anchor = anchor.replace(" ", "_").replace("'", "").replace(".", "").replace(",", "")
+    return anchor[:30]
+
+
 def format_concert_line(concert: Concert, link_venue: bool = True, link_bands: bool = True) -> str:
     """
     Format a single concert as an HTML line.
@@ -20,10 +27,10 @@ def format_concert_line(concert: Concert, link_venue: bool = True, link_bands: b
     # Venue - escape scraped names to prevent XSS
     venue_name = escape(concert.venue_name)
     venue_location = escape(concert.venue_location)
-    venue_id = escape(concert.venue_id)
+    venue_anchor = _venue_to_anchor(concert.venue_id)
 
     if link_venue:
-        venue_link = f'<a href="by-club.html#{venue_id}"><b>{venue_name}, {venue_location}</b></a>'
+        venue_link = f'<a href="by-club.html#{venue_anchor}"><b>{venue_name}, {venue_location}</b></a>'
     else:
         venue_link = f"<b>{venue_name}, {venue_location}</b>"
     parts.append(venue_link)
