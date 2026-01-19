@@ -17,12 +17,14 @@ logger = logging.getLogger(__name__)
 
 
 # Venues with iCal feeds
+# For monthly_url venues, we iterate over multiple months to get all events
 ICAL_VENUES = [
     {
         "name": "Lizard Lounge",
         "id": "lizardlounge",
         "location": "Cambridge",
         "url": "https://lizardloungeclub.com/events/?ical=1",
+        "monthly_url": "https://lizardloungeclub.com/events/month/{year}-{month:02d}/?ical=1",
         "age": "21+",
     },
     {
@@ -75,28 +77,54 @@ class ICalVenuesScraper(BaseScraper):
     def _fetch_venue_ical(self, venue: dict) -> List[Concert]:
         """Fetch and parse iCal data for a venue."""
         concerts = []
+        seen_events = set()  # Track seen events to avoid duplicates
 
-        try:
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-            }
-            response = requests.get(venue["url"], timeout=30, headers=headers)
-            response.raise_for_status()
-            ical_text = response.text
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        }
 
-            events = self._parse_ical(ical_text)
+        # Determine URLs to fetch
+        urls_to_fetch = []
 
-            for event in events:
-                # Skip non-music events or placeholder events
-                if self._should_skip_event(event):
-                    continue
+        if "monthly_url" in venue:
+            # Fetch multiple months (current + next 5 months = 6 months total)
+            now = datetime.now()
+            for month_offset in range(6):
+                target_date = now + timedelta(days=month_offset * 30)
+                url = venue["monthly_url"].format(
+                    year=target_date.year,
+                    month=target_date.month
+                )
+                urls_to_fetch.append(url)
+        else:
+            # Just fetch the single URL
+            urls_to_fetch.append(venue["url"])
 
-                concert = self._event_to_concert(event, venue)
-                if concert:
-                    concerts.append(concert)
+        for url in urls_to_fetch:
+            try:
+                response = requests.get(url, timeout=30, headers=headers)
+                response.raise_for_status()
+                ical_text = response.text
 
-        except Exception as e:
-            logger.error(f"Error fetching iCal for {venue['name']}: {e}")
+                events = self._parse_ical(ical_text)
+
+                for event in events:
+                    # Skip non-music events or placeholder events
+                    if self._should_skip_event(event):
+                        continue
+
+                    # Create unique key to avoid duplicates across months
+                    event_key = f"{event.get('DTSTART', '')}-{event.get('SUMMARY', '')}"
+                    if event_key in seen_events:
+                        continue
+                    seen_events.add(event_key)
+
+                    concert = self._event_to_concert(event, venue)
+                    if concert:
+                        concerts.append(concert)
+
+            except Exception as e:
+                logger.debug(f"Error fetching iCal from {url}: {e}")
 
         return concerts
 

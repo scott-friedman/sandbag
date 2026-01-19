@@ -20,6 +20,7 @@ from foobos.fetchers.scrapers import (
     BostonGroupieNewsScraper,
     BostonSkaScraper,
     ICalVenuesScraper,
+    SongkickVenuesScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre
 from foobos.generators import generate_all_html
@@ -116,6 +117,16 @@ def cmd_fetch(args):
         all_concerts.extend(ical_concerts)
     except Exception as e:
         logger.error(f"iCal venues scrape failed: {e}")
+
+    # Songkick Venues (Deep Cuts, Groton Hill Music Center)
+    try:
+        logger.info("Scraping Songkick venues (Deep Cuts, Groton Hill)...")
+        songkick_scraper = SongkickVenuesScraper()
+        songkick_concerts = songkick_scraper.fetch()
+        logger.info(f"Songkick Venues: {len(songkick_concerts)} concerts")
+        all_concerts.extend(songkick_concerts)
+    except Exception as e:
+        logger.error(f"Songkick venues scrape failed: {e}")
 
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 

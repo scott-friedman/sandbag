@@ -208,6 +208,15 @@ def _normalize_venue_id(venue_id: str) -> str:
         # Midway Cafe
         "midway_cafe": "midway",
         "midwaycafe": "midway",
+
+        # Deep Cuts
+        "deep_cuts": "deepcuts",
+        "deep-cuts": "deepcuts",
+
+        # Groton Hill Music Center
+        "groton_hill_music_center": "grotonhill",
+        "groton-hill": "grotonhill",
+        "groton_hill": "grotonhill",
     }
 
     return id_map.get(venue_id, venue_id)
@@ -288,6 +297,13 @@ def _normalize_venue_name(name: str) -> str:
 
         # Rockwell
         "the rockwell": "The Rockwell",
+
+        # Deep Cuts
+        "deep cuts": "Deep Cuts",
+
+        # Groton Hill Music Center
+        "groton hill music center": "Groton Hill Music Center",
+        "groton hill": "Groton Hill Music Center",
     }
 
     name_lower = name.lower().strip()
