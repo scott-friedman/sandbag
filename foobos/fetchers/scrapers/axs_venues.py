@@ -42,6 +42,13 @@ BOSTON_VENUES = {
         "capacity": 525,
         "parser": "sinclair",
     },
+    "armory": {
+        "name": "Arts at the Armory",
+        "location": "Somerville",
+        "url": "https://artsatthearmory.org/upcoming-events/",
+        "capacity": 300,
+        "parser": "json_ld",
+    },
 }
 
 
