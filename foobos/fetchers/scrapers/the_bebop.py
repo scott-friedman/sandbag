@@ -1,0 +1,158 @@
+"""
+Scraper for The Bebop Boston events.
+https://www.thebebopboston.com/new-events
+"""
+
+from datetime import datetime
+from typing import List
+import logging
+import re
+
+from .base import BaseScraper
+from ...models import Concert
+from ...utils import get_cached, save_cache
+
+logger = logging.getLogger(__name__)
+
+BEBOP_URL = "https://www.thebebopboston.com/new-events"
+
+
+class TheBebopScraper(BaseScraper):
+    """Scraper for The Bebop in Boston's South End."""
+
+    source_name = "the_bebop"
+
+    @property
+    def url(self) -> str:
+        return BEBOP_URL
+
+    def fetch(self) -> List[Concert]:
+        """Fetch concerts from The Bebop."""
+        self._log_fetch_start()
+
+        # Check cache first
+        cached = get_cached("scrape_the_bebop")
+        if cached:
+            logger.info(f"[{self.source_name}] Using cached data ({len(cached)} events)")
+            return [Concert.from_dict(c) for c in cached]
+
+        try:
+            soup = self._get_soup()
+            concerts = self._parse_events(soup)
+        except Exception as e:
+            logger.error(f"Failed to fetch The Bebop events: {e}")
+            return []
+
+        # Cache the results
+        save_cache("scrape_the_bebop", [c.to_dict() for c in concerts])
+        self._log_fetch_complete(len(concerts))
+
+        return concerts
+
+    def _parse_events(self, soup) -> List[Concert]:
+        """Parse events from the Squarespace events page."""
+        concerts = []
+
+        # Get all text with separator to preserve structure
+        all_text = soup.get_text(separator='\n', strip=True)
+        lines = [l.strip() for l in all_text.split('\n') if l.strip()]
+
+        i = 0
+        while i < len(lines):
+            line = lines[i]
+
+            # Look for date patterns like "Saturday, January 31, 2026, 10:30 PM – 11:59 PM"
+            date_match = re.match(
+                r'(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),\s+'
+                r'(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(\d{4})',
+                line
+            )
+
+            if date_match:
+                day_of_week = date_match.group(1)
+                month = date_match.group(2)
+                day = int(date_match.group(3))
+                year = int(date_match.group(4))
+
+                # Extract time from the same line
+                time_match = re.search(r'(\d{1,2}:\d{2})\s*(AM|PM)', line, re.I)
+                time_str = "10pm"
+                if time_match:
+                    hour_min = time_match.group(1)
+                    ampm = time_match.group(2).lower()
+                    time_str = f"{hour_min}{ampm}"
+
+                # Parse the date
+                try:
+                    months = {
+                        'january': 1, 'february': 2, 'march': 3, 'april': 4,
+                        'may': 5, 'june': 6, 'july': 7, 'august': 8,
+                        'september': 9, 'october': 10, 'november': 11, 'december': 12
+                    }
+                    month_num = months.get(month.lower())
+                    if month_num:
+                        date = datetime(year, month_num, day)
+                    else:
+                        i += 1
+                        continue
+                except ValueError:
+                    i += 1
+                    continue
+
+                # Look for event title in subsequent lines
+                # Skip venue info lines (The Bebop, address, etc.)
+                title = None
+                skip_patterns = ['the bebop', 'boylston', 'boston, ma', 'united states',
+                                 'google maps', 'view map', 'add to calendar']
+
+                j = i + 1
+                while j < len(lines) and j < i + 10:
+                    candidate = lines[j].strip()
+
+                    # Skip empty or venue info
+                    if not candidate or any(p in candidate.lower() for p in skip_patterns):
+                        j += 1
+                        continue
+
+                    # Skip if it looks like another date
+                    if re.match(r'(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),', candidate):
+                        break
+
+                    # Skip pure numbers (like addresses)
+                    if re.match(r'^\d+$', candidate):
+                        j += 1
+                        continue
+
+                    # This might be the title
+                    title = candidate
+                    break
+
+                if title and len(title) > 2:
+                    # Clean up title - remove common suffixes
+                    title = re.sub(r'\s*-\s*Tickets?\s*$', '', title, flags=re.I)
+                    title = re.sub(r'\s*\|\s*The Bebop\s*$', '', title, flags=re.I)
+
+                    bands = self._split_bands(title)
+                    if not bands:
+                        bands = [title]
+
+                    concert = Concert(
+                        date=date,
+                        venue_id="bebop",
+                        venue_name="The Bebop",
+                        venue_location="Boston",
+                        bands=bands,
+                        age_requirement="21+",
+                        price_advance=None,
+                        price_door=None,
+                        time=time_str,
+                        flags=[],
+                        source=self.source_name,
+                        source_url=BEBOP_URL,
+                        genre_tags=["jazz", "soul", "funk"]
+                    )
+                    concerts.append(concert)
+
+            i += 1
+
+        return concerts

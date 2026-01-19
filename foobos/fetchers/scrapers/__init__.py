@@ -12,6 +12,9 @@ from .bso import BSOScraper
 from .plough_and_stars import PloughAndStarsScraper
 from .boston_shows import BostonShowsScraper
 from .sally_obriens import SallyOBriensScraper
+from .chevalier_theatre import ChevalierTheatreScraper
+from .the_bebop import TheBebopScraper
+from .the_cabot import TheCabotScraper
 
 __all__ = [
     "BaseScraper",
@@ -28,4 +31,7 @@ __all__ = [
     "PloughAndStarsScraper",
     "BostonShowsScraper",
     "SallyOBriensScraper",
+    "ChevalierTheatreScraper",
+    "TheBebopScraper",
+    "TheCabotScraper",
 ]
