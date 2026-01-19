@@ -27,14 +27,14 @@ def generate_index(concerts: List[Concert]) -> None:
     html = f'''<!DOCTYPE html>
 <html>
 <head>
-<title>{SITE_TITLE} (updated {update_date})</title>
+<title>The List (updated {update_date})</title>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080">
 
-<h2><i>{SITE_TITLE} (updated {update_date})</i></h2>
+<h2><i>The List (updated {update_date})</i></h2>
 
 <p>
-This is a WWW version of <a href="mailto:{SITE_EMAIL}">{SITE_NAME}'s</a> excellent <a href="index.html">(Boston) Greater Boston Area concert guide</a>. All of the content is automatically aggregated from multiple sources including Ticketmaster and local venue calendars. Please <a href="mailto:{SITE_EMAIL}">send us mail</a> if you have questions or corrections related to the list content.
+This is a WWW version of the excellent <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>. All of the idea is foopee's, I've just cloned it for Boston. Please <a href="mailto:{SITE_EMAIL}">send me mail</a> if you have questions or corrections related to the list content. My program automatically pulls info into HTML, so please let me know if there is a problem. You can <a href="mailto:{SITE_EMAIL}">contact me</a> if there's anything else you need.
 </p>
 
 <p>
@@ -50,8 +50,8 @@ Here's what the symbols at the end of each listing mean:
 <hr>
 
 <p>
-<b>Jan 1, 2026:</b> Welcome to {SITE_NAME}! Inspired by the legendary <a href="http://www.foopee.com/punk/the-list/">foopee.com</a> Bay Area List.<br>
-<b>Jan 1, 2026:</b> Site now auto-updates daily from Ticketmaster + local venue scraping.<br>
+<b>{update_date}:</b> The List has gone live! Boston's own version of the legendary <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>.<br>
+<b>{update_date}:</b> Auto-updates daily from Ticketmaster, venue calendars, and punk scene aggregators.<br>
 </p>
 
 <hr>

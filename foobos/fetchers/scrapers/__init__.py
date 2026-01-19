@@ -6,6 +6,7 @@ from .axs_venues import AXSVenuesScraper
 from .bowery_boston import BoweryBostonScraper
 from .boston_groupie_news import BostonGroupieNewsScraper
 from .boston_ska import BostonSkaScraper
+from .ical_venues import ICalVenuesScraper
 
 __all__ = [
     "BaseScraper",
@@ -16,4 +17,5 @@ __all__ = [
     "BoweryBostonScraper",
     "BostonGroupieNewsScraper",
     "BostonSkaScraper",
+    "ICalVenuesScraper",
 ]

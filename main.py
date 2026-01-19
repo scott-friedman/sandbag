@@ -19,6 +19,7 @@ from foobos.fetchers.scrapers import (
     BoweryBostonScraper,
     BostonGroupieNewsScraper,
     BostonSkaScraper,
+    ICalVenuesScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre
 from foobos.generators import generate_all_html
@@ -105,6 +106,16 @@ def cmd_fetch(args):
         all_concerts.extend(ska_concerts)
     except Exception as e:
         logger.error(f"Boston Ska scrape failed: {e}")
+
+    # iCal Venues (Lizard Lounge, The Rockwell)
+    try:
+        logger.info("Scraping iCal venues (Lizard Lounge, The Rockwell)...")
+        ical_scraper = ICalVenuesScraper()
+        ical_concerts = ical_scraper.fetch()
+        logger.info(f"iCal Venues: {len(ical_concerts)} concerts")
+        all_concerts.extend(ical_concerts)
+    except Exception as e:
+        logger.error(f"iCal venues scrape failed: {e}")
 
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 

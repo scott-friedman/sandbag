@@ -7,7 +7,7 @@ on ticketing platforms.
 """
 
 from datetime import datetime
-from typing import List, Optional
+from typing import List, Optional, Tuple
 import logging
 import re
 
@@ -56,130 +56,174 @@ class SafeInACrowdScraper(BaseScraper):
         return concerts
 
     def _parse_listings(self, soup: BeautifulSoup) -> List[Concert]:
-        """Parse show listings from the page."""
+        """Parse show listings from the page.
+
+        Format: <p><strong>DATE:</strong> BANDS at VENUE in LOCATION TIME/PRICE[/AGE]</p>
+        Example: <strong>Friday, January 16th:</strong> Who Remembers, Goin' Ape at Pyxis in Providence, RI 7:00pm/$10
+        """
         concerts = []
         current_year = datetime.now().year
 
-        # Safe In A Crowd typically has a simple text-based format
-        # Look for the main content area
-        content = soup.find("div", class_="content") or soup.find("main") or soup.body
+        # Find the entry-content div
+        content = soup.find("div", class_="entry-content")
+        if not content:
+            content = soup.find("main") or soup.body
 
         if not content:
             logger.warning("Could not find content area")
             return concerts
 
-        # Get all text and try to parse show listings
-        # Format is typically: DATE - VENUE - BANDS - PRICE/TIME/AGE
-        text = content.get_text(separator="\n")
-        lines = [line.strip() for line in text.split("\n") if line.strip()]
+        # Find all paragraph tags with show listings
+        for p in content.find_all("p"):
+            # Look for paragraphs with a strong tag containing a date
+            strong = p.find("strong")
+            if not strong:
+                continue
 
-        current_date = None
+            strong_text = strong.get_text().strip()
 
-        for line in lines:
-            # Try to detect date lines
+            # Check if this looks like a date line
+            # Format: "Friday, January 16th:" or "Sunday, February 8th:"
             date_match = re.match(
-                r'^(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*,?\s+)?'
-                r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2})',
-                line,
+                r'^(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\s+'
+                r'((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2})(?:st|nd|rd|th)?:?',
+                strong_text,
                 re.IGNORECASE
             )
 
-            if date_match:
-                date_str = date_match.group(1)
-                current_date = parse_date(date_str, default_year=current_year)
+            if not date_match:
                 continue
 
-            # Try to parse as a show listing
-            if current_date and self._looks_like_show(line):
-                concert = self._parse_show_line(line, current_date)
-                if concert:
-                    concerts.append(concert)
+            # Parse the date
+            date_str = date_match.group(1)
+            show_date = parse_date(date_str, default_year=current_year)
+            if not show_date:
+                continue
+
+            # Get the full text of the paragraph (excluding the strong tag content)
+            full_text = p.get_text().strip()
+            # Remove the date portion
+            show_text = full_text[len(strong_text):].strip()
+
+            if not show_text:
+                continue
+
+            # Parse the show listing
+            concert = self._parse_show_text(show_text, show_date)
+            if concert:
+                concerts.append(concert)
 
         return concerts
 
-    def _looks_like_show(self, line: str) -> bool:
-        """Check if a line looks like a show listing."""
-        # Shows typically have venue indicators or price indicators
-        indicators = ["@", "$", "pm", "all ages", "21+", "18+", "a/a"]
-        line_lower = line.lower()
-        return any(ind in line_lower for ind in indicators)
+    def _parse_show_text(self, text: str, date: datetime) -> Optional[Concert]:
+        """Parse a show listing text.
 
-    def _parse_show_line(self, line: str, date: datetime) -> Optional[Concert]:
-        """Parse a single show listing line."""
+        Format: BANDS at VENUE in LOCATION TIME/PRICE[/AGE]
+        Example: Who Remembers, Goin' Ape, Through And Through at Pyxis in Providence, RI 7:00pm/$10
+        """
         try:
-            # Common format: "BANDS @ VENUE $PRICE TIME AGE"
-            # Or: "VENUE: BANDS - $PRICE TIME"
+            # Pattern: "BANDS at VENUE in LOCATION TIME/PRICE[/AGE][/NOTES]"
+            # We need to find " at " to split bands from venue info
 
-            # Try to extract venue (often after @ or before :)
-            venue_name = "Unknown Venue"
-            venue_location = "Boston"
-            bands_str = line
+            at_match = re.search(r'\s+at\s+', text, re.IGNORECASE)
+            if not at_match:
+                return None
 
-            if "@" in line:
-                parts = line.split("@", 1)
-                bands_str = parts[0].strip()
-                venue_part = parts[1].strip()
-                # Venue name is usually first part before price/time
-                venue_match = re.match(r'^([^$\d]+)', venue_part)
-                if venue_match:
-                    venue_name = self._clean_text(venue_match.group(1))
+            bands_str = text[:at_match.start()].strip()
+            venue_info = text[at_match.end():].strip()
 
-            elif ":" in line and not re.match(r'^\d+:', line):
-                parts = line.split(":", 1)
-                venue_name = self._clean_text(parts[0])
-                bands_str = parts[1].strip()
+            # Parse venue info: "VENUE in LOCATION TIME/PRICE[/AGE]"
+            # Look for " in " to separate venue name from location
+            in_match = re.search(r'\s+in\s+', venue_info, re.IGNORECASE)
+            if not in_match:
+                return None
 
-            # Extract price
-            price_match = re.search(r'\$\d+(?:\s*/\s*\$?\d+)?', line)
-            price_str = price_match.group(0) if price_match else ""
-            price_advance, price_door = self._parse_price(price_str)
+            venue_name = venue_info[:in_match.start()].strip()
+            location_info = venue_info[in_match.end():].strip()
 
-            # Extract time
-            time_match = re.search(r'\d{1,2}(?::\d{2})?\s*(?:am|pm)', line, re.IGNORECASE)
-            time = self._parse_time(time_match.group(0)) if time_match else "8pm"
+            # Parse location info: "LOCATION TIME/PRICE[/AGE]"
+            # Location is typically "City, STATE" followed by time
+            # Time format: 7:00pm or 7pm
+            time_match = re.search(r'(\d{1,2}(?::\d{2})?\s*(?:am|pm))', location_info, re.IGNORECASE)
 
-            # Extract age
-            age = "a/a"  # Default for hardcore shows
-            if "21+" in line or "21 and over" in line.lower():
+            if time_match:
+                location_str = location_info[:time_match.start()].strip()
+                rest = location_info[time_match.start():].strip()
+                time_str = time_match.group(1)
+            else:
+                location_str = location_info
+                rest = ""
+                time_str = "8pm"
+
+            # Clean up location (remove trailing comma)
+            location_str = location_str.rstrip(',').strip()
+
+            # Extract price from rest
+            price_match = re.search(r'\$(\d+)(?:\s*/\s*\$?(\d+))?', rest)
+            price_advance = None
+            price_door = None
+            if price_match:
+                price_advance = int(price_match.group(1))
+                if price_match.group(2):
+                    price_door = int(price_match.group(2))
+                else:
+                    price_door = price_advance
+
+            # Check for FREE
+            if 'FREE' in rest.upper():
+                price_advance = 0
+                price_door = 0
+
+            # Check for SOLD OUT
+            sold_out = 'SOLD OUT' in rest.upper()
+
+            # Extract age requirement
+            age = "a/a"  # Default all ages
+            if '21+' in rest:
                 age = "21+"
-            elif "18+" in line or "18 and over" in line.lower():
+            elif '18+' in rest:
                 age = "18+"
+            elif '16+' in rest:
+                age = "16+"
 
-            # Clean bands string (remove price/time/age info)
-            bands_str = re.sub(r'\$\d+(?:\s*/\s*\$?\d+)?', '', bands_str)
-            bands_str = re.sub(r'\d{1,2}(?::\d{2})?\s*(?:am|pm)', '', bands_str, flags=re.IGNORECASE)
-            bands_str = re.sub(r'(?:all ages|21\+|18\+|a/a)', '', bands_str, flags=re.IGNORECASE)
-
+            # Split bands
             bands = self._split_bands(bands_str)
             if not bands:
                 return None
 
-            # Generate venue ID from name
+            # Generate venue ID
             venue_id = self._generate_venue_id(venue_name)
+
+            # Parse time
+            time = self._parse_time(time_str)
+
+            # Build flags
+            flags = ["@"]  # Assume mosh for hardcore shows
+            if sold_out:
+                flags.append("SOLD OUT")
 
             return Concert(
                 date=date,
                 venue_id=venue_id,
                 venue_name=venue_name,
-                venue_location=venue_location,
+                venue_location=location_str,
                 bands=bands,
                 age_requirement=age,
                 price_advance=price_advance,
                 price_door=price_door,
                 time=time,
-                flags=["@"],  # Assume mosh for hardcore shows
+                flags=flags,
                 source=self.source_name,
                 source_url=self.url,
                 genre_tags=["hardcore", "punk"]
             )
 
         except Exception as e:
-            logger.debug(f"Error parsing line '{line}': {e}")
+            logger.debug(f"Error parsing show text '{text}': {e}")
             return None
 
     def _generate_venue_id(self, venue_name: str) -> str:
         """Generate a venue ID slug from name."""
-        # Map common venue names
         name_lower = venue_name.lower()
 
         venue_map = {
@@ -195,6 +239,12 @@ class SafeInACrowdScraper(BaseScraper):
             "american legion": "legion",
             "midway": "midway",
             "o'brien": "obriens",
+            "sonia": "sonia",
+            "roadrunner": "roadrunner",
+            "big night": "bignightlive",
+            "rockwell": "rockwell",
+            "deep cuts": "deepcuts",
+            "lizard lounge": "lizardlounge",
         }
 
         for pattern, slug in venue_map.items():
