@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-01-19T01:37:41.816804",
-    "total_concerts": 74,
+    "last_updated": "2026-01-19T01:44:26.547724",
+    "total_concerts": 121,
     "generated_by": "foobos"
   },
   "concerts": [
@@ -34,7 +34,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.219578"
+      "last_updated": "2026-01-19T01:43:12.202247"
     },
     {
       "id": "1cf62716f929",
@@ -64,7 +64,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.220184"
+      "last_updated": "2026-01-19T01:43:12.202812"
     },
     {
       "id": "9309dfd353e1",
@@ -98,7 +98,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.336282"
+      "last_updated": "2026-01-19T01:43:11.934247"
     },
     {
       "id": "e39b1c81e81a",
@@ -126,7 +126,7 @@
         "alternative",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.336322"
+      "last_updated": "2026-01-19T01:43:11.934288"
     },
     {
       "id": "558188a3eb2d",
@@ -158,7 +158,7 @@
         "rock",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:36:54.336397"
+      "last_updated": "2026-01-19T01:43:11.934362"
     },
     {
       "id": "60bf95ba1656",
@@ -189,7 +189,32 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.220464"
+      "last_updated": "2026-01-19T01:43:12.203086"
+    },
+    {
+      "id": "51c413ac308d",
+      "date": "2026-01-23T22:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Vibzzz All Night"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/vibzzz-all-night/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662060"
     },
     {
       "id": "a914b7688ed5",
@@ -220,7 +245,33 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.336451"
+      "last_updated": "2026-01-19T01:43:11.934412"
+    },
+    {
+      "id": "402edfc95f3c",
+      "date": "2026-01-27T19:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Serpents Tour Starring Nymphia Wind",
+        "Plastique Tiara"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/the-serpents-tour-starring-nymphia-wind-and-plastique-tiara/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662126"
     },
     {
       "id": "b038229b7c54",
@@ -249,7 +300,82 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.336660"
+      "last_updated": "2026-01-19T01:43:11.934620"
+    },
+    {
+      "id": "82fab04b417a",
+      "date": "2026-01-29T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Alleycvt"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/alleycvt/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662141"
+    },
+    {
+      "id": "505d0d08e601",
+      "date": "2026-01-30T19:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Sudan Archives"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/sudan-archives/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662170"
+    },
+    {
+      "id": "7b8147c555d0",
+      "date": "2026-01-31T22:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Max Styler"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/max-styler/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662181"
     },
     {
       "id": "40d23bfb9eac",
@@ -279,7 +405,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.220750"
+      "last_updated": "2026-01-19T01:43:12.203356"
     },
     {
       "id": "0b20230faae7",
@@ -308,7 +434,7 @@
         "alternative",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.337258"
+      "last_updated": "2026-01-19T01:43:11.935195"
     },
     {
       "id": "aa2068bb29a7",
@@ -337,7 +463,32 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.337406"
+      "last_updated": "2026-01-19T01:43:11.935330"
+    },
+    {
+      "id": "43b5302bf35a",
+      "date": "2026-02-13T18:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Monaleo"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/monaleo-2/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662200"
     },
     {
       "id": "cc5782a50391",
@@ -367,7 +518,82 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.221014"
+      "last_updated": "2026-01-19T01:43:12.203613"
+    },
+    {
+      "id": "816df345911d",
+      "date": "2026-02-14T18:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Badflower"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/badflower-2/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662211"
+    },
+    {
+      "id": "ba296a64dbaf",
+      "date": "2026-02-14T22:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Layton Giordani"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/layton-giordani/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662224"
+    },
+    {
+      "id": "3530b829a75c",
+      "date": "2026-02-17T19:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "SZN4"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/szn4/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662233"
     },
     {
       "id": "367a0ed91306",
@@ -395,7 +621,7 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T01:36:54.337665"
+      "last_updated": "2026-01-19T01:43:11.935584"
     },
     {
       "id": "70708d466ca6",
@@ -423,7 +649,7 @@
         "alternative",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.337751"
+      "last_updated": "2026-01-19T01:43:11.935669"
     },
     {
       "id": "4fcdbf71e0c3",
@@ -453,7 +679,32 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.221077"
+      "last_updated": "2026-01-19T01:43:12.203678"
+    },
+    {
+      "id": "f395ba3cf09e",
+      "date": "2026-02-21T18:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Margo Price"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/margo-price/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662245"
     },
     {
       "id": "df69b2431a11",
@@ -482,7 +733,32 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.337929"
+      "last_updated": "2026-01-19T01:43:11.935841"
+    },
+    {
+      "id": "a7159095debf",
+      "date": "2026-02-24T19:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "[canceled] Loyle Carner"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/loyle-carner/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662257"
     },
     {
       "id": "3b7882a81f5e",
@@ -510,7 +786,32 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T01:36:54.337984"
+      "last_updated": "2026-01-19T01:43:11.935897"
+    },
+    {
+      "id": "9193f90d1e6c",
+      "date": "2026-02-25T18:30:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Record Company"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/the-record-company-2/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662266"
     },
     {
       "id": "dd7724f6bdec",
@@ -539,7 +840,57 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T01:36:54.338272"
+      "last_updated": "2026-01-19T01:43:11.936164"
+    },
+    {
+      "id": "13ab9436f600",
+      "date": "2026-02-27T18:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Peter McPoland"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/peter-mcpoland-2/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662276"
+    },
+    {
+      "id": "e334e5f82ba0",
+      "date": "2026-02-27T22:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Boots n Beats"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/boots-n-beats/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662287"
     },
     {
       "id": "8febabaaefbe",
@@ -569,7 +920,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.221130"
+      "last_updated": "2026-01-19T01:43:12.203730"
     },
     {
       "id": "83f2238791ba",
@@ -599,7 +950,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.221352"
+      "last_updated": "2026-01-19T01:43:12.203920"
     },
     {
       "id": "1f1bc21dcac1",
@@ -629,7 +980,58 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T01:36:54.338914"
+      "last_updated": "2026-01-19T01:43:11.936801"
+    },
+    {
+      "id": "e255a38d9feb",
+      "date": "2026-03-06T19:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Michael Shannon &amp; Jason Narducy",
+        "Friends play R.E.M.\u2019s Lifes Rich Pageant"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/michael-shannon-jason-narducy-and-friends-play-r-e-m-s-lifes-rich-pageant/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662312"
+    },
+    {
+      "id": "8b4ebee4e390",
+      "date": "2026-03-08T19:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Amber Mark"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/amber-mark/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662326"
     },
     {
       "id": "f54fbe5b0e92",
@@ -659,7 +1061,7 @@
         "rock",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:36:54.339197"
+      "last_updated": "2026-01-19T01:43:11.937051"
     },
     {
       "id": "c31a3eefe7b1",
@@ -688,7 +1090,57 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T01:36:54.339223"
+      "last_updated": "2026-01-19T01:43:11.937074"
+    },
+    {
+      "id": "605128631054",
+      "date": "2026-03-13T18:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Quarters"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/quarters/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662338"
+    },
+    {
+      "id": "deca0b0e7f63",
+      "date": "2026-03-13T22:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Kettama"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/kettama/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662351"
     },
     {
       "id": "9deb8b6759d8",
@@ -717,7 +1169,32 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.339544"
+      "last_updated": "2026-01-19T01:43:11.937406"
+    },
+    {
+      "id": "e1ff0020c3bd",
+      "date": "2026-03-14T20:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Evan Honer"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/evan-honer/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662365"
     },
     {
       "id": "ee42500773f6",
@@ -748,7 +1225,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.339575"
+      "last_updated": "2026-01-19T01:43:11.937438"
     },
     {
       "id": "8b8c158ae324",
@@ -778,7 +1255,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.339638"
+      "last_updated": "2026-01-19T01:43:11.937493"
     },
     {
       "id": "64eddf3fd9f8",
@@ -806,7 +1283,32 @@
         "rock",
         "blues-rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.339666"
+      "last_updated": "2026-01-19T01:43:11.937521"
+    },
+    {
+      "id": "c4366154d513",
+      "date": "2026-03-17T19:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Sweet Pill"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/sweet-pill/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662381"
     },
     {
       "id": "44b87021adab",
@@ -834,7 +1336,32 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.339769"
+      "last_updated": "2026-01-19T01:43:11.937637"
+    },
+    {
+      "id": "f755b5fea7cd",
+      "date": "2026-03-19T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Mindchatter"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/mindchatter/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662401"
     },
     {
       "id": "86e19046d9a7",
@@ -865,7 +1392,7 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T01:36:54.339825"
+      "last_updated": "2026-01-19T01:43:11.937692"
     },
     {
       "id": "97b32766d886",
@@ -893,7 +1420,7 @@
         "metal",
         "death metal/black metal"
       ],
-      "last_updated": "2026-01-19T01:36:54.339897"
+      "last_updated": "2026-01-19T01:43:11.937773"
     },
     {
       "id": "1aebe79e4272",
@@ -918,10 +1445,10 @@
       "source": "ticketmaster",
       "source_url": "https://www.ticketmaster.com/armchair-boogie-madison-wisconsin-03-20-2026/event/0700642FDB647647",
       "genre_tags": [
-        "folk",
-        "indie folk"
+        "indie folk",
+        "folk"
       ],
-      "last_updated": "2026-01-19T01:36:54.339919"
+      "last_updated": "2026-01-19T01:43:11.937796"
     },
     {
       "id": "26ac777a2e32",
@@ -949,7 +1476,57 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T01:36:54.340058"
+      "last_updated": "2026-01-19T01:43:11.937935"
+    },
+    {
+      "id": "0a95c4755bea",
+      "date": "2026-03-21T22:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Prospa"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/prospa/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662419"
+    },
+    {
+      "id": "2a085f01a834",
+      "date": "2026-03-23T19:00:00",
+      "day_of_week": "Mon",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Matt Berninger"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/matt-berninger/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662438"
     },
     {
       "id": "e9b0bde4117e",
@@ -978,7 +1555,7 @@
         "rock",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:36:54.340228"
+      "last_updated": "2026-01-19T01:43:11.938085"
     },
     {
       "id": "ec4d03bc3a0b",
@@ -1008,7 +1585,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.340253"
+      "last_updated": "2026-01-19T01:43:11.938108"
     },
     {
       "id": "0b78838b732b",
@@ -1037,7 +1614,32 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T01:36:54.340332"
+      "last_updated": "2026-01-19T01:43:11.938209"
+    },
+    {
+      "id": "77b92adbb9c8",
+      "date": "2026-03-25T19:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Gogol Bordello"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/gogol-bordello-2/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662455"
     },
     {
       "id": "be064dc17ce6",
@@ -1067,7 +1669,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.340407"
+      "last_updated": "2026-01-19T01:43:11.938289"
     },
     {
       "id": "9e9fe38f1903",
@@ -1097,7 +1699,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.340437"
+      "last_updated": "2026-01-19T01:43:11.938319"
     },
     {
       "id": "a20aea02a0e2",
@@ -1128,7 +1730,32 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T01:36:54.340568"
+      "last_updated": "2026-01-19T01:43:11.938448"
+    },
+    {
+      "id": "76927dd6c651",
+      "date": "2026-04-01T19:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "[moved to Roadrunner] Wednesday"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/21146/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662475"
     },
     {
       "id": "7b96f4c3a7f2",
@@ -1156,7 +1783,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.340733"
+      "last_updated": "2026-01-19T01:43:11.938618"
     },
     {
       "id": "89fa52b050e7",
@@ -1184,7 +1811,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.340761"
+      "last_updated": "2026-01-19T01:43:11.938648"
     },
     {
       "id": "81fdd509c8a5",
@@ -1213,7 +1840,32 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.340813"
+      "last_updated": "2026-01-19T01:43:11.938702"
+    },
+    {
+      "id": "56033432a6b3",
+      "date": "2026-04-04T21:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "We Touch Grass: Anime Rave"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "9pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/we-touch-grass-anime-rave/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662500"
     },
     {
       "id": "ae2cc120edf7",
@@ -1243,7 +1895,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.221408"
+      "last_updated": "2026-01-19T01:43:12.203971"
     },
     {
       "id": "9221e6a396c8",
@@ -1271,7 +1923,32 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.340841"
+      "last_updated": "2026-01-19T01:43:11.938735"
+    },
+    {
+      "id": "0cb1952dc08f",
+      "date": "2026-04-08T19:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Machine Girl"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/machine-girl/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662518"
     },
     {
       "id": "b38a619cba50",
@@ -1299,7 +1976,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.340894"
+      "last_updated": "2026-01-19T01:43:11.938789"
     },
     {
       "id": "16dd90330a32",
@@ -1329,7 +2006,32 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.221456"
+      "last_updated": "2026-01-19T01:43:12.204018"
+    },
+    {
+      "id": "6ebeb6260594",
+      "date": "2026-04-09T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Two Feet: The Next Steps Tour"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/two-feet/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662553"
     },
     {
       "id": "96e3046f2d22",
@@ -1359,7 +2061,57 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.221502"
+      "last_updated": "2026-01-19T01:43:12.204065"
+    },
+    {
+      "id": "0f359cc0bda6",
+      "date": "2026-04-10T18:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Kishi Bashi"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/kishi-bashi-4/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662567"
+    },
+    {
+      "id": "c93cf0fc7dc4",
+      "date": "2026-04-10T22:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Martinez Brothers \u2013 North America Tour 2026"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/the-martinez-brothers-north-america-tour-2026/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662595"
     },
     {
       "id": "5f269ce9acbc",
@@ -1389,7 +2141,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.340996"
+      "last_updated": "2026-01-19T01:43:11.938890"
     },
     {
       "id": "f48ab1aaaf39",
@@ -1419,7 +2171,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.221553"
+      "last_updated": "2026-01-19T01:43:12.204115"
     },
     {
       "id": "001d5094febd",
@@ -1449,7 +2201,32 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.221676"
+      "last_updated": "2026-01-19T01:43:12.204220"
+    },
+    {
+      "id": "391f8601dbe9",
+      "date": "2026-04-16T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Growlers"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/the-growlers-3/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662616"
     },
     {
       "id": "165f25c6cfd3",
@@ -1477,7 +2254,83 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.341209"
+      "last_updated": "2026-01-19T01:43:11.939074"
+    },
+    {
+      "id": "61ccde4b6fef",
+      "date": "2026-04-17T18:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Starjunk 95"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/starjunk-95/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662634"
+    },
+    {
+      "id": "101c6b89d44c",
+      "date": "2026-04-21T19:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Jos\u00e9 Gonz\u00e1lez"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/jose-gonzalez/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662653"
+    },
+    {
+      "id": "f85a822baf74",
+      "date": "2026-04-22T19:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Pattie Gonia: SAVE HER! Feat. Sequoia",
+        "Vera!"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/pattie-gonia-save-her-feat-sequoia-and-vera/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662675"
     },
     {
       "id": "ff22c8bd0c4f",
@@ -1505,7 +2358,7 @@
         "rock",
         "rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.341548"
+      "last_updated": "2026-01-19T01:43:11.939425"
     },
     {
       "id": "0c68837b2b21",
@@ -1534,7 +2387,32 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.341716"
+      "last_updated": "2026-01-19T01:43:11.939602"
+    },
+    {
+      "id": "41707fc0cdd2",
+      "date": "2026-04-26T19:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Sarah Kinsley"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/sarah-kinsley-2/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662688"
     },
     {
       "id": "a286def99b20",
@@ -1562,7 +2440,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.341746"
+      "last_updated": "2026-01-19T01:43:11.939633"
     },
     {
       "id": "abec079e65e5",
@@ -1591,7 +2469,7 @@
         "rock",
         "rock & roll"
       ],
-      "last_updated": "2026-01-19T01:36:54.341770"
+      "last_updated": "2026-01-19T01:43:11.939663"
     },
     {
       "id": "29aceefcdd0f",
@@ -1619,7 +2497,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.341820"
+      "last_updated": "2026-01-19T01:43:11.939723"
     },
     {
       "id": "76b762c4f248",
@@ -1648,7 +2526,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.341847"
+      "last_updated": "2026-01-19T01:43:11.939751"
     },
     {
       "id": "494d7914fb95",
@@ -1677,7 +2555,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.341917"
+      "last_updated": "2026-01-19T01:43:11.939833"
     },
     {
       "id": "ea0c715a8eba",
@@ -1706,7 +2584,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.341943"
+      "last_updated": "2026-01-19T01:43:11.939863"
     },
     {
       "id": "8708cc88833b",
@@ -1734,7 +2612,32 @@
         "rock",
         "classic rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.341988"
+      "last_updated": "2026-01-19T01:43:11.939909"
+    },
+    {
+      "id": "a0fb50741ddd",
+      "date": "2026-04-30T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Oklou"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/oklou/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662700"
     },
     {
       "id": "dd0dd533e2bc",
@@ -1765,7 +2668,7 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T01:36:54.342040"
+      "last_updated": "2026-01-19T01:43:11.939964"
     },
     {
       "id": "b02d3273eb52",
@@ -1795,7 +2698,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.342062"
+      "last_updated": "2026-01-19T01:43:11.939986"
     },
     {
       "id": "67c4614826f4",
@@ -1824,7 +2727,7 @@
         "alternative",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.342086"
+      "last_updated": "2026-01-19T01:43:11.940011"
     },
     {
       "id": "d7c73269ddae",
@@ -1852,7 +2755,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.342208"
+      "last_updated": "2026-01-19T01:43:11.940112"
     },
     {
       "id": "a4a9f951130a",
@@ -1880,7 +2783,7 @@
         "rock",
         "rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.342233"
+      "last_updated": "2026-01-19T01:43:11.940212"
     },
     {
       "id": "0222919cdc3b",
@@ -1909,7 +2812,7 @@
         "rock",
         "rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.342257"
+      "last_updated": "2026-01-19T01:43:11.940244"
     },
     {
       "id": "487992a9fcfe",
@@ -1940,7 +2843,7 @@
         "rock",
         "hard rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.342308"
+      "last_updated": "2026-01-19T01:43:11.940301"
     },
     {
       "id": "5bdd33cbfce8",
@@ -1970,7 +2873,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.342336"
+      "last_updated": "2026-01-19T01:43:11.940335"
     },
     {
       "id": "87de65a380ff",
@@ -1999,7 +2902,107 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.342364"
+      "last_updated": "2026-01-19T01:43:11.940365"
+    },
+    {
+      "id": "7b6b9ecf700c",
+      "date": "2026-05-07T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Paper Kites"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/the-paper-kites/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662715"
+    },
+    {
+      "id": "329c1f1eb966",
+      "date": "2026-05-09T18:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Searows"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/searows/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662725"
+    },
+    {
+      "id": "62c0f3ba6799",
+      "date": "2026-05-10T20:30:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Christos Mastoras &amp; Melisses"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/christos-mastoras-meaisses/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662739"
+    },
+    {
+      "id": "eb5647cab188",
+      "date": "2026-05-14T19:00:00",
+      "day_of_week": "Thu",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Melody&#8217;s Echo Chamber"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/melodys-echo-chamber/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662758"
     },
     {
       "id": "764df4954219",
@@ -2029,7 +3032,7 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T01:36:54.342783"
+      "last_updated": "2026-01-19T01:43:11.940791"
     },
     {
       "id": "d44728ecb00b",
@@ -2059,7 +3062,32 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.342829"
+      "last_updated": "2026-01-19T01:43:11.940843"
+    },
+    {
+      "id": "97518b6a9707",
+      "date": "2026-05-19T18:00:00",
+      "day_of_week": "Tue",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "REVOLVER PRESENTS: THORNHILL: The Mercia Tour"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/revolver-presents-thornhill-the-mercia-tour/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662778"
     },
     {
       "id": "2620631a87b0",
@@ -2087,7 +3115,7 @@
         "rock",
         "classic rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.342877"
+      "last_updated": "2026-01-19T01:43:11.940890"
     },
     {
       "id": "f0a4dd82e85e",
@@ -2115,7 +3143,7 @@
         "rock",
         "classic rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.342931"
+      "last_updated": "2026-01-19T01:43:11.940941"
     },
     {
       "id": "b4e15d8fe569",
@@ -2143,7 +3171,7 @@
         "alternative",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T01:36:54.342983"
+      "last_updated": "2026-01-19T01:43:11.940991"
     },
     {
       "id": "5321fb0d33cf",
@@ -2173,7 +3201,158 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T01:37:32.221742"
+      "last_updated": "2026-01-19T01:43:12.204274"
+    },
+    {
+      "id": "45c0f5dab19a",
+      "date": "2026-06-05T22:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "HOL! Presented by Ground Control"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/hol-presented-by-ground-control/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662795"
+    },
+    {
+      "id": "4b5252d19097",
+      "date": "2026-06-10T19:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "INJI"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/inji/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662806"
+    },
+    {
+      "id": "b66c943ec0a3",
+      "date": "2026-08-14T18:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "[moved to Roadrunner] Chance Pe\u00f1a"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/chance-pena/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662823"
+    },
+    {
+      "id": "c195f2fb304f",
+      "date": "2026-09-26T20:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Endless Night Boston Vampire Ball: Le Cabaret Royale"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/21445/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662848"
+    },
+    {
+      "id": "d813ba714d97",
+      "date": "2026-10-11T19:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Benjamin Tod",
+        "Inline Six"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/benjamin-tod-and-the-inline-six/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662864"
+    },
+    {
+      "id": "02714d89d170",
+      "date": "2026-10-19T18:00:00",
+      "day_of_week": "Mon",
+      "venue": {
+        "id": "royale",
+        "name": "Royale",
+        "location": "Boston"
+      },
+      "bands": [
+        "Bethel Music"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "6pm",
+      "flags": [],
+      "source": "scrape:boston_venues",
+      "source_url": "https://royaleboston.com/event/bethel-music/",
+      "genre_tags": [],
+      "last_updated": "2026-01-19T01:43:29.662888"
     }
   ]
 }

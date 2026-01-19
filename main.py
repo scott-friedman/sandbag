@@ -13,7 +13,7 @@ from datetime import datetime
 
 from foobos.config import OUTPUT_DIR, DATA_DIR, CACHE_DIR
 from foobos.fetchers import TicketmasterFetcher
-from foobos.fetchers.scrapers import SafeInACrowdScraper, Do617Scraper, MiddleEastScraper
+from foobos.fetchers.scrapers import SafeInACrowdScraper, Do617Scraper, MiddleEastScraper, AXSVenuesScraper
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre
 from foobos.generators import generate_all_html
 from foobos.utils.cache import clear_cache
@@ -79,6 +79,16 @@ def cmd_fetch(args):
         all_concerts.extend(me_concerts)
     except Exception as e:
         logger.error(f"Middle East scrape failed: {e}")
+
+    # AXS Venues (Roadrunner, Royale, Big Night Live, MGM Music Hall)
+    try:
+        logger.info("Scraping AXS venues (Roadrunner, Royale, Big Night Live, MGM)...")
+        axs_scraper = AXSVenuesScraper()
+        axs_concerts = axs_scraper.fetch()
+        logger.info(f"AXS Venues: {len(axs_concerts)} concerts")
+        all_concerts.extend(axs_concerts)
+    except Exception as e:
+        logger.error(f"AXS venues scrape failed: {e}")
 
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 

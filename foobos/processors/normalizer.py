@@ -38,6 +38,10 @@ def normalize_concerts(concerts: List[Concert]) -> List[Concert]:
 
 def _normalize_concert(concert: Concert) -> Concert:
     """Normalize a single concert."""
+    # Normalize date (remove timezone info for consistency)
+    if concert.date and concert.date.tzinfo is not None:
+        concert.date = concert.date.replace(tzinfo=None)
+
     # Normalize bands
     concert.bands = [_normalize_band_name(b) for b in concert.bands if b]
     concert.bands = [b for b in concert.bands if b]  # Remove empty
