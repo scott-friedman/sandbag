@@ -99,7 +99,14 @@ def _normalize_name(name: str) -> str:
 
 
 def _are_duplicates(a: Concert, b: Concert) -> bool:
-    """Check if two concerts are duplicates."""
+    """Check if two concerts are duplicates using majority vote on event info.
+
+    A duplicate is detected if:
+    - Same date (already filtered by day)
+    - Similar venue AND similar headliner (required)
+    OR
+    - Same venue AND majority of other info matches (time, price, age, bands)
+    """
     # Must be same date (already filtered by day)
 
     # Check venue similarity with normalization
@@ -117,15 +124,100 @@ def _are_duplicates(a: Concert, b: Concert) -> bool:
         return False
 
     # Check headliner similarity
-    if not a.bands or not b.bands:
-        return False
+    headliner_similar = False
+    if a.bands and b.bands:
+        headliner_a = _normalize_name(a.headliner)
+        headliner_b = _normalize_name(b.headliner)
+        headliner_score = fuzz.ratio(headliner_a, headliner_b)
+        headliner_similar = headliner_score >= SIMILARITY_THRESHOLD
 
-    headliner_a = _normalize_name(a.headliner)
-    headliner_b = _normalize_name(b.headliner)
+    # If venue and headliner both match, it's a duplicate
+    if headliner_similar:
+        return True
 
-    headliner_score = fuzz.ratio(headliner_a, headliner_b)
+    # If venue matches but headliner doesn't, check majority of other info
+    # This catches cases where headliner name is formatted differently
+    # but all other event details match
+    match_count = 0
+    total_checks = 0
 
-    return headliner_score >= SIMILARITY_THRESHOLD
+    # Check time similarity
+    if a.time and b.time:
+        total_checks += 1
+        if _times_similar(a.time, b.time):
+            match_count += 1
+
+    # Check price similarity
+    if a.price_advance is not None or b.price_advance is not None:
+        total_checks += 1
+        if a.price_advance == b.price_advance:
+            match_count += 1
+    if a.price_door is not None or b.price_door is not None:
+        total_checks += 1
+        if a.price_door == b.price_door:
+            match_count += 1
+
+    # Check age requirement
+    if a.age_requirement and b.age_requirement:
+        total_checks += 1
+        if a.age_requirement == b.age_requirement:
+            match_count += 1
+
+    # Check for overlapping bands (any band in common besides headliner)
+    if len(a.bands) > 1 and len(b.bands) > 1:
+        total_checks += 1
+        a_other_bands = {_normalize_name(b) for b in a.bands[1:]}
+        b_other_bands = {_normalize_name(b) for b in b.bands[1:]}
+        # Check if any supporting bands overlap using fuzzy matching
+        has_overlap = False
+        for band_a in a_other_bands:
+            for band_b in b_other_bands:
+                if fuzz.ratio(band_a, band_b) >= SIMILARITY_THRESHOLD:
+                    has_overlap = True
+                    break
+            if has_overlap:
+                break
+        if has_overlap:
+            match_count += 1
+
+    # If majority of event info matches (at least 3 out of available checks),
+    # consider it a duplicate even if headliner names differ
+    if total_checks >= 3 and match_count >= (total_checks // 2 + 1):
+        logger.debug(f"Duplicate detected by majority match: {a.venue_name} - "
+                    f"{match_count}/{total_checks} fields match")
+        return True
+
+    return False
+
+
+def _times_similar(time_a: str, time_b: str) -> bool:
+    """Check if two times are similar (same or within 30 minutes)."""
+    import re
+
+    def parse_time(t: str) -> int:
+        """Convert time string to minutes since midnight."""
+        t = t.lower().strip()
+        match = re.match(r'(\d+)(?::(\d+))?\s*(am|pm)?', t)
+        if not match:
+            return -1
+        hour = int(match.group(1))
+        minute = int(match.group(2) or 0)
+        period = match.group(3)
+
+        if period == 'pm' and hour != 12:
+            hour += 12
+        elif period == 'am' and hour == 12:
+            hour = 0
+
+        return hour * 60 + minute
+
+    mins_a = parse_time(time_a)
+    mins_b = parse_time(time_b)
+
+    if mins_a < 0 or mins_b < 0:
+        return time_a.lower() == time_b.lower()
+
+    return abs(mins_a - mins_b) <= 30
 
 
 def _merge_concerts(concerts: List[Concert]) -> Concert:
