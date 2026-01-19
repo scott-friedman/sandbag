@@ -37,7 +37,7 @@ class TheCabotScraper(BaseScraper):
         return CABOT_URL
 
     def fetch(self) -> List[Concert]:
-        """Fetch concerts from The Cabot."""
+        """Fetch concerts from The Cabot with pagination support."""
         self._log_fetch_start()
 
         # Check cache first
@@ -46,18 +46,42 @@ class TheCabotScraper(BaseScraper):
             logger.info(f"[{self.source_name}] Using cached data ({len(cached)} events)")
             return [Concert.from_dict(c) for c in cached]
 
+        concerts = []
+        max_pages = 10  # Safety limit
+
         try:
-            # Use custom headers to avoid blocking
-            response = requests.get(CABOT_URL, headers=HEADERS, timeout=30)
-            response.raise_for_status()
-            soup = BeautifulSoup(response.text, 'lxml')
-            concerts = self._parse_events(soup)
+            for page_num in range(1, max_pages + 1):
+                if page_num == 1:
+                    page_url = CABOT_URL
+                else:
+                    page_url = f"{CABOT_URL}page/{page_num}/"
+
+                response = requests.get(page_url, headers=HEADERS, timeout=30)
+
+                # Stop if we get an error (likely no more pages)
+                if response.status_code != 200:
+                    break
+
+                soup = BeautifulSoup(response.text, 'lxml')
+                page_concerts = self._parse_events(soup)
+
+                if not page_concerts:
+                    # No more events
+                    break
+
+                concerts.extend(page_concerts)
+                logger.debug(f"[{self.source_name}] Page {page_num}: {len(page_concerts)} events")
+
+                # If fewer than 10 events, probably last page
+                if len(page_concerts) < 10:
+                    break
+
         except Exception as e:
             logger.error(f"Failed to fetch The Cabot events: {e}")
-            return []
 
         # Cache the results
-        save_cache("scrape_the_cabot", [c.to_dict() for c in concerts])
+        if concerts:
+            save_cache("scrape_the_cabot", [c.to_dict() for c in concerts])
         self._log_fetch_complete(len(concerts))
 
         return concerts

@@ -26,6 +26,42 @@ from ...utils import get_cached, save_cache, parse_date
 logger = logging.getLogger(__name__)
 
 
+# Non-music event keywords to filter out (for multi-purpose venues like Arts at the Armory)
+NON_MUSIC_KEYWORDS = [
+    # Dance classes (not concerts)
+    "swing", "salsa class", "latin dance class", "dance class", "dance lesson",
+    "ballroom", "tango class", "bachata class",
+    # Markets and fairs
+    "farmers market", "flea market", "craft fair", "bazaar", "holiday market",
+    "artisan market", "vintage market",
+    # Workshops and classes
+    "workshop", "yoga", "meditation", "pilates", "fitness", "training session",
+    "art class", "painting class", "pottery", "crafting",
+    # Comedy and spoken word
+    "comedy", "stand-up", "open mic comedy", "improv", "storytelling",
+    "poetry slam", "poetry workshop", "the moth", "storyslam",
+    # Sports and gaming
+    "wrestling", "trivia", "game night", "bingo", "karaoke",
+    "ttrpg", "rpg convention", "board game",
+    # Meetings and community events
+    "meeting", "club meeting", "networking", "mixer",
+    "brunch", "breakfast", "luncheon",
+    # Kids events (usually not concert listings)
+    "kids", "children's", "family day", "storytime",
+    # Wellness
+    "wellness", "healing", "reiki", "sound bath",
+]
+
+# Keywords that indicate it IS a music event (override non-music if present)
+MUSIC_KEYWORDS = [
+    "concert", "live music", "band", "singer", "songwriter", "jazz",
+    "rock", "punk", "metal", "folk", "blues", "reggae", "ska",
+    "hip hop", "rap", "r&b", "soul", "funk", "electronic", "dj set",
+    "orchestra", "symphony", "chamber", "quartet", "trio",
+    "album release", "record release", "tour", "farewell show",
+]
+
+
 # Venue configurations - using venue websites
 BOSTON_VENUES = {
     "royale": {
@@ -41,6 +77,21 @@ BOSTON_VENUES = {
         "url": "https://www.sinclaircambridge.com/events/",
         "capacity": 525,
         "parser": "sinclair",
+    },
+    "armory": {
+        "name": "Arts at the Armory",
+        "location": "Somerville",
+        "url": "https://artsatthearmory.org/upcoming-events/",
+        "capacity": 300,
+        "parser": "json_ld",
+    },
+    # Berklee performances - scrapes all venues from their performances page
+    "berklee": {
+        "name": "Berklee",  # Will be overridden by actual venue from page
+        "location": "Boston",
+        "url": "https://www.berklee.edu/events/performances",
+        "parser": "berklee",
+        "use_page_venue": True,  # Use venue name from the page, not this config
     },
 }
 
@@ -95,9 +146,11 @@ class AXSVenuesScraper(BaseScraper):
                 concerts = self._parse_sinclair(soup, venue_id, venue_config)
             elif parser_type == "json_ld":
                 concerts = self._parse_json_ld(soup, venue_id, venue_config)
+            elif parser_type == "berklee":
+                concerts = self._parse_berklee(soup, venue_id, venue_config)
 
-            # Fallback to generic parsing if no results
-            if not concerts:
+            # Fallback to generic parsing if no results (except berklee which has specific format)
+            if not concerts and parser_type != "berklee":
                 concerts = self._parse_event_page(soup, venue_id, venue_config)
 
         except Exception as e:
@@ -269,6 +322,10 @@ class AXSVenuesScraper(BaseScraper):
                     if not name:
                         continue
 
+                    # Filter out non-music events for multi-purpose venues
+                    if not self._is_music_event(name, venue_id):
+                        continue
+
                     # Parse date
                     start_date = event.get("startDate")
                     if not start_date:
@@ -340,6 +397,179 @@ class AXSVenuesScraper(BaseScraper):
 
         return concerts
 
+    def _parse_berklee(self, soup: BeautifulSoup, venue_id: str, venue_config: Dict) -> List[Concert]:
+        """Parse events from Berklee's Drupal-based events page.
+
+        Berklee uses a standard Drupal views structure with:
+        - div.views-row for each event
+        - div.title for event name
+        - time[datetime] for date/time
+        - field--name-field-event-venue-title for venue
+
+        Handles pagination by fetching multiple pages until no more events.
+        """
+        concerts = []
+        use_page_venue = venue_config.get("use_page_venue", False)
+        base_url = venue_config["url"]
+        max_pages = 20  # Safety limit
+
+        for page_num in range(max_pages):
+            # Fetch page (page 0 is the initial soup we already have)
+            if page_num == 0:
+                page_soup = soup
+            else:
+                page_url = f"{base_url}?page={page_num}"
+                try:
+                    page_soup = self._get_soup(page_url)
+                except Exception as e:
+                    logger.debug(f"Error fetching Berklee page {page_num}: {e}")
+                    break
+
+            view = page_soup.find(class_="view-events")
+            if not view:
+                logger.debug("No view-events container found on Berklee page")
+                break
+
+            rows = view.find_all(class_="views-row")
+            if not rows:
+                # No more events on this page
+                break
+
+            page_concerts = self._parse_berklee_rows(rows, venue_id, venue_config, use_page_venue)
+            concerts.extend(page_concerts)
+
+            logger.debug(f"Berklee page {page_num}: found {len(page_concerts)} events")
+
+            # If we got fewer than 10, we're probably on the last page
+            if len(rows) < 10:
+                break
+
+        return concerts
+
+    def _parse_berklee_rows(self, rows, venue_id: str, venue_config: Dict, use_page_venue: bool) -> List[Concert]:
+        """Parse event rows from a single Berklee page."""
+        concerts = []
+
+        for row in rows:
+            try:
+                # Get event title
+                title_div = row.find(class_="title")
+                if not title_div:
+                    continue
+                event_name = self._clean_text(title_div.get_text())
+                if not event_name or len(event_name) < 3:
+                    continue
+
+                # Get venue from page
+                venue_field = row.find(class_="field--name-field-event-venue-title")
+                event_venue = ""
+                if venue_field:
+                    event_venue = self._clean_text(venue_field.get_text().replace("Venue Title", ""))
+
+                # Determine venue name and ID
+                if use_page_venue and event_venue:
+                    actual_venue_name = event_venue
+                    # Normalize venue ID from name
+                    actual_venue_id = self._berklee_venue_to_id(event_venue)
+                else:
+                    actual_venue_name = venue_config["name"]
+                    actual_venue_id = venue_id
+
+                # Get date/time
+                time_elem = row.find("time")
+                if not time_elem:
+                    continue
+
+                datetime_str = time_elem.get("datetime", "")
+                if not datetime_str:
+                    continue
+
+                try:
+                    # Parse ISO datetime: 2026-01-21T13:00:00-05:00
+                    event_date = datetime.fromisoformat(datetime_str.replace("Z", "").split("+")[0].split("-05:00")[0].split("-04:00")[0])
+                except ValueError:
+                    continue
+
+                # Skip past events
+                if event_date.date() < datetime.now().date():
+                    continue
+
+                # Extract show time
+                hour = event_date.hour
+                minute = event_date.minute
+                if hour >= 12:
+                    ampm = "pm"
+                    display_hour = hour if hour == 12 else hour - 12
+                else:
+                    ampm = "am"
+                    display_hour = hour if hour != 0 else 12
+
+                if minute == 0:
+                    show_time = f"{display_hour}{ampm}"
+                else:
+                    show_time = f"{display_hour}:{minute:02d}{ampm}"
+
+                # Parse band names from event title
+                bands = self._parse_event_name(event_name)
+
+                # Get ticket link if available
+                source_url = venue_config["url"]
+                event_link = row.find("a", href=lambda x: x and "/events/" in x)
+                if event_link:
+                    href = event_link.get("href", "")
+                    if href.startswith("/"):
+                        source_url = f"https://www.berklee.edu{href}"
+                    elif href.startswith("http"):
+                        source_url = href
+
+                concerts.append(Concert(
+                    date=event_date,
+                    venue_id=actual_venue_id,
+                    venue_name=actual_venue_name,
+                    venue_location=venue_config["location"],
+                    bands=bands,
+                    age_requirement="a/a",  # Berklee events are typically all ages
+                    price_advance=None,
+                    price_door=None,
+                    time=show_time,
+                    flags=[],
+                    source=self.source_name,
+                    source_url=source_url,
+                    genre_tags=[]
+                ))
+
+            except Exception as e:
+                logger.debug(f"Error parsing Berklee event: {e}")
+                continue
+
+        return concerts
+
+    def _berklee_venue_to_id(self, venue_name: str) -> str:
+        """Convert Berklee venue name to a normalized venue ID."""
+        # Map common Berklee venue names to IDs
+        venue_map = {
+            "berklee performance center": "berklee_bpc",
+            "red room at cafe 939": "cafe939",
+            "cafe 939": "cafe939",
+            "berk recital hall": "berk_recital",
+            "david friend recital hall": "david_friend_recital",
+            "seully hall": "seully_hall",
+            "studio 401": "studio_401",
+            "online": "berklee_online",
+        }
+
+        name_lower = venue_name.lower().strip()
+
+        # Check for exact or partial matches
+        for key, vid in venue_map.items():
+            if key in name_lower:
+                return vid
+
+        # Fallback: generate ID from name
+        vid = name_lower.replace(" ", "_").replace("'", "").replace(".", "")
+        vid = ''.join(c for c in vid if c.isalnum() or c == '_')
+        return vid[:30]
+
     def _parse_event_page(self, soup: BeautifulSoup, venue_id: str, venue_config: Dict) -> List[Concert]:
         """Parse events from common HTML patterns."""
         concerts = []
@@ -381,6 +611,10 @@ class AXSVenuesScraper(BaseScraper):
 
             event_name = self._clean_text(name_elem.get_text())
             if not event_name or len(event_name) < 3:
+                return None
+
+            # Filter out non-music events for multi-purpose venues
+            if not self._is_music_event(event_name, venue_id):
                 return None
 
             # Find date
@@ -434,3 +668,32 @@ class AXSVenuesScraper(BaseScraper):
         bands = self._split_bands(name)
 
         return bands if bands else [name.strip()]
+
+    def _is_music_event(self, event_name: str, venue_id: str) -> bool:
+        """Check if an event is likely a music performance.
+
+        For multi-purpose venues like Arts at the Armory, we need to filter out
+        non-music events since there's no downstream genre filtering.
+
+        Returns True if the event appears to be music-related.
+        """
+        # For dedicated music venues, assume all events are music
+        if venue_id not in ["armory"]:
+            return True
+
+        name_lower = event_name.lower()
+
+        # First check for music keywords - if present, it's likely music
+        for keyword in MUSIC_KEYWORDS:
+            if keyword in name_lower:
+                return True
+
+        # Then check for non-music keywords
+        for keyword in NON_MUSIC_KEYWORDS:
+            if keyword in name_lower:
+                logger.debug(f"Filtering out non-music event: {event_name} (matched: {keyword})")
+                return False
+
+        # Default to including the event if uncertain
+        # Better to have some false positives than miss real concerts
+        return True
