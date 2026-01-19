@@ -73,9 +73,13 @@ class TicketmasterFetcher(BaseFetcher):
         start_date = datetime.now()
         end_date = start_date + timedelta(weeks=WEEKS_AHEAD)
 
+        # Use lat/long + radius for precise Boston area filtering
+        # Boston coordinates: 42.3601, -71.0589
         params = {
             "apikey": TICKETMASTER_API_KEY,
-            "dmaId": BOSTON_DMA,
+            "latlong": "42.3601,-71.0589",
+            "radius": "50",
+            "unit": "miles",
             "classificationName": "music",
             "startDateTime": start_date.strftime("%Y-%m-%dT00:00:00Z"),
             "endDateTime": end_date.strftime("%Y-%m-%dT23:59:59Z"),
