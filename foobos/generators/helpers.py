@@ -15,7 +15,7 @@ def format_concert_line(concert: Concert, link_venue: bool = True, link_bands: b
 
     # Venue
     if link_venue:
-        venue_link = f'<a href="clubs.html#{concert.venue_id}"><b>{concert.venue_name}, {concert.venue_location}</b></a>'
+        venue_link = f'<a href="by-club.html#{concert.venue_id}"><b>{concert.venue_name}, {concert.venue_location}</b></a>'
     else:
         venue_link = f"<b>{concert.venue_name}, {concert.venue_location}</b>"
     parts.append(venue_link)
