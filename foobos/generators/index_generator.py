@@ -4,6 +4,7 @@ Matches foopee.com format with alphabetical band/venue listings.
 """
 
 from datetime import datetime, timedelta
+from html import escape
 from typing import List, Dict, Tuple
 import logging
 from pathlib import Path
@@ -227,6 +228,7 @@ def _generate_bands_list(band_info: Dict[str, Tuple[str, int]]) -> str:
 
     Format: * Band1 * Band2 * Band3 *
     Each band links to its anchor on the single by-band.html page.
+    All band names are HTML-escaped to prevent XSS attacks.
     """
     if not band_info:
         return ""
@@ -237,7 +239,8 @@ def _generate_bands_list(band_info: Dict[str, Tuple[str, int]]) -> str:
     links = []
     for band in sorted_bands:
         anchor, _ = band_info[band]
-        link = f'<a href="by-band.html#{anchor}">{band}</a>'
+        # Escape band name to prevent XSS
+        link = f'<a href="by-band.html#{anchor}">{escape(band)}</a>'
         links.append(link)
 
     # Join with asterisks
@@ -249,6 +252,7 @@ def _generate_venues_list(venue_info: Dict[str, Tuple[str, str, int]]) -> str:
 
     Format: * Venue1, City * Venue2, City *
     Each venue links to its anchor on the single by-club.html page.
+    All venue names are HTML-escaped to prevent XSS attacks.
     """
     if not venue_info:
         return ""
@@ -266,7 +270,8 @@ def _generate_venues_list(venue_info: Dict[str, Tuple[str, str, int]]) -> str:
 
     links = []
     for venue_id, (display_name, anchor, _) in sorted_venues:
-        link = f'<a href="by-club.html#{anchor}">{display_name}</a>'
+        # Escape venue name to prevent XSS
+        link = f'<a href="by-club.html#{anchor}">{escape(display_name)}</a>'
         links.append(link)
 
     # Join with asterisks

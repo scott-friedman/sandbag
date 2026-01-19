@@ -3,6 +3,7 @@ Generate by-band.html page - all concerts organized by band in one master list.
 Matches foopee.com format: band header with bulleted shows underneath.
 """
 
+from html import escape
 from typing import List, Dict, Tuple
 import logging
 from pathlib import Path
@@ -75,36 +76,39 @@ def _generate_band_page(bands: Dict[str, List[Concert]]) -> None:
             continue
 
         anchor = _band_to_anchor(band)
+        # Escape band name to prevent XSS
+        band_escaped = escape(band)
 
         # Sort concerts by date
         concerts = sorted(concerts, key=lambda c: c.date)
 
         # Band header (bold) with anchor
         html += f'<ul>\n'
-        html += f'<li><a name="{anchor}"><b>{band}</b></a>\n'
+        html += f'<li><a name="{anchor}"><b>{band_escaped}</b></a>\n'
         html += '<ul>\n'
 
         for concert in concerts:
             date_str = concert.date.strftime("%b %-d")
-            venue_str = f"{concert.venue_name}, {concert.venue_location}"
+            # Escape venue info to prevent XSS
+            venue_str = f"{escape(concert.venue_name)}, {escape(concert.venue_location)}"
 
-            # Build details string
+            # Build details string - escape all scraped data
             details_parts = []
             if concert.age_requirement and concert.age_requirement != "a/a":
-                details_parts.append(concert.age_requirement)
+                details_parts.append(escape(concert.age_requirement))
             else:
                 details_parts.append("a/a")
 
             if concert.price_display:
-                details_parts.append(concert.price_display)
+                details_parts.append(escape(concert.price_display))
 
             if concert.time:
-                details_parts.append(concert.time)
+                details_parts.append(escape(concert.time))
 
             details = " ".join(details_parts)
 
-            # Add flags
-            flags_str = " ".join(concert.flags) if concert.flags else ""
+            # Add flags - escape to prevent XSS
+            flags_str = " ".join(escape(flag) for flag in concert.flags) if concert.flags else ""
 
             line = f'<li><b>{date_str}</b> <a href="by-club.html">{venue_str}</a> {details}'
             if flags_str:
