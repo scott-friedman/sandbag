@@ -12,7 +12,7 @@ from ..models import Concert
 logger = logging.getLogger(__name__)
 
 # Minimum similarity score to consider events as duplicates
-SIMILARITY_THRESHOLD = 85
+SIMILARITY_THRESHOLD = 80  # Lowered from 85 to catch more variants
 
 
 def deduplicate_concerts(concerts: List[Concert]) -> List[Concert]:
@@ -83,20 +83,35 @@ def _deduplicate_day(concerts: List[Concert]) -> List[Concert]:
     return result
 
 
+def _normalize_name(name: str) -> str:
+    """Normalize a name for comparison."""
+    import re
+    name = name.lower().strip()
+    # Remove common prefixes/suffixes
+    name = re.sub(r'^the\s+', '', name)
+    name = re.sub(r',\s*the$', '', name)
+    # Remove venue city suffixes
+    name = re.sub(r'\s*[-–]\s*(boston|cambridge|somerville|brookline|allston|brighton).*$', '', name, flags=re.I)
+    # Normalize punctuation and whitespace
+    name = re.sub(r'[^\w\s]', '', name)
+    name = re.sub(r'\s+', ' ', name)
+    return name.strip()
+
+
 def _are_duplicates(a: Concert, b: Concert) -> bool:
     """Check if two concerts are duplicates."""
     # Must be same date (already filtered by day)
 
-    # Check venue similarity
-    venue_score = fuzz.ratio(
-        a.venue_id.lower(),
-        b.venue_id.lower()
-    )
-    venue_name_score = fuzz.ratio(
-        a.venue_name.lower(),
-        b.venue_name.lower()
-    )
-    venue_similar = venue_score >= SIMILARITY_THRESHOLD or venue_name_score >= SIMILARITY_THRESHOLD
+    # Check venue similarity with normalization
+    venue_a = _normalize_name(a.venue_name or a.venue_id)
+    venue_b = _normalize_name(b.venue_name or b.venue_id)
+
+    venue_score = fuzz.ratio(venue_a, venue_b)
+    venue_similar = venue_score >= SIMILARITY_THRESHOLD
+
+    # Also check raw venue_id for exact matches
+    if not venue_similar and a.venue_id and b.venue_id:
+        venue_similar = a.venue_id.lower() == b.venue_id.lower()
 
     if not venue_similar:
         return False
@@ -105,10 +120,10 @@ def _are_duplicates(a: Concert, b: Concert) -> bool:
     if not a.bands or not b.bands:
         return False
 
-    headliner_score = fuzz.ratio(
-        a.headliner.lower(),
-        b.headliner.lower()
-    )
+    headliner_a = _normalize_name(a.headliner)
+    headliner_b = _normalize_name(b.headliner)
+
+    headliner_score = fuzz.ratio(headliner_a, headliner_b)
 
     return headliner_score >= SIMILARITY_THRESHOLD
 

@@ -2,8 +2,9 @@
 Scraper for bostonshows.org - Greater Boston live music calendar.
 https://bostonshows.org/
 
-Note: This site may have connectivity issues from some networks (TLS handshake failures).
-It should work in most production environments like GitHub Actions.
+NOTE: This scraper is DISABLED. The site returns 503 errors from automated requests
+(CloudFlare protection). The site aggregates from the same venue sources we already use,
+so we're not missing coverage.
 """
 
 from datetime import datetime, timedelta
@@ -32,35 +33,12 @@ class BostonShowsScraper(BaseScraper):
         return BOSTON_SHOWS_URL
 
     def fetch(self) -> List[Concert]:
-        """Fetch concerts from bostonshows.org."""
-        self._log_fetch_start()
+        """Fetch concerts from bostonshows.org.
 
-        # Check cache first
-        cached = get_cached("scrape_boston_shows")
-        if cached:
-            logger.info(f"[{self.source_name}] Using cached data ({len(cached)} events)")
-            return [Concert.from_dict(c) for c in cached]
-
-        all_concerts = []
-
-        try:
-            # Fetch main page
-            soup = self._get_soup(BOSTON_SHOWS_URL)
-            concerts = self._parse_main_page(soup)
-            all_concerts.extend(concerts)
-            logger.info(f"[{self.source_name}] Found {len(concerts)} events on main page")
-
-        except Exception as e:
-            logger.warning(f"[{self.source_name}] Error fetching main page: {e}")
-            # Return empty list if site is inaccessible
-            return []
-
-        # Cache the results
-        if all_concerts:
-            save_cache("scrape_boston_shows", [c.to_dict() for c in all_concerts])
-
-        self._log_fetch_complete(len(all_concerts))
-        return all_concerts
+        NOTE: Disabled - site blocks automated requests with 503 errors.
+        """
+        logger.info(f"[{self.source_name}] Scraper disabled - site blocks automated requests")
+        return []
 
     def _parse_main_page(self, soup) -> List[Concert]:
         """Parse the main page for concert listings."""

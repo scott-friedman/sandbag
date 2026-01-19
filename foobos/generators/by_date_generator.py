@@ -36,6 +36,30 @@ def generate_by_date_pages(concerts: List[Concert]) -> None:
     logger.info(f"Generated {WEEKS_AHEAD} by-date pages")
 
 
+def _generate_date_shortcuts(current_week: int, reference_date: datetime) -> str:
+    """Generate date range shortcuts like foopee format.
+
+    Format: [ Jan 12 - Jan 18 | Jan 19 - Jan 25 | ... ]
+    Current week is shown in bold without a link.
+    """
+    from ..config import WEEKS_AHEAD
+
+    parts = []
+    for week_num in range(WEEKS_AHEAD):
+        week_start = reference_date + timedelta(weeks=week_num)
+        week_start, week_end = get_week_range(week_start)
+        # Format as "Jan 12 - Jan 18"
+        label = f"{week_start.strftime('%b %-d')} - {week_end.strftime('%b %-d')}"
+
+        if week_num == current_week:
+            # Current week - bold, no link
+            parts.append(f"<b>{label}</b>")
+        else:
+            parts.append(f'<a href="by-date.{week_num}.html">{label}</a>')
+
+    return "[ " + " | ".join(parts) + " ]"
+
+
 def _generate_week_page(week_num: int, concerts: List[Concert], reference_date: datetime) -> None:
     """Generate a single by-date.X.html page."""
     # Calculate week range
@@ -84,10 +108,15 @@ def _generate_week_page(week_num: int, concerts: List[Concert], reference_date: 
 
         current_date += timedelta(days=1)
 
-    html += '''</ul>
+    # Generate date shortcuts
+    date_shortcuts = _generate_date_shortcuts(week_num, reference_date)
+
+    html += f'''</ul>
 
 <hr>
-<p><a href="index.html">Back to The List</a></p>
+<p>{date_shortcuts}</p>
+
+<p>[ <a href="index.html">Top of The List</a> | <a href="mailto:foobos@foobos.com">Your Name Here</a> ]</p>
 
 </body>
 </html>
