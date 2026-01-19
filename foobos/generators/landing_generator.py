@@ -53,10 +53,8 @@ body {
 <div class="site-title">foobos</div>
 
 <div class="nav-links">
-[ <a href="list.html">the list</a> ]<br>
-[ <a href="by-date.0.html">concerts by date</a> ]<br>
-[ <a href="by-band.html">concerts by band</a> ]<br>
-[ <a href="by-club.html">concerts by venue</a> ]
+[ <a href="list.html">shows</a> ]<br>
+[ <a href="http://www.foopee.com/punk/the-list/">what is foopee?</a> ]
 </div>
 
 </body>
