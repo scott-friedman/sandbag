@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-01-19T02:05:04.868913",
-    "total_concerts": 167,
+    "last_updated": "2026-01-19T02:22:51.845192",
+    "total_concerts": 188,
     "generated_by": "foobos"
   },
   "concerts": [
@@ -34,7 +34,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.541556"
+      "last_updated": "2026-01-19T02:22:45.299831"
     },
     {
       "id": "1cf62716f929",
@@ -64,19 +64,21 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.542119"
+      "last_updated": "2026-01-19T02:22:45.300451"
     },
     {
-      "id": "f331d0f9ab57",
-      "date": "2026-01-21T00:00:00",
-      "day_of_week": "Wed",
+      "id": "ce491bc47a1c",
+      "date": "2026-01-19T00:00:00",
+      "day_of_week": "Mon",
       "venue": {
-        "id": "obriens",
-        "name": "O'Brien's Pub",
-        "location": "Allston"
+        "id": "silhouette_lounge",
+        "name": "Silhouette Lounge",
+        "location": "Boston"
       },
       "bands": [
-        "at O'Briens \u2022"
+        "Ohio State Fair",
+        "Angel Bite",
+        "Warmachine"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -92,7 +94,69 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.552241"
+      "last_updated": "2026-01-19T02:22:47.428907"
+    },
+    {
+      "id": "0a082733992f",
+      "date": "2026-01-21T00:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "obriens",
+        "name": "O'Brien's Pub",
+        "location": "Allston"
+      },
+      "bands": [
+        "Astral Bitch",
+        "Collect Pond",
+        "Sailor Down",
+        "Joel Ronson"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.429073"
+    },
+    {
+      "id": "0a86e7712d67",
+      "date": "2026-01-21T00:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "silhouette_lounge",
+        "name": "Silhouette Lounge",
+        "location": "Boston"
+      },
+      "bands": [
+        "Permanent Blue",
+        "Will Tell Aim",
+        "Good & You?",
+        "Baby Bowler"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.429198"
     },
     {
       "id": "73f05717be7b",
@@ -119,19 +183,21 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.073361"
+      "last_updated": "2026-01-19T02:22:46.168268"
     },
     {
-      "id": "424c401ae452",
+      "id": "6315eb736398",
       "date": "2026-01-22T00:00:00",
       "day_of_week": "Thu",
       "venue": {
-        "id": "central_square_elks_lodge_bishop_allen_drive_central_sq",
-        "name": "Central Square Elks Lodge Bishop Allen Drive Central Sq",
-        "location": "Boston"
+        "id": "elks",
+        "name": "Elks Lodge",
+        "location": "Cambridge"
       },
       "bands": [
-        "and more"
+        "If It Rains",
+        "How Much Art",
+        "Computer Kill"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -147,10 +213,10 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.552470"
+      "last_updated": "2026-01-19T02:22:47.429310"
     },
     {
-      "id": "34f3b5751b38",
+      "id": "66bf1b424e85",
       "date": "2026-01-22T00:00:00",
       "day_of_week": "Thu",
       "venue": {
@@ -159,7 +225,11 @@
         "location": "Allston"
       },
       "bands": [
-        "at O'Brien's"
+        "Marianne Toilet",
+        "Runs",
+        "Manglers",
+        "Emotional Rollercoasters",
+        "Krista Page"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -175,7 +245,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.552565"
+      "last_updated": "2026-01-19T02:22:47.429423"
     },
     {
       "id": "9309dfd353e1",
@@ -209,7 +279,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.275017"
+      "last_updated": "2026-01-19T02:22:44.935466"
     },
     {
       "id": "e39b1c81e81a",
@@ -237,7 +307,7 @@
         "alternative",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.275056"
+      "last_updated": "2026-01-19T02:22:44.935517"
     },
     {
       "id": "558188a3eb2d",
@@ -269,7 +339,7 @@
         "rock",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.275132"
+      "last_updated": "2026-01-19T02:22:44.935603"
     },
     {
       "id": "60bf95ba1656",
@@ -300,7 +370,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.542409"
+      "last_updated": "2026-01-19T02:22:45.300781"
     },
     {
       "id": "00f05e5b9fbd",
@@ -327,7 +397,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.073737"
+      "last_updated": "2026-01-19T02:22:46.168708"
     },
     {
       "id": "015068a3f4b2",
@@ -352,7 +422,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.074054"
+      "last_updated": "2026-01-19T02:22:46.169115"
     },
     {
       "id": "51c413ac308d",
@@ -377,7 +447,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/vibzzz-all-night/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.861979"
+      "last_updated": "2026-01-19T02:22:45.681770"
     },
     {
       "id": "a914b7688ed5",
@@ -408,7 +478,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.275200"
+      "last_updated": "2026-01-19T02:22:44.935667"
     },
     {
       "id": "c3dc11873299",
@@ -434,10 +504,44 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.074379"
+      "last_updated": "2026-01-19T02:22:46.169478"
     },
     {
-      "id": "cc8c3cdb12ee",
+      "id": "b6093d7b59d7",
+      "date": "2026-01-24T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "middleeast",
+        "name": "Middle East",
+        "location": "Cambridge"
+      },
+      "bands": [
+        "Stars",
+        "Stripes",
+        "Stigma",
+        "Fuerza Bruta",
+        "Hub City Stompers",
+        "Bad Terms",
+        "Stress"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.429777"
+    },
+    {
+      "id": "2d467e6d39c8",
       "date": "2026-01-24T00:00:00",
       "day_of_week": "Sat",
       "venue": {
@@ -446,7 +550,9 @@
         "location": "Jamaica Plain"
       },
       "bands": [
-        "this is a"
+        "Stop Calling Me Frank",
+        "Unnatural Axe",
+        "Last Stand"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -462,19 +568,21 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.552734"
+      "last_updated": "2026-01-19T02:22:47.429891"
     },
     {
-      "id": "a8d26cc5d6fd",
+      "id": "b1aca05166fc",
       "date": "2026-01-24T00:00:00",
       "day_of_week": "Sat",
       "venue": {
-        "id": "obriens",
-        "name": "O'Brien's Pub",
-        "location": "Allston"
+        "id": "square_root",
+        "name": "Square Root",
+        "location": "Boston"
       },
       "bands": [
-        "at O'Briens"
+        "Sapling",
+        "John Hovorka",
+        "Crow Follow"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -490,7 +598,38 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.552880"
+      "last_updated": "2026-01-19T02:22:47.429995"
+    },
+    {
+      "id": "8eb8853df7d5",
+      "date": "2026-01-24T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "obriens",
+        "name": "O'Brien's Pub",
+        "location": "Allston"
+      },
+      "bands": [
+        "Things Left Unsaid",
+        "Louzy",
+        "Good June",
+        "Sorry Safari"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.430088"
     },
     {
       "id": "5b11c714ce62",
@@ -516,10 +655,10 @@
       "source_url": "https://www.bostonska.net/",
       "genre_tags": [
         "ska",
-        "reggae",
-        "punk"
+        "punk",
+        "reggae"
       ],
-      "last_updated": "2026-01-19T02:05:04.819305"
+      "last_updated": "2026-01-19T02:22:51.797118"
     },
     {
       "id": "5f6b545465ee",
@@ -544,7 +683,38 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.074692"
+      "last_updated": "2026-01-19T02:22:46.169836"
+    },
+    {
+      "id": "9b877f3bb4b9",
+      "date": "2026-01-25T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "silhouette_lounge",
+        "name": "Silhouette Lounge",
+        "location": "Boston"
+      },
+      "bands": [
+        "Blame It on Whitman",
+        "Cape Crush",
+        "Care For",
+        "MK Naomi"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.430190"
     },
     {
       "id": "402edfc95f3c",
@@ -570,7 +740,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/the-serpents-tour-starring-nymphia-wind-and-plastique-tiara/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862036"
+      "last_updated": "2026-01-19T02:22:45.681833"
     },
     {
       "id": "b038229b7c54",
@@ -599,7 +769,38 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.275396"
+      "last_updated": "2026-01-19T02:22:44.935898"
+    },
+    {
+      "id": "77e03722bdcd",
+      "date": "2026-01-28T00:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "middleeast_up",
+        "name": "Middle East Upstairs",
+        "location": "Cambridge"
+      },
+      "bands": [
+        "Gene Loves Jezebel",
+        "Gossip Collar",
+        "Black Season Witch",
+        "Silver Rein"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": 20,
+        "door": null,
+        "display": "$20"
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.430297"
     },
     {
       "id": "71cdb885ce1c",
@@ -625,7 +826,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.074997"
+      "last_updated": "2026-01-19T02:22:46.170186"
     },
     {
       "id": "82fab04b417a",
@@ -650,7 +851,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/alleycvt/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862051"
+      "last_updated": "2026-01-19T02:22:45.681850"
     },
     {
       "id": "981fd16efaa5",
@@ -675,7 +876,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.075300"
+      "last_updated": "2026-01-19T02:22:46.170545"
     },
     {
       "id": "ec6545d7c7f7",
@@ -700,7 +901,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.075601"
+      "last_updated": "2026-01-19T02:22:46.170889"
     },
     {
       "id": "505d0d08e601",
@@ -725,7 +926,7 @@
       "source": "merged:scrape:boston_venues+scrape:bowery_boston",
       "source_url": "https://royaleboston.com/event/sudan-archives/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862063"
+      "last_updated": "2026-01-19T02:22:45.681864"
     },
     {
       "id": "287e51962136",
@@ -751,10 +952,10 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.075886"
+      "last_updated": "2026-01-19T02:22:46.171226"
     },
     {
-      "id": "c386221625ba",
+      "id": "ceb8701e0d8f",
       "date": "2026-01-31T00:00:00",
       "day_of_week": "Sat",
       "venue": {
@@ -763,7 +964,9 @@
         "location": "Allston"
       },
       "bands": [
-        "at O'Brien's this is a"
+        "Snowbeasts",
+        "Spirit Hotel",
+        "Neponset Monastery"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -779,10 +982,10 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.553261"
+      "last_updated": "2026-01-19T02:22:47.430535"
     },
     {
-      "id": "abc84ab1a93f",
+      "id": "4f82e7d116c5",
       "date": "2026-01-31T00:00:00",
       "day_of_week": "Sat",
       "venue": {
@@ -791,7 +994,9 @@
         "location": "Allston"
       },
       "bands": [
-        "at O'Briens"
+        "Missing Peace",
+        "Cheem",
+        "Slow Degrade"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -807,10 +1012,10 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.553351"
+      "last_updated": "2026-01-19T02:22:47.430634"
     },
     {
-      "id": "e4959091d4cd",
+      "id": "3bf9de9b2619",
       "date": "2026-01-31T00:00:00",
       "day_of_week": "Sat",
       "venue": {
@@ -819,7 +1024,7 @@
         "location": "Jamaica Plain"
       },
       "bands": [
-        "at The Midway ("
+        "Andy California"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -835,7 +1040,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.553439"
+      "last_updated": "2026-01-19T02:22:47.430745"
     },
     {
       "id": "143d656a0b5c",
@@ -860,7 +1065,7 @@
       "source": "scrape:bowery_boston",
       "source_url": "https://www.boweryboston.com/see-all-shows",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:59.000255"
+      "last_updated": "2026-01-19T02:22:47.084388"
     },
     {
       "id": "7b8147c555d0",
@@ -885,7 +1090,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/max-styler/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862073"
+      "last_updated": "2026-01-19T02:22:45.681876"
     },
     {
       "id": "f868f6bdbcb5",
@@ -911,7 +1116,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.076192"
+      "last_updated": "2026-01-19T02:22:46.171567"
     },
     {
       "id": "aa6e51be81d5",
@@ -936,7 +1141,7 @@
       "source": "scrape:bowery_boston",
       "source_url": "https://www.boweryboston.com/see-all-shows",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:59.000273"
+      "last_updated": "2026-01-19T02:22:47.084409"
     },
     {
       "id": "40d23bfb9eac",
@@ -966,7 +1171,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.542683"
+      "last_updated": "2026-01-19T02:22:45.301080"
     },
     {
       "id": "c93d739fc40f",
@@ -993,19 +1198,22 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.076483"
+      "last_updated": "2026-01-19T02:22:46.171918"
     },
     {
-      "id": "4824f491875f",
+      "id": "a689946bbd13",
       "date": "2026-02-02T00:00:00",
       "day_of_week": "Mon",
       "venue": {
-        "id": "obriens",
-        "name": "O'Brien's Pub",
-        "location": "Allston"
+        "id": "silhouette_lounge",
+        "name": "Silhouette Lounge",
+        "location": "Boston"
       },
       "bands": [
-        "at O'Brien's"
+        "Weatherless",
+        "Rain House",
+        "Literally Nobody",
+        "School"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -1021,7 +1229,38 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.553667"
+      "last_updated": "2026-01-19T02:22:47.430920"
+    },
+    {
+      "id": "06a313639acb",
+      "date": "2026-02-02T00:00:00",
+      "day_of_week": "Mon",
+      "venue": {
+        "id": "obriens",
+        "name": "O'Brien's Pub",
+        "location": "Allston"
+      },
+      "bands": [
+        "Discontent",
+        "Can\u2019t Lose",
+        "Unhinged",
+        "Bullzeye"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.431016"
     },
     {
       "id": "be137c399442",
@@ -1047,7 +1286,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.076775"
+      "last_updated": "2026-01-19T02:22:46.172244"
     },
     {
       "id": "eb5f79affc06",
@@ -1073,7 +1312,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.077056"
+      "last_updated": "2026-01-19T02:22:46.172588"
     },
     {
       "id": "d3c32f936abe",
@@ -1099,10 +1338,10 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.077345"
+      "last_updated": "2026-01-19T02:22:46.172917"
     },
     {
-      "id": "25e790497f3f",
+      "id": "2accd4e0d556",
       "date": "2026-02-05T00:00:00",
       "day_of_week": "Thu",
       "venue": {
@@ -1111,7 +1350,9 @@
         "location": "Allston"
       },
       "bands": [
-        "at O'Brien's"
+        "Sparks the Rescue",
+        "5ever",
+        "Megan From Work"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -1127,7 +1368,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.553742"
+      "last_updated": "2026-01-19T02:22:47.431101"
     },
     {
       "id": "2accff2dfc0c",
@@ -1154,7 +1395,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.077641"
+      "last_updated": "2026-01-19T02:22:46.173243"
     },
     {
       "id": "ab267d701d89",
@@ -1179,10 +1420,10 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.077921"
+      "last_updated": "2026-01-19T02:22:46.173588"
     },
     {
-      "id": "f67f5cbef938",
+      "id": "c3166962fe7c",
       "date": "2026-02-06T00:00:00",
       "day_of_week": "Fri",
       "venue": {
@@ -1191,7 +1432,9 @@
         "location": "Allston"
       },
       "bands": [
-        "at O'Brien's"
+        "Sparks the Rescue",
+        "We Demand Parachutes",
+        "Borderlines"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -1207,7 +1450,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.553813"
+      "last_updated": "2026-01-19T02:22:47.431186"
     },
     {
       "id": "8f34d6efdfa6",
@@ -1232,7 +1475,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.078215"
+      "last_updated": "2026-01-19T02:22:46.173918"
     },
     {
       "id": "f5baa0ce2989",
@@ -1258,10 +1501,10 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.078497"
+      "last_updated": "2026-01-19T02:22:46.174237"
     },
     {
-      "id": "9fe0f53f6ac4",
+      "id": "b86ed274f26e",
       "date": "2026-02-07T00:00:00",
       "day_of_week": "Sat",
       "venue": {
@@ -1270,8 +1513,12 @@
         "location": "Cambridge"
       },
       "bands": [
-        "At Sonia\u2019s",
-        "Cambridge"
+        "Muck",
+        "Mires",
+        "White Dynamite",
+        "Sonic Bomb",
+        "Humanoids",
+        "We Own Land"
       ],
       "age_requirement": "18+",
       "price": {
@@ -1287,10 +1534,10 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.553911"
+      "last_updated": "2026-01-19T02:22:47.431299"
     },
     {
-      "id": "081374255480",
+      "id": "bf600a2ac43e",
       "date": "2026-02-07T00:00:00",
       "day_of_week": "Sat",
       "venue": {
@@ -1299,7 +1546,11 @@
         "location": "Jamaica Plain"
       },
       "bands": [
-        "at The Midway"
+        "DEVA",
+        "Charmed",
+        "Strange",
+        "Jacklights",
+        "TELL"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -1315,7 +1566,37 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.553994"
+      "last_updated": "2026-01-19T02:22:47.431391"
+    },
+    {
+      "id": "795d4af3577b",
+      "date": "2026-02-07T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "deepcuts",
+        "name": "Deep Cuts",
+        "location": "Medford"
+      },
+      "bands": [
+        "Grownup Noise",
+        "Happy Little Clouds",
+        "Josh Gondelman"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.431479"
     },
     {
       "id": "6dae131820f1",
@@ -1340,19 +1621,23 @@
       "source": "scrape:boston_venues",
       "source_url": "https://www.sinclaircambridge.com/events/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:58.078780"
+      "last_updated": "2026-01-19T02:22:46.174575"
     },
     {
-      "id": "92c2e4af0ac7",
+      "id": "ae7d07905261",
       "date": "2026-02-08T00:00:00",
       "day_of_week": "Sun",
       "venue": {
-        "id": "middleeast",
-        "name": "Middle East",
+        "id": "middleeast_up",
+        "name": "Middle East Upstairs",
         "location": "Cambridge"
       },
       "bands": [
-        "Middle East UP"
+        "Shit-Faced",
+        "Erections",
+        "Who Killed Spikey Jacket?",
+        "Uniformed Service",
+        "Phantom Rider"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -1368,7 +1653,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.554203"
+      "last_updated": "2026-01-19T02:22:47.431636"
     },
     {
       "id": "0b20230faae7",
@@ -1397,7 +1682,37 @@
         "alternative",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.275953"
+      "last_updated": "2026-01-19T02:22:44.936519"
+    },
+    {
+      "id": "76d4b1f5b901",
+      "date": "2026-02-11T00:00:00",
+      "day_of_week": "Wed",
+      "venue": {
+        "id": "deepcuts",
+        "name": "Deep Cuts",
+        "location": "Medford"
+      },
+      "bands": [
+        "TREE",
+        "Sky Tigers",
+        "Hell Beach"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.431815"
     },
     {
       "id": "aa2068bb29a7",
@@ -1426,7 +1741,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.276083"
+      "last_updated": "2026-01-19T02:22:44.936669"
     },
     {
       "id": "43b5302bf35a",
@@ -1451,7 +1766,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/monaleo-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862091"
+      "last_updated": "2026-01-19T02:22:45.681898"
     },
     {
       "id": "cc5782a50391",
@@ -1481,10 +1796,10 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.542930"
+      "last_updated": "2026-01-19T02:22:45.301369"
     },
     {
-      "id": "09b88880602f",
+      "id": "9517b7c25bf4",
       "date": "2026-02-14T00:00:00",
       "day_of_week": "Sat",
       "venue": {
@@ -1493,7 +1808,10 @@
         "location": "Allston"
       },
       "bands": [
-        "at O'Brien's"
+        "Rockin Bob Punk",
+        "TJ Welch",
+        "Wasted",
+        "Still Sedated"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -1509,7 +1827,68 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.554410"
+      "last_updated": "2026-01-19T02:22:47.431904"
+    },
+    {
+      "id": "bea844f47e09",
+      "date": "2026-02-14T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "middleeast_up",
+        "name": "Middle East Upstairs",
+        "location": "Cambridge"
+      },
+      "bands": [
+        "American Ocelot",
+        "Happy Little Clouds",
+        "Girl With A Hawk",
+        "Galaxy Cake"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.431993"
+    },
+    {
+      "id": "eca04c832ecf",
+      "date": "2026-02-14T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "deepcuts",
+        "name": "Deep Cuts",
+        "location": "Medford"
+      },
+      "bands": [
+        "Spiller",
+        "Diablogato",
+        "99 Shots"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.432079"
     },
     {
       "id": "816df345911d",
@@ -1534,7 +1913,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/badflower-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862103"
+      "last_updated": "2026-01-19T02:22:45.681912"
     },
     {
       "id": "ba296a64dbaf",
@@ -1559,7 +1938,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/layton-giordani/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862116"
+      "last_updated": "2026-01-19T02:22:45.681926"
     },
     {
       "id": "3530b829a75c",
@@ -1584,7 +1963,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/szn4/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862124"
+      "last_updated": "2026-01-19T02:22:45.681937"
     },
     {
       "id": "367a0ed91306",
@@ -1612,7 +1991,7 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T02:04:57.276355"
+      "last_updated": "2026-01-19T02:22:44.936963"
     },
     {
       "id": "70708d466ca6",
@@ -1640,7 +2019,7 @@
         "alternative",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.276438"
+      "last_updated": "2026-01-19T02:22:44.937055"
     },
     {
       "id": "4fcdbf71e0c3",
@@ -1670,19 +2049,22 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.542993"
+      "last_updated": "2026-01-19T02:22:45.301445"
     },
     {
-      "id": "3000ab69cfb2",
+      "id": "d248feaf7838",
       "date": "2026-02-21T00:00:00",
       "day_of_week": "Sat",
       "venue": {
-        "id": "obriens",
-        "name": "O'Brien's Pub",
-        "location": "Allston"
+        "id": "faces_malden",
+        "name": "Faces Malden",
+        "location": "Boston"
       },
       "bands": [
-        "at O'Brien's"
+        "KCUF",
+        "Oh The Humanity!",
+        "Leisure Boys",
+        "CE Skidmore"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -1698,7 +2080,69 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.554819"
+      "last_updated": "2026-01-19T02:22:47.432262"
+    },
+    {
+      "id": "234be6746660",
+      "date": "2026-02-21T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "deepcuts",
+        "name": "Deep Cuts",
+        "location": "Medford"
+      },
+      "bands": [
+        "Worshipper",
+        "Zip-Tie Handcuffs",
+        "Gossip Collar",
+        "Bastard Leg"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.432361"
+    },
+    {
+      "id": "040442dc3aa1",
+      "date": "2026-02-21T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "obriens",
+        "name": "O'Brien's Pub",
+        "location": "Allston"
+      },
+      "bands": [
+        "Inplainsight",
+        "Dowsing Rod",
+        "Evil Felipe",
+        "Horrendous Downplay"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.432444"
     },
     {
       "id": "f395ba3cf09e",
@@ -1723,7 +2167,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/margo-price/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862134"
+      "last_updated": "2026-01-19T02:22:45.681949"
     },
     {
       "id": "df69b2431a11",
@@ -1752,7 +2196,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.276620"
+      "last_updated": "2026-01-19T02:22:44.937246"
     },
     {
       "id": "a7159095debf",
@@ -1777,7 +2221,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/loyle-carner/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862161"
+      "last_updated": "2026-01-19T02:22:45.681962"
     },
     {
       "id": "3b7882a81f5e",
@@ -1805,7 +2249,7 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T02:04:57.276681"
+      "last_updated": "2026-01-19T02:22:44.937328"
     },
     {
       "id": "9193f90d1e6c",
@@ -1830,7 +2274,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/the-record-company-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862173"
+      "last_updated": "2026-01-19T02:22:45.681973"
     },
     {
       "id": "dd7724f6bdec",
@@ -1859,7 +2303,7 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T02:04:57.276957"
+      "last_updated": "2026-01-19T02:22:44.937660"
     },
     {
       "id": "13ab9436f600",
@@ -1884,7 +2328,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/peter-mcpoland-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862183"
+      "last_updated": "2026-01-19T02:22:45.681984"
     },
     {
       "id": "e334e5f82ba0",
@@ -1909,7 +2353,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/boots-n-beats/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862193"
+      "last_updated": "2026-01-19T02:22:45.681996"
     },
     {
       "id": "8febabaaefbe",
@@ -1939,7 +2383,36 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.543047"
+      "last_updated": "2026-01-19T02:22:45.301513"
+    },
+    {
+      "id": "ad1f546c58c0",
+      "date": "2026-02-28T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "jungle_tix",
+        "name": "Jungle  TIX",
+        "location": "Boston"
+      },
+      "bands": [
+        "Osis",
+        "Mussel Time"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.432548"
     },
     {
       "id": "83f2238791ba",
@@ -1969,7 +2442,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.543254"
+      "last_updated": "2026-01-19T02:22:45.301739"
     },
     {
       "id": "e3d537cfc702",
@@ -1995,7 +2468,7 @@
       "source": "scrape:bowery_boston",
       "source_url": "https://www.boweryboston.com/see-all-shows",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:59.000305"
+      "last_updated": "2026-01-19T02:22:47.084444"
     },
     {
       "id": "1f1bc21dcac1",
@@ -2025,7 +2498,7 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T02:04:57.277603"
+      "last_updated": "2026-01-19T02:22:44.938381"
     },
     {
       "id": "e255a38d9feb",
@@ -2051,10 +2524,10 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/michael-shannon-jason-narducy-and-friends-play-r-e-m-s-lifes-rich-pageant/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862216"
+      "last_updated": "2026-01-19T02:22:45.682022"
     },
     {
-      "id": "c94bedf336a9",
+      "id": "74bd76145bfb",
       "date": "2026-03-07T00:00:00",
       "day_of_week": "Sat",
       "venue": {
@@ -2063,7 +2536,10 @@
         "location": "Allston"
       },
       "bands": [
-        "at O'Brien's"
+        "TREE",
+        "Catching Hell",
+        "Beantown Boozehounds",
+        "Hammered Saint"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -2079,7 +2555,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.554966"
+      "last_updated": "2026-01-19T02:22:47.432634"
     },
     {
       "id": "6ba245a941c4",
@@ -2106,10 +2582,10 @@
       "source_url": "https://www.bostonska.net/",
       "genre_tags": [
         "ska",
-        "reggae",
-        "punk"
+        "punk",
+        "reggae"
       ],
-      "last_updated": "2026-01-19T02:05:04.819795"
+      "last_updated": "2026-01-19T02:22:51.797518"
     },
     {
       "id": "8b4ebee4e390",
@@ -2134,7 +2610,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/amber-mark/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862228"
+      "last_updated": "2026-01-19T02:22:45.682033"
     },
     {
       "id": "f54fbe5b0e92",
@@ -2164,7 +2640,7 @@
         "rock",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.277877"
+      "last_updated": "2026-01-19T02:22:44.938684"
     },
     {
       "id": "c31a3eefe7b1",
@@ -2193,7 +2669,38 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T02:04:57.277907"
+      "last_updated": "2026-01-19T02:22:44.938710"
+    },
+    {
+      "id": "d7d54df0a95d",
+      "date": "2026-03-13T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "middleeast_up",
+        "name": "Middle East Upstairs",
+        "location": "Cambridge"
+      },
+      "bands": [
+        "Lover of Eve",
+        "Carissa Johnson & The Cure-Alls",
+        "blindspot",
+        "Joshua Sweet"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.432738"
     },
     {
       "id": "605128631054",
@@ -2218,7 +2725,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/quarters/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862243"
+      "last_updated": "2026-01-19T02:22:45.682045"
     },
     {
       "id": "deca0b0e7f63",
@@ -2243,7 +2750,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/kettama/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862253"
+      "last_updated": "2026-01-19T02:22:45.682055"
     },
     {
       "id": "9deb8b6759d8",
@@ -2272,35 +2779,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.278243"
-    },
-    {
-      "id": "d1c17a1894a3",
-      "date": "2026-03-14T00:00:00",
-      "day_of_week": "Sat",
-      "venue": {
-        "id": "barrel_house_z",
-        "name": "Barrel House Z",
-        "location": "Boston"
-      },
-      "bands": [
-        "Plymouth Punk Rock Mini Pop Up Market"
-      ],
-      "age_requirement": "a/a",
-      "price": {
-        "advance": null,
-        "door": null,
-        "display": ""
-      },
-      "time": "8pm",
-      "flags": [],
-      "source": "scrape:boston_groupie_news",
-      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
-      "genre_tags": [
-        "punk",
-        "rock"
-      ],
-      "last_updated": "2026-01-19T02:04:59.555106"
+      "last_updated": "2026-01-19T02:22:44.939096"
     },
     {
       "id": "e1ff0020c3bd",
@@ -2325,7 +2804,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/evan-honer/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862263"
+      "last_updated": "2026-01-19T02:22:45.682065"
     },
     {
       "id": "ee42500773f6",
@@ -2356,7 +2835,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.278275"
+      "last_updated": "2026-01-19T02:22:44.939131"
     },
     {
       "id": "8b8c158ae324",
@@ -2386,7 +2865,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.278332"
+      "last_updated": "2026-01-19T02:22:44.939199"
     },
     {
       "id": "64eddf3fd9f8",
@@ -2414,7 +2893,7 @@
         "rock",
         "blues-rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.278357"
+      "last_updated": "2026-01-19T02:22:44.939228"
     },
     {
       "id": "c4366154d513",
@@ -2439,7 +2918,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/sweet-pill/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862272"
+      "last_updated": "2026-01-19T02:22:45.682075"
     },
     {
       "id": "44b87021adab",
@@ -2467,10 +2946,10 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.278462"
+      "last_updated": "2026-01-19T02:22:44.939342"
     },
     {
-      "id": "bd5b057d5329",
+      "id": "1647a5efc9d3",
       "date": "2026-03-19T00:00:00",
       "day_of_week": "Thu",
       "venue": {
@@ -2479,7 +2958,10 @@
         "location": "Allston"
       },
       "bands": [
-        "at O'Brien's"
+        "Celebrity Sighting",
+        "Nice Guy",
+        "/ Whyte Lipstick",
+        "Merry Merry"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -2495,7 +2977,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.555208"
+      "last_updated": "2026-01-19T02:22:47.432921"
     },
     {
       "id": "f755b5fea7cd",
@@ -2520,7 +3002,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/mindchatter/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862281"
+      "last_updated": "2026-01-19T02:22:45.682085"
     },
     {
       "id": "86e19046d9a7",
@@ -2551,7 +3033,7 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T02:04:57.278516"
+      "last_updated": "2026-01-19T02:22:44.939400"
     },
     {
       "id": "97b32766d886",
@@ -2579,7 +3061,7 @@
         "metal",
         "death metal/black metal"
       ],
-      "last_updated": "2026-01-19T02:04:57.278595"
+      "last_updated": "2026-01-19T02:22:44.939480"
     },
     {
       "id": "1aebe79e4272",
@@ -2607,7 +3089,66 @@
         "indie folk",
         "folk"
       ],
-      "last_updated": "2026-01-19T02:04:57.278625"
+      "last_updated": "2026-01-19T02:22:44.939510"
+    },
+    {
+      "id": "6a0ccdabaa7c",
+      "date": "2026-03-20T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "middleeast_up",
+        "name": "Middle East Upstairs",
+        "location": "Cambridge"
+      },
+      "bands": [
+        "Angry Samoans"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.433095"
+    },
+    {
+      "id": "5f787a725e79",
+      "date": "2026-03-20T00:00:00",
+      "day_of_week": "Fri",
+      "venue": {
+        "id": "deepcuts",
+        "name": "Deep Cuts",
+        "location": "Medford"
+      },
+      "bands": [
+        "Len Price 3",
+        "Chelsea Curve",
+        "Muck & the Mires",
+        "Pop!"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.433190"
     },
     {
       "id": "d65b3e5cff71",
@@ -2635,10 +3176,10 @@
       "source_url": "https://www.bostonska.net/",
       "genre_tags": [
         "ska",
-        "reggae",
-        "punk"
+        "punk",
+        "reggae"
       ],
-      "last_updated": "2026-01-19T02:05:04.820246"
+      "last_updated": "2026-01-19T02:22:51.797872"
     },
     {
       "id": "26ac777a2e32",
@@ -2666,10 +3207,10 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T02:04:57.278762"
+      "last_updated": "2026-01-19T02:22:44.939654"
     },
     {
-      "id": "7ea9519db736",
+      "id": "d1fd2cae961f",
       "date": "2026-03-21T00:00:00",
       "day_of_week": "Sat",
       "venue": {
@@ -2678,7 +3219,7 @@
         "location": "Somerville"
       },
       "bands": [
-        "are"
+        "Trinary System"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -2694,7 +3235,7 @@
         "punk",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:59.555508"
+      "last_updated": "2026-01-19T02:22:47.433291"
     },
     {
       "id": "0a95c4755bea",
@@ -2719,7 +3260,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/prospa/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862290"
+      "last_updated": "2026-01-19T02:22:45.682094"
     },
     {
       "id": "2a085f01a834",
@@ -2744,7 +3285,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/matt-berninger/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862301"
+      "last_updated": "2026-01-19T02:22:45.682105"
     },
     {
       "id": "e9b0bde4117e",
@@ -2773,7 +3314,7 @@
         "rock",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.278953"
+      "last_updated": "2026-01-19T02:22:44.939849"
     },
     {
       "id": "ec4d03bc3a0b",
@@ -2803,7 +3344,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.278979"
+      "last_updated": "2026-01-19T02:22:44.939874"
     },
     {
       "id": "0b78838b732b",
@@ -2832,7 +3373,7 @@
         "folk",
         "indie folk"
       ],
-      "last_updated": "2026-01-19T02:04:57.279062"
+      "last_updated": "2026-01-19T02:22:44.939963"
     },
     {
       "id": "77b92adbb9c8",
@@ -2857,7 +3398,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/gogol-bordello-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862312"
+      "last_updated": "2026-01-19T02:22:45.682115"
     },
     {
       "id": "be064dc17ce6",
@@ -2887,7 +3428,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.279142"
+      "last_updated": "2026-01-19T02:22:44.940044"
     },
     {
       "id": "9e9fe38f1903",
@@ -2917,7 +3458,37 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.279199"
+      "last_updated": "2026-01-19T02:22:44.940078"
+    },
+    {
+      "id": "dabb66fcbad7",
+      "date": "2026-03-28T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "deepcuts",
+        "name": "Deep Cuts",
+        "location": "Medford"
+      },
+      "bands": [
+        "Lyres",
+        "Dogmatics",
+        "Downhauls"
+      ],
+      "age_requirement": "18+",
+      "price": {
+        "advance": 25,
+        "door": null,
+        "display": "$25"
+      },
+      "time": "11pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.433385"
     },
     {
       "id": "a20aea02a0e2",
@@ -2948,7 +3519,7 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T02:04:57.279342"
+      "last_updated": "2026-01-19T02:22:44.940216"
     },
     {
       "id": "76927dd6c651",
@@ -2973,7 +3544,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/21146/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862323"
+      "last_updated": "2026-01-19T02:22:45.682127"
     },
     {
       "id": "7b96f4c3a7f2",
@@ -3001,7 +3572,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.279499"
+      "last_updated": "2026-01-19T02:22:44.940372"
     },
     {
       "id": "89fa52b050e7",
@@ -3029,7 +3600,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.279529"
+      "last_updated": "2026-01-19T02:22:44.940400"
     },
     {
       "id": "81fdd509c8a5",
@@ -3058,7 +3629,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.279583"
+      "last_updated": "2026-01-19T02:22:44.940468"
     },
     {
       "id": "e019da230ee4",
@@ -3086,10 +3657,10 @@
       "source_url": "https://www.bostonska.net/",
       "genre_tags": [
         "ska",
-        "reggae",
-        "punk"
+        "punk",
+        "reggae"
       ],
-      "last_updated": "2026-01-19T02:05:04.820660"
+      "last_updated": "2026-01-19T02:22:51.798211"
     },
     {
       "id": "56033432a6b3",
@@ -3114,7 +3685,37 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/we-touch-grass-anime-rave/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862335"
+      "last_updated": "2026-01-19T02:22:45.682141"
+    },
+    {
+      "id": "63e7b1b19c11",
+      "date": "2026-04-05T00:00:00",
+      "day_of_week": "Sun",
+      "venue": {
+        "id": "jungle",
+        "name": "Jungle",
+        "location": "Boston"
+      },
+      "bands": [
+        "Pledge Pins",
+        "Hambone Skinny",
+        "Cryin' Caleb"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.433475"
     },
     {
       "id": "ae2cc120edf7",
@@ -3144,7 +3745,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.543303"
+      "last_updated": "2026-01-19T02:22:45.301799"
     },
     {
       "id": "9221e6a396c8",
@@ -3172,7 +3773,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.279617"
+      "last_updated": "2026-01-19T02:22:44.940510"
     },
     {
       "id": "0cb1952dc08f",
@@ -3197,7 +3798,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/machine-girl/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862346"
+      "last_updated": "2026-01-19T02:22:45.682152"
     },
     {
       "id": "b38a619cba50",
@@ -3225,7 +3826,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.279679"
+      "last_updated": "2026-01-19T02:22:44.940584"
     },
     {
       "id": "16dd90330a32",
@@ -3255,7 +3856,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.543351"
+      "last_updated": "2026-01-19T02:22:45.301855"
     },
     {
       "id": "6ebeb6260594",
@@ -3280,7 +3881,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/two-feet/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862357"
+      "last_updated": "2026-01-19T02:22:45.682164"
     },
     {
       "id": "96e3046f2d22",
@@ -3310,7 +3911,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.543397"
+      "last_updated": "2026-01-19T02:22:45.301909"
     },
     {
       "id": "0f359cc0bda6",
@@ -3335,7 +3936,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/kishi-bashi-4/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862365"
+      "last_updated": "2026-01-19T02:22:45.682173"
     },
     {
       "id": "c93cf0fc7dc4",
@@ -3360,7 +3961,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/the-martinez-brothers-north-america-tour-2026/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862379"
+      "last_updated": "2026-01-19T02:22:45.682189"
     },
     {
       "id": "5f269ce9acbc",
@@ -3390,7 +3991,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.279783"
+      "last_updated": "2026-01-19T02:22:44.940707"
     },
     {
       "id": "f48ab1aaaf39",
@@ -3420,7 +4021,69 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.543448"
+      "last_updated": "2026-01-19T02:22:45.301970"
+    },
+    {
+      "id": "872a6d6bcee1",
+      "date": "2026-04-11T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "middleeast",
+        "name": "Middle East",
+        "location": "Cambridge"
+      },
+      "bands": [
+        "Blood For Blood",
+        "Skinhead",
+        "COA",
+        "Neolithic"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": 30,
+        "door": null,
+        "display": "$30"
+      },
+      "time": "7pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.433564"
+    },
+    {
+      "id": "0b215b30ba1c",
+      "date": "2026-04-11T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "square_root",
+        "name": "Square Root",
+        "location": "Boston"
+      },
+      "bands": [
+        "Spackles",
+        "Jay Allen",
+        "Archcriminals",
+        "Mesos"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "8pm",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.433661"
     },
     {
       "id": "001d5094febd",
@@ -3450,7 +4113,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.543541"
+      "last_updated": "2026-01-19T02:22:45.302078"
     },
     {
       "id": "391f8601dbe9",
@@ -3475,7 +4138,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/the-growlers-3/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862390"
+      "last_updated": "2026-01-19T02:22:45.682203"
     },
     {
       "id": "165f25c6cfd3",
@@ -3503,7 +4166,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.279975"
+      "last_updated": "2026-01-19T02:22:44.940949"
     },
     {
       "id": "61ccde4b6fef",
@@ -3528,7 +4191,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/starjunk-95/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862400"
+      "last_updated": "2026-01-19T02:22:45.682214"
     },
     {
       "id": "101c6b89d44c",
@@ -3553,7 +4216,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/jose-gonzalez/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862411"
+      "last_updated": "2026-01-19T02:22:45.682227"
     },
     {
       "id": "f85a822baf74",
@@ -3579,7 +4242,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/pattie-gonia-save-her-feat-sequoia-and-vera/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862427"
+      "last_updated": "2026-01-19T02:22:45.682249"
     },
     {
       "id": "ff22c8bd0c4f",
@@ -3607,7 +4270,7 @@
         "rock",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.280338"
+      "last_updated": "2026-01-19T02:22:44.941316"
     },
     {
       "id": "0c68837b2b21",
@@ -3636,7 +4299,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.280505"
+      "last_updated": "2026-01-19T02:22:44.941490"
     },
     {
       "id": "41707fc0cdd2",
@@ -3661,7 +4324,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/sarah-kinsley-2/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862436"
+      "last_updated": "2026-01-19T02:22:45.682261"
     },
     {
       "id": "a286def99b20",
@@ -3689,7 +4352,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.280534"
+      "last_updated": "2026-01-19T02:22:44.941532"
     },
     {
       "id": "abec079e65e5",
@@ -3718,7 +4381,7 @@
         "rock",
         "rock & roll"
       ],
-      "last_updated": "2026-01-19T02:04:57.280558"
+      "last_updated": "2026-01-19T02:22:44.941560"
     },
     {
       "id": "29aceefcdd0f",
@@ -3746,7 +4409,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.280615"
+      "last_updated": "2026-01-19T02:22:44.941618"
     },
     {
       "id": "76b762c4f248",
@@ -3775,7 +4438,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.280646"
+      "last_updated": "2026-01-19T02:22:44.941649"
     },
     {
       "id": "494d7914fb95",
@@ -3804,7 +4467,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.280715"
+      "last_updated": "2026-01-19T02:22:44.941735"
     },
     {
       "id": "ea0c715a8eba",
@@ -3833,7 +4496,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.280742"
+      "last_updated": "2026-01-19T02:22:44.941770"
     },
     {
       "id": "8708cc88833b",
@@ -3861,7 +4524,7 @@
         "rock",
         "classic rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.280787"
+      "last_updated": "2026-01-19T02:22:44.941820"
     },
     {
       "id": "a0fb50741ddd",
@@ -3886,7 +4549,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/oklou/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862445"
+      "last_updated": "2026-01-19T02:22:45.682271"
     },
     {
       "id": "dd0dd533e2bc",
@@ -3917,7 +4580,7 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T02:04:57.280838"
+      "last_updated": "2026-01-19T02:22:44.941894"
     },
     {
       "id": "b02d3273eb52",
@@ -3947,7 +4610,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.280862"
+      "last_updated": "2026-01-19T02:22:44.941921"
     },
     {
       "id": "67c4614826f4",
@@ -3976,7 +4639,35 @@
         "alternative",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.280886"
+      "last_updated": "2026-01-19T02:22:44.941954"
+    },
+    {
+      "id": "3906c2e38d91",
+      "date": "2026-05-02T00:00:00",
+      "day_of_week": "Sat",
+      "venue": {
+        "id": "hynes_convention_center",
+        "name": "Hynes Convention Center",
+        "location": "Boston"
+      },
+      "bands": [
+        "Oddities & Curiosities Expo Boston"
+      ],
+      "age_requirement": "a/a",
+      "price": {
+        "advance": null,
+        "door": null,
+        "display": ""
+      },
+      "time": "10am",
+      "flags": [],
+      "source": "scrape:boston_groupie_news",
+      "source_url": "https://www.bostongroupienews.com/BostonPunkRockConcertReport.html",
+      "genre_tags": [
+        "punk",
+        "rock"
+      ],
+      "last_updated": "2026-01-19T02:22:47.433814"
     },
     {
       "id": "d7c73269ddae",
@@ -4004,7 +4695,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.280993"
+      "last_updated": "2026-01-19T02:22:44.942059"
     },
     {
       "id": "a4a9f951130a",
@@ -4032,7 +4723,7 @@
         "rock",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.281015"
+      "last_updated": "2026-01-19T02:22:44.942084"
     },
     {
       "id": "0222919cdc3b",
@@ -4061,7 +4752,7 @@
         "rock",
         "rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.281039"
+      "last_updated": "2026-01-19T02:22:44.942108"
     },
     {
       "id": "487992a9fcfe",
@@ -4092,7 +4783,7 @@
         "rock",
         "hard rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.281096"
+      "last_updated": "2026-01-19T02:22:44.942165"
     },
     {
       "id": "5bdd33cbfce8",
@@ -4122,7 +4813,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.281137"
+      "last_updated": "2026-01-19T02:22:44.942196"
     },
     {
       "id": "87de65a380ff",
@@ -4151,7 +4842,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.281182"
+      "last_updated": "2026-01-19T02:22:44.942225"
     },
     {
       "id": "7b6b9ecf700c",
@@ -4176,7 +4867,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/the-paper-kites/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862454"
+      "last_updated": "2026-01-19T02:22:45.682284"
     },
     {
       "id": "329c1f1eb966",
@@ -4201,7 +4892,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/searows/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862463"
+      "last_updated": "2026-01-19T02:22:45.682299"
     },
     {
       "id": "62c0f3ba6799",
@@ -4226,7 +4917,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/christos-mastoras-meaisses/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862472"
+      "last_updated": "2026-01-19T02:22:45.682317"
     },
     {
       "id": "eb5647cab188",
@@ -4251,7 +4942,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/melodys-echo-chamber/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862482"
+      "last_updated": "2026-01-19T02:22:45.682334"
     },
     {
       "id": "764df4954219",
@@ -4281,7 +4972,7 @@
         "metal",
         "nu-metal"
       ],
-      "last_updated": "2026-01-19T02:04:57.281628"
+      "last_updated": "2026-01-19T02:22:44.942633"
     },
     {
       "id": "d44728ecb00b",
@@ -4311,7 +5002,7 @@
         "rock",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.281683"
+      "last_updated": "2026-01-19T02:22:44.942685"
     },
     {
       "id": "97518b6a9707",
@@ -4336,7 +5027,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/revolver-presents-thornhill-the-mercia-tour/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862494"
+      "last_updated": "2026-01-19T02:22:45.682350"
     },
     {
       "id": "2620631a87b0",
@@ -4364,7 +5055,7 @@
         "rock",
         "classic rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.281734"
+      "last_updated": "2026-01-19T02:22:44.942750"
     },
     {
       "id": "f0a4dd82e85e",
@@ -4392,7 +5083,7 @@
         "rock",
         "classic rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.281787"
+      "last_updated": "2026-01-19T02:22:44.942811"
     },
     {
       "id": "b4e15d8fe569",
@@ -4420,7 +5111,7 @@
         "alternative",
         "alternative rock"
       ],
-      "last_updated": "2026-01-19T02:04:57.281837"
+      "last_updated": "2026-01-19T02:22:44.942870"
     },
     {
       "id": "5321fb0d33cf",
@@ -4450,7 +5141,7 @@
         "hardcore",
         "punk"
       ],
-      "last_updated": "2026-01-19T02:04:57.543604"
+      "last_updated": "2026-01-19T02:22:45.302140"
     },
     {
       "id": "45c0f5dab19a",
@@ -4475,7 +5166,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/hol-presented-by-ground-control/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862506"
+      "last_updated": "2026-01-19T02:22:45.682362"
     },
     {
       "id": "4b5252d19097",
@@ -4500,7 +5191,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/inji/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862514"
+      "last_updated": "2026-01-19T02:22:45.682372"
     },
     {
       "id": "b66c943ec0a3",
@@ -4525,7 +5216,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/chance-pena/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862543"
+      "last_updated": "2026-01-19T02:22:45.682386"
     },
     {
       "id": "c195f2fb304f",
@@ -4550,7 +5241,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/21445/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862560"
+      "last_updated": "2026-01-19T02:22:45.682402"
     },
     {
       "id": "d813ba714d97",
@@ -4576,7 +5267,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/benjamin-tod-and-the-inline-six/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862572"
+      "last_updated": "2026-01-19T02:22:45.682417"
     },
     {
       "id": "02714d89d170",
@@ -4601,7 +5292,7 @@
       "source": "scrape:boston_venues",
       "source_url": "https://royaleboston.com/event/bethel-music/",
       "genre_tags": [],
-      "last_updated": "2026-01-19T02:04:57.862582"
+      "last_updated": "2026-01-19T02:22:45.682429"
     }
   ]
 }
