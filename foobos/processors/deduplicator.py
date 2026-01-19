@@ -220,12 +220,61 @@ def _times_similar(time_a: str, time_b: str) -> bool:
     return abs(mins_a - mins_b) <= 30
 
 
+def _info_richness_score(concert: Concert) -> int:
+    """Calculate how much useful information a concert entry contains.
+
+    Higher score = more detailed/complete information.
+    """
+    score = 0
+
+    # Headliner detail - longer names with tour info are better
+    # "Kenny Wayne Shepherd: Ledbetter Heights 30th Anniversary Tour" > "Kenny Wayne Shepherd"
+    if concert.bands:
+        headliner = concert.bands[0]
+        score += len(headliner) // 10  # Bonus for longer, more detailed names
+        if ':' in headliner or '-' in headliner or 'tour' in headliner.lower():
+            score += 5  # Bonus for tour name in headliner
+
+    # More bands listed is better
+    score += len(concert.bands) * 2
+
+    # Price info present
+    if concert.price_advance is not None:
+        score += 3
+    if concert.price_door is not None:
+        score += 3
+
+    # Flags indicate additional info (sold out, recommended, etc.)
+    score += len(concert.flags) * 4
+
+    # Specific age requirement (not default)
+    if concert.age_requirement and concert.age_requirement != "a/a":
+        score += 2
+
+    # Specific time (not default 8pm)
+    if concert.time and concert.time != "8pm":
+        score += 2
+
+    # Genre tags present
+    score += len(concert.genre_tags)
+
+    # Source URL present
+    if concert.source_url:
+        score += 2
+
+    return score
+
+
 def _merge_concerts(concerts: List[Concert]) -> Concert:
-    """Merge multiple duplicate concerts into the best single record."""
+    """Merge multiple duplicate concerts into the best single record.
+
+    Prefers entries with more complete/detailed information, then falls back
+    to source reliability for tie-breaking.
+    """
     if len(concerts) == 1:
         return concerts[0]
 
-    # Sort by source reliability (prefer ticketmaster > scrape:safe_in_a_crowd > others)
+    # Sort by info richness first (descending), then source reliability
     source_priority = {
         "ticketmaster": 1,
         "scrape:safe_in_a_crowd": 2,
@@ -233,17 +282,33 @@ def _merge_concerts(concerts: List[Concert]) -> Concert:
         "scrape:do617": 4,
     }
 
-    concerts.sort(key=lambda c: source_priority.get(c.source, 99))
+    concerts.sort(key=lambda c: (-_info_richness_score(c), source_priority.get(c.source, 99)))
 
-    # Start with the most reliable source as base
+    # Start with the most info-rich entry as base
     best = concerts[0]
+
+    logger.debug(f"Merging {len(concerts)} duplicates, using base from {best.source} "
+                 f"(richness: {_info_richness_score(best)})")
 
     # Merge in additional info from other sources
     for concert in concerts[1:]:
-        # Merge bands (union of all bands mentioned)
+        # Merge bands - prefer more detailed names and add any missing bands
         all_bands = list(best.bands)
         for band in concert.bands:
-            if band and not any(fuzz.ratio(band.lower(), b.lower()) > 90 for b in all_bands):
+            if not band:
+                continue
+            # Check if this band matches any existing band
+            match_found = False
+            for i, existing in enumerate(all_bands):
+                similarity = fuzz.ratio(band.lower(), existing.lower())
+                if similarity > 90:
+                    match_found = True
+                    # If the new name is more detailed (longer with tour info), use it
+                    if len(band) > len(existing) + 5:
+                        all_bands[i] = band
+                        logger.debug(f"Upgraded band name: '{existing}' -> '{band}'")
+                    break
+            if not match_found:
                 all_bands.append(band)
         best.bands = all_bands
 
