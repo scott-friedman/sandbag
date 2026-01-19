@@ -31,7 +31,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.197573"
+    "last_updated": "2026-01-19T04:05:25.471337"
   },
   {
     "id": "83bde85eab9a",
@@ -65,7 +65,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.197761"
+    "last_updated": "2026-01-19T04:05:25.471530"
   },
   {
     "id": "175800ec3f93",
@@ -100,7 +100,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.197903"
+    "last_updated": "2026-01-19T04:05:25.471679"
   },
   {
     "id": "cb30f4f6d6f0",
@@ -134,7 +134,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.198024"
+    "last_updated": "2026-01-19T04:05:25.471817"
   },
   {
     "id": "eff55fffe880",
@@ -167,7 +167,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.198142"
+    "last_updated": "2026-01-19T04:05:25.471935"
   },
   {
     "id": "9307d4c18ad7",
@@ -200,7 +200,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.198238"
+    "last_updated": "2026-01-19T04:05:25.472071"
   },
   {
     "id": "eafcd723b0c7",
@@ -234,7 +234,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.198342"
+    "last_updated": "2026-01-19T04:05:25.472178"
   },
   {
     "id": "ce491bc47a1c",
@@ -264,7 +264,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.958896"
+    "last_updated": "2026-01-19T04:05:27.808170"
   },
   {
     "id": "86eeeba0b83e",
@@ -298,7 +298,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.198485"
+    "last_updated": "2026-01-19T04:05:25.472318"
   },
   {
     "id": "73f05717be7b",
@@ -325,7 +325,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.530132"
+    "last_updated": "2026-01-19T04:05:26.337639"
   },
   {
     "id": "6315eb736398",
@@ -355,7 +355,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.959399"
+    "last_updated": "2026-01-19T04:05:27.808606"
   },
   {
     "id": "66bf1b424e85",
@@ -387,7 +387,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.959509"
+    "last_updated": "2026-01-19T04:05:27.808718"
   },
   {
     "id": "12f234cc5ce6",
@@ -412,7 +412,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/sambalolo/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.594790"
+    "last_updated": "2026-01-19T04:05:34.211443"
   },
   {
     "id": "717d561aa0ef",
@@ -437,7 +437,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/sharp-pins/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.863944"
+    "last_updated": "2026-01-19T04:05:36.160983"
   },
   {
     "id": "61dc98a08097",
@@ -465,7 +465,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.501448"
+    "last_updated": "2026-01-19T04:05:37.303050"
   },
   {
     "id": "dd901060b5c7",
@@ -493,7 +493,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.501810"
+    "last_updated": "2026-01-19T04:05:37.303426"
   },
   {
     "id": "1f41112caf63",
@@ -527,7 +527,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.198582"
+    "last_updated": "2026-01-19T04:05:25.472432"
   },
   {
     "id": "51c413ac308d",
@@ -552,7 +552,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/vibzzz-all-night/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593603"
+    "last_updated": "2026-01-19T04:05:25.956139"
   },
   {
     "id": "00f05e5b9fbd",
@@ -579,7 +579,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.530545"
+    "last_updated": "2026-01-19T04:05:26.338073"
   },
   {
     "id": "015068a3f4b2",
@@ -604,7 +604,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.530923"
+    "last_updated": "2026-01-19T04:05:26.338462"
   },
   {
     "id": "87d95122a305",
@@ -629,7 +629,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/chameleon-rift-daydream/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.594832"
+    "last_updated": "2026-01-19T04:05:34.211487"
   },
   {
     "id": "127207afe7ee",
@@ -654,7 +654,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/shit-faced-shakespeare-hamlet/2026-01-23/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.863975"
+    "last_updated": "2026-01-19T04:05:36.161028"
   },
   {
     "id": "e70508806590",
@@ -679,7 +679,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/tori-piskin-poor-little-rich-girl/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.864003"
+    "last_updated": "2026-01-19T04:05:36.161058"
   },
   {
     "id": "61a9872167fb",
@@ -707,7 +707,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.501928"
+    "last_updated": "2026-01-19T04:05:37.303550"
   },
   {
     "id": "b936cb744f0b",
@@ -735,7 +735,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.502478"
+    "last_updated": "2026-01-19T04:05:37.304111"
   },
   {
     "id": "7a25dda5b054",
@@ -763,7 +763,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.502769"
+    "last_updated": "2026-01-19T04:05:37.304420"
   },
   {
     "id": "155f82af885a",
@@ -798,7 +798,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.198669"
+    "last_updated": "2026-01-19T04:05:25.472529"
   },
   {
     "id": "f4a656838a6d",
@@ -833,7 +833,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.198760"
+    "last_updated": "2026-01-19T04:05:25.472614"
   },
   {
     "id": "c3dc11873299",
@@ -859,7 +859,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.531296"
+    "last_updated": "2026-01-19T04:05:26.338839"
   },
   {
     "id": "b6093d7b59d7",
@@ -893,7 +893,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.959862"
+    "last_updated": "2026-01-19T04:05:27.809111"
   },
   {
     "id": "2d467e6d39c8",
@@ -923,7 +923,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.959969"
+    "last_updated": "2026-01-19T04:05:27.809226"
   },
   {
     "id": "b1aca05166fc",
@@ -953,7 +953,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.960080"
+    "last_updated": "2026-01-19T04:05:27.809334"
   },
   {
     "id": "8eb8853df7d5",
@@ -984,7 +984,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.960187"
+    "last_updated": "2026-01-19T04:05:27.809438"
   },
   {
     "id": "5b11c714ce62",
@@ -1009,11 +1009,11 @@
     "source": "scrape:boston_ska",
     "source_url": "https://www.bostonska.net/",
     "genre_tags": [
-      "punk",
       "reggae",
+      "punk",
       "ska"
     ],
-    "last_updated": "2026-01-19T03:39:41.304057"
+    "last_updated": "2026-01-19T04:05:33.741115"
   },
   {
     "id": "a2c04f8f87d4",
@@ -1038,7 +1038,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/akiras-birthday-bash-pressure-cooker-live-w-dj-jaucques-wblk-sound/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.594875"
+    "last_updated": "2026-01-19T04:05:34.211527"
   },
   {
     "id": "f02afbc99935",
@@ -1063,7 +1063,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/shit-faced-shakespeare-hamlet-2/2026-01-24/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.864030"
+    "last_updated": "2026-01-19T04:05:36.161085"
   },
   {
     "id": "6fda5da14810",
@@ -1091,7 +1091,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.502040"
+    "last_updated": "2026-01-19T04:05:37.303675"
   },
   {
     "id": "103de5c46274",
@@ -1125,7 +1125,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.198849"
+    "last_updated": "2026-01-19T04:05:25.472708"
   },
   {
     "id": "505d0d08e601",
@@ -1150,7 +1150,7 @@
     "source": "merged:scrape:boston_venues+scrape:bowery_boston",
     "source_url": "https://royaleboston.com/event/sudan-archives/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593703"
+    "last_updated": "2026-01-19T04:05:25.956232"
   },
   {
     "id": "981fd16efaa5",
@@ -1175,7 +1175,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.532373"
+    "last_updated": "2026-01-19T04:05:26.339951"
   },
   {
     "id": "ec6545d7c7f7",
@@ -1200,7 +1200,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.532713"
+    "last_updated": "2026-01-19T04:05:26.340299"
   },
   {
     "id": "09cf66e8b2a5",
@@ -1226,7 +1226,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/club-delf-featuring-duke-levine-and-kevin-barry-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.594980"
+    "last_updated": "2026-01-19T04:05:34.211635"
   },
   {
     "id": "c69e44d314a3",
@@ -1251,7 +1251,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/shit-faced-shakespeare-hamlet/2026-01-30/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.864195"
+    "last_updated": "2026-01-19T04:05:36.161224"
   },
   {
     "id": "023e1843b164",
@@ -1276,7 +1276,7 @@
     "source": "scrape:songkick",
     "source_url": "https://www.songkick.com/venues/4447493",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:43.148282"
+    "last_updated": "2026-01-19T04:05:37.013350"
   },
   {
     "id": "d9c108bc7ffd",
@@ -1309,7 +1309,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.198944"
+    "last_updated": "2026-01-19T04:05:25.472793"
   },
   {
     "id": "7b8147c555d0",
@@ -1334,7 +1334,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/max-styler/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593714"
+    "last_updated": "2026-01-19T04:05:25.956244"
   },
   {
     "id": "287e51962136",
@@ -1360,7 +1360,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.533058"
+    "last_updated": "2026-01-19T04:05:26.340646"
   },
   {
     "id": "143d656a0b5c",
@@ -1385,7 +1385,7 @@
     "source": "scrape:bowery_boston",
     "source_url": "https://www.boweryboston.com/see-all-shows",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:33.543698"
+    "last_updated": "2026-01-19T04:05:27.373130"
   },
   {
     "id": "ceb8701e0d8f",
@@ -1415,7 +1415,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.960660"
+    "last_updated": "2026-01-19T04:05:27.809896"
   },
   {
     "id": "4f82e7d116c5",
@@ -1445,7 +1445,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.960765"
+    "last_updated": "2026-01-19T04:05:27.810008"
   },
   {
     "id": "3bf9de9b2619",
@@ -1473,7 +1473,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.960860"
+    "last_updated": "2026-01-19T04:05:27.810108"
   },
   {
     "id": "5e8bec078437",
@@ -1500,7 +1500,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/clowning-nonsense-w-daniel-maseda/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.864234"
+    "last_updated": "2026-01-19T04:05:36.161260"
   },
   {
     "id": "d14b4d6fdfda",
@@ -1525,7 +1525,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/shit-faced-shakespeare-hamlet-2/2026-01-31/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.864262"
+    "last_updated": "2026-01-19T04:05:36.161288"
   },
   {
     "id": "62dded730b1a",
@@ -1551,7 +1551,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/be-good-with-paulette/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.864292"
+    "last_updated": "2026-01-19T04:05:36.161317"
   },
   {
     "id": "e299a556523f",
@@ -1576,7 +1576,7 @@
     "source": "scrape:songkick",
     "source_url": "https://www.songkick.com/venues/4503147",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:43.092115"
+    "last_updated": "2026-01-19T04:05:36.388046"
   },
   {
     "id": "65d13a406e22",
@@ -1604,7 +1604,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.504408"
+    "last_updated": "2026-01-19T04:05:37.306143"
   },
   {
     "id": "cd256e975e2d",
@@ -1635,10 +1635,10 @@
     "source_url": "https://safeinacrowd.com/",
     "genre_tags": [
       "rock",
-      "hardcore",
-      "punk"
+      "punk",
+      "hardcore"
     ],
-    "last_updated": "2026-01-19T03:39:31.199035"
+    "last_updated": "2026-01-19T04:05:25.472884"
   },
   {
     "id": "c93d739fc40f",
@@ -1665,7 +1665,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.533783"
+    "last_updated": "2026-01-19T04:05:26.341325"
   },
   {
     "id": "a689946bbd13",
@@ -1696,7 +1696,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.961035"
+    "last_updated": "2026-01-19T04:05:27.810282"
   },
   {
     "id": "2ce0b7b733d7",
@@ -1730,7 +1730,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.199127"
+    "last_updated": "2026-01-19T04:05:25.472970"
   },
   {
     "id": "2accff2dfc0c",
@@ -1757,7 +1757,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.535154"
+    "last_updated": "2026-01-19T04:05:26.342690"
   },
   {
     "id": "ab267d701d89",
@@ -1782,7 +1782,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.535496"
+    "last_updated": "2026-01-19T04:05:26.343018"
   },
   {
     "id": "c3166962fe7c",
@@ -1812,7 +1812,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.961334"
+    "last_updated": "2026-01-19T04:05:27.810585"
   },
   {
     "id": "1b73494f788d",
@@ -1837,7 +1837,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/otis-grove-featuring-mister-rourke/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736055"
+    "last_updated": "2026-01-19T04:05:34.536819"
   },
   {
     "id": "3655c0fc2892",
@@ -1862,7 +1862,7 @@
     "source": "scrape:songkick",
     "source_url": "https://www.songkick.com/venues/4447493",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:43.149977"
+    "last_updated": "2026-01-19T04:05:37.015155"
   },
   {
     "id": "80c275a04198",
@@ -1896,7 +1896,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.199216"
+    "last_updated": "2026-01-19T04:05:25.473079"
   },
   {
     "id": "8f34d6efdfa6",
@@ -1921,7 +1921,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.535810"
+    "last_updated": "2026-01-19T04:05:26.343341"
   },
   {
     "id": "f5baa0ce2989",
@@ -1947,7 +1947,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.536149"
+    "last_updated": "2026-01-19T04:05:26.343667"
   },
   {
     "id": "b86ed274f26e",
@@ -1980,7 +1980,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.961443"
+    "last_updated": "2026-01-19T04:05:27.810713"
   },
   {
     "id": "bf600a2ac43e",
@@ -2012,7 +2012,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.961535"
+    "last_updated": "2026-01-19T04:05:27.810808"
   },
   {
     "id": "795d4af3577b",
@@ -2042,7 +2042,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.961621"
+    "last_updated": "2026-01-19T04:05:27.810894"
   },
   {
     "id": "96eae0a87a61",
@@ -2068,7 +2068,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/mc-kabir-with-krush-factory-11/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736113"
+    "last_updated": "2026-01-19T04:05:34.536849"
   },
   {
     "id": "2b1531c1efc2",
@@ -2100,10 +2100,10 @@
     "source_url": "https://safeinacrowd.com/",
     "genre_tags": [
       "rock",
-      "hardcore",
-      "punk"
+      "punk",
+      "hardcore"
     ],
-    "last_updated": "2026-01-19T03:39:31.199302"
+    "last_updated": "2026-01-19T04:05:25.473173"
   },
   {
     "id": "690756b44618",
@@ -2137,7 +2137,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.199384"
+    "last_updated": "2026-01-19T04:05:25.473263"
   },
   {
     "id": "6dae131820f1",
@@ -2162,7 +2162,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.536481"
+    "last_updated": "2026-01-19T04:05:26.343988"
   },
   {
     "id": "4017169f0a7e",
@@ -2197,7 +2197,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.199469"
+    "last_updated": "2026-01-19T04:05:25.473347"
   },
   {
     "id": "816df345911d",
@@ -2222,7 +2222,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/badflower-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593758"
+    "last_updated": "2026-01-19T04:05:25.956282"
   },
   {
     "id": "ba296a64dbaf",
@@ -2247,7 +2247,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/layton-giordani/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593773"
+    "last_updated": "2026-01-19T04:05:25.956296"
   },
   {
     "id": "9517b7c25bf4",
@@ -2278,7 +2278,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.962074"
+    "last_updated": "2026-01-19T04:05:27.811352"
   },
   {
     "id": "bea844f47e09",
@@ -2309,7 +2309,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.962184"
+    "last_updated": "2026-01-19T04:05:27.811451"
   },
   {
     "id": "eca04c832ecf",
@@ -2339,7 +2339,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.962274"
+    "last_updated": "2026-01-19T04:05:27.811543"
   },
   {
     "id": "e16e52a1c020",
@@ -2364,7 +2364,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/jesse-dee-sings-songs-for-the-heart-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736254"
+    "last_updated": "2026-01-19T04:05:34.536976"
   },
   {
     "id": "7e3e71b56593",
@@ -2397,7 +2397,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.199554"
+    "last_updated": "2026-01-19T04:05:25.473430"
   },
   {
     "id": "f395ba3cf09e",
@@ -2422,7 +2422,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/margo-price/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593795"
+    "last_updated": "2026-01-19T04:05:25.956318"
   },
   {
     "id": "d248feaf7838",
@@ -2453,7 +2453,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.962469"
+    "last_updated": "2026-01-19T04:05:27.811764"
   },
   {
     "id": "234be6746660",
@@ -2484,7 +2484,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.962557"
+    "last_updated": "2026-01-19T04:05:27.811862"
   },
   {
     "id": "040442dc3aa1",
@@ -2515,7 +2515,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.962644"
+    "last_updated": "2026-01-19T04:05:27.811953"
   },
   {
     "id": "beff39db1e4c",
@@ -2541,7 +2541,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/reckoners-with-special-guest-the-rangemasters/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736419"
+    "last_updated": "2026-01-19T04:05:34.537167"
   },
   {
     "id": "c949a41c046e",
@@ -2574,7 +2574,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.199632"
+    "last_updated": "2026-01-19T04:05:25.473509"
   },
   {
     "id": "43ebbfef16f0",
@@ -2609,7 +2609,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.199714"
+    "last_updated": "2026-01-19T04:05:25.473593"
   },
   {
     "id": "c9c229b6239a",
@@ -2642,7 +2642,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.199794"
+    "last_updated": "2026-01-19T04:05:25.473685"
   },
   {
     "id": "ad1f546c58c0",
@@ -2671,7 +2671,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.962754"
+    "last_updated": "2026-01-19T04:05:27.812072"
   },
   {
     "id": "75d139318f15",
@@ -2706,7 +2706,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.199888"
+    "last_updated": "2026-01-19T04:05:25.473768"
   },
   {
     "id": "90f1e57d79a4",
@@ -2739,7 +2739,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.199967"
+    "last_updated": "2026-01-19T04:05:25.473843"
   },
   {
     "id": "4e592913f69c",
@@ -2772,7 +2772,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.200043"
+    "last_updated": "2026-01-19T04:05:25.473920"
   },
   {
     "id": "e16fe4616369",
@@ -2804,7 +2804,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.200131"
+    "last_updated": "2026-01-19T04:05:25.474006"
   },
   {
     "id": "6ebeb6260594",
@@ -2829,7 +2829,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/two-feet/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594020"
+    "last_updated": "2026-01-19T04:05:25.956542"
   },
   {
     "id": "752210bd6673",
@@ -2860,7 +2860,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.200206"
+    "last_updated": "2026-01-19T04:05:25.474088"
   },
   {
     "id": "0f359cc0bda6",
@@ -2885,7 +2885,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/kishi-bashi-4/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594034"
+    "last_updated": "2026-01-19T04:05:25.956555"
   },
   {
     "id": "c93cf0fc7dc4",
@@ -2910,7 +2910,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/the-martinez-brothers-north-america-tour-2026/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594051"
+    "last_updated": "2026-01-19T04:05:25.956573"
   },
   {
     "id": "021b13c56a28",
@@ -2936,7 +2936,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/mattie-debbie-album-release-party/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.204555"
+    "last_updated": "2026-01-19T04:05:34.934718"
   },
   {
     "id": "872a6d6bcee1",
@@ -2970,7 +2970,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.200288"
+    "last_updated": "2026-01-19T04:05:25.474164"
   },
   {
     "id": "872a6d6bcee1",
@@ -3001,7 +3001,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.963807"
+    "last_updated": "2026-01-19T04:05:27.813121"
   },
   {
     "id": "0b215b30ba1c",
@@ -3032,7 +3032,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.963918"
+    "last_updated": "2026-01-19T04:05:27.813222"
   },
   {
     "id": "f3f01502ef3d",
@@ -3064,7 +3064,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.200367"
+    "last_updated": "2026-01-19T04:05:25.474256"
   },
   {
     "id": "2044f6365557",
@@ -3098,7 +3098,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.200449"
+    "last_updated": "2026-01-19T04:05:25.474335"
   },
   {
     "id": "3427bb0c0b44",
@@ -3132,7 +3132,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.200527"
+    "last_updated": "2026-01-19T04:05:25.474417"
   },
   {
     "id": "bdcc36532f42",
@@ -3165,7 +3165,7 @@
       "hardcore",
       "punk"
     ],
-    "last_updated": "2026-01-19T03:39:31.200604"
+    "last_updated": "2026-01-19T04:05:25.474494"
   },
   {
     "id": "402edfc95f3c",
@@ -3191,7 +3191,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/the-serpents-tour-starring-nymphia-wind-and-plastique-tiara/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593669"
+    "last_updated": "2026-01-19T04:05:25.956201"
   },
   {
     "id": "6ebe41f8a449",
@@ -3216,7 +3216,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/deadword-theater-no-exit-by-jean-paul-sartre-3/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.864103"
+    "last_updated": "2026-01-19T04:05:36.161143"
   },
   {
     "id": "82fab04b417a",
@@ -3241,7 +3241,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/alleycvt/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593688"
+    "last_updated": "2026-01-19T04:05:25.956218"
   },
   {
     "id": "71cdb885ce1c",
@@ -3267,7 +3267,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.531993"
+    "last_updated": "2026-01-19T04:05:26.339575"
   },
   {
     "id": "a25bfcb88b0c",
@@ -3292,7 +3292,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/beno/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.864167"
+    "last_updated": "2026-01-19T04:05:36.161197"
   },
   {
     "id": "b5999a5f68e5",
@@ -3320,7 +3320,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.503944"
+    "last_updated": "2026-01-19T04:05:37.305692"
   },
   {
     "id": "6f35b48422cb",
@@ -3348,7 +3348,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.504290"
+    "last_updated": "2026-01-19T04:05:37.306025"
   },
   {
     "id": "43b5302bf35a",
@@ -3373,7 +3373,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/monaleo-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593737"
+    "last_updated": "2026-01-19T04:05:25.956269"
   },
   {
     "id": "c301de50ddbb",
@@ -3398,7 +3398,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/the-890s-5/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736220"
+    "last_updated": "2026-01-19T04:05:34.536947"
   },
   {
     "id": "78cab776c9ff",
@@ -3423,7 +3423,7 @@
     "source": "scrape:songkick",
     "source_url": "https://www.songkick.com/venues/4447493",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:43.152684"
+    "last_updated": "2026-01-19T04:05:37.016864"
   },
   {
     "id": "3530b829a75c",
@@ -3448,7 +3448,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/szn4/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593784"
+    "last_updated": "2026-01-19T04:05:25.956306"
   },
   {
     "id": "a7159095debf",
@@ -3473,7 +3473,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/loyle-carner/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593807"
+    "last_updated": "2026-01-19T04:05:25.956330"
   },
   {
     "id": "9193f90d1e6c",
@@ -3498,7 +3498,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/the-record-company-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593824"
+    "last_updated": "2026-01-19T04:05:25.956341"
   },
   {
     "id": "ebd8e2c86b2b",
@@ -3524,7 +3524,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/an-evening-with-lyle-brewer-4/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736469"
+    "last_updated": "2026-01-19T04:05:34.537218"
   },
   {
     "id": "13ab9436f600",
@@ -3549,7 +3549,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/peter-mcpoland-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593835"
+    "last_updated": "2026-01-19T04:05:25.956356"
   },
   {
     "id": "e334e5f82ba0",
@@ -3574,7 +3574,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/boots-n-beats/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593849"
+    "last_updated": "2026-01-19T04:05:25.956366"
   },
   {
     "id": "4d075285b194",
@@ -3599,7 +3599,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/jen-kearney-gas-station-poet-vinyl-release-the-real-deal/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736539"
+    "last_updated": "2026-01-19T04:05:34.537288"
   },
   {
     "id": "e255a38d9feb",
@@ -3625,7 +3625,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/michael-shannon-jason-narducy-and-friends-play-r-e-m-s-lifes-rich-pageant/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593875"
+    "last_updated": "2026-01-19T04:05:25.956393"
   },
   {
     "id": "8b4ebee4e390",
@@ -3650,7 +3650,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/amber-mark/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593887"
+    "last_updated": "2026-01-19T04:05:25.956404"
   },
   {
     "id": "6ba245a941c4",
@@ -3676,11 +3676,11 @@
     "source": "scrape:boston_ska",
     "source_url": "https://www.bostonska.net/",
     "genre_tags": [
-      "punk",
       "reggae",
+      "punk",
       "ska"
     ],
-    "last_updated": "2026-01-19T03:39:41.304467"
+    "last_updated": "2026-01-19T04:05:33.741513"
   },
   {
     "id": "605128631054",
@@ -3705,7 +3705,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/quarters/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593896"
+    "last_updated": "2026-01-19T04:05:25.956415"
   },
   {
     "id": "deca0b0e7f63",
@@ -3730,7 +3730,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/kettama/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593906"
+    "last_updated": "2026-01-19T04:05:25.956425"
   },
   {
     "id": "d7d54df0a95d",
@@ -3761,7 +3761,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.962952"
+    "last_updated": "2026-01-19T04:05:27.812269"
   },
   {
     "id": "91c38a8b4597",
@@ -3787,7 +3787,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/kotoko-brass-sonido-mal-maiz-live-at-the-lizard-lounge/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.078111"
+    "last_updated": "2026-01-19T04:05:34.671057"
   },
   {
     "id": "e1ff0020c3bd",
@@ -3812,7 +3812,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/evan-honer/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593916"
+    "last_updated": "2026-01-19T04:05:25.956436"
   },
   {
     "id": "c4366154d513",
@@ -3837,7 +3837,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/sweet-pill/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593925"
+    "last_updated": "2026-01-19T04:05:25.956446"
   },
   {
     "id": "f755b5fea7cd",
@@ -3862,7 +3862,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/mindchatter/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593935"
+    "last_updated": "2026-01-19T04:05:25.956457"
   },
   {
     "id": "1647a5efc9d3",
@@ -3893,7 +3893,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.963148"
+    "last_updated": "2026-01-19T04:05:27.812451"
   },
   {
     "id": "0a95c4755bea",
@@ -3918,7 +3918,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/prospa/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593944"
+    "last_updated": "2026-01-19T04:05:25.956467"
   },
   {
     "id": "d1fd2cae961f",
@@ -3946,7 +3946,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.963519"
+    "last_updated": "2026-01-19T04:05:27.812828"
   },
   {
     "id": "2a085f01a834",
@@ -3971,7 +3971,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/matt-berninger/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593954"
+    "last_updated": "2026-01-19T04:05:25.956481"
   },
   {
     "id": "77b92adbb9c8",
@@ -3996,7 +3996,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/gogol-bordello-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593964"
+    "last_updated": "2026-01-19T04:05:25.956491"
   },
   {
     "id": "76927dd6c651",
@@ -4021,7 +4021,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/21146/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593975"
+    "last_updated": "2026-01-19T04:05:25.956503"
   },
   {
     "id": "56033432a6b3",
@@ -4046,7 +4046,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/we-touch-grass-anime-rave/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.593991"
+    "last_updated": "2026-01-19T04:05:25.956518"
   },
   {
     "id": "e019da230ee4",
@@ -4073,11 +4073,11 @@
     "source": "scrape:boston_ska",
     "source_url": "https://www.bostonska.net/",
     "genre_tags": [
-      "punk",
       "reggae",
+      "punk",
       "ska"
     ],
-    "last_updated": "2026-01-19T03:39:41.305203"
+    "last_updated": "2026-01-19T04:05:33.742232"
   },
   {
     "id": "641437b0ac3f",
@@ -4103,7 +4103,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/mc-kabir-with-krush-factory-13/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.204474"
+    "last_updated": "2026-01-19T04:05:34.934646"
   },
   {
     "id": "0cb1952dc08f",
@@ -4128,7 +4128,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/machine-girl/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594006"
+    "last_updated": "2026-01-19T04:05:25.956528"
   },
   {
     "id": "391f8601dbe9",
@@ -4153,7 +4153,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/the-growlers-3/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594065"
+    "last_updated": "2026-01-19T04:05:25.956713"
   },
   {
     "id": "61ccde4b6fef",
@@ -4178,7 +4178,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/starjunk-95/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594076"
+    "last_updated": "2026-01-19T04:05:25.956727"
   },
   {
     "id": "101c6b89d44c",
@@ -4203,7 +4203,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/jose-gonzalez/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594105"
+    "last_updated": "2026-01-19T04:05:25.956744"
   },
   {
     "id": "f85a822baf74",
@@ -4229,7 +4229,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/pattie-gonia-save-her-feat-sequoia-and-vera/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594125"
+    "last_updated": "2026-01-19T04:05:25.956762"
   },
   {
     "id": "41707fc0cdd2",
@@ -4254,7 +4254,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/sarah-kinsley-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594135"
+    "last_updated": "2026-01-19T04:05:25.956773"
   },
   {
     "id": "a0fb50741ddd",
@@ -4279,7 +4279,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/oklou/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594312"
+    "last_updated": "2026-01-19T04:05:25.956782"
   },
   {
     "id": "7b6b9ecf700c",
@@ -4304,7 +4304,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/the-paper-kites/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594327"
+    "last_updated": "2026-01-19T04:05:25.956792"
   },
   {
     "id": "329c1f1eb966",
@@ -4329,7 +4329,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/searows/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594339"
+    "last_updated": "2026-01-19T04:05:25.956802"
   },
   {
     "id": "62c0f3ba6799",
@@ -4354,7 +4354,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/christos-mastoras-meaisses/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594351"
+    "last_updated": "2026-01-19T04:05:25.956813"
   },
   {
     "id": "eb5647cab188",
@@ -4379,7 +4379,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/melodys-echo-chamber/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594363"
+    "last_updated": "2026-01-19T04:05:25.956825"
   },
   {
     "id": "97518b6a9707",
@@ -4404,7 +4404,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/revolver-presents-thornhill-the-mercia-tour/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594378"
+    "last_updated": "2026-01-19T04:05:25.956842"
   },
   {
     "id": "45c0f5dab19a",
@@ -4429,7 +4429,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/hol-presented-by-ground-control/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594394"
+    "last_updated": "2026-01-19T04:05:25.956858"
   },
   {
     "id": "4b5252d19097",
@@ -4454,7 +4454,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/inji/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594405"
+    "last_updated": "2026-01-19T04:05:25.956869"
   },
   {
     "id": "b66c943ec0a3",
@@ -4479,7 +4479,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/chance-pena/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594420"
+    "last_updated": "2026-01-19T04:05:25.956883"
   },
   {
     "id": "c195f2fb304f",
@@ -4504,7 +4504,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/21445/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594438"
+    "last_updated": "2026-01-19T04:05:25.956899"
   },
   {
     "id": "d813ba714d97",
@@ -4530,7 +4530,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/benjamin-tod-and-the-inline-six/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594454"
+    "last_updated": "2026-01-19T04:05:25.956913"
   },
   {
     "id": "02714d89d170",
@@ -4555,7 +4555,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://royaleboston.com/event/bethel-music/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:31.594465"
+    "last_updated": "2026-01-19T04:05:25.956924"
   },
   {
     "id": "5f6b545465ee",
@@ -4580,7 +4580,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.531639"
+    "last_updated": "2026-01-19T04:05:26.339199"
   },
   {
     "id": "9b877f3bb4b9",
@@ -4611,7 +4611,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.960291"
+    "last_updated": "2026-01-19T04:05:27.809559"
   },
   {
     "id": "abf56f1f152f",
@@ -4636,7 +4636,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/lizard-lounge-poetry-jam-2026-mvp-most-valuable-poet-finals/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.594911"
+    "last_updated": "2026-01-19T04:05:34.211564"
   },
   {
     "id": "9a9aa6837286",
@@ -4661,7 +4661,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/school-of-rock-medford/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.864060"
+    "last_updated": "2026-01-19T04:05:36.161115"
   },
   {
     "id": "3f9e16f2d372",
@@ -4689,7 +4689,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.502178"
+    "last_updated": "2026-01-19T04:05:37.303796"
   },
   {
     "id": "7ca80c637475",
@@ -4717,7 +4717,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.503063"
+    "last_updated": "2026-01-19T04:05:37.304756"
   },
   {
     "id": "f868f6bdbcb5",
@@ -4743,7 +4743,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.533441"
+    "last_updated": "2026-01-19T04:05:26.340979"
   },
   {
     "id": "aa6e51be81d5",
@@ -4768,7 +4768,7 @@
     "source": "scrape:bowery_boston",
     "source_url": "https://www.boweryboston.com/see-all-shows",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:33.543718"
+    "last_updated": "2026-01-19T04:05:27.373151"
   },
   {
     "id": "f5ead2b6792c",
@@ -4793,7 +4793,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/poetry-jam-featured-poet-tba/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.735898"
+    "last_updated": "2026-01-19T04:05:34.536655"
   },
   {
     "id": "be137c399442",
@@ -4819,7 +4819,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.534130"
+    "last_updated": "2026-01-19T04:05:26.341678"
   },
   {
     "id": "eb5f79affc06",
@@ -4845,7 +4845,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.534490"
+    "last_updated": "2026-01-19T04:05:26.342025"
   },
   {
     "id": "4f18ff48d55c",
@@ -4870,7 +4870,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/the-duppy-conquerors-22/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.735971"
+    "last_updated": "2026-01-19T04:05:34.536734"
   },
   {
     "id": "7a1d1269d556",
@@ -4895,7 +4895,7 @@
     "source": "scrape:songkick",
     "source_url": "https://www.songkick.com/venues/4447493",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:43.149146"
+    "last_updated": "2026-01-19T04:05:37.014258"
   },
   {
     "id": "d3c32f936abe",
@@ -4921,7 +4921,7 @@
     "source": "scrape:boston_venues",
     "source_url": "https://www.sinclaircambridge.com/events/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:32.534812"
+    "last_updated": "2026-01-19T04:05:26.342356"
   },
   {
     "id": "2accd4e0d556",
@@ -4951,7 +4951,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.961245"
+    "last_updated": "2026-01-19T04:05:27.810479"
   },
   {
     "id": "4acac6302983",
@@ -4976,7 +4976,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/mr-hos-orchestrotica/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736017"
+    "last_updated": "2026-01-19T04:05:34.536782"
   },
   {
     "id": "e3d537cfc702",
@@ -5002,7 +5002,7 @@
     "source": "scrape:bowery_boston",
     "source_url": "https://www.boweryboston.com/see-all-shows",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:33.543752"
+    "last_updated": "2026-01-19T04:05:27.373185"
   },
   {
     "id": "0a082733992f",
@@ -5033,7 +5033,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.959163"
+    "last_updated": "2026-01-19T04:05:27.808357"
   },
   {
     "id": "0a86e7712d67",
@@ -5064,7 +5064,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.959292"
+    "last_updated": "2026-01-19T04:05:27.808497"
   },
   {
     "id": "c761a0b32983",
@@ -5090,7 +5090,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/duke-levine-the-super-sweet-sounds-of-the-70s-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.594722"
+    "last_updated": "2026-01-19T04:05:34.211373"
   },
   {
     "id": "4ddf70dbe630",
@@ -5115,7 +5115,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/deadword-theater-no-exit-by-jean-paul-sartre-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.863876"
+    "last_updated": "2026-01-19T04:05:36.160910"
   },
   {
     "id": "fa41acd130ab",
@@ -5141,7 +5141,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/fresh-wips-june-and-bryce/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.863914"
+    "last_updated": "2026-01-19T04:05:36.160951"
   },
   {
     "id": "0448f00ce69a",
@@ -5169,7 +5169,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.500799"
+    "last_updated": "2026-01-19T04:05:37.302375"
   },
   {
     "id": "845b09fa6fe4",
@@ -5197,7 +5197,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.501122"
+    "last_updated": "2026-01-19T04:05:37.302711"
   },
   {
     "id": "77e03722bdcd",
@@ -5228,7 +5228,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.960392"
+    "last_updated": "2026-01-19T04:05:27.809662"
   },
   {
     "id": "48e17eecebe8",
@@ -5254,7 +5254,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/duke-levine-the-super-sweet-sounds-of-the-70s-3/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.594944"
+    "last_updated": "2026-01-19T04:05:34.211597"
   },
   {
     "id": "9ac164f20bb7",
@@ -5279,7 +5279,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/deadword-theater-no-exit-by-jean-paul-sartre-4/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.864141"
+    "last_updated": "2026-01-19T04:05:36.161171"
   },
   {
     "id": "29c06a3b7a13",
@@ -5307,7 +5307,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.503662"
+    "last_updated": "2026-01-19T04:05:37.305379"
   },
   {
     "id": "76d4b1f5b901",
@@ -5337,7 +5337,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.961975"
+    "last_updated": "2026-01-19T04:05:27.811258"
   },
   {
     "id": "2e25f9a6aae3",
@@ -5362,7 +5362,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/ahren-shreeve-trio/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736150"
+    "last_updated": "2026-01-19T04:05:34.536881"
   },
   {
     "id": "74bd76145bfb",
@@ -5393,7 +5393,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.962858"
+    "last_updated": "2026-01-19T04:05:27.812172"
   },
   {
     "id": "86d13f41beb2",
@@ -5419,7 +5419,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/mc-kabir-with-krush-factory-12/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.077976"
+    "last_updated": "2026-01-19T04:05:34.670928"
   },
   {
     "id": "6a0ccdabaa7c",
@@ -5447,7 +5447,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.963329"
+    "last_updated": "2026-01-19T04:05:27.812621"
   },
   {
     "id": "5f787a725e79",
@@ -5478,7 +5478,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.963425"
+    "last_updated": "2026-01-19T04:05:27.812717"
   },
   {
     "id": "d65b3e5cff71",
@@ -5505,11 +5505,11 @@
     "source": "scrape:boston_ska",
     "source_url": "https://www.bostonska.net/",
     "genre_tags": [
-      "punk",
       "reggae",
+      "punk",
       "ska"
     ],
-    "last_updated": "2026-01-19T03:39:41.304842"
+    "last_updated": "2026-01-19T04:05:33.741875"
   },
   {
     "id": "f494a153af37",
@@ -5534,7 +5534,7 @@
     "source": "scrape:songkick",
     "source_url": "https://www.songkick.com/venues/4503147",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:43.093898"
+    "last_updated": "2026-01-19T04:05:36.389984"
   },
   {
     "id": "dabb66fcbad7",
@@ -5564,7 +5564,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.963616"
+    "last_updated": "2026-01-19T04:05:27.812924"
   },
   {
     "id": "63e7b1b19c11",
@@ -5594,7 +5594,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.963713"
+    "last_updated": "2026-01-19T04:05:27.813025"
   },
   {
     "id": "3906c2e38d91",
@@ -5622,7 +5622,7 @@
       "punk",
       "rock"
     ],
-    "last_updated": "2026-01-19T03:39:33.964068"
+    "last_updated": "2026-01-19T04:05:27.813367"
   },
   {
     "id": "be92dc1cd798",
@@ -5648,7 +5648,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/mc-kabir-with-krush-factory-14/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.493148"
+    "last_updated": "2026-01-19T04:05:35.210305"
   },
   {
     "id": "5f8d1a4f0f0e",
@@ -5674,7 +5674,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/hellbender-and-agent-lockhart-live-at-the-lizard-lounge/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736191"
+    "last_updated": "2026-01-19T04:05:34.536921"
   },
   {
     "id": "f78f06c5a87b",
@@ -5699,7 +5699,7 @@
     "source": "scrape:songkick",
     "source_url": "https://www.songkick.com/venues/4447493",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:43.150817"
+    "last_updated": "2026-01-19T04:05:37.016010"
   },
   {
     "id": "ccab7c3f69f5",
@@ -5724,7 +5724,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/poetry-jam-featured-poet-tba-2/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736279"
+    "last_updated": "2026-01-19T04:05:34.537020"
   },
   {
     "id": "647d8d2f68f8",
@@ -5750,7 +5750,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/bang-bang-experience-the-rikki-rocksteady-all-stars/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736317"
+    "last_updated": "2026-01-19T04:05:34.537063"
   },
   {
     "id": "714291198197",
@@ -5777,7 +5777,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/the-haymakers-and-friends-with-bob-cencis-orange-guitar/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736353"
+    "last_updated": "2026-01-19T04:05:34.537101"
   },
   {
     "id": "079133522d3d",
@@ -5803,7 +5803,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/reckoners-with-special-guest-tyler-james-kelly/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736387"
+    "last_updated": "2026-01-19T04:05:34.537135"
   },
   {
     "id": "0e06d0b18622",
@@ -5828,7 +5828,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/poetry-jam-featured-poet-tba-3/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736443"
+    "last_updated": "2026-01-19T04:05:34.537191"
   },
   {
     "id": "3037f8e673bc",
@@ -5854,7 +5854,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/jon-nolan-good-co-sneaky-miles/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:41.736500"
+    "last_updated": "2026-01-19T04:05:34.537249"
   },
   {
     "id": "3aa5e2d4d788",
@@ -5879,7 +5879,7 @@
     "source": "scrape:songkick",
     "source_url": "https://www.songkick.com/venues/4503147",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:43.093040"
+    "last_updated": "2026-01-19T04:05:36.389023"
   },
   {
     "id": "2d65bf9c7698",
@@ -5904,7 +5904,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/the-reckoning-crew-8/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.078055"
+    "last_updated": "2026-01-19T04:05:34.670987"
   },
   {
     "id": "3a5020bb02a4",
@@ -5930,7 +5930,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://lizardloungeclub.com/event/mc-kabir-with-krush-factory-15/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.619924"
+    "last_updated": "2026-01-19T04:05:35.332750"
   },
   {
     "id": "51c981dd3dcf",
@@ -5955,7 +5955,7 @@
     "source": "scrape:ical_venues",
     "source_url": "https://therockwell.org/calendar/deadword-theater-no-exit-by-jean-paul-sartre/",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:42.863813"
+    "last_updated": "2026-01-19T04:05:36.160847"
   },
   {
     "id": "e32a419ff5d5",
@@ -5983,7 +5983,7 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.500630"
+    "last_updated": "2026-01-19T04:05:37.302215"
   },
   {
     "id": "d5d9823fd2f8",
@@ -6008,7 +6008,7 @@
     "source": "scrape:songkick",
     "source_url": "https://www.songkick.com/venues/4503147",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:43.094747"
+    "last_updated": "2026-01-19T04:05:36.390927"
   },
   {
     "id": "4bcd74bbde77",
@@ -6033,7 +6033,7 @@
     "source": "scrape:songkick",
     "source_url": "https://www.songkick.com/venues/4503147",
     "genre_tags": [],
-    "last_updated": "2026-01-19T03:39:43.095596"
+    "last_updated": "2026-01-19T04:05:36.391923"
   },
   {
     "id": "46add2184918",
@@ -6061,6 +6061,6 @@
       "classical",
       "orchestra"
     ],
-    "last_updated": "2026-01-19T03:39:43.503375"
+    "last_updated": "2026-01-19T04:05:37.305078"
   }
 ]
