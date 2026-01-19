@@ -26,6 +26,42 @@ from ...utils import get_cached, save_cache, parse_date
 logger = logging.getLogger(__name__)
 
 
+# Non-music event keywords to filter out (for multi-purpose venues like Arts at the Armory)
+NON_MUSIC_KEYWORDS = [
+    # Dance classes (not concerts)
+    "swing", "salsa class", "latin dance class", "dance class", "dance lesson",
+    "ballroom", "tango class", "bachata class",
+    # Markets and fairs
+    "farmers market", "flea market", "craft fair", "bazaar", "holiday market",
+    "artisan market", "vintage market",
+    # Workshops and classes
+    "workshop", "yoga", "meditation", "pilates", "fitness", "training session",
+    "art class", "painting class", "pottery", "crafting",
+    # Comedy and spoken word
+    "comedy", "stand-up", "open mic comedy", "improv", "storytelling",
+    "poetry slam", "poetry workshop", "the moth", "storyslam",
+    # Sports and gaming
+    "wrestling", "trivia", "game night", "bingo", "karaoke",
+    "ttrpg", "rpg convention", "board game",
+    # Meetings and community events
+    "meeting", "club meeting", "networking", "mixer",
+    "brunch", "breakfast", "luncheon",
+    # Kids events (usually not concert listings)
+    "kids", "children's", "family day", "storytime",
+    # Wellness
+    "wellness", "healing", "reiki", "sound bath",
+]
+
+# Keywords that indicate it IS a music event (override non-music if present)
+MUSIC_KEYWORDS = [
+    "concert", "live music", "band", "singer", "songwriter", "jazz",
+    "rock", "punk", "metal", "folk", "blues", "reggae", "ska",
+    "hip hop", "rap", "r&b", "soul", "funk", "electronic", "dj set",
+    "orchestra", "symphony", "chamber", "quartet", "trio",
+    "album release", "record release", "tour", "farewell show",
+]
+
+
 # Venue configurations - using venue websites
 BOSTON_VENUES = {
     "royale": {
@@ -276,6 +312,10 @@ class AXSVenuesScraper(BaseScraper):
                     if not name:
                         continue
 
+                    # Filter out non-music events for multi-purpose venues
+                    if not self._is_music_event(name, venue_id):
+                        continue
+
                     # Parse date
                     start_date = event.get("startDate")
                     if not start_date:
@@ -390,6 +430,10 @@ class AXSVenuesScraper(BaseScraper):
             if not event_name or len(event_name) < 3:
                 return None
 
+            # Filter out non-music events for multi-purpose venues
+            if not self._is_music_event(event_name, venue_id):
+                return None
+
             # Find date
             date_text = ""
             date_elem = element.find(class_=re.compile(r"date|time", re.IGNORECASE))
@@ -441,3 +485,32 @@ class AXSVenuesScraper(BaseScraper):
         bands = self._split_bands(name)
 
         return bands if bands else [name.strip()]
+
+    def _is_music_event(self, event_name: str, venue_id: str) -> bool:
+        """Check if an event is likely a music performance.
+
+        For multi-purpose venues like Arts at the Armory, we need to filter out
+        non-music events since there's no downstream genre filtering.
+
+        Returns True if the event appears to be music-related.
+        """
+        # For dedicated music venues, assume all events are music
+        if venue_id not in ["armory"]:
+            return True
+
+        name_lower = event_name.lower()
+
+        # First check for music keywords - if present, it's likely music
+        for keyword in MUSIC_KEYWORDS:
+            if keyword in name_lower:
+                return True
+
+        # Then check for non-music keywords
+        for keyword in NON_MUSIC_KEYWORDS:
+            if keyword in name_lower:
+                logger.debug(f"Filtering out non-music event: {event_name} (matched: {keyword})")
+                return False
+
+        # Default to including the event if uncertain
+        # Better to have some false positives than miss real concerts
+        return True
