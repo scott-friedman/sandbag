@@ -21,6 +21,7 @@ from foobos.fetchers.scrapers import (
     BostonSkaScraper,
     ICalVenuesScraper,
     SongkickVenuesScraper,
+    BSOScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre
 from foobos.generators import generate_all_html
@@ -127,6 +128,16 @@ def cmd_fetch(args):
         all_concerts.extend(songkick_concerts)
     except Exception as e:
         logger.error(f"Songkick venues scrape failed: {e}")
+
+    # BSO (Symphony Hall, Tanglewood, Boston Pops)
+    try:
+        logger.info("Scraping BSO venues (Symphony Hall, etc.)...")
+        bso_scraper = BSOScraper()
+        bso_concerts = bso_scraper.fetch()
+        logger.info(f"BSO Venues: {len(bso_concerts)} concerts")
+        all_concerts.extend(bso_concerts)
+    except Exception as e:
+        logger.error(f"BSO venues scrape failed: {e}")
 
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 

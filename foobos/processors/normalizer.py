@@ -217,6 +217,12 @@ def _normalize_venue_id(venue_id: str) -> str:
         "groton_hill_music_center": "grotonhill",
         "groton-hill": "grotonhill",
         "groton_hill": "grotonhill",
+
+        # Symphony Hall / BSO
+        "symphony_hall": "symphonyhall",
+        "symphony-hall": "symphonyhall",
+        "bso": "symphonyhall",
+        "boston_symphony_orchestra": "symphonyhall",
     }
 
     return id_map.get(venue_id, venue_id)
@@ -304,6 +310,10 @@ def _normalize_venue_name(name: str) -> str:
         # Groton Hill Music Center
         "groton hill music center": "Groton Hill Music Center",
         "groton hill": "Groton Hill Music Center",
+
+        # Symphony Hall
+        "symphony hall": "Symphony Hall",
+        "boston symphony orchestra": "Symphony Hall",
     }
 
     name_lower = name.lower().strip()
