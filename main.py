@@ -54,7 +54,7 @@ def cmd_fetch(args):
     try:
         logger.info("Scraping Safe In A Crowd...")
         siac_scraper = SafeInACrowdScraper()
-        siac_concerts = siac_scraper.scrape()
+        siac_concerts = siac_scraper.fetch()
         logger.info(f"Safe In A Crowd: {len(siac_concerts)} concerts")
         all_concerts.extend(siac_concerts)
     except Exception as e:
@@ -64,7 +64,7 @@ def cmd_fetch(args):
     try:
         logger.info("Scraping Do617...")
         do617_scraper = Do617Scraper()
-        do617_concerts = do617_scraper.scrape()
+        do617_concerts = do617_scraper.fetch()
         logger.info(f"Do617: {len(do617_concerts)} concerts")
         all_concerts.extend(do617_concerts)
     except Exception as e:
@@ -74,7 +74,7 @@ def cmd_fetch(args):
     try:
         logger.info("Scraping Middle East...")
         me_scraper = MiddleEastScraper()
-        me_concerts = me_scraper.scrape()
+        me_concerts = me_scraper.fetch()
         logger.info(f"Middle East: {len(me_concerts)} concerts")
         all_concerts.extend(me_concerts)
     except Exception as e:

@@ -11,7 +11,7 @@ from collections import defaultdict
 from ..models import Concert
 from ..config import OUTPUT_DIR, WEEKS_AHEAD
 from ..utils.date_utils import get_week_range, get_week_label, get_week_number
-from .html_generator import format_concert_line
+from .helpers import format_concert_line
 
 logger = logging.getLogger(__name__)
 

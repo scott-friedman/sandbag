@@ -103,3 +103,25 @@ def clear_old_cache(max_age_hours: int = 48) -> int:
                 pass
 
     return removed
+
+
+def clear_cache() -> int:
+    """
+    Remove all cache files.
+
+    Returns:
+        Number of files removed
+    """
+    cache_dir = Path(CACHE_DIR)
+    if not cache_dir.exists():
+        return 0
+
+    removed = 0
+    for cache_file in cache_dir.glob("*.json"):
+        try:
+            cache_file.unlink()
+            removed += 1
+        except OSError:
+            pass
+
+    return removed

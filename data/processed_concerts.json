@@ -1,0 +1,2172 @@
+[
+  {
+    "id": "9309dfd353e1",
+    "date": "2026-01-23T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "la_crosse_center",
+      "name": "La Crosse Center",
+      "location": "La Crosse"
+    },
+    "bands": [
+      "Chevelle",
+      "311",
+      "Lit",
+      "Sick Puppies",
+      "Of Mice & Men",
+      "Amira Elfeky",
+      "Nonpoint"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "6pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/riverfront-revolt-two-day-ticket-with-la-crosse-wisconsin-01-23-2026/event/07006366B88A7FD5",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.336282"
+  },
+  {
+    "id": "e39b1c81e81a",
+    "date": "2026-01-23T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "vivarium",
+      "name": "Vivarium",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Cate Le Bon"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7bObe",
+    "genre_tags": [
+      "alternative",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.336322"
+  },
+  {
+    "id": "558188a3eb2d",
+    "date": "2026-01-23T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "Geoff Palmer",
+      "Dogsblood",
+      "We Should Have Been DJ's",
+      "Brash Menagerie",
+      "Wisconsin Fest"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/wi-punk-fest-madison-wisconsin-01-23-2026/event/070063561AB18D3B",
+    "genre_tags": [
+      "rock",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:36:54.336397"
+  },
+  {
+    "id": "60bf95ba1656",
+    "date": "2026-01-23T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "balmora_sin_against_sin_wisdom",
+      "name": "Balmora, Sin Against Sin, Wisdom & War, Fifth World, Violent Protest at BUI Skatepark in Brattleboro, VT 6",
+      "location": "Boston"
+    },
+    "bands": [
+      "/ or",
+      "student ID"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": 15,
+      "door": 15,
+      "display": "$15/$15"
+    },
+    "time": "6pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.220464"
+  },
+  {
+    "id": "a914b7688ed5",
+    "date": "2026-01-24T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "la_crosse_center",
+      "name": "La Crosse Center",
+      "location": "La Crosse"
+    },
+    "bands": [
+      "Chevelle",
+      "Of Mice & Men",
+      "Amira Elfeky",
+      "Nonpoint"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "5pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/riverfront-revolt-saturday-chevelle-la-crosse-wisconsin-01-24-2026/event/07006366B8877FD0",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.336451"
+  },
+  {
+    "id": "b038229b7c54",
+    "date": "2026-01-28T00:00:00",
+    "day_of_week": "Wed",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "Wayne Hancock",
+      "Nicky Diamonds"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/wayne-hancock-madison-wisconsin-01-28-2026/event/07006373E531A2B1",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.336660"
+  },
+  {
+    "id": "0b20230faae7",
+    "date": "2026-02-11T00:00:00",
+    "day_of_week": "Wed",
+    "venue": {
+      "id": "the_rave-eagles_club",
+      "name": "The Rave-Eagles Club",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Motion City Soundtrack",
+      "Say Anything"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7jEQd",
+    "genre_tags": [
+      "alternative",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.337258"
+  },
+  {
+    "id": "aa2068bb29a7",
+    "date": "2026-02-13T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "Bad Bad Hats",
+      "Smut"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/bad-bad-hats-madison-wisconsin-02-13-2026/event/0700635CA4BB5C0D",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.337406"
+  },
+  {
+    "id": "367a0ed91306",
+    "date": "2026-02-19T00:00:00",
+    "day_of_week": "Thu",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "Porch Flowers"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/the-porch-flowers-winefred-rt-alewives-madison-wisconsin-02-19-2026/event/07006427DE1B7420",
+    "genre_tags": [
+      "folk",
+      "indie folk"
+    ],
+    "last_updated": "2026-01-19T01:36:54.337665"
+  },
+  {
+    "id": "70708d466ca6",
+    "date": "2026-02-21T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "riverside_theatre_-_wi",
+      "name": "Riverside Theatre - WI",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Needtobreathe"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7jp8O",
+    "genre_tags": [
+      "alternative",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.337751"
+  },
+  {
+    "id": "4fcdbf71e0c3",
+    "date": "2026-02-21T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "scattered_remnants_entropy_ing",
+      "name": "Scattered Remnants, Entropy, Ingrate, D.O.D. at Ralph\u2019s Diner in Worcester, MA 8",
+      "location": "Boston"
+    },
+    "bands": [
+      "/+"
+    ],
+    "age_requirement": "21+",
+    "price": {
+      "advance": 20,
+      "door": 21,
+      "display": "$20/$21"
+    },
+    "time": "8pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.221077"
+  },
+  {
+    "id": "df69b2431a11",
+    "date": "2026-02-23T00:00:00",
+    "day_of_week": "Mon",
+    "venue": {
+      "id": "fiserv_forum",
+      "name": "Fiserv Forum",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Nine Inch Nails",
+      "Boys Noize"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/nine-inch-nails-peel-it-back-milwaukee-wisconsin-02-23-2026/event/0700633DA46B2BC5",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.337929"
+  },
+  {
+    "id": "3b7882a81f5e",
+    "date": "2026-02-25T00:00:00",
+    "day_of_week": "Wed",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "Buffalo Traffic Jam"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/buffalo-traffic-jam-madison-wisconsin-02-25-2026/event/07006371D67B8B14",
+    "genre_tags": [
+      "folk",
+      "indie folk"
+    ],
+    "last_updated": "2026-01-19T01:36:54.337984"
+  },
+  {
+    "id": "dd7724f6bdec",
+    "date": "2026-02-27T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "Joseph Huber",
+      "Billy Bronsted String"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/joseph-huber-band-billy-bronsted-string-madison-wisconsin-02-27-2026/event/07006429F29F76D3",
+    "genre_tags": [
+      "folk",
+      "indie folk"
+    ],
+    "last_updated": "2026-01-19T01:36:54.338272"
+  },
+  {
+    "id": "1f1bc21dcac1",
+    "date": "2026-03-06T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "landmark_credit_union_live",
+      "name": "Landmark Credit Union Live",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Sabaton",
+      "Pop Evil",
+      "Wings of Steel"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/sabaton-legends-on-tour-milwaukee-wisconsin-03-06-2026/event/0700634DB37053C5",
+    "genre_tags": [
+      "metal",
+      "nu-metal"
+    ],
+    "last_updated": "2026-01-19T01:36:54.338914"
+  },
+  {
+    "id": "f54fbe5b0e92",
+    "date": "2026-03-10T00:00:00",
+    "day_of_week": "Tue",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "saturdays at your place",
+      "Retirement Party",
+      "Kerosene Heights"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/saturdays-at-your-place-madison-wisconsin-03-10-2026/event/07006373A8F67446",
+    "genre_tags": [
+      "rock",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:36:54.339197"
+  },
+  {
+    "id": "c31a3eefe7b1",
+    "date": "2026-03-11T00:00:00",
+    "day_of_week": "Wed",
+    "venue": {
+      "id": "the_sylvee",
+      "name": "The Sylvee",
+      "location": "Madison"
+    },
+    "bands": [
+      "Jesse Welles",
+      "S.G. Goodman"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/jesse-welles-under-the-powerlines-2026-madison-wisconsin-03-11-2026/event/07006306AB381EE6",
+    "genre_tags": [
+      "folk",
+      "indie folk"
+    ],
+    "last_updated": "2026-01-19T01:36:54.339223"
+  },
+  {
+    "id": "9deb8b6759d8",
+    "date": "2026-03-14T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "the_sylvee",
+      "name": "The Sylvee",
+      "location": "Madison"
+    },
+    "bands": [
+      "Houndmouth",
+      "Bends"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/houndmouth-madison-wisconsin-03-14-2026/event/0700638281743AA7",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.339544"
+  },
+  {
+    "id": "ee42500773f6",
+    "date": "2026-03-15T00:00:00",
+    "day_of_week": "Sun",
+    "venue": {
+      "id": "majestic_theatre",
+      "name": "Majestic Theatre",
+      "location": "Madison"
+    },
+    "bands": [
+      "Drug Church",
+      "White Reaper",
+      "Spy",
+      "Death Lens"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/drug-church-x-white-reaper-madison-wisconsin-03-15-2026/event/0700638BD77EA567",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.339575"
+  },
+  {
+    "id": "8b8c158ae324",
+    "date": "2026-03-15T00:00:00",
+    "day_of_week": "Sun",
+    "venue": {
+      "id": "the_sylvee",
+      "name": "The Sylvee",
+      "location": "Madison"
+    },
+    "bands": [
+      "Rise Against",
+      "Destroy Boys",
+      "Koyo"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/rise-against-madison-wisconsin-03-15-2026/event/070063830994A14A",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.339638"
+  },
+  {
+    "id": "64eddf3fd9f8",
+    "date": "2026-03-15T00:00:00",
+    "day_of_week": "Sun",
+    "venue": {
+      "id": "turner_hall_ballroom",
+      "name": "Turner Hall Ballroom",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Sons of Legion"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7qP0A",
+    "genre_tags": [
+      "rock",
+      "blues-rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.339666"
+  },
+  {
+    "id": "44b87021adab",
+    "date": "2026-03-19T00:00:00",
+    "day_of_week": "Thu",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "Last Dinosaurs"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/last-dinosaurs-wellness-10-year-anniversary-madison-wisconsin-03-19-2026/event/0700634EBB8F61FC",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.339769"
+  },
+  {
+    "id": "86e19046d9a7",
+    "date": "2026-03-20T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "la_crosse_center",
+      "name": "La Crosse Center",
+      "location": "La Crosse"
+    },
+    "bands": [
+      "Warrant",
+      "Firehouse",
+      "Steel Heart",
+      "Red Voodoo"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/turn-up-the-good-times-tour-la-crosse-wisconsin-03-20-2026/event/0700631B86AB0D17",
+    "genre_tags": [
+      "metal",
+      "nu-metal"
+    ],
+    "last_updated": "2026-01-19T01:36:54.339825"
+  },
+  {
+    "id": "97b32766d886",
+    "date": "2026-03-20T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "the_rave-eagles_club",
+      "name": "The Rave-Eagles Club",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Orbit Culture"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7rvfb",
+    "genre_tags": [
+      "metal",
+      "death metal/black metal"
+    ],
+    "last_updated": "2026-01-19T01:36:54.339897"
+  },
+  {
+    "id": "1aebe79e4272",
+    "date": "2026-03-20T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "Armchair Boogie"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/armchair-boogie-madison-wisconsin-03-20-2026/event/0700642FDB647647",
+    "genre_tags": [
+      "folk",
+      "indie folk"
+    ],
+    "last_updated": "2026-01-19T01:36:54.339919"
+  },
+  {
+    "id": "26ac777a2e32",
+    "date": "2026-03-21T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "Armchair Boogie"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/armchair-boogie-madison-wisconsin-03-21-2026/event/0700642FDC7D770C",
+    "genre_tags": [
+      "folk",
+      "indie folk"
+    ],
+    "last_updated": "2026-01-19T01:36:54.340058"
+  },
+  {
+    "id": "e9b0bde4117e",
+    "date": "2026-03-24T00:00:00",
+    "day_of_week": "Tue",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "twen",
+      "Monsoon"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/twen-madison-wisconsin-03-24-2026/event/07006335BA0128A3",
+    "genre_tags": [
+      "rock",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:36:54.340228"
+  },
+  {
+    "id": "ec4d03bc3a0b",
+    "date": "2026-03-25T00:00:00",
+    "day_of_week": "Wed",
+    "venue": {
+      "id": "landmark_credit_union_live",
+      "name": "Landmark Credit Union Live",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Boys Like Girls",
+      "iDKHOW",
+      "Arrows In Action"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/boys-like-girls-the-soundtrack-of-milwaukee-wisconsin-03-25-2026/event/0700635CC9D56F09",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.340253"
+  },
+  {
+    "id": "0b78838b732b",
+    "date": "2026-03-25T00:00:00",
+    "day_of_week": "Wed",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "John Craigie",
+      "Lou Hazel"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/john-craigie-spring-2026-madison-wisconsin-03-25-2026/event/070063842025B3CA",
+    "genre_tags": [
+      "folk",
+      "indie folk"
+    ],
+    "last_updated": "2026-01-19T01:36:54.340332"
+  },
+  {
+    "id": "be064dc17ce6",
+    "date": "2026-03-26T00:00:00",
+    "day_of_week": "Thu",
+    "venue": {
+      "id": "la_crosse_center",
+      "name": "La Crosse Center",
+      "location": "La Crosse"
+    },
+    "bands": [
+      "Filter",
+      "Finger Eleven",
+      "Local H"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/filter-and-finger-eleven-la-crosse-wisconsin-03-26-2026/event/0700637802A288EA",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.340407"
+  },
+  {
+    "id": "9e9fe38f1903",
+    "date": "2026-03-27T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "the_sylvee",
+      "name": "The Sylvee",
+      "location": "Madison"
+    },
+    "bands": [
+      "Black Label Society",
+      "Zakk Sabbath",
+      "Dark Chapel"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/black-label-society-madison-wisconsin-03-27-2026/event/0700636A31739169",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.340437"
+  },
+  {
+    "id": "a20aea02a0e2",
+    "date": "2026-04-01T00:00:00",
+    "day_of_week": "Wed",
+    "venue": {
+      "id": "the_sylvee",
+      "name": "The Sylvee",
+      "location": "Madison"
+    },
+    "bands": [
+      "Devil Wears Prada",
+      "Four Year Strong",
+      "Split Chain",
+      "I Promised The World"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/the-devil-wears-prada-flowers-tour-madison-wisconsin-04-01-2026/event/0700636CEE3D96AA",
+    "genre_tags": [
+      "metal",
+      "nu-metal"
+    ],
+    "last_updated": "2026-01-19T01:36:54.340568"
+  },
+  {
+    "id": "7b96f4c3a7f2",
+    "date": "2026-04-03T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "majestic_theatre",
+      "name": "Majestic Theatre",
+      "location": "Madison"
+    },
+    "bands": [
+      "Dirtwire"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/dirtwire-universal-language-tour-madison-wisconsin-04-03-2026/event/07006363AF4F5DFC",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.340733"
+  },
+  {
+    "id": "89fa52b050e7",
+    "date": "2026-04-03T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "Landon Conrath"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/landon-conrath-madison-wisconsin-04-03-2026/event/07006346B50934F3",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.340761"
+  },
+  {
+    "id": "81fdd509c8a5",
+    "date": "2026-04-04T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "majestic_theatre",
+      "name": "Majestic Theatre",
+      "location": "Madison"
+    },
+    "bands": [
+      "Kishi Bashi",
+      "Bayonne"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/kishi-bashi-sonderlust-10th-anniversary-tour-madison-wisconsin-04-04-2026/event/07006348E85F56A2",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.340813"
+  },
+  {
+    "id": "9221e6a396c8",
+    "date": "2026-04-08T00:00:00",
+    "day_of_week": "Wed",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "Arts Fishing Club"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/arts-fishing-club-madison-wisconsin-04-08-2026/event/0700635EA6AF63D3",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.340841"
+  },
+  {
+    "id": "b38a619cba50",
+    "date": "2026-04-09T00:00:00",
+    "day_of_week": "Thu",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "Califone"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/califone-madison-wisconsin-04-09-2026/event/0700636DB2E27350",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.340894"
+  },
+  {
+    "id": "16dd90330a32",
+    "date": "2026-04-09T00:00:00",
+    "day_of_week": "Thu",
+    "venue": {
+      "id": "paradise",
+      "name": "Circle Jerks, Gorilla Biscuits at Paradise Rock Club in Boston, MA 6",
+      "location": "Boston"
+    },
+    "bands": [
+      "/$$$/Sold Out"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "6pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.221456"
+  },
+  {
+    "id": "5f269ce9acbc",
+    "date": "2026-04-11T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "majestic_theatre",
+      "name": "Majestic Theatre",
+      "location": "Madison"
+    },
+    "bands": [
+      "Magnolia Park",
+      "Silly Goose",
+      "Pinknoise"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/magnolia-park-nights-after-vamp-tour-madison-wisconsin-04-11-2026/event/0700636C0039A0FD",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.340996"
+  },
+  {
+    "id": "f48ab1aaaf39",
+    "date": "2026-04-11T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "middleeast",
+      "name": "Blood for Blood, Skinhead, Colin of Arabia, Neolithic at The Middle East Downstairs in Cambridge, MA 6",
+      "location": "Boston"
+    },
+    "bands": [
+      "//Sold Out"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": 30,
+      "door": 30,
+      "display": "$30/$30"
+    },
+    "time": "6pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.221553"
+  },
+  {
+    "id": "165f25c6cfd3",
+    "date": "2026-04-17T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "ho-chunk_gaming_black_river_fa",
+      "name": "Ho-Chunk Gaming Black River Falls",
+      "location": "Black River Falls"
+    },
+    "bands": [
+      "Generation Radio"
+    ],
+    "age_requirement": "21+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/generation-radio-black-river-falls-wisconsin-04-17-2026/event/07006390BD9D663E",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.341209"
+  },
+  {
+    "id": "ff22c8bd0c4f",
+    "date": "2026-04-25T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "miller_high_life_theatre",
+      "name": "Miller High Life Theatre",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Rock Orchestra By Candlelight"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7jN3v",
+    "genre_tags": [
+      "rock",
+      "rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.341548"
+  },
+  {
+    "id": "0c68837b2b21",
+    "date": "2026-04-26T00:00:00",
+    "day_of_week": "Sun",
+    "venue": {
+      "id": "landmark_credit_union_live",
+      "name": "Landmark Credit Union Live",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Puscifer",
+      "Dave Hill"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/puscifer-the-normal-isnt-tour-milwaukee-wisconsin-04-26-2026/event/0700635013B6A99D",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.341716"
+  },
+  {
+    "id": "a286def99b20",
+    "date": "2026-04-27T00:00:00",
+    "day_of_week": "Mon",
+    "venue": {
+      "id": "the_sylvee",
+      "name": "The Sylvee",
+      "location": "Madison"
+    },
+    "bands": [
+      "Band of Horses"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/band-of-horses-celebrating-20-years-madison-wisconsin-04-27-2026/event/07006427B83E6369",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.341746"
+  },
+  {
+    "id": "abec079e65e5",
+    "date": "2026-04-28T00:00:00",
+    "day_of_week": "Tue",
+    "venue": {
+      "id": "riverside_theatre_-_wi",
+      "name": "Riverside Theatre - WI",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Waxahatchee",
+      "MJ Lenderman"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7r6qF",
+    "genre_tags": [
+      "rock",
+      "rock & roll"
+    ],
+    "last_updated": "2026-01-19T01:36:54.341770"
+  },
+  {
+    "id": "29aceefcdd0f",
+    "date": "2026-04-28T00:00:00",
+    "day_of_week": "Tue",
+    "venue": {
+      "id": "majestic_theatre",
+      "name": "Majestic Theatre",
+      "location": "Madison"
+    },
+    "bands": [
+      "Growlers"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/the-growlers-madison-wisconsin-04-28-2026/event/0700636BA53B5ED9",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.341820"
+  },
+  {
+    "id": "76b762c4f248",
+    "date": "2026-04-28T00:00:00",
+    "day_of_week": "Tue",
+    "venue": {
+      "id": "the_sylvee",
+      "name": "The Sylvee",
+      "location": "Madison"
+    },
+    "bands": [
+      "Puscifer",
+      "Dave Hill"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/puscifer-the-normal-isnt-tour-madison-wisconsin-04-28-2026/event/0700634EA09D5619",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.341847"
+  },
+  {
+    "id": "494d7914fb95",
+    "date": "2026-04-29T00:00:00",
+    "day_of_week": "Wed",
+    "venue": {
+      "id": "high_noon_saloon",
+      "name": "High Noon Saloon",
+      "location": "Madison"
+    },
+    "bands": [
+      "Electric Six",
+      "Tragedy"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/electric-six-w-tragedy-all-metal-madison-wisconsin-04-29-2026/event/07006425AA90461D",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.341917"
+  },
+  {
+    "id": "ea0c715a8eba",
+    "date": "2026-04-30T00:00:00",
+    "day_of_week": "Thu",
+    "venue": {
+      "id": "the_sylvee",
+      "name": "The Sylvee",
+      "location": "Madison"
+    },
+    "bands": [
+      "Panchiko",
+      "sundots"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/panchiko-madison-wisconsin-04-30-2026/event/0700636C3286BC8D",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.341943"
+  },
+  {
+    "id": "8708cc88833b",
+    "date": "2026-04-30T00:00:00",
+    "day_of_week": "Thu",
+    "venue": {
+      "id": "riverside_theatre_-_wi",
+      "name": "Riverside Theatre - WI",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Get the Led Out"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7q3qe",
+    "genre_tags": [
+      "rock",
+      "classic rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.341988"
+  },
+  {
+    "id": "dd0dd533e2bc",
+    "date": "2026-05-01T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "majestic_theatre",
+      "name": "Majestic Theatre",
+      "location": "Madison"
+    },
+    "bands": [
+      "Bloodywood",
+      "Pretty Wild",
+      "Ladrones",
+      "Ankor"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/bloodywood-system-of-a-brown-tour-madison-wisconsin-05-01-2026/event/07006381F04483D3",
+    "genre_tags": [
+      "metal",
+      "nu-metal"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342040"
+  },
+  {
+    "id": "b02d3273eb52",
+    "date": "2026-05-02T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "the_sylvee",
+      "name": "The Sylvee",
+      "location": "Madison"
+    },
+    "bands": [
+      "Bilmuri",
+      "Home Team",
+      "Gang!"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/bilmuri-kinda-hard-tour-madison-wisconsin-05-02-2026/event/07006383F9489588",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342062"
+  },
+  {
+    "id": "67c4614826f4",
+    "date": "2026-05-02T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "turner_hall_ballroom",
+      "name": "Turner Hall Ballroom",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Iron and Wine",
+      "Improvement Movement"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7O-__",
+    "genre_tags": [
+      "alternative",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342086"
+  },
+  {
+    "id": "d7c73269ddae",
+    "date": "2026-05-03T00:00:00",
+    "day_of_week": "Sun",
+    "venue": {
+      "id": "miller_high_life_theatre",
+      "name": "Miller High Life Theatre",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "David Byrne"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.pabsttheatergroup.com/events/detail/david-byrne-2026",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342208"
+  },
+  {
+    "id": "a4a9f951130a",
+    "date": "2026-05-04T00:00:00",
+    "day_of_week": "Mon",
+    "venue": {
+      "id": "turner_hall_ballroom",
+      "name": "Turner Hall Ballroom",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Arcy Drive"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7rFF6",
+    "genre_tags": [
+      "rock",
+      "rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342233"
+  },
+  {
+    "id": "0222919cdc3b",
+    "date": "2026-05-05T00:00:00",
+    "day_of_week": "Tue",
+    "venue": {
+      "id": "riverside_theatre_-_wi",
+      "name": "Riverside Theatre - WI",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "SatchVai Band featuring Joe Satriani and Steve Vai",
+      "Animals As Leaders"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7O3ve",
+    "genre_tags": [
+      "rock",
+      "rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342257"
+  },
+  {
+    "id": "487992a9fcfe",
+    "date": "2026-05-06T00:00:00",
+    "day_of_week": "Wed",
+    "venue": {
+      "id": "the_rave-eagles_club",
+      "name": "The Rave-Eagles Club",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Amity Affliction",
+      "August Burns Red",
+      "Boundaries",
+      "Heavensgate"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "6pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7rbjU",
+    "genre_tags": [
+      "rock",
+      "hard rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342308"
+  },
+  {
+    "id": "5bdd33cbfce8",
+    "date": "2026-05-06T00:00:00",
+    "day_of_week": "Wed",
+    "venue": {
+      "id": "oshkosh_arena",
+      "name": "Oshkosh Arena",
+      "location": "Oshkosh"
+    },
+    "bands": [
+      "Bush",
+      "Mammoth",
+      "James and the Cold Gun"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/bush-the-land-of-milk-and-oshkosh-wisconsin-05-06-2026/event/070063928FA748BA",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342336"
+  },
+  {
+    "id": "87de65a380ff",
+    "date": "2026-05-07T00:00:00",
+    "day_of_week": "Thu",
+    "venue": {
+      "id": "majestic_theatre",
+      "name": "Majestic Theatre",
+      "location": "Madison"
+    },
+    "bands": [
+      "Moss",
+      "Gatlin"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/the-moss-madison-wisconsin-05-07-2026/event/07006338FDA74321",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342364"
+  },
+  {
+    "id": "764df4954219",
+    "date": "2026-05-16T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "landmark_credit_union_live",
+      "name": "Landmark Credit Union Live",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Dethklok",
+      "Amon Amarth",
+      "Castle Rat"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/dethklok-amon-amarth-the-amonklok-conquest-milwaukee-wisconsin-05-16-2026/event/07006383B9E96F84",
+    "genre_tags": [
+      "metal",
+      "nu-metal"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342783"
+  },
+  {
+    "id": "d44728ecb00b",
+    "date": "2026-05-17T00:00:00",
+    "day_of_week": "Sun",
+    "venue": {
+      "id": "landmark_credit_union_live",
+      "name": "Landmark Credit Union Live",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Yellowcard",
+      "New Found Glory",
+      "Plain White T's"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/yellowcard-the-up-up-down-down-milwaukee-wisconsin-05-17-2026/event/07006383B3126AA0",
+    "genre_tags": [
+      "rock",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342829"
+  },
+  {
+    "id": "2620631a87b0",
+    "date": "2026-05-22T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "riverside_theatre_-_wi",
+      "name": "Riverside Theatre - WI",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Brit Floyd"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7rfuz",
+    "genre_tags": [
+      "rock",
+      "classic rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342877"
+  },
+  {
+    "id": "f0a4dd82e85e",
+    "date": "2026-05-23T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "riverside_theatre_-_wi",
+      "name": "Riverside Theatre - WI",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Brit Floyd"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7rfuU",
+    "genre_tags": [
+      "rock",
+      "classic rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342931"
+  },
+  {
+    "id": "b4e15d8fe569",
+    "date": "2026-05-28T00:00:00",
+    "day_of_week": "Thu",
+    "venue": {
+      "id": "riverside_theatre_-_wi",
+      "name": "Riverside Theatre - WI",
+      "location": "Milwaukee"
+    },
+    "bands": [
+      "Rilo Kiley"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [],
+    "source": "ticketmaster",
+    "source_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7OaA0",
+    "genre_tags": [
+      "alternative",
+      "alternative rock"
+    ],
+    "last_updated": "2026-01-19T01:36:54.342983"
+  },
+  {
+    "id": "7ed54de4fba9",
+    "date": "2026-01-16T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "unknown_venue",
+      "name": "Unknown Venue",
+      "location": "Boston"
+    },
+    "bands": [
+      "All shows are unless otherwise noted as 16+// after the Time",
+      "Price of the show."
+    ],
+    "age_requirement": "21+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.219578"
+  },
+  {
+    "id": "1cf62716f929",
+    "date": "2026-01-18T00:00:00",
+    "day_of_week": "Sun",
+    "venue": {
+      "id": "i_promised_the_world_rosashari",
+      "name": "I Promised the World, Rosasharin, Azshara, Quick to Judge at Sonia in Cambridge, MA 7",
+      "location": "Boston"
+    },
+    "bands": [
+      "/+"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": 18,
+      "door": 18,
+      "display": "$18/$18"
+    },
+    "time": "7pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.220184"
+  },
+  {
+    "id": "40d23bfb9eac",
+    "date": "2026-02-02T00:00:00",
+    "day_of_week": "Mon",
+    "venue": {
+      "id": "discontent_can\u2019t_lose_unhinged",
+      "name": "Discontent, Can\u2019t Lose, Unhinged, Bullzeye at O\u2019Brien\u2019s Pub in Allston, MA 7",
+      "location": "Boston"
+    },
+    "bands": [
+      "/+"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": 15,
+      "door": 18,
+      "display": "$15/$18"
+    },
+    "time": "7pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.220750"
+  },
+  {
+    "id": "cc5782a50391",
+    "date": "2026-02-14T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "middleeast",
+      "name": "Xibalba, Crush Your Soul, LIE, Wisdom & War, Can\u2019t Lose, Life\u2019s End at The Middle East Downstairs in Cambridge, MA 6",
+      "location": "Boston"
+    },
+    "bands": [
+      "/$Free"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "6pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.221014"
+  },
+  {
+    "id": "8febabaaefbe",
+    "date": "2026-02-28T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "middleeast",
+      "name": "Uponbrokenapologies, Mortar, In Contempt, Satiate at The Middle East Corner Bar in Cambridge, MA 8",
+      "location": "Boston"
+    },
+    "bands": [
+      "/$Free/"
+    ],
+    "age_requirement": "18+",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "8pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.221130"
+  },
+  {
+    "id": "83f2238791ba",
+    "date": "2026-03-01T00:00:00",
+    "day_of_week": "Sun",
+    "venue": {
+      "id": "middleeast",
+      "name": "Vicegrip, Helldog, I.C.B.M., Hard 2 Kill at The Middle East Corner Bar in Cambridge, MA 7",
+      "location": "Boston"
+    },
+    "bands": [
+      "/$Free"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "7pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.221352"
+  },
+  {
+    "id": "ae2cc120edf7",
+    "date": "2026-04-06T00:00:00",
+    "day_of_week": "Mon",
+    "venue": {
+      "id": "sinclair",
+      "name": "Angel Du$t, Death Threat, Outta Pocket, Jivebomb at The Sinclair in Cambridge, MA 6",
+      "location": "Boston"
+    },
+    "bands": [
+      "/$$"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "6pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.221408"
+  },
+  {
+    "id": "96e3046f2d22",
+    "date": "2026-04-10T00:00:00",
+    "day_of_week": "Fri",
+    "venue": {
+      "id": "paradise",
+      "name": "Circle Jerks, Gorilla Biscuits at Paradise Rock Club in Boston, MA 6",
+      "location": "Boston"
+    },
+    "bands": [
+      "/$$$"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "6pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.221502"
+  },
+  {
+    "id": "001d5094febd",
+    "date": "2026-04-12T00:00:00",
+    "day_of_week": "Sun",
+    "venue": {
+      "id": "blood_for_blood_skinhead_death",
+      "name": "Blood for Blood, Skinhead, Death Before Dishonor, Risk at Big Night Live in Boston, MA 5",
+      "location": "Boston"
+    },
+    "bands": [
+      "//Sold Out"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": 30,
+      "door": 30,
+      "display": "$30/$30"
+    },
+    "time": "5pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.221676"
+  },
+  {
+    "id": "5321fb0d33cf",
+    "date": "2026-05-30T00:00:00",
+    "day_of_week": "Sat",
+    "venue": {
+      "id": "acid_bath_napalm_death_pig_des",
+      "name": "Acid Bath, Napalm Death, Pig Destroyer, Primitive Man, Final Gasp at Roadrunner in Boston, MA 5",
+      "location": "Boston"
+    },
+    "bands": [
+      "/$$$"
+    ],
+    "age_requirement": "a/a",
+    "price": {
+      "advance": null,
+      "door": null,
+      "display": ""
+    },
+    "time": "5pm",
+    "flags": [
+      "@"
+    ],
+    "source": "scrape:safe_in_a_crowd",
+    "source_url": "https://safeinacrowd.com/",
+    "genre_tags": [
+      "hardcore",
+      "punk"
+    ],
+    "last_updated": "2026-01-19T01:37:32.221742"
+  }
+]

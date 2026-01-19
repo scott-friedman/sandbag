@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Environment
+.env
+.venv
+env/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Data cache (regenerated on each run)
+data/cache/
+data/raw_concerts.json
+
+# Keep processed data and concerts.json for reference
+!data/concerts.json
+!data/processed_concerts.json
