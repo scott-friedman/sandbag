@@ -85,6 +85,23 @@ BOSTON_VENUES = {
         "capacity": 300,
         "parser": "json_ld",
     },
+    # Berklee venues - performances page only (not recitals/masterclasses)
+    "berklee_bpc": {
+        "name": "Berklee Performance Center",
+        "location": "Boston",
+        "url": "https://www.berklee.edu/events/performances",
+        "capacity": 1215,
+        "parser": "berklee",
+        "venue_filter": "Berklee Performance Center",
+    },
+    "cafe939": {
+        "name": "Cafe 939",
+        "location": "Boston",
+        "url": "https://www.berklee.edu/events/performances",
+        "capacity": 200,
+        "parser": "berklee",
+        "venue_filter": "Red Room at Cafe 939",
+    },
 }
 
 
@@ -138,9 +155,11 @@ class AXSVenuesScraper(BaseScraper):
                 concerts = self._parse_sinclair(soup, venue_id, venue_config)
             elif parser_type == "json_ld":
                 concerts = self._parse_json_ld(soup, venue_id, venue_config)
+            elif parser_type == "berklee":
+                concerts = self._parse_berklee(soup, venue_id, venue_config)
 
-            # Fallback to generic parsing if no results
-            if not concerts:
+            # Fallback to generic parsing if no results (except berklee which has specific format)
+            if not concerts and parser_type != "berklee":
                 concerts = self._parse_event_page(soup, venue_id, venue_config)
 
         except Exception as e:
@@ -383,6 +402,114 @@ class AXSVenuesScraper(BaseScraper):
 
             except (json.JSONDecodeError, KeyError, TypeError) as e:
                 logger.debug(f"JSON-LD parse error: {e}")
+                continue
+
+        return concerts
+
+    def _parse_berklee(self, soup: BeautifulSoup, venue_id: str, venue_config: Dict) -> List[Concert]:
+        """Parse events from Berklee's Drupal-based events page.
+
+        Berklee uses a standard Drupal views structure with:
+        - div.views-row for each event
+        - div.title for event name
+        - time[datetime] for date/time
+        - field--name-field-event-venue-title for venue
+        """
+        concerts = []
+        venue_filter = venue_config.get("venue_filter", "")
+
+        view = soup.find(class_="view-events")
+        if not view:
+            logger.debug("No view-events container found on Berklee page")
+            return concerts
+
+        rows = view.find_all(class_="views-row")
+
+        for row in rows:
+            try:
+                # Get event title
+                title_div = row.find(class_="title")
+                if not title_div:
+                    continue
+                event_name = self._clean_text(title_div.get_text())
+                if not event_name or len(event_name) < 3:
+                    continue
+
+                # Get venue - filter to specific venue if configured
+                venue_field = row.find(class_="field--name-field-event-venue-title")
+                event_venue = ""
+                if venue_field:
+                    event_venue = self._clean_text(venue_field.get_text().replace("Venue Title", ""))
+
+                # Skip if venue filter is set and doesn't match
+                if venue_filter and venue_filter.lower() not in event_venue.lower():
+                    continue
+
+                # Get date/time
+                time_elem = row.find("time")
+                if not time_elem:
+                    continue
+
+                datetime_str = time_elem.get("datetime", "")
+                if not datetime_str:
+                    continue
+
+                try:
+                    # Parse ISO datetime: 2026-01-21T13:00:00-05:00
+                    event_date = datetime.fromisoformat(datetime_str.replace("Z", "").split("+")[0].split("-05:00")[0].split("-04:00")[0])
+                except ValueError:
+                    continue
+
+                # Skip past events
+                if event_date.date() < datetime.now().date():
+                    continue
+
+                # Extract show time
+                hour = event_date.hour
+                minute = event_date.minute
+                if hour >= 12:
+                    ampm = "pm"
+                    display_hour = hour if hour == 12 else hour - 12
+                else:
+                    ampm = "am"
+                    display_hour = hour if hour != 0 else 12
+
+                if minute == 0:
+                    show_time = f"{display_hour}{ampm}"
+                else:
+                    show_time = f"{display_hour}:{minute:02d}{ampm}"
+
+                # Parse band names from event title
+                bands = self._parse_event_name(event_name)
+
+                # Get ticket link if available
+                source_url = venue_config["url"]
+                event_link = row.find("a", href=lambda x: x and "/events/" in x)
+                if event_link:
+                    href = event_link.get("href", "")
+                    if href.startswith("/"):
+                        source_url = f"https://www.berklee.edu{href}"
+                    elif href.startswith("http"):
+                        source_url = href
+
+                concerts.append(Concert(
+                    date=event_date,
+                    venue_id=venue_id,
+                    venue_name=venue_config["name"],
+                    venue_location=venue_config["location"],
+                    bands=bands,
+                    age_requirement="a/a",  # Berklee events are typically all ages
+                    price_advance=None,
+                    price_door=None,
+                    time=show_time,
+                    flags=[],
+                    source=self.source_name,
+                    source_url=source_url,
+                    genre_tags=[]
+                ))
+
+            except Exception as e:
+                logger.debug(f"Error parsing Berklee event: {e}")
                 continue
 
         return concerts
