@@ -8,8 +8,8 @@ import os
 TICKETMASTER_API_KEY = os.environ.get("TICKETMASTER_API_KEY", "")
 TICKETMASTER_BASE_URL = "https://app.ticketmaster.com/discovery/v2"
 
-# Boston metro area - DMA code 335
-BOSTON_DMA = "335"
+# Boston metro area - DMA code 246
+BOSTON_DMA = "246"
 BOSTON_LATLONG = (42.3601, -71.0589)
 SEARCH_RADIUS_MILES = 50
 
