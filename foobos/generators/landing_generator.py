@@ -3,9 +3,10 @@ Generate index.html - simple landing page matching foopee.com style.
 """
 
 import logging
+import shutil
 from pathlib import Path
 
-from ..config import OUTPUT_DIR
+from ..config import OUTPUT_DIR, PROJECT_ROOT
 
 logger = logging.getLogger(__name__)
 
@@ -54,7 +55,7 @@ body {
 
 <div class="nav-links">
 [ <a href="list.html">shows</a> ]<br>
-[ <a href="http://www.foopee.com/punk/the-list/">what is foopee?</a> ]
+[ <a href="fool.html">what is foopee?</a> ]
 </div>
 
 </body>
@@ -66,3 +67,39 @@ body {
         f.write(html)
 
     logger.info("Generated index.html (landing page)")
+
+    # Generate fool.html - the-fool.png on black background
+    fool_html = '''<!DOCTYPE html>
+<html>
+<head>
+<title>what is foopee?</title>
+<style>
+body {
+  background: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+</style>
+</head>
+<body>
+<img src="the-fool.png" alt="The Fool">
+</body>
+</html>
+'''
+
+    fool_path = Path(OUTPUT_DIR) / "fool.html"
+    with open(fool_path, "w") as f:
+        f.write(fool_html)
+
+    logger.info("Generated fool.html")
+
+    # Copy the-fool.png to output directory
+    src_img = Path(PROJECT_ROOT) / "the-fool.png"
+    dst_img = Path(OUTPUT_DIR) / "the-fool.png"
+    if src_img.exists():
+        shutil.copy2(src_img, dst_img)
+        logger.info("Copied the-fool.png to output")
