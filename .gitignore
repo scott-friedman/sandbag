@@ -21,6 +21,9 @@ venv/
 *.swp
 *.swo
 
+# Generated output (regenerated on each run)
+output/
+
 # Data cache (regenerated on each run)
 data/cache/
 data/raw_concerts.json
