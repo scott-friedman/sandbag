@@ -65,7 +65,7 @@ def _generate_club_page(venues: Dict[str, List[Concert]]) -> None:
 
 <h2><i>Listing By Club</i></h2>
 
-<p><a href="index.html">Back to The List</a></p>
+<p><a href="list.html">Back to The List</a></p>
 
 <hr>
 
@@ -133,7 +133,7 @@ def _generate_club_page(venues: Dict[str, List[Concert]]) -> None:
 
     html += '''<hr>
 
-<p><a href="index.html">Back to The List</a></p>
+<p><a href="list.html">Back to The List</a></p>
 
 </body>
 </html>

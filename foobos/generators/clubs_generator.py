@@ -36,7 +36,7 @@ def generate_clubs_page() -> None:
 
 <h2><i>Club Directory</i></h2>
 
-<p><a href="index.html">Back to The List</a></p>
+<p><a href="list.html">Back to The List</a></p>
 
 <hr>
 
@@ -83,7 +83,7 @@ Venues that frequently book punk, hardcore, and metal shows in the Greater Bosto
 
     html += '''<hr>
 
-<p><a href="index.html">Back to The List</a></p>
+<p><a href="list.html">Back to The List</a></p>
 
 </body>
 </html>
