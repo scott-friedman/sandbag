@@ -25,7 +25,7 @@ from foobos.fetchers.scrapers import (
     PloughAndStarsScraper,
     BostonShowsScraper,
 )
-from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre
+from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre, filter_past_events
 from foobos.generators import generate_all_html
 from foobos.utils.cache import clear_cache
 
@@ -223,6 +223,10 @@ def cmd_process(args):
     logger.info("Filtering by genre...")
     concerts = filter_by_genre(concerts, strict=args.strict if hasattr(args, 'strict') else False)
 
+    # Remove past events (only keep today and future)
+    logger.info("Removing past events...")
+    concerts = filter_past_events(concerts)
+
     logger.info(f"Processed concerts: {len(concerts)}")
 
     # Save processed data
@@ -251,6 +255,10 @@ def cmd_generate(args):
 
     concerts = [Concert.from_dict(d) for d in processed_data]
     logger.info(f"Loaded {len(concerts)} processed concerts")
+
+    # Filter out past events (in case processed data contains stale entries)
+    concerts = filter_past_events(concerts)
+    logger.info(f"After date filter: {len(concerts)} concerts")
 
     # Generate HTML
     logger.info("Generating HTML...")
