@@ -22,6 +22,7 @@ from foobos.fetchers.scrapers import (
     ICalVenuesScraper,
     SongkickVenuesScraper,
     BSOScraper,
+    PloughAndStarsScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre
 from foobos.generators import generate_all_html
@@ -158,6 +159,16 @@ def cmd_fetch(args):
         all_concerts.extend(bso_concerts)
     except Exception as e:
         logger.error(f"BSO venues scrape failed: {e}")
+
+    # The Plough and Stars (Cambridge Irish pub)
+    try:
+        logger.info("Scraping The Plough and Stars...")
+        plough_scraper = PloughAndStarsScraper()
+        plough_concerts = plough_scraper.fetch()
+        logger.info(f"Plough and Stars: {len(plough_concerts)} concerts")
+        all_concerts.extend(plough_concerts)
+    except Exception as e:
+        logger.error(f"Plough and Stars scrape failed: {e}")
 
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 

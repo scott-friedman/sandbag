@@ -9,6 +9,7 @@ from .boston_ska import BostonSkaScraper
 from .ical_venues import ICalVenuesScraper
 from .songkick_venues import SongkickVenuesScraper
 from .bso import BSOScraper
+from .plough_and_stars import PloughAndStarsScraper
 
 __all__ = [
     "BaseScraper",
@@ -22,4 +23,5 @@ __all__ = [
     "ICalVenuesScraper",
     "SongkickVenuesScraper",
     "BSOScraper",
+    "PloughAndStarsScraper",
 ]
