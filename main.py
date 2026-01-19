@@ -13,7 +13,7 @@ from datetime import datetime
 
 from foobos.config import OUTPUT_DIR, DATA_DIR, CACHE_DIR
 from foobos.fetchers import TicketmasterFetcher
-from foobos.fetchers.scrapers import SafeInACrowdScraper, Do617Scraper, MiddleEastScraper, AXSVenuesScraper
+from foobos.fetchers.scrapers import SafeInACrowdScraper, Do617Scraper, MiddleEastScraper, AXSVenuesScraper, BoweryBostonScraper
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre
 from foobos.generators import generate_all_html
 from foobos.utils.cache import clear_cache
@@ -60,35 +60,25 @@ def cmd_fetch(args):
     except Exception as e:
         logger.error(f"Safe In A Crowd scrape failed: {e}")
 
-    # Do617
+    # AXS Venues (Royale, Sinclair - direct venue pages with full data)
     try:
-        logger.info("Scraping Do617...")
-        do617_scraper = Do617Scraper()
-        do617_concerts = do617_scraper.fetch()
-        logger.info(f"Do617: {len(do617_concerts)} concerts")
-        all_concerts.extend(do617_concerts)
-    except Exception as e:
-        logger.error(f"Do617 scrape failed: {e}")
-
-    # Middle East
-    try:
-        logger.info("Scraping Middle East...")
-        me_scraper = MiddleEastScraper()
-        me_concerts = me_scraper.fetch()
-        logger.info(f"Middle East: {len(me_concerts)} concerts")
-        all_concerts.extend(me_concerts)
-    except Exception as e:
-        logger.error(f"Middle East scrape failed: {e}")
-
-    # AXS Venues (Roadrunner, Royale, Big Night Live, MGM Music Hall)
-    try:
-        logger.info("Scraping AXS venues (Roadrunner, Royale, Big Night Live, MGM)...")
+        logger.info("Scraping AXS venues (Royale, Sinclair)...")
         axs_scraper = AXSVenuesScraper()
         axs_concerts = axs_scraper.fetch()
         logger.info(f"AXS Venues: {len(axs_concerts)} concerts")
         all_concerts.extend(axs_concerts)
     except Exception as e:
         logger.error(f"AXS venues scrape failed: {e}")
+
+    # Bowery Boston (Roadrunner, Fête, Armory - not available via direct pages)
+    try:
+        logger.info("Scraping Bowery Boston (Roadrunner, etc.)...")
+        bowery_scraper = BoweryBostonScraper()
+        bowery_concerts = bowery_scraper.fetch()
+        logger.info(f"Bowery Boston: {len(bowery_concerts)} concerts")
+        all_concerts.extend(bowery_concerts)
+    except Exception as e:
+        logger.error(f"Bowery Boston scrape failed: {e}")
 
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 
