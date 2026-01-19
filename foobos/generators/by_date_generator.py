@@ -41,6 +41,7 @@ def _generate_date_shortcuts(current_week: int, reference_date: datetime) -> str
 
     Format: [ Jan 12 - Jan 18 | Jan 19 - Jan 25 | ... ]
     Current week is shown in bold without a link.
+    Links wrap naturally across multiple lines.
     """
     from ..config import WEEKS_AHEAD
 
@@ -116,7 +117,7 @@ def _generate_week_page(week_num: int, concerts: List[Concert], reference_date: 
 <hr>
 <p>{date_shortcuts}</p>
 
-<p>[ <a href="index.html">Top of The List</a> | <a href="mailto:foobos@foobos.com">Your Name Here</a> ]</p>
+<p>[ <a href="index.html">Top of The List</a> | <a href="mailto:foobos@example.com">Graham Spencer</a> ]</p>
 
 </body>
 </html>
