@@ -69,7 +69,7 @@ img {
 </style>
 </head>
 <body>
-<img src="the-fool.png" alt="The Fool">
+<img src="the%20fool.jpg" alt="SANE">
 </body>
 </html>
 '''
@@ -80,9 +80,9 @@ img {
 
     logger.info("Generated fool.html")
 
-    # Copy the-fool.png to output directory (skip if same location)
-    src_img = Path(PROJECT_ROOT) / "the-fool.png"
-    dst_img = Path(OUTPUT_DIR) / "the-fool.png"
+    # Copy the fool.jpg to output directory (skip if same location)
+    src_img = Path(PROJECT_ROOT) / "the fool.jpg"
+    dst_img = Path(OUTPUT_DIR) / "the fool.jpg"
     if src_img.exists() and src_img.resolve() != dst_img.resolve():
         shutil.copy2(src_img, dst_img)
-        logger.info("Copied the-fool.png to output")
+        logger.info("Copied the fool.jpg to output")
