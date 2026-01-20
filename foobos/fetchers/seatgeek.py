@@ -123,28 +123,27 @@ class SeatGeekFetcher(BaseFetcher):
     def _parse_event(self, event: dict) -> Optional[Concert]:
         """Parse SeatGeek event into Concert object."""
         try:
-            # Extract date
-            datetime_utc = event.get("datetime_utc") or event.get("datetime_local")
-            if not datetime_utc:
+            # Extract date - use datetime_local to get correct local date
+            # (datetime_utc can be next day for late evening events due to timezone offset)
+            datetime_local = event.get("datetime_local") or event.get("datetime_utc")
+            if not datetime_local:
                 return None
 
-            # Parse datetime
+            # Parse datetime from local time
             try:
-                date = datetime.strptime(datetime_utc[:19], "%Y-%m-%dT%H:%M:%S")
+                date = datetime.strptime(datetime_local[:19], "%Y-%m-%dT%H:%M:%S")
             except ValueError:
-                date = datetime.strptime(datetime_utc[:10], "%Y-%m-%d")
+                date = datetime.strptime(datetime_local[:10], "%Y-%m-%d")
 
-            # Extract time
-            time_str = event.get("datetime_local", "")
-            if time_str and "T" in time_str:
+            # Extract time from local datetime
+            time = "8pm"
+            if datetime_local and "T" in datetime_local:
                 try:
-                    time_part = time_str.split("T")[1][:5]
+                    time_part = datetime_local.split("T")[1][:5]
                     time_obj = datetime.strptime(time_part, "%H:%M")
                     time = time_obj.strftime("%-I%p").lower()
                 except (ValueError, IndexError):
-                    time = "8pm"
-            else:
-                time = "8pm"
+                    pass
 
             # Extract venue
             venue_data = event.get("venue", {})
