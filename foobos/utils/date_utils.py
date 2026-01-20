@@ -99,3 +99,32 @@ def get_week_label(start: datetime, end: datetime) -> str:
         return f"{start.strftime('%b %-d')} - {end.strftime('%b %-d')}"
     else:
         return f"{start.strftime('%b %-d')} - {end.strftime('%b %-d')}"
+
+
+def get_adjusted_week_label(week_start: datetime, week_end: datetime, today: datetime) -> str:
+    """
+    Generate week label, adjusting start date to today if today falls within the week.
+
+    For the current week, if today is after the week start (Sunday), use today
+    as the display start date. This prevents showing past dates in the range.
+
+    Args:
+        week_start: The Sunday start of the week
+        week_end: The Saturday end of the week
+        today: Today's date
+
+    Returns:
+        Week label like "Jan 19 - Jan 25" with adjusted start if applicable
+    """
+    # Normalize dates for comparison
+    today_normalized = today.replace(hour=0, minute=0, second=0, microsecond=0)
+    week_start_normalized = week_start.replace(hour=0, minute=0, second=0, microsecond=0)
+    week_end_normalized = week_end.replace(hour=0, minute=0, second=0, microsecond=0)
+
+    # If today is within this week and after the week start, use today as start
+    if week_start_normalized <= today_normalized <= week_end_normalized:
+        display_start = today_normalized
+    else:
+        display_start = week_start_normalized
+
+    return get_week_label(display_start, week_end_normalized)
