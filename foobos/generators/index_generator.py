@@ -64,7 +64,6 @@ Here's what the symbols at the end of each listing might mean:
 <hr>
 
 <p>
-<b>Jan 19, 2026</b> Added photograph of Fenway Park.
 <b>Jan 18, 2026</b> The List has gone live! Boston's own version of the legendary <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>.<br>
 </p>
 
