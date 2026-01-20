@@ -55,7 +55,7 @@ body {
 
 <div class="nav-links">
 [ <a href="list.html">shows</a> ]<br>
-[ <a href="fool.html">what is foopee?</a> ]
+[ <a href="fool.html">what is foobos?</a> ]
 </div>
 
 </body>
@@ -72,7 +72,7 @@ body {
     fool_html = '''<!DOCTYPE html>
 <html>
 <head>
-<title>what is foopee?</title>
+<title>what is foobos?</title>
 <style>
 body {
   background: #000000;
