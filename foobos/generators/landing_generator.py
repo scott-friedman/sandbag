@@ -41,7 +41,7 @@ def generate_landing_page() -> None:
 
     logger.info("Generated index.html (landing page)")
 
-    # Generate fool.html - the-fool.png on black background
+    # Generate fool.html - in-sane.JPG on black background
     fool_html = '''<!DOCTYPE html>
 <html>
 <head>
@@ -69,7 +69,7 @@ img {
 </style>
 </head>
 <body>
-<img src="the%20fool.jpg" alt="SANE">
+<img src="in-sane.JPG" alt="SANE">
 </body>
 </html>
 '''
@@ -80,9 +80,9 @@ img {
 
     logger.info("Generated fool.html")
 
-    # Copy the fool.jpg to output directory (skip if same location)
-    src_img = Path(PROJECT_ROOT) / "the fool.jpg"
-    dst_img = Path(OUTPUT_DIR) / "the fool.jpg"
+    # Copy in-sane.JPG to output directory (skip if same location)
+    src_img = Path(PROJECT_ROOT) / "in-sane.JPG"
+    dst_img = Path(OUTPUT_DIR) / "in-sane.JPG"
     if src_img.exists() and src_img.resolve() != dst_img.resolve():
         shutil.copy2(src_img, dst_img)
-        logger.info("Copied the fool.jpg to output")
+        logger.info("Copied in-sane.JPG to output")
