@@ -14,49 +14,22 @@ logger = logging.getLogger(__name__)
 def generate_landing_page() -> None:
     """Generate the simple index.html landing page."""
 
-    html = '''<!DOCTYPE html>
-<html>
-<head>
-<title>foobos</title>
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #FFFFFF;
-  color: #000000;
-  text-align: center;
-  padding: 60px 20px;
-  margin: 0;
-}
-.site-title {
-  font-size: 56px;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-.nav-links {
-  margin: 25px 0;
-  line-height: 2.2;
-}
-.nav-links a {
-  color: #0000FF;
-  text-decoration: none;
-  font-size: 16px;
-}
-.nav-links a:visited {
-  color: #800080;
-}
-.nav-links a:hover {
-  text-decoration: underline;
-}
-</style>
-</head>
-<body>
+    html = '''<html>
+<head><title>foobos</title></head>
+<body bgcolor="white">
 
-<div class="site-title">foobos</div>
+<center>
 
-<div class="nav-links">
-[ <a href="list.html">shows</a> ]<br>
-[ <a href="fool.html">what is foobos?</a> ]
-</div>
+<br><br><br><br><br>
+<font size=+10 face="arial black,helvetica">foobos</font>
+
+<br><br>
+<font face="arial black,helvetica">
+[ <a href="list.html">shows</a> ] <br>
+[ <a href="fool.html">what is foobos?</a> ] <br>
+</font>
+
+</center>
 
 </body>
 </html>
