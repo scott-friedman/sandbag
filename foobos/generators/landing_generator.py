@@ -74,14 +74,24 @@ body {
 <head>
 <title>what is foobos?</title>
 <style>
-body {
+html, body {
   background: #000000;
   margin: 0;
   padding: 0;
+  min-height: 100%;
+  width: 100%;
+}
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+img {
+  max-width: 100%;
+  max-height: 100vh;
+  width: auto;
+  height: auto;
 }
 </style>
 </head>
