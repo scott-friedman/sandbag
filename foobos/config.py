@@ -5,6 +5,13 @@ Configuration for foobos concert listing generator.
 import os
 from pathlib import Path
 
+# Load .env file if present
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # python-dotenv not installed, use system env vars
+
 # Project root directory (parent of foobos package)
 PROJECT_ROOT = Path(__file__).parent.parent.resolve()
 
