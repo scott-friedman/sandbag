@@ -11,7 +11,7 @@ from pathlib import Path
 
 from ..models import Concert
 from ..config import OUTPUT_DIR, SITE_NAME, SITE_TITLE, SITE_DESCRIPTION, SITE_EMAIL, WEEKS_AHEAD
-from ..utils.date_utils import get_week_range, get_week_label
+from ..utils.date_utils import get_week_range, get_week_label, get_adjusted_week_label
 
 logger = logging.getLogger(__name__)
 
@@ -211,13 +211,18 @@ Here's what the symbols at the end of each listing might mean:
 
 
 def _generate_week_links(start_date: datetime) -> str:
-    """Generate week range links for Concerts By Date section."""
+    """Generate week range links for Concerts By Date section.
+
+    For the current week (week 0), the start date is adjusted to today
+    to avoid showing past dates in the range.
+    """
     lines = []
+    today = start_date  # start_date is today when called from generate_index
 
     for week_num in range(WEEKS_AHEAD):
         week_start = start_date + timedelta(weeks=week_num)
         week_start, week_end = get_week_range(week_start)
-        label = get_week_label(week_start, week_end)
+        label = get_adjusted_week_label(week_start, week_end, today)
         lines.append(f'&nbsp;&nbsp;&nbsp;&nbsp;<a href="by-date.{week_num}.html">{label}</a><br>')
 
     return "\n".join(lines)
