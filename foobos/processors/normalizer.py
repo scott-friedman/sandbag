@@ -169,6 +169,7 @@ def _normalize_venue_id(venue_id: str) -> str:
         "sinclair_cambridge": "sinclair",
         "thesinclair": "sinclair",
         "the_sinclair_music_hall": "sinclair",
+        "the_sinclair_-_cambridge": "sinclair",
 
         # Royale variants
         "royale_boston": "royale",
@@ -183,7 +184,7 @@ def _normalize_venue_id(venue_id: str) -> str:
         "house_of_blues": "hob_boston",
         "houseofblues": "hob_boston",
         "citizens_house_of_blues_boston": "hob_boston",
-        "hob": "hob_boston",  # Fix Orlando issue
+        "hob": "hob_boston",
 
         # O'Brien's variants (note the curly apostrophe and straight apostrophe)
         "obriens_pub": "obriens",
@@ -227,6 +228,88 @@ def _normalize_venue_id(venue_id: str) -> str:
         "symphony-hall": "symphonyhall",
         "bso": "symphonyhall",
         "boston_symphony_orchestra": "symphonyhall",
+        "boston_symphony_hall": "symphonyhall",
+
+        # Berklee Performance Center variants
+        "berklee": "berklee_bpc",
+        "berklee_performing_arts_center": "berklee_bpc",
+
+        # Big Night Live variants
+        "bignightlive": "big_night_live",
+
+        # Bijou variants
+        "bijou_nightclub": "bijou",
+
+        # Blue Ocean Music Hall variants
+        "blue_ocean": "blue_ocean_music_hall",
+
+        # Cafe 939 / Red Room variants
+        "cafe_939": "cafe939",
+        "red_room_at_cafe_939": "cafe939",
+
+        # Centro Nightclub variants
+        "centro_night_club": "centro_nightclub",
+
+        # Chevalier Theatre variants
+        "chevalier": "chevalier_theatre",
+
+        # City Winery variants
+        "citywinery": "city_winery",
+
+        # Fenway Park variants
+        "fenway": "fenway_park",
+
+        # Lynn Auditorium variants
+        "lynn_memorial_auditorium": "lynn_auditorium",
+
+        # Memoire variants
+        "memoire_boston": "memoire",
+
+        # MGM Music Hall variants
+        "mgm_music_hall_at_fenway": "mgm_music_hall",
+
+        # Off The Rails variants
+        "off_the_rails": "off_the_rails_music_venue",
+
+        # Palladium variants
+        "palladium-ma": "palladium",
+
+        # Leader Bank Pavilion variants
+        "pavilion": "leader_bank_pavilion",
+
+        # Providence Performing Arts Center variants
+        "providence_performing_arts": "providence_performing_arts_cen",
+
+        # Rockwell variants
+        "the_rockwell": "rockwell",
+
+        # Scullers Jazz Club variants
+        "scullers": "scullers_jazz_club",
+
+        # Sonia variants
+        "sonia_live_music_venue": "sonia",
+
+        # TD Garden variants
+        "tdgarden": "td_garden",
+
+        # The Grand variants
+        "the_grand_(boston)": "the_grand",
+
+        # Hanover Theatre variants
+        "the_hanover_theatre": "hanover_theatre",
+
+        # Strand Theatre variants
+        "strand_theatre-ri": "the_strand_theatre_-_providenc",
+
+        # The VETS / Veterans Memorial variants
+        "the_vets": "veterans_memorial_auditorium",
+        "the_vets_-_veterans_memorial_a": "veterans_memorial_auditorium",
+
+        # Wally's variants
+        "wallys_pub": "wallys",
+
+        # Xfinity Center variants
+        "xfinity_center": "xfinity_center_-_ma",
     }
 
     return id_map.get(venue_id, venue_id)

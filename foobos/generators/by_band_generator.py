@@ -15,6 +15,13 @@ from ..config import OUTPUT_DIR
 logger = logging.getLogger(__name__)
 
 
+def _normalize_band_key(band: str) -> str:
+    """Normalize band name for grouping (case-insensitive, no punctuation)."""
+    key = band.lower().strip()
+    key = key.replace("'", "").replace("'", "").replace(".", "").replace(",", "")
+    return key
+
+
 def generate_by_band_pages(concerts: List[Concert]) -> Tuple[int, Dict[str, Tuple[str, int]]]:
     """Generate the single by-band.html page.
 
@@ -22,13 +29,26 @@ def generate_by_band_pages(concerts: List[Concert]) -> Tuple[int, Dict[str, Tupl
         Tuple of (page_count, band_info_dict)
         band_info_dict maps band_name -> (anchor, page_num) where page_num is always 0
     """
-    # Group concerts by band
-    by_band: Dict[str, List[Concert]] = defaultdict(list)
+    # Group concerts by normalized band key for deduplication
+    by_band_key: Dict[str, List[Concert]] = defaultdict(list)
+    # Track the preferred display name for each normalized key (most common or first seen)
+    band_display_names: Dict[str, Dict[str, int]] = defaultdict(lambda: defaultdict(int))
 
     for concert in concerts:
         for band in concert.bands:
             if band and len(band) > 1:  # Skip single characters
-                by_band[band].append(concert)
+                key = _normalize_band_key(band)
+                by_band_key[key].append(concert)
+                band_display_names[key][band] += 1
+
+    # Convert to display name keyed dict, using most frequent name variant
+    by_band: Dict[str, List[Concert]] = {}
+    key_to_display: Dict[str, str] = {}
+    for key, concerts_list in by_band_key.items():
+        # Choose the most common display name
+        display_name = max(band_display_names[key].items(), key=lambda x: x[1])[0]
+        by_band[display_name] = concerts_list
+        key_to_display[key] = display_name
 
     # Build band_info for index page links
     band_info: Dict[str, Tuple[str, int]] = {}
