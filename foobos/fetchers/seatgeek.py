@@ -78,13 +78,11 @@ class SeatGeekFetcher(BaseFetcher):
             "lat": BOSTON_LATLONG[0],
             "lon": BOSTON_LATLONG[1],
             "range": f"{SEARCH_RADIUS_MILES}mi",
-            "type": "concert",
+            "type": "concert",  # Ensures only concert events, not sports/theater/etc
             "datetime_utc.gte": start_date.strftime("%Y-%m-%dT00:00:00"),
             "datetime_utc.lte": end_date.strftime("%Y-%m-%dT23:59:59"),
             "per_page": 100,
             "sort": "datetime_utc.asc",
-            # Only return events with ticket listings available
-            "listing_count.gt": 0,
         }
 
         # Add secret if available

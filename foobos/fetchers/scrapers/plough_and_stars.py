@@ -10,6 +10,7 @@ import re
 
 from .base import BaseScraper
 from ...models import Concert
+from ...config import WEEKS_AHEAD
 from ...utils import get_cached, save_cache
 
 logger = logging.getLogger(__name__)
@@ -40,9 +41,10 @@ class PloughAndStarsScraper(BaseScraper):
 
         all_concerts = []
 
-        # Fetch multiple months (current + next 5 months)
+        # Fetch multiple months based on WEEKS_AHEAD config
         now = datetime.now()
-        for month_offset in range(6):
+        months_ahead = (WEEKS_AHEAD // 4) + 1
+        for month_offset in range(months_ahead):
             target_date = now + timedelta(days=month_offset * 30)
             month = target_date.month
             year = target_date.year
@@ -92,7 +94,7 @@ class PloughAndStarsScraper(BaseScraper):
 
                 # Skip past dates or dates too far in future
                 now = datetime.now()
-                if date < now - timedelta(days=1) or date > now + timedelta(days=180):
+                if date < now - timedelta(days=1) or date > now + timedelta(weeks=WEEKS_AHEAD):
                     continue
 
                 # Find events in this day

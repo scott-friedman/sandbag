@@ -83,8 +83,8 @@ DATA_DIR = str(PROJECT_ROOT / "data")
 CACHE_DIR = str(PROJECT_ROOT / "data" / "cache")
 CACHE_TTL_HOURS = 12
 
-# How many weeks ahead to fetch/display
-WEEKS_AHEAD = 20
+# How many weeks ahead to fetch/display (10 months ≈ 43 weeks)
+WEEKS_AHEAD = 43
 
 # Site branding
 SITE_NAME = "foobos"
