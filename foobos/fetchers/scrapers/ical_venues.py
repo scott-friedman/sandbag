@@ -11,6 +11,7 @@ import requests
 
 from .base import BaseScraper
 from ...models import Concert
+from ...config import WEEKS_AHEAD
 from ...utils import get_cached, save_cache
 
 logger = logging.getLogger(__name__)
@@ -87,9 +88,10 @@ class ICalVenuesScraper(BaseScraper):
         urls_to_fetch = []
 
         if "monthly_url" in venue:
-            # Fetch multiple months (current + next 5 months = 6 months total)
+            # Fetch multiple months based on WEEKS_AHEAD config
             now = datetime.now()
-            for month_offset in range(6):
+            months_ahead = (WEEKS_AHEAD // 4) + 1
+            for month_offset in range(months_ahead):
                 target_date = now + timedelta(days=month_offset * 30)
                 url = venue["monthly_url"].format(
                     year=target_date.year,
@@ -190,9 +192,9 @@ class ICalVenuesScraper(BaseScraper):
             if not date:
                 return None
 
-            # Only include future events (within next 6 months)
+            # Only include future events within configured lookahead
             now = datetime.now()
-            if date < now or date > now + timedelta(days=180):
+            if date < now or date > now + timedelta(weeks=WEEKS_AHEAD):
                 return None
 
             # Parse time

@@ -10,6 +10,7 @@ import re
 
 from .base import BaseScraper
 from ...models import Concert
+from ...config import WEEKS_AHEAD
 from ...utils import get_cached, save_cache
 
 logger = logging.getLogger(__name__)
@@ -150,9 +151,9 @@ class SongkickVenuesScraper(BaseScraper):
         if not date:
             return None
 
-        # Only include future events (within next 6 months)
+        # Only include future events within configured lookahead
         now = datetime.now()
-        if date < now or date > now + timedelta(days=180):
+        if date < now or date > now + timedelta(weeks=WEEKS_AHEAD):
             return None
 
         # Extract artist/band name

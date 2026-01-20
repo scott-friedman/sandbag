@@ -24,10 +24,7 @@ from foobos.fetchers.scrapers import (
     BSOScraper,
     PloughAndStarsScraper,
     SallyOBriensScraper,
-    ChevalierTheatreScraper,
     TheBebopScraper,
-    TheCabotScraper,
-    PalladiumScraper,
     ScullersJazzScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre, filter_past_events
@@ -186,16 +183,6 @@ def cmd_fetch(args):
     except Exception as e:
         logger.error(f"Sally O'Brien's scrape failed: {e}")
 
-    # Chevalier Theatre (Medford theater)
-    try:
-        logger.info("Scraping Chevalier Theatre...")
-        chevalier_scraper = ChevalierTheatreScraper()
-        chevalier_concerts = chevalier_scraper.fetch()
-        logger.info(f"Chevalier Theatre: {len(chevalier_concerts)} concerts")
-        all_concerts.extend(chevalier_concerts)
-    except Exception as e:
-        logger.error(f"Chevalier Theatre scrape failed: {e}")
-
     # The Bebop (Boston South End jazz/soul venue)
     try:
         logger.info("Scraping The Bebop...")
@@ -205,26 +192,6 @@ def cmd_fetch(args):
         all_concerts.extend(bebop_concerts)
     except Exception as e:
         logger.error(f"The Bebop scrape failed: {e}")
-
-    # The Cabot (Beverly theater)
-    try:
-        logger.info("Scraping The Cabot...")
-        cabot_scraper = TheCabotScraper()
-        cabot_concerts = cabot_scraper.fetch()
-        logger.info(f"The Cabot: {len(cabot_concerts)} concerts")
-        all_concerts.extend(cabot_concerts)
-    except Exception as e:
-        logger.error(f"The Cabot scrape failed: {e}")
-
-    # The Palladium (Worcester - requires Playwright for JS rendering)
-    try:
-        logger.info("Scraping The Palladium...")
-        palladium_scraper = PalladiumScraper()
-        palladium_concerts = palladium_scraper.fetch()
-        logger.info(f"The Palladium: {len(palladium_concerts)} concerts")
-        all_concerts.extend(palladium_concerts)
-    except Exception as e:
-        logger.error(f"The Palladium scrape failed: {e}")
 
     # Scullers Jazz Club (Boston - requires Playwright for JS rendering)
     try:

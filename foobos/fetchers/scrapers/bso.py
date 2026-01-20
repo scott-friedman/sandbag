@@ -10,6 +10,7 @@ import re
 
 from .base import BaseScraper
 from ...models import Concert
+from ...config import WEEKS_AHEAD
 from ...utils import get_cached, save_cache
 
 logger = logging.getLogger(__name__)
@@ -98,9 +99,9 @@ class BSOScraper(BaseScraper):
                 if not date:
                     continue
 
-                # Only include future events within 6 months
+                # Only include future events within configured lookahead
                 now = datetime.now()
-                if date < now or date > now + timedelta(days=180):
+                if date < now or date > now + timedelta(weeks=WEEKS_AHEAD):
                     continue
 
                 time_str = self._extract_performance_time(perf)
