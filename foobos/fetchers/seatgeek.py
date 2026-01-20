@@ -83,6 +83,8 @@ class SeatGeekFetcher(BaseFetcher):
             "datetime_utc.lte": end_date.strftime("%Y-%m-%dT23:59:59"),
             "per_page": 100,
             "sort": "datetime_utc.asc",
+            # Only return events with ticket listings available
+            "listing_count.gt": 0,
         }
 
         # Add secret if available
@@ -218,23 +220,50 @@ class SeatGeekFetcher(BaseFetcher):
 
     def _get_venue_id(self, sg_venue_id: str, venue_name: str) -> str:
         """Map SeatGeek venue to our venue slug."""
-        # Common SeatGeek venue mappings
+        # Common SeatGeek venue mappings (SeatGeek name slug -> our venue_id)
         sg_venue_map = {
+            # Major Boston venues
             "house-of-blues-boston": "hob_boston",
+            "citizens-house-of-blues-boston": "hob_boston",
             "paradise-rock-club": "paradise",
             "royale-boston": "royale",
+            "royale---boston": "royale",
             "the-sinclair": "sinclair",
+            "the-sinclair---cambridge": "sinclair",
             "brighton-music-hall": "brighton",
             "middle-east-cambridge": "middleeast",
+            "middle-east---upstairs": "middleeast_up",
             "middle-east-downstairs": "middleeast_down",
+            "middle-east---downstairs": "middleeast_down",
             "orpheum-theatre-boston": "orpheum",
+            "orpheum-theatre---boston": "orpheum",
             "roadrunner-boston": "roadrunner",
+            "roadrunner---boston": "roadrunner",
             "td-garden": "tdgarden",
             "fenway-park": "fenway",
             "blue-hills-bank-pavilion": "pavilion",
             "leader-bank-pavilion": "pavilion",
             "xfinity-center-mansfield": "xfinity",
             "wang-theatre": "wang",
+            "boch-center-wang-theatre": "wang",
+            # Additional venues from SeatGeek
+            "mgm-music-hall-at-fenway": "mgm_music_hall",
+            "big-night-live": "big_night_live",
+            "somerville-theatre": "somerville_theatre",
+            "city-winery---boston": "city_winery",
+            "city-winery-boston": "city_winery",
+            "blue-ocean-music-hall": "blue_ocean",
+            "the-cabot": "the_cabot",
+            "groton-hill-music-center": "groton_hill",
+            "the-grand---boston": "the_grand",
+            "the-grand-boston": "the_grand",
+            "chevalier-theatre": "chevalier",
+            "the-palladium": "palladium",
+            "boston-symphony-hall": "symphony_hall",
+            "berklee-performance-center": "berklee",
+            "cafe-939-at-berklee": "cafe_939",
+            "regattabar": "regattabar",
+            "scullers-jazz-club": "scullers",
         }
 
         # Try slug from venue name
