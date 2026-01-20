@@ -48,7 +48,7 @@ def generate_index(
 <h2><i>The List (updated {update_date})</i></h2>
 
 <p>
-This is a Boston version of the legendary <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>. This was all foopee's idea, I've tried to clone it for Boston. Please <a href="mailto:sf@scottfriedman.ooo">send me mail</a> if you have questions or corrections related to the list content.
+This is a Boston version of the legendary <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>. Please <a href="mailto:sf@scottfriedman.ooo">send me mail</a> if you have questions or corrections related to the list content.
 </p>
 
 <p>
@@ -64,7 +64,6 @@ Here's what the symbols at the end of each listing might mean:
 <hr>
 
 <p>
-<b>Jan 19, 2026</b> Auto-updates daily from Ticketmaster, venue calendars, and other aggregators.<br>
 <b>Jan 19, 2026</b> The List has gone live! Boston's own version of the legendary <a href="http://www.foopee.com/punk/the-list/">foopee concert list</a>.<br>
 </p>
 
