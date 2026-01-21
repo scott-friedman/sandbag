@@ -98,3 +98,11 @@ SITE_NAME = "foobos"
 SITE_TITLE = "foobos"
 SITE_DESCRIPTION = "Boston area punk/hardcore/ska/indie shows"
 SITE_EMAIL = "foobos@example.com"
+
+# Analytics Configuration
+# Set your Google Analytics 4 Measurement ID (format: G-XXXXXXXXXX)
+# Get this from: Google Analytics > Admin > Data Streams > Web > Measurement ID
+GA4_MEASUREMENT_ID = os.environ.get("GA4_MEASUREMENT_ID", "")
+
+# Enable/disable analytics (set to False to disable tracking)
+ANALYTICS_ENABLED = bool(GA4_MEASUREMENT_ID)

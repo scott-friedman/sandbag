@@ -1,0 +1,114 @@
+name: Lighthouse Performance Audit
+
+on:
+  # Run after concert listings are updated
+  workflow_run:
+    workflows: ["Update foobos Concert Listings"]
+    types:
+      - completed
+  # Also run weekly on Sundays for historical tracking
+  schedule:
+    - cron: '0 12 * * 0'
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli@0.13.x
+
+      - name: Run Lighthouse audit
+        run: |
+          lhci autorun \
+            --collect.url=https://foobos.scottfriedman.ooo/ \
+            --collect.url=https://foobos.scottfriedman.ooo/by-date.0.html \
+            --collect.url=https://foobos.scottfriedman.ooo/by-band.html \
+            --collect.numberOfRuns=3 \
+            --assert.preset=lighthouse:recommended \
+            --assert.assertions.categories:performance=warn:min=0.5 \
+            --assert.assertions.categories:accessibility=error:min=0.9 \
+            --upload.target=filesystem \
+            --upload.outputDir=./lighthouse-results
+        continue-on-error: true
+
+      - name: Archive Lighthouse results
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-results-${{ github.run_number }}
+          path: lighthouse-results/
+          retention-days: 90
+
+      - name: Generate performance summary
+        run: |
+          echo "## Lighthouse Performance Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Parse and display results if available
+          if [ -d "./lighthouse-results" ]; then
+            for manifest in ./lighthouse-results/manifest.json; do
+              if [ -f "$manifest" ]; then
+                echo "### Results" >> $GITHUB_STEP_SUMMARY
+                echo "" >> $GITHUB_STEP_SUMMARY
+                echo "| Page | Performance | Accessibility | Best Practices | SEO |" >> $GITHUB_STEP_SUMMARY
+                echo "|------|-------------|---------------|----------------|-----|" >> $GITHUB_STEP_SUMMARY
+
+                # Use jq to parse results if available
+                if command -v jq &> /dev/null; then
+                  jq -r '.[] | "| \(.url | split("/") | last | if . == "" then "index" else . end) | \(.summary.performance * 100 | floor)% | \(.summary.accessibility * 100 | floor)% | \(.summary["best-practices"] * 100 | floor)% | \(.summary.seo * 100 | floor)% |"' "$manifest" >> $GITHUB_STEP_SUMMARY 2>/dev/null || echo "Could not parse results" >> $GITHUB_STEP_SUMMARY
+                fi
+              fi
+            done
+          fi
+
+      - name: Update performance history
+        run: |
+          mkdir -p data/performance
+
+          # Create or update performance history JSON
+          HISTORY_FILE="data/performance/lighthouse-history.json"
+          DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+
+          # Extract scores from manifest if it exists
+          if [ -f "./lighthouse-results/manifest.json" ] && command -v jq &> /dev/null; then
+            SCORES=$(jq -c '[.[] | {url: .url, performance: .summary.performance, accessibility: .summary.accessibility, bestPractices: .summary["best-practices"], seo: .summary.seo}]' ./lighthouse-results/manifest.json 2>/dev/null || echo "[]")
+
+            # Create new entry
+            NEW_ENTRY=$(jq -nc --arg date "$DATE" --argjson scores "$SCORES" '{date: $date, scores: $scores}')
+
+            # Append to history (keep last 100 entries)
+            if [ -f "$HISTORY_FILE" ]; then
+              jq --argjson new "$NEW_ENTRY" '. + [$new] | .[-100:]' "$HISTORY_FILE" > tmp.json && mv tmp.json "$HISTORY_FILE"
+            else
+              echo "[$NEW_ENTRY]" > "$HISTORY_FILE"
+            fi
+          fi
+
+      - name: Commit performance history
+        run: |
+          git config user.name "foobos Bot"
+          git config user.email "bot@foobos.local"
+          git add data/performance/ || true
+
+          if git diff --staged --quiet; then
+            echo "No performance data changes to commit"
+          else
+            git commit -m "Update Lighthouse performance history $(date +'%Y-%m-%d')"
+            git push
+          fi
