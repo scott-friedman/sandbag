@@ -12,7 +12,7 @@ from pathlib import Path
 from datetime import datetime
 
 from foobos.config import OUTPUT_DIR, DATA_DIR, CACHE_DIR
-from foobos.fetchers import TicketmasterFetcher, SeatGeekFetcher, EventbriteFetcher
+from foobos.fetchers import TicketmasterFetcher, SeatGeekFetcher
 from foobos.fetchers.scrapers import (
     SafeInACrowdScraper,
     AXSVenuesScraper,
@@ -28,6 +28,8 @@ from foobos.fetchers.scrapers import (
     ScullersJazzScraper,
     SoundcheckStudiosScraper,
     JazzBostonScraper,
+    NarrowsCenterScraper,
+    ClubDelfScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre, filter_past_events
 from foobos.generators import generate_all_html
@@ -75,16 +77,6 @@ def cmd_fetch(args):
         all_concerts.extend(sg_concerts)
     except Exception as e:
         logger.error(f"SeatGeek fetch failed: {e}")
-
-    # Eventbrite API (good for DIY/smaller venues)
-    try:
-        logger.info("Fetching from Eventbrite...")
-        eb_fetcher = EventbriteFetcher()
-        eb_concerts = eb_fetcher.fetch()
-        logger.info(f"Eventbrite: {len(eb_concerts)} concerts")
-        all_concerts.extend(eb_concerts)
-    except Exception as e:
-        logger.error(f"Eventbrite fetch failed: {e}")
 
     # Safe In A Crowd (critical for DIY shows)
     try:
@@ -225,6 +217,26 @@ def cmd_fetch(args):
         all_concerts.extend(jazzboston_concerts)
     except Exception as e:
         logger.error(f"JazzBoston scrape failed: {e}")
+
+    # Narrows Center for the Arts (Fall River - via ShoWare)
+    try:
+        logger.info("Scraping Narrows Center...")
+        narrows_scraper = NarrowsCenterScraper()
+        narrows_concerts = narrows_scraper.fetch()
+        logger.info(f"Narrows Center: {len(narrows_concerts)} concerts")
+        all_concerts.extend(narrows_concerts)
+    except Exception as e:
+        logger.error(f"Narrows Center scrape failed: {e}")
+
+    # Club d'Elf (Boston jazz/world band - all locations)
+    try:
+        logger.info("Scraping Club d'Elf shows...")
+        clubdelf_scraper = ClubDelfScraper()
+        clubdelf_concerts = clubdelf_scraper.fetch()
+        logger.info(f"Club d'Elf: {len(clubdelf_concerts)} concerts")
+        all_concerts.extend(clubdelf_concerts)
+    except Exception as e:
+        logger.error(f"Club d'Elf scrape failed: {e}")
 
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 

@@ -23,9 +23,6 @@ SEATGEEK_CLIENT_ID = os.environ.get("SEATGEEK_CLIENT_ID", "")
 SEATGEEK_CLIENT_SECRET = os.environ.get("SEATGEEK_CLIENT_SECRET", "")
 SEATGEEK_BASE_URL = "https://api.seatgeek.com/2"
 
-EVENTBRITE_API_KEY = os.environ.get("EVENTBRITE_API_KEY", "")
-EVENTBRITE_BASE_URL = "https://www.eventbriteapi.com/v3"
-
 # Boston metro area - DMA code 246
 BOSTON_DMA = "246"
 BOSTON_LATLONG = (42.3601, -71.0589)

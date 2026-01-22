@@ -15,6 +15,8 @@ from .the_bebop import TheBebopScraper
 from .scullers_jazz import ScullersJazzScraper
 from .soundcheck_studios import SoundcheckStudiosScraper
 from .jazzboston import JazzBostonScraper
+from .narrows_center import NarrowsCenterScraper
+from .club_delf import ClubDelfScraper
 
 __all__ = [
     "BaseScraper",
@@ -34,4 +36,6 @@ __all__ = [
     "ScullersJazzScraper",
     "SoundcheckStudiosScraper",
     "JazzBostonScraper",
+    "NarrowsCenterScraper",
+    "ClubDelfScraper",
 ]
