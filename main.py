@@ -32,6 +32,7 @@ from foobos.fetchers.scrapers import (
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre, filter_past_events
 from foobos.generators import generate_all_html
 from foobos.utils.cache import clear_cache
+from foobos.notifications import send_daily_notification
 
 # Configure logging
 logging.basicConfig(
@@ -349,6 +350,45 @@ def cmd_clear_cache(args):
     logger.info("Cache cleared.")
 
 
+def cmd_notify(args):
+    """Send email notification with concert listings."""
+    import json
+
+    # Load processed data
+    processed_path = Path(DATA_DIR) / "processed_concerts.json"
+    if not processed_path.exists():
+        logger.error("No processed data found. Run 'process' first.")
+        return 1
+
+    logger.info("Loading processed concert data...")
+    from foobos.models import Concert
+    with open(processed_path) as f:
+        processed_data = json.load(f)
+
+    concerts = [Concert.from_dict(d) for d in processed_data]
+
+    # Filter out past events
+    concerts = filter_past_events(concerts)
+    logger.info(f"Loaded {len(concerts)} upcoming concerts")
+
+    # Send notification
+    dry_run = getattr(args, 'dry_run', False)
+    if dry_run:
+        logger.info("Running in dry-run mode (no email will be sent)")
+
+    success = send_daily_notification(concerts, dry_run=dry_run)
+
+    if dry_run:
+        logger.info("Dry run complete. Check data/email_preview.html")
+    elif success:
+        logger.info("Notification sent successfully")
+    else:
+        logger.error("Failed to send notification")
+        return 1
+
+    return 0
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="foobos - Boston Punk Concert Listing Generator",
@@ -390,6 +430,15 @@ Examples:
     # clear-cache command
     cache_parser = subparsers.add_parser("clear-cache", help="Clear the API response cache")
 
+    # notify command
+    notify_parser = subparsers.add_parser("notify", help="Send email notification with concert listings")
+    notify_parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        dest="dry_run",
+        help="Generate email preview without sending"
+    )
+
     args = parser.parse_args()
 
     if args.command is None:
@@ -404,6 +453,7 @@ Examples:
         "generate": cmd_generate,
         "all": cmd_all,
         "clear-cache": cmd_clear_cache,
+        "notify": cmd_notify,
     }
 
     try:

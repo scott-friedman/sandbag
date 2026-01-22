@@ -106,3 +106,14 @@ GA4_MEASUREMENT_ID = os.environ.get("GA4_MEASUREMENT_ID", "G-Z6XNS24W12")
 
 # Enable/disable analytics (set to False to disable tracking)
 ANALYTICS_ENABLED = bool(GA4_MEASUREMENT_ID)
+
+# Email Notification Configuration
+# Gmail SMTP settings for daily notifications
+SMTP_HOST = "smtp.gmail.com"
+SMTP_PORT = 587
+GMAIL_ADDRESS = os.environ.get("GMAIL_ADDRESS", "")
+GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "")
+NOTIFY_RECIPIENTS = os.environ.get("NOTIFY_RECIPIENTS", "")
+
+# Enable notifications only if all required settings are present
+NOTIFICATIONS_ENABLED = bool(GMAIL_ADDRESS and GMAIL_APP_PASSWORD and NOTIFY_RECIPIENTS)

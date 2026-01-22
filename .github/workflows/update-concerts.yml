@@ -52,6 +52,14 @@ jobs:
           GA4_MEASUREMENT_ID: ${{ secrets.GA4_MEASUREMENT_ID }}
         run: python main.py generate
 
+      - name: Send email notification
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_RECIPIENTS: ${{ secrets.NOTIFY_RECIPIENTS }}
+        run: python main.py notify
+        continue-on-error: true
+
       - name: Commit and push changes
         run: |
           git config user.name "foobos Bot"
