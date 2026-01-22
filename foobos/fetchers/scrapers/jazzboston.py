@@ -22,6 +22,13 @@ logger = logging.getLogger(__name__)
 
 JAZZBOSTON_URL = "https://jazzboston.org/jazz-calendar/?view=list"
 
+# Venue name normalization - map alternate names to canonical names
+VENUE_ALIASES = {
+    "the charles hotel at regattabar": ("Regattabar", "Cambridge"),
+    "charles hotel at regattabar": ("Regattabar", "Cambridge"),
+    "regattabar at the charles hotel": ("Regattabar", "Cambridge"),
+}
+
 # Try to import Playwright - it may not be available in all environments
 try:
     from playwright.sync_api import sync_playwright
@@ -295,24 +302,35 @@ class JazzBostonScraper(BaseScraper):
 
         # Format: "Presented by X at Venue, Location"
         # or just "Presented by X at Venue"
+        venue = None
+        location = "Boston"
+
         match = re.search(r'at\s+([^,]+),?\s*(\w+)?', address_text, re.IGNORECASE)
         if match:
             venue = match.group(1).strip()
             location = match.group(2).strip() if match.group(2) else "Boston"
-            return (venue, location)
-
-        # Try simpler pattern
-        if ' at ' in address_text:
+        elif ' at ' in address_text:
+            # Try simpler pattern
             parts = address_text.split(' at ', 1)
             if len(parts) > 1:
                 venue_location = parts[1].strip()
                 # Split on comma for location
                 if ',' in venue_location:
                     venue, location = venue_location.rsplit(',', 1)
-                    return (venue.strip(), location.strip())
-                return (venue_location, "Boston")
+                    venue = venue.strip()
+                    location = location.strip()
+                else:
+                    venue = venue_location
 
-        return ("Various", "Boston")
+        if not venue:
+            return ("Various", "Boston")
+
+        # Check for venue aliases (normalize alternate names)
+        venue_lower = venue.lower()
+        if venue_lower in VENUE_ALIASES:
+            return VENUE_ALIASES[venue_lower]
+
+        return (venue, location)
 
     def _extract_time(self, row) -> str:
         """Extract show time from event row."""
