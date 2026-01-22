@@ -1,6 +1,7 @@
 """
 Scraper for venues that have pages on Songkick.
-Currently supports: Deep Cuts, Groton Hill Music Center
+Currently supports: Deep Cuts, Groton Hill Music Center, City Winery,
+Club Passim, The Lilypad, ONCE venues, The 4th Wall, Warehouse XI
 """
 
 from datetime import datetime, timedelta
@@ -68,6 +69,20 @@ SONGKICK_VENUES = [
         "songkick_id": "4409048",
         "age": "18+",
     },
+    {
+        "name": "The 4th Wall",
+        "id": "4thwall",
+        "location": "Arlington",
+        "songkick_id": "4541042",
+        "age": "a/a",
+    },
+    {
+        "name": "Warehouse XI",
+        "id": "warehousexi",
+        "location": "Somerville",
+        "songkick_id": "3118614",
+        "age": "a/a",
+    },
 ]
 
 
@@ -109,9 +124,10 @@ class SongkickVenuesScraper(BaseScraper):
         return all_concerts
 
     def _fetch_venue_events(self, venue: dict) -> List[Concert]:
-        """Fetch events from a Songkick venue page."""
+        """Fetch events from a Songkick venue calendar page."""
         concerts = []
-        venue_url = f"https://www.songkick.com/venues/{venue['songkick_id']}-{venue['id']}"
+        # Use /calendar endpoint which shows more events than the main venue page
+        venue_url = f"https://www.songkick.com/venues/{venue['songkick_id']}/calendar"
 
         try:
             soup = self._get_soup(venue_url)

@@ -28,6 +28,10 @@ output/
 data/cache/
 data/raw_concerts.json
 
+# Email notification files (generated)
+data/email_preview.html
+data/last_notified.json
+
 # Keep processed data and concerts.json for reference
 !data/concerts.json
 !data/processed_concerts.json
