@@ -58,12 +58,7 @@ class ClubDelfScraper(BaseScraper):
                 browser = p.chromium.launch(headless=True)
                 page = browser.new_page()
 
-                # Set a realistic user agent
-                page.set_extra_http_headers({
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-                })
-
-                # Navigate to shows page
+                # Navigate to shows page (no custom User-Agent - it triggers bot detection)
                 page.goto(CLUB_DELF_URL, wait_until="networkidle", timeout=30000)
                 page.wait_for_timeout(2000)
 
@@ -89,25 +84,95 @@ class ClubDelfScraper(BaseScraper):
         return concerts
 
     def _parse_shows(self, soup) -> List[Concert]:
-        """Parse shows from the page."""
+        """Parse shows from the page.
+
+        Club d'Elf uses GigPress plugin with table structure:
+        - .gigpress-date: Date in MM/DD/YY format
+        - .gigpress-city: City, State
+        - .gigpress-venue: Venue name (linked)
+        - .gigpress-country: Country
+        """
         concerts = []
         current_year = datetime.now().year
 
-        # Look for show entries - WordPress sites often use article or div containers
-        show_containers = soup.find_all(['article', 'div', 'li'],
-                                        class_=re.compile(r'show|event|gig|tour|performance', re.I))
+        # GigPress uses table rows for events
+        # Look for rows containing gigpress classes
+        rows = soup.find_all('tr')
 
-        if show_containers:
+        for row in rows:
+            date_cell = row.find(class_='gigpress-date')
+            venue_cell = row.find(class_='gigpress-venue')
+            city_cell = row.find(class_='gigpress-city')
+
+            if date_cell and venue_cell:
+                concert = self._parse_gigpress_row(date_cell, venue_cell, city_cell, current_year)
+                if concert:
+                    concerts.append(concert)
+
+        # If no GigPress rows found, try legacy container-based parsing
+        if not concerts:
+            show_containers = soup.find_all(['article', 'div', 'li'],
+                                            class_=re.compile(r'show|event|gig|tour|performance', re.I))
+
             for container in show_containers:
                 concert = self._parse_show_container(container, current_year)
                 if concert:
                     concerts.append(concert)
 
-        # If no containers found, try text-based parsing
+        # If still no events, try text-based parsing
         if not concerts:
             concerts = self._parse_from_text(soup)
 
         return concerts
+
+    def _parse_gigpress_row(self, date_cell, venue_cell, city_cell, year: int) -> Concert:
+        """Parse a GigPress table row."""
+        # Extract date (format: MM/DD/YY)
+        date_text = self._clean_text(date_cell.get_text())
+        date = self._parse_date(date_text, year)
+        if not date:
+            return None
+
+        # Extract venue name (may be a link)
+        venue_link = venue_cell.find('a')
+        if venue_link:
+            venue_name = self._clean_text(venue_link.get_text())
+        else:
+            venue_name = self._clean_text(venue_cell.get_text())
+
+        if not venue_name or venue_name.lower() in ['tba', 'tbd', '']:
+            venue_name = "TBA"
+
+        # Extract city/location
+        venue_location = ""
+        if city_cell:
+            venue_location = self._clean_text(city_cell.get_text())
+
+        # Extract time if present in the row
+        time_str = "8pm"
+        row_text = date_cell.parent.get_text() if date_cell.parent else ""
+        time_match = re.search(r'(\d{1,2}(?::\d{2})?\s*(?:am|pm))', row_text, re.I)
+        if time_match:
+            time_str = time_match.group(1).lower().replace(' ', '')
+
+        # Generate venue ID
+        venue_id = re.sub(r'[^a-z0-9]', '', venue_name.lower())[:20] or "clubdelf_venue"
+
+        return Concert(
+            date=date,
+            venue_id=venue_id,
+            venue_name=venue_name,
+            venue_location=venue_location,
+            bands=["Club d'Elf"],
+            age_requirement="a/a",
+            price_advance=None,
+            price_door=None,
+            time=time_str,
+            flags=["featured_band"],
+            source=self.source_name,
+            source_url=CLUB_DELF_URL,
+            genre_tags=["jazz", "world", "experimental"]
+        )
 
     def _parse_show_container(self, container, year: int) -> Concert:
         """Parse a single show container."""

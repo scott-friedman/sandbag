@@ -92,32 +92,52 @@ class NarrowsCenterScraper(BaseScraper):
         return concerts
 
     def _parse_events(self, soup, page) -> List[Concert]:
-        """Parse events from the rendered page."""
+        """Parse events from the rendered page.
+
+        ShoWare uses a calendar widget with these classes:
+        - .day-cell, .highlight-day: Calendar day cells
+        - .display-perfname: Performance/event name
+        - .display-perftime: Show time
+        - .display-perfprice: Ticket price
+        - .display-perfbuybutton: Buy button link
+        """
         concerts = []
         current_year = datetime.now().year
 
-        # ShoWare typically has event containers with performance info
-        # Look for common patterns in ShoWare sites
-        event_containers = soup.find_all(class_=re.compile(r'event|performance|show-item|calendar-event', re.I))
+        # Try ShoWare-specific selectors first
+        # Look for highlighted days (days with performances)
+        highlighted_days = soup.find_all(class_=re.compile(r'highlight-day', re.I))
 
-        if not event_containers:
-            # Try looking for links with event info
+        # Also look for performance display elements directly
+        perf_names = soup.find_all(class_=re.compile(r'display-perfname|perfname', re.I))
+
+        if perf_names:
+            for perf in perf_names:
+                concert = self._parse_showare_performance(perf, current_year)
+                if concert:
+                    concerts.append(concert)
+
+        # Try legacy container patterns if ShoWare-specific didn't work
+        if not concerts:
+            event_containers = soup.find_all(class_=re.compile(r'event-item|performance-item|show-item', re.I))
+            for container in event_containers:
+                try:
+                    concert = self._parse_event_container(container, current_year)
+                    if concert:
+                        concerts.append(concert)
+                except Exception as e:
+                    logger.debug(f"Error parsing event: {e}")
+                    continue
+
+        # Try looking for links with event info
+        if not concerts:
             event_links = soup.find_all('a', href=re.compile(r'eventperformances|ordertickets', re.I))
             for link in event_links:
                 concert = self._parse_event_link(link, current_year)
                 if concert:
                     concerts.append(concert)
 
-        for container in event_containers:
-            try:
-                concert = self._parse_event_container(container, current_year)
-                if concert:
-                    concerts.append(concert)
-            except Exception as e:
-                logger.debug(f"Error parsing event: {e}")
-                continue
-
-        # If no events found via containers, try text-based parsing
+        # Last resort: try text-based parsing (but filter out nav elements)
         if not concerts:
             concerts = self._parse_from_text(soup)
 
@@ -131,6 +151,66 @@ class NarrowsCenterScraper(BaseScraper):
                 unique_concerts.append(c)
 
         return unique_concerts
+
+    def _parse_showare_performance(self, perf_elem, year: int) -> Concert:
+        """Parse a ShoWare performance element."""
+        title = self._clean_text(perf_elem.get_text())
+        if not title or len(title) < 3:
+            return None
+
+        # Skip navigation/UI elements
+        nav_words = ['next', 'prev', 'previous', 'month', 'today', 'calendar', 'filter', 'search']
+        if any(nav in title.lower() for nav in nav_words):
+            return None
+
+        # Look for parent container with more info
+        parent = perf_elem.find_parent(['div', 'li', 'tr', 'td'])
+        date = None
+        time_str = "7:30pm"
+        price_advance = None
+
+        if parent:
+            # Look for date
+            date_elem = parent.find(class_=re.compile(r'date|display-date', re.I))
+            if date_elem:
+                date = self._parse_date(date_elem.get_text(), year)
+
+            # Look for time
+            time_elem = parent.find(class_=re.compile(r'display-perftime|time', re.I))
+            if time_elem:
+                time_str = self._parse_time(time_elem.get_text())
+
+            # Look for price
+            price_elem = parent.find(class_=re.compile(r'display-perfprice|price', re.I))
+            if price_elem:
+                price_advance, _ = self._parse_price(price_elem.get_text())
+
+            # Try to get date from parent text if not found
+            if not date:
+                date = self._parse_date(parent.get_text(), year)
+
+        if not date:
+            return None
+
+        bands = self._split_bands(title)
+        if not bands:
+            bands = [title]
+
+        return Concert(
+            date=date,
+            venue_id="narrowscenter",
+            venue_name="Narrows Center for the Arts",
+            venue_location="Fall River",
+            bands=bands,
+            age_requirement="a/a",
+            price_advance=price_advance,
+            price_door=None,
+            time=time_str,
+            flags=[],
+            source=self.source_name,
+            source_url=NARROWS_URL,
+            genre_tags=[]
+        )
 
     def _parse_event_container(self, container, year: int) -> Concert:
         """Parse a single event container."""
@@ -233,6 +313,11 @@ class NarrowsCenterScraper(BaseScraper):
         concerts = []
         current_year = datetime.now().year
 
+        # Navigation/UI words to skip
+        nav_words = ['next', 'prev', 'previous', 'month', 'today', 'calendar',
+                     'filter', 'search', 'view', 'more', 'load', 'show all',
+                     'buy tickets', 'sold out', 'on sale', 'select']
+
         text = soup.get_text(separator='\n')
         lines = [l.strip() for l in text.split('\n') if l.strip()]
 
@@ -246,10 +331,16 @@ class NarrowsCenterScraper(BaseScraper):
                 # Look ahead for title
                 if i + 1 < len(lines):
                     potential_title = lines[i + 1]
-                    # Skip if looks like time/price/date
+
+                    # Skip navigation/UI elements
+                    if any(nav in potential_title.lower() for nav in nav_words):
+                        i += 1
+                        continue
+
+                    # Skip if looks like time/price/date/short words
                     if not re.match(r'^(\d|January|February|March|April|May|June|July|August|September|October|November|December|AM|PM|\$)',
                                    potential_title, re.I):
-                        if len(potential_title) > 3:
+                        if len(potential_title) > 3 and len(potential_title) < 200:
                             bands = self._split_bands(potential_title)
                             if not bands:
                                 bands = [potential_title]

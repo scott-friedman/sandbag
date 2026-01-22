@@ -25,11 +25,11 @@ from foobos.fetchers.scrapers import (
     PloughAndStarsScraper,
     SallyOBriensScraper,
     TheBebopScraper,
-    ScullersJazzScraper,
     SoundcheckStudiosScraper,
     JazzBostonScraper,
     NarrowsCenterScraper,
     ClubDelfScraper,
+    FalloutShelterScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre, filter_past_events
 from foobos.generators import generate_all_html
@@ -188,16 +188,6 @@ def cmd_fetch(args):
     except Exception as e:
         logger.error(f"The Bebop scrape failed: {e}")
 
-    # Scullers Jazz Club (Boston - requires Playwright for JS rendering)
-    try:
-        logger.info("Scraping Scullers Jazz Club...")
-        scullers_scraper = ScullersJazzScraper()
-        scullers_concerts = scullers_scraper.fetch()
-        logger.info(f"Scullers Jazz: {len(scullers_concerts)} concerts")
-        all_concerts.extend(scullers_concerts)
-    except Exception as e:
-        logger.error(f"Scullers Jazz scrape failed: {e}")
-
     # Soundcheck Studios (Pemberton - live music venue)
     try:
         logger.info("Scraping Soundcheck Studios...")
@@ -237,6 +227,16 @@ def cmd_fetch(args):
         all_concerts.extend(clubdelf_concerts)
     except Exception as e:
         logger.error(f"Club d'Elf scrape failed: {e}")
+
+    # The Fallout Shelter (Norwood - Wix site requires Playwright)
+    try:
+        logger.info("Scraping The Fallout Shelter...")
+        fallout_scraper = FalloutShelterScraper()
+        fallout_concerts = fallout_scraper.fetch()
+        logger.info(f"Fallout Shelter: {len(fallout_concerts)} concerts")
+        all_concerts.extend(fallout_concerts)
+    except Exception as e:
+        logger.error(f"Fallout Shelter scrape failed: {e}")
 
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 
