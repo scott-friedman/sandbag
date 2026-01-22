@@ -1,6 +1,9 @@
 """
 Scraper for JazzBoston calendar.
 https://jazzboston.org/jazz-calendar/?view=list
+
+Note: The site uses JavaScript-driven pagination (5 pages, ~21 events each).
+This scraper can only access the first page without a headless browser.
 """
 
 from datetime import datetime
@@ -58,8 +61,13 @@ class JazzBostonScraper(BaseScraper):
         - Date: div.hidden or p.endate (MM-DD-YYYY)
         - Venue: span.eli_address ("Presented by X at Venue, Location")
         - Time: in "Upcoming Dates:" text ("@ X:XX pm")
+
+        Note: Each event appears twice in the HTML, so we deduplicate by
+        (title, date) key. Also, pagination is JavaScript-driven so we can
+        only scrape the first page (~21 events) without a headless browser.
         """
         concerts = []
+        seen_events = set()  # Track (title, date) to deduplicate
 
         # Find all event rows
         event_rows = soup.select('div.eli_row')
@@ -69,7 +77,11 @@ class JazzBostonScraper(BaseScraper):
             try:
                 concert = self._parse_event_row(row)
                 if concert:
-                    concerts.append(concert)
+                    # Deduplicate by title + date
+                    event_key = (concert.bands[0] if concert.bands else "", concert.date.date())
+                    if event_key not in seen_events:
+                        seen_events.add(event_key)
+                        concerts.append(concert)
             except Exception as e:
                 logger.debug(f"Error parsing JazzBoston event: {e}")
                 continue

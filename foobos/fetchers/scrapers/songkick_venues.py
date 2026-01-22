@@ -124,9 +124,10 @@ class SongkickVenuesScraper(BaseScraper):
         return all_concerts
 
     def _fetch_venue_events(self, venue: dict) -> List[Concert]:
-        """Fetch events from a Songkick venue page."""
+        """Fetch events from a Songkick venue calendar page."""
         concerts = []
-        venue_url = f"https://www.songkick.com/venues/{venue['songkick_id']}-{venue['id']}"
+        # Use /calendar endpoint which shows more events than the main venue page
+        venue_url = f"https://www.songkick.com/venues/{venue['songkick_id']}/calendar"
 
         try:
             soup = self._get_soup(venue_url)
