@@ -1,6 +1,7 @@
 """
 Scraper for venues that have pages on Songkick.
-Currently supports: Deep Cuts, Groton Hill Music Center
+Currently supports: Deep Cuts, Groton Hill Music Center, City Winery,
+Club Passim, The Lilypad, ONCE venues, The 4th Wall, Warehouse XI
 """
 
 from datetime import datetime, timedelta
@@ -67,6 +68,20 @@ SONGKICK_VENUES = [
         "location": "Somerville",
         "songkick_id": "4409048",
         "age": "18+",
+    },
+    {
+        "name": "The 4th Wall",
+        "id": "4thwall",
+        "location": "Arlington",
+        "songkick_id": "4541042",
+        "age": "a/a",
+    },
+    {
+        "name": "Warehouse XI",
+        "id": "warehousexi",
+        "location": "Somerville",
+        "songkick_id": "3118614",
+        "age": "a/a",
     },
 ]
 

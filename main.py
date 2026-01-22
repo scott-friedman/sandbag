@@ -27,6 +27,7 @@ from foobos.fetchers.scrapers import (
     TheBebopScraper,
     ScullersJazzScraper,
     SoundcheckStudiosScraper,
+    JazzBostonScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre, filter_past_events
 from foobos.generators import generate_all_html
@@ -213,6 +214,16 @@ def cmd_fetch(args):
         all_concerts.extend(soundcheck_concerts)
     except Exception as e:
         logger.error(f"Soundcheck Studios scrape failed: {e}")
+
+    # JazzBoston (Boston area jazz calendar aggregator)
+    try:
+        logger.info("Scraping JazzBoston...")
+        jazzboston_scraper = JazzBostonScraper()
+        jazzboston_concerts = jazzboston_scraper.fetch()
+        logger.info(f"JazzBoston: {len(jazzboston_concerts)} concerts")
+        all_concerts.extend(jazzboston_concerts)
+    except Exception as e:
+        logger.error(f"JazzBoston scrape failed: {e}")
 
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 
