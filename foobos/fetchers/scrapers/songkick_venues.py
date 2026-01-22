@@ -83,6 +83,20 @@ SONGKICK_VENUES = [
         "songkick_id": "3118614",
         "age": "a/a",
     },
+    {
+        "name": "Arts at the Armory",
+        "id": "armory",
+        "location": "Somerville",
+        "songkick_id": "359916",
+        "age": "a/a",
+    },
+    {
+        "name": "Faces Brewing Co",
+        "id": "facesbrewing",
+        "location": "Malden",
+        "songkick_id": "4422088",
+        "age": "21+",
+    },
 ]
 
 

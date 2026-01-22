@@ -26,7 +26,7 @@ from ...utils import get_cached, save_cache, parse_date
 logger = logging.getLogger(__name__)
 
 
-# Non-music event keywords to filter out (for multi-purpose venues like Arts at the Armory)
+# Non-music event keywords to filter out (for multi-purpose venues)
 NON_MUSIC_KEYWORDS = [
     # Dance classes (not concerts)
     "swing", "salsa class", "latin dance class", "dance class", "dance lesson",
@@ -77,13 +77,6 @@ BOSTON_VENUES = {
         "url": "https://www.sinclaircambridge.com/events/",
         "capacity": 525,
         "parser": "sinclair",
-    },
-    "armory": {
-        "name": "Arts at the Armory",
-        "location": "Somerville",
-        "url": "https://artsatthearmory.org/upcoming-events/",
-        "capacity": 300,
-        "parser": "json_ld",
     },
     # Berklee performances - scrapes all venues from their performances page
     "berklee": {
@@ -695,8 +688,8 @@ class AXSVenuesScraper(BaseScraper):
         Returns True if the event appears to be music-related.
         """
         # For dedicated music venues, assume all events are music
-        if venue_id not in ["armory"]:
-            return True
+        # (all current venues in this scraper are music venues)
+        return True
 
         name_lower = event_name.lower()
 
