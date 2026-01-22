@@ -4,6 +4,7 @@ Send email notifications via Gmail SMTP.
 
 import logging
 import smtplib
+from datetime import datetime, timedelta
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
@@ -32,6 +33,9 @@ def send_daily_notification(
     """
     Send daily email notification with concert listings.
 
+    If there are new concerts, only shows those.
+    If no new concerts, shows the next 3 days of events instead.
+
     Args:
         concerts: List of concerts to include
         dry_run: If True, save preview HTML instead of sending
@@ -45,11 +49,28 @@ def send_daily_notification(
 
     # Detect new concerts
     new_concerts, all_ids = detect_new_concerts(concerts)
-    new_ids = {c.id for c in new_concerts}
+
+    # Determine which concerts to show and the display mode
+    if new_concerts:
+        # Show only new concerts
+        display_concerts = new_concerts
+        mode = "new"
+        logger.info(f"Showing {len(new_concerts)} new concerts")
+    else:
+        # No new concerts - show next 3 days
+        today = datetime.now().date()
+        cutoff = today + timedelta(days=3)
+        display_concerts = [
+            c for c in concerts
+            if today <= c.date.date() <= cutoff
+        ]
+        display_concerts.sort(key=lambda c: c.date)
+        mode = "upcoming"
+        logger.info(f"No new concerts - showing {len(display_concerts)} concerts in next 3 days")
 
     # Generate email content
-    html_content = generate_email_html(concerts, new_ids)
-    subject = generate_email_subject(new_count=len(new_ids))
+    html_content = generate_email_html(display_concerts, mode=mode)
+    subject = generate_email_subject(mode=mode, count=len(display_concerts))
 
     if dry_run:
         # Save preview instead of sending
@@ -59,7 +80,7 @@ def send_daily_notification(
             f.write(html_content)
         logger.info(f"Email preview saved to {preview_path}")
         logger.info(f"Subject: {subject}")
-        logger.info(f"Total shows: {len(concerts)}, New shows: {len(new_ids)}")
+        logger.info(f"Mode: {mode}, Shows: {len(display_concerts)}")
         return True
 
     # Check if notifications are enabled

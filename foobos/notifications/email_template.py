@@ -2,23 +2,23 @@
 Generate HTML email template for concert notifications.
 """
 
-from datetime import datetime
-from typing import List, Set
+from datetime import datetime, timedelta
+from typing import List
 
 from ..models import Concert
 
 
 def generate_email_html(
     concerts: List[Concert],
-    new_concert_ids: Set[str],
+    mode: str = "new",
     date_str: str = None
 ) -> str:
     """
     Generate HTML email with concert table.
 
     Args:
-        concerts: All concerts to include in email
-        new_concert_ids: IDs of newly added concerts (highlighted)
+        concerts: Concerts to include in email
+        mode: "new" for new concerts only, "upcoming" for next 3 days fallback
         date_str: Date string for subject (defaults to today)
 
     Returns:
@@ -30,15 +30,23 @@ def generate_email_html(
     # Sort concerts by date
     sorted_concerts = sorted(concerts, key=lambda c: c.date)
 
-    # Count new shows
-    new_count = len(new_concert_ids)
+    # Generate subtitle based on mode
+    if mode == "new":
+        title = "New Shows"
+        subtitle = f"{len(sorted_concerts)} new show{'s' if len(sorted_concerts) != 1 else ''} added"
+    else:
+        # Upcoming mode - show date range
+        today = datetime.now().date()
+        end_date = today + timedelta(days=3)
+        subtitle = f"No new shows today &middot; Here's what's coming up ({today.strftime('%b %d')} - {end_date.strftime('%b %d')})"
+        title = "Upcoming Shows"
 
     html = f"""<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>foobos Daily Update - {date_str}</title>
+    <title>foobos - {title}</title>
     <style>
         body {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -77,20 +85,6 @@ def generate_email_html(
         tr:hover {{
             background: #fafafa;
         }}
-        .new-show {{
-            background: #fffde7 !important;
-        }}
-        .new-badge {{
-            display: inline-block;
-            background: #ffc107;
-            color: #333;
-            font-size: 10px;
-            font-weight: bold;
-            padding: 2px 6px;
-            border-radius: 3px;
-            margin-right: 6px;
-            text-transform: uppercase;
-        }}
         .date-cell {{
             white-space: nowrap;
             font-weight: 500;
@@ -123,17 +117,17 @@ def generate_email_html(
     </style>
 </head>
 <body>
-    <h1>foobos Daily Update</h1>
-    <p class="subtitle">{date_str} &middot; {len(sorted_concerts)} shows"""
-
-    if new_count > 0:
-        html += f" &middot; <strong>{new_count} new</strong>"
-
-    html += "</p>"
+    <h1>foobos - {title}</h1>
+    <p class="subtitle">{subtitle}</p>"""
 
     if not sorted_concerts:
-        html += """
-    <p class="empty-message">No upcoming shows found.</p>
+        if mode == "new":
+            html += """
+    <p class="empty-message">No new shows found.</p>
+"""
+        else:
+            html += """
+    <p class="empty-message">No shows in the next 3 days.</p>
 """
     else:
         html += """
@@ -148,20 +142,14 @@ def generate_email_html(
         <tbody>
 """
         for concert in sorted_concerts:
-            is_new = concert.id in new_concert_ids
-            row_class = ' class="new-show"' if is_new else ''
-
             # Format date
             date_formatted = concert.date.strftime("%a %b %d")
 
             # Format artists
             artists = ", ".join(concert.bands) if concert.bands else "TBA"
 
-            # New badge
-            new_badge = '<span class="new-badge">New</span>' if is_new else ''
-
-            html += f"""            <tr{row_class}>
-                <td class="date-cell">{new_badge}{date_formatted}</td>
+            html += f"""            <tr>
+                <td class="date-cell">{date_formatted}</td>
                 <td class="venue-cell">
                     {concert.venue_name}
                     <div class="venue-location">{concert.venue_location}</div>
@@ -187,22 +175,25 @@ def generate_email_html(
     return html
 
 
-def generate_email_subject(date_str: str = None, new_count: int = 0) -> str:
+def generate_email_subject(mode: str = "new", count: int = 0, date_str: str = None) -> str:
     """
     Generate email subject line.
 
     Args:
+        mode: "new" for new concerts, "upcoming" for next 3 days fallback
+        count: Number of shows
         date_str: Date string (defaults to today)
-        new_count: Number of new shows
 
     Returns:
         Email subject string
     """
     if date_str is None:
-        date_str = datetime.now().strftime("%b %d, %Y")
+        date_str = datetime.now().strftime("%b %d")
 
-    subject = f"foobos Daily Update - {date_str}"
-    if new_count > 0:
-        subject += f" ({new_count} new)"
-
-    return subject
+    if mode == "new":
+        if count == 1:
+            return f"foobos: 1 new show added ({date_str})"
+        else:
+            return f"foobos: {count} new shows added ({date_str})"
+    else:
+        return f"foobos: Upcoming shows ({date_str})"
