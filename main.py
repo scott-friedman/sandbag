@@ -12,7 +12,7 @@ from pathlib import Path
 from datetime import datetime
 
 from foobos.config import OUTPUT_DIR, DATA_DIR, CACHE_DIR
-from foobos.fetchers import TicketmasterFetcher, SeatGeekFetcher, EventbriteFetcher
+from foobos.fetchers import TicketmasterFetcher, SeatGeekFetcher
 from foobos.fetchers.scrapers import (
     SafeInACrowdScraper,
     AXSVenuesScraper,
@@ -75,16 +75,6 @@ def cmd_fetch(args):
         all_concerts.extend(sg_concerts)
     except Exception as e:
         logger.error(f"SeatGeek fetch failed: {e}")
-
-    # Eventbrite API (good for DIY/smaller venues)
-    try:
-        logger.info("Fetching from Eventbrite...")
-        eb_fetcher = EventbriteFetcher()
-        eb_concerts = eb_fetcher.fetch()
-        logger.info(f"Eventbrite: {len(eb_concerts)} concerts")
-        all_concerts.extend(eb_concerts)
-    except Exception as e:
-        logger.error(f"Eventbrite fetch failed: {e}")
 
     # Safe In A Crowd (critical for DIY shows)
     try:
