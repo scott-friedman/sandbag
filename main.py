@@ -188,7 +188,7 @@ def cmd_fetch(args):
     except Exception as e:
         logger.error(f"The Bebop scrape failed: {e}")
 
-    # Soundcheck Studios (Pemberton - live music venue)
+    # Soundcheck Studios (Pembroke - live music venue)
     try:
         logger.info("Scraping Soundcheck Studios...")
         soundcheck_scraper = SoundcheckStudiosScraper()

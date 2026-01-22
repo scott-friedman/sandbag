@@ -156,7 +156,16 @@ class AXSVenuesScraper(BaseScraper):
         except Exception as e:
             logger.debug(f"Error scraping {venue_config['name']}: {e}")
 
-        return concerts
+        # Final deduplication at venue level
+        seen = set()
+        unique_concerts = []
+        for c in concerts:
+            key = (c.date.strftime('%Y-%m-%d'), c.bands[0].lower() if c.bands else '')
+            if key not in seen:
+                seen.add(key)
+                unique_concerts.append(c)
+
+        return unique_concerts
 
     def _parse_sinclair(self, soup: BeautifulSoup, venue_id: str, venue_config: Dict) -> List[Concert]:
         """Parse events from The Sinclair's event page format.
@@ -299,6 +308,7 @@ class AXSVenuesScraper(BaseScraper):
     def _parse_json_ld(self, soup: BeautifulSoup, venue_id: str, venue_config: Dict) -> List[Concert]:
         """Parse events from JSON-LD structured data."""
         concerts = []
+        seen_events = set()  # Track (date, name) to avoid duplicates
 
         for script in soup.find_all("script", type="application/ld+json"):
             try:
@@ -374,6 +384,13 @@ class AXSVenuesScraper(BaseScraper):
                             pass
 
                     bands = self._parse_event_name(name)
+
+                    # Deduplicate by (date, headliner)
+                    event_key = (event_date.strftime('%Y-%m-%d'),
+                                bands[0].lower() if bands else name.lower())
+                    if event_key in seen_events:
+                        continue
+                    seen_events.add(event_key)
 
                     concerts.append(Concert(
                         date=event_date,

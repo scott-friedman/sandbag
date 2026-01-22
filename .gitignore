@@ -28,9 +28,12 @@ output/
 data/cache/
 data/raw_concerts.json
 
-# Email notification files (generated)
+# Email preview (regenerated on each run)
 data/email_preview.html
-data/last_notified.json
+
+# Keep last_notified.json to track which concerts have been sent
+# This prevents every concert from appearing "new" on each run
+!data/last_notified.json
 
 # Keep processed data and concerts.json for reference
 !data/concerts.json

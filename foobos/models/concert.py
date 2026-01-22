@@ -38,10 +38,41 @@ class Concert:
             self.id = self._generate_id()
 
     def _generate_id(self) -> str:
-        """Generate unique ID from date + venue + headliner."""
+        """Generate unique ID from date + venue + normalized headliner.
+
+        The headliner is normalized to ensure stable IDs across runs even if
+        the exact headliner string varies slightly (e.g., "Band" vs "Band ft. Guest").
+        """
+        import re
         date_str = self.date.strftime("%Y-%m-%d")
         headliner = self.bands[0] if self.bands else "unknown"
-        unique_str = f"{date_str}|{self.venue_id}|{headliner}".lower()
+
+        # Normalize headliner for stable ID generation:
+        # 1. Lowercase
+        # 2. Remove featuring/with suffixes (ft., feat., w/, with, and, &)
+        # 3. Remove tour/show suffixes (- Tour, : Live, etc.)
+        # 4. Remove punctuation
+        # 5. Collapse spaces and take first 30 chars
+        normalized = headliner.lower()
+
+        # Remove featuring suffixes and everything after
+        normalized = re.sub(r'\s+(ft\.?|feat\.?|featuring|w/|with|and|&)\s+.*$', '', normalized)
+
+        # Remove tour/show suffixes (including "- Something Tour", "- Live", etc.)
+        normalized = re.sub(r'\s*[-:]\s+.*?(tour|live|concert|show|presents|anniversary).*$', '', normalized, flags=re.I)
+        normalized = re.sub(r'\s*[-:]\s+\d{4}.*$', '', normalized)  # Remove year suffixes like "- 2026"
+
+        # Remove parenthetical content
+        normalized = re.sub(r'\s*\([^)]*\)\s*', ' ', normalized)
+
+        # Remove punctuation and normalize whitespace
+        normalized = re.sub(r'[^\w\s]', '', normalized)
+        normalized = re.sub(r'\s+', ' ', normalized).strip()
+
+        # Take first 30 chars to focus on core band name
+        normalized = normalized[:30].strip()
+
+        unique_str = f"{date_str}|{self.venue_id}|{normalized}"
         return hashlib.md5(unique_str.encode()).hexdigest()[:12]
 
     @property

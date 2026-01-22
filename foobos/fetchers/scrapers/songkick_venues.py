@@ -126,6 +126,8 @@ class SongkickVenuesScraper(BaseScraper):
     def _fetch_venue_events(self, venue: dict) -> List[Concert]:
         """Fetch events from a Songkick venue calendar page."""
         concerts = []
+        seen_events = set()  # Track (date, headliner) to avoid duplicates
+
         # Use /calendar endpoint which shows more events than the main venue page
         venue_url = f"https://www.songkick.com/venues/{venue['songkick_id']}/calendar"
 
@@ -151,7 +153,12 @@ class SongkickVenuesScraper(BaseScraper):
                     try:
                         concert = self._parse_event(event, venue)
                         if concert:
-                            concerts.append(concert)
+                            # Deduplicate within this venue (same date + headliner)
+                            event_key = (concert.date.strftime('%Y-%m-%d'),
+                                        concert.bands[0].lower() if concert.bands else '')
+                            if event_key not in seen_events:
+                                seen_events.add(event_key)
+                                concerts.append(concert)
                     except Exception as e:
                         logger.debug(f"Error parsing Songkick event: {e}")
 

@@ -82,6 +82,7 @@ class BostonSkaScraper(BaseScraper):
     def _parse_listings(self, soup: BeautifulSoup) -> List[Concert]:
         """Parse concert listings from the page."""
         concerts = []
+        seen_events = set()  # Track (date, headliner, venue) to avoid duplicates
 
         # Look for event entries - the page has event cards/blocks
         # Try various selectors for event containers
@@ -99,7 +100,13 @@ class BostonSkaScraper(BaseScraper):
                     if current_event.get("bands") and current_event.get("date"):
                         concert = self._create_concert(current_event)
                         if concert:
-                            concerts.append(concert)
+                            # Deduplicate by (date, headliner, venue)
+                            event_key = (concert.date.strftime('%Y-%m-%d'),
+                                        concert.bands[0].lower() if concert.bands else '',
+                                        concert.venue_id)
+                            if event_key not in seen_events:
+                                seen_events.add(event_key)
+                                concerts.append(concert)
                         current_event = {}
                     continue
 
@@ -142,14 +149,25 @@ class BostonSkaScraper(BaseScraper):
             if current_event.get("bands") and current_event.get("date"):
                 concert = self._create_concert(current_event)
                 if concert:
-                    concerts.append(concert)
+                    event_key = (concert.date.strftime('%Y-%m-%d'),
+                                concert.bands[0].lower() if concert.bands else '',
+                                concert.venue_id)
+                    if event_key not in seen_events:
+                        seen_events.add(event_key)
+                        concerts.append(concert)
 
         else:
             # Parse structured event containers
             for container in event_containers:
                 concert = self._parse_event_container(container)
                 if concert:
-                    concerts.append(concert)
+                    # Deduplicate by (date, headliner, venue)
+                    event_key = (concert.date.strftime('%Y-%m-%d'),
+                                concert.bands[0].lower() if concert.bands else '',
+                                concert.venue_id)
+                    if event_key not in seen_events:
+                        seen_events.add(event_key)
+                        concerts.append(concert)
 
         return concerts
 

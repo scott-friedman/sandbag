@@ -20,7 +20,7 @@ SOUNDCHECK_URL = "https://www.soundcheck-studios.com/shows"
 
 
 class SoundcheckStudiosScraper(BaseScraper):
-    """Scraper for Soundcheck Studios in Pemberton, MA."""
+    """Scraper for Soundcheck Studios in Pembroke, MA."""
 
     source_name = "soundcheck_studios"
 
@@ -115,7 +115,7 @@ class SoundcheckStudiosScraper(BaseScraper):
                     date=date,
                     venue_id="soundcheck_studios",
                     venue_name="Soundcheck Studios",
-                    venue_location="Pemberton",
+                    venue_location="Pembroke",
                     bands=bands,
                     age_requirement="a/a",
                     price_advance=None,

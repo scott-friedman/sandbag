@@ -124,12 +124,26 @@ def _are_duplicates(a: Concert, b: Concert) -> bool:
         return False
 
     # Check headliner similarity
+    # Use multiple fuzzy matching strategies to catch variations like
+    # "Club d'Elf" vs "Club d'Elf ft. Duke Levine & Kevin Barry"
     headliner_similar = False
     if a.bands and b.bands:
         headliner_a = _normalize_name(a.headliner)
         headliner_b = _normalize_name(b.headliner)
+
+        # Standard ratio for similar-length strings
         headliner_score = fuzz.ratio(headliner_a, headliner_b)
-        headliner_similar = headliner_score >= SIMILARITY_THRESHOLD
+
+        # Partial ratio catches when one name contains the other
+        partial_score = fuzz.partial_ratio(headliner_a, headliner_b)
+
+        # Token set ratio handles word reordering and extra words
+        token_score = fuzz.token_set_ratio(headliner_a, headliner_b)
+
+        # Consider similar if any matching strategy exceeds threshold
+        headliner_similar = (headliner_score >= SIMILARITY_THRESHOLD or
+                           partial_score >= 95 or
+                           token_score >= 95)
 
     # If venue and headliner both match, it's a duplicate
     if headliner_similar:

@@ -158,9 +158,15 @@ class NarrowsCenterScraper(BaseScraper):
         if not title or len(title) < 3:
             return None
 
-        # Skip navigation/UI elements
-        nav_words = ['next', 'prev', 'previous', 'month', 'today', 'calendar', 'filter', 'search']
-        if any(nav in title.lower() for nav in nav_words):
+        # Skip navigation/UI elements and button text
+        skip_titles = ['next', 'prev', 'previous', 'month', 'today', 'calendar',
+                       'filter', 'search', 'buy tickets', 'buy now', 'get tickets',
+                       'on sale', 'more info', 'view all', 'see all']
+        title_lower = title.lower()
+        if any(skip == title_lower or skip in title_lower.split() for skip in skip_titles):
+            return None
+        # Also skip if title is exactly "Buy Tickets" or similar button text
+        if title_lower in ['buy tickets', 'tickets', 'buy', 'more', 'details']:
             return None
 
         # Look for parent container with more info
@@ -277,6 +283,12 @@ class NarrowsCenterScraper(BaseScraper):
         """Parse event from a link element."""
         title = self._clean_text(link.get_text())
         if not title or len(title) < 3:
+            return None
+
+        # Skip button/UI text
+        title_lower = title.lower()
+        if title_lower in ['buy tickets', 'tickets', 'buy', 'buy now', 'get tickets',
+                           'more', 'details', 'more info', 'view', 'see all']:
             return None
 
         # Try to find date near the link

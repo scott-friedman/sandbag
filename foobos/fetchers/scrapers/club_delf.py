@@ -98,6 +98,7 @@ class ClubDelfScraper(BaseScraper):
         # GigPress uses table rows for events
         # Look for rows containing gigpress classes
         rows = soup.find_all('tr')
+        seen_events = set()  # Track (date, venue_id, time) to avoid duplicates
 
         for row in rows:
             date_cell = row.find(class_='gigpress-date')
@@ -105,9 +106,15 @@ class ClubDelfScraper(BaseScraper):
             city_cell = row.find(class_='gigpress-city')
 
             if date_cell and venue_cell:
-                concert = self._parse_gigpress_row(date_cell, venue_cell, city_cell, current_year)
+                # Get the info row (next sibling with gigpress-info class) for time
+                info_row = row.find_next_sibling('tr', class_='gigpress-info')
+                concert = self._parse_gigpress_row(date_cell, venue_cell, city_cell, info_row, current_year)
                 if concert:
-                    concerts.append(concert)
+                    # Deduplicate by (date, venue, time)
+                    event_key = (concert.date.strftime('%Y-%m-%d'), concert.venue_id, concert.time)
+                    if event_key not in seen_events:
+                        seen_events.add(event_key)
+                        concerts.append(concert)
 
         # If no GigPress rows found, try legacy container-based parsing
         if not concerts:
@@ -125,8 +132,16 @@ class ClubDelfScraper(BaseScraper):
 
         return concerts
 
-    def _parse_gigpress_row(self, date_cell, venue_cell, city_cell, year: int) -> Concert:
-        """Parse a GigPress table row."""
+    def _parse_gigpress_row(self, date_cell, venue_cell, city_cell, info_row, year: int) -> Concert:
+        """Parse a GigPress table row.
+
+        Args:
+            date_cell: Cell containing the date
+            venue_cell: Cell containing the venue name
+            city_cell: Cell containing the city/location
+            info_row: The following row with class gigpress-info containing time/price/details
+            year: Default year for date parsing
+        """
         # Extract date (format: MM/DD/YY)
         date_text = self._clean_text(date_cell.get_text())
         date = self._parse_date(date_text, year)
@@ -148,12 +163,19 @@ class ClubDelfScraper(BaseScraper):
         if city_cell:
             venue_location = self._clean_text(city_cell.get_text())
 
-        # Extract time if present in the row
+        # Extract time from info row (format: "Time: 7:00pm" or "7:00pm")
         time_str = "8pm"
-        row_text = date_cell.parent.get_text() if date_cell.parent else ""
-        time_match = re.search(r'(\d{1,2}(?::\d{2})?\s*(?:am|pm))', row_text, re.I)
-        if time_match:
-            time_str = time_match.group(1).lower().replace(' ', '')
+        if info_row:
+            info_text = info_row.get_text()
+            time_match = re.search(r'(?:Time:?\s*)?(\d{1,2}):?(\d{2})?\s*(am|pm)', info_text, re.I)
+            if time_match:
+                hour = time_match.group(1)
+                minutes = time_match.group(2) or "00"
+                ampm = time_match.group(3).lower()
+                if minutes == "00":
+                    time_str = f"{hour}{ampm}"
+                else:
+                    time_str = f"{hour}:{minutes}{ampm}"
 
         # Generate venue ID
         venue_id = re.sub(r'[^a-z0-9]', '', venue_name.lower())[:20] or "clubdelf_venue"
@@ -168,7 +190,7 @@ class ClubDelfScraper(BaseScraper):
             price_advance=None,
             price_door=None,
             time=time_str,
-            flags=["featured_band"],
+            flags=[],
             source=self.source_name,
             source_url=CLUB_DELF_URL,
             genre_tags=["jazz", "world", "experimental"]
@@ -229,7 +251,7 @@ class ClubDelfScraper(BaseScraper):
             price_advance=None,
             price_door=None,
             time=time_str,
-            flags=["featured_band"],
+            flags=[],
             source=self.source_name,
             source_url=CLUB_DELF_URL,
             genre_tags=["jazz", "world", "experimental"]
@@ -276,7 +298,7 @@ class ClubDelfScraper(BaseScraper):
                         price_advance=None,
                         price_door=None,
                         time=time_str,
-                        flags=["featured_band"],
+                        flags=[],
                         source=self.source_name,
                         source_url=CLUB_DELF_URL,
                         genre_tags=["jazz", "world", "experimental"]
