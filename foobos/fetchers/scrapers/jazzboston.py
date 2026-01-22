@@ -2,14 +2,17 @@
 Scraper for JazzBoston calendar.
 https://jazzboston.org/jazz-calendar/?view=list
 
-Note: The site uses JavaScript-driven pagination (5 pages, ~21 events each).
-This scraper can only access the first page without a headless browser.
+Uses Playwright when available to handle JavaScript-driven pagination
+(5 pages, ~21 events each, ~105 total events).
+Falls back to static scraping (page 1 only) if Playwright unavailable.
 """
 
 from datetime import datetime
 from typing import List, Optional, Tuple
 import logging
 import re
+
+from bs4 import BeautifulSoup
 
 from .base import BaseScraper
 from ...models import Concert
@@ -18,6 +21,14 @@ from ...utils import get_cached, save_cache
 logger = logging.getLogger(__name__)
 
 JAZZBOSTON_URL = "https://jazzboston.org/jazz-calendar/?view=list"
+
+# Try to import Playwright - it may not be available in all environments
+try:
+    from playwright.sync_api import sync_playwright
+    PLAYWRIGHT_AVAILABLE = True
+except ImportError:
+    PLAYWRIGHT_AVAILABLE = False
+    logger.info("Playwright not available - JazzBoston will use static scraping (page 1 only)")
 
 
 class JazzBostonScraper(BaseScraper):
@@ -39,20 +50,104 @@ class JazzBostonScraper(BaseScraper):
             logger.info(f"[{self.source_name}] Using cached data ({len(cached)} events)")
             return [Concert.from_dict(c) for c in cached]
 
+        # Use Playwright if available for full pagination support
+        if PLAYWRIGHT_AVAILABLE:
+            concerts = self._fetch_with_playwright()
+        else:
+            concerts = self._fetch_static()
+
+        # Cache the results
+        if concerts:
+            save_cache("scrape_jazzboston", [c.to_dict() for c in concerts])
+
+        self._log_fetch_complete(len(concerts))
+        return concerts
+
+    def _fetch_with_playwright(self) -> List[Concert]:
+        """Fetch all pages using Playwright for JavaScript pagination."""
+        all_concerts = []
+        seen_events = set()
+
+        try:
+            with sync_playwright() as p:
+                browser = p.chromium.launch(headless=True)
+                page = browser.new_page()
+
+                # Navigate and wait for content to load
+                logger.info(f"[{self.source_name}] Loading page with Playwright...")
+                page.goto(JAZZBOSTON_URL, wait_until="networkidle", timeout=30000)
+                page.wait_for_timeout(2000)
+
+                # Get total pages from pagination info
+                total_pages = 5  # Default based on observed behavior
+
+                try:
+                    # Try to get actual page count from pagination
+                    pagination = page.locator('.eli_pagination')
+                    if pagination.count() > 0:
+                        page_buttons = page.locator('.eli_pagination a, .eli_pagination span.page-number')
+                        if page_buttons.count() > 0:
+                            # Get the last page number
+                            all_nums = page_buttons.all_text_contents()
+                            nums = [int(n) for n in all_nums if n.isdigit()]
+                            if nums:
+                                total_pages = max(nums)
+                except Exception:
+                    pass
+
+                logger.info(f"[{self.source_name}] Scraping {total_pages} pages...")
+
+                # Scrape each page
+                for page_num in range(1, total_pages + 1):
+                    try:
+                        if page_num > 1:
+                            # Click on page number
+                            page_link = page.locator(f'.eli_pagination a:has-text("{page_num}")')
+                            if page_link.count() > 0:
+                                page_link.first.click()
+                                page.wait_for_timeout(1500)
+                            else:
+                                # Try clicking "next" or incrementing
+                                next_btn = page.locator('.eli_pagination .next, .eli_pagination a:has-text("»")')
+                                if next_btn.count() > 0:
+                                    next_btn.first.click()
+                                    page.wait_for_timeout(1500)
+                                else:
+                                    break
+
+                        # Get page content and parse
+                        content = page.content()
+                        soup = BeautifulSoup(content, 'lxml')
+                        page_concerts = self._parse_events(soup, seen_events)
+                        all_concerts.extend(page_concerts)
+
+                        logger.debug(f"[{self.source_name}] Page {page_num}: {len(page_concerts)} events")
+
+                    except Exception as e:
+                        logger.debug(f"[{self.source_name}] Error on page {page_num}: {e}")
+                        break
+
+                browser.close()
+
+        except Exception as e:
+            logger.error(f"[{self.source_name}] Playwright fetch failed: {e}")
+            # Fall back to static scraping
+            logger.info(f"[{self.source_name}] Falling back to static scraping...")
+            return self._fetch_static()
+
+        return all_concerts
+
+    def _fetch_static(self) -> List[Concert]:
+        """Fetch using static HTTP request (page 1 only)."""
         try:
             soup = self._get_soup()
-            concerts = self._parse_events(soup)
+            seen_events = set()
+            return self._parse_events(soup, seen_events)
         except Exception as e:
             logger.error(f"Failed to fetch JazzBoston events: {e}")
             return []
 
-        # Cache the results
-        save_cache("scrape_jazzboston", [c.to_dict() for c in concerts])
-        self._log_fetch_complete(len(concerts))
-
-        return concerts
-
-    def _parse_events(self, soup) -> List[Concert]:
+    def _parse_events(self, soup, seen_events: set) -> List[Concert]:
         """Parse events from the JazzBoston calendar page.
 
         Structure:
@@ -63,15 +158,12 @@ class JazzBostonScraper(BaseScraper):
         - Time: in "Upcoming Dates:" text ("@ X:XX pm")
 
         Note: Each event appears twice in the HTML, so we deduplicate by
-        (title, date) key. Also, pagination is JavaScript-driven so we can
-        only scrape the first page (~21 events) without a headless browser.
+        (title, date) key using the seen_events set.
         """
         concerts = []
-        seen_events = set()  # Track (title, date) to deduplicate
 
         # Find all event rows
         event_rows = soup.select('div.eli_row')
-        logger.debug(f"[{self.source_name}] Found {len(event_rows)} event rows")
 
         for row in event_rows:
             try:
