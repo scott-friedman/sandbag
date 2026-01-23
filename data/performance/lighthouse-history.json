@@ -474,5 +474,73 @@
         "seo": 0.64
       }
     ]
+  },
+  {
+    "date": "2026-01-23T11:20:50Z",
+    "scores": [
+      {
+        "url": "https://foobos.scottfriedman.ooo/",
+        "performance": 0.99,
+        "accessibility": 0.82,
+        "bestPractices": 0.93,
+        "seo": 0.64
+      },
+      {
+        "url": "https://foobos.scottfriedman.ooo/",
+        "performance": 1,
+        "accessibility": 0.82,
+        "bestPractices": 0.93,
+        "seo": 0.64
+      },
+      {
+        "url": "https://foobos.scottfriedman.ooo/by-date.0.html",
+        "performance": 1,
+        "accessibility": 0.87,
+        "bestPractices": 0.96,
+        "seo": 0.64
+      },
+      {
+        "url": "https://foobos.scottfriedman.ooo/by-date.0.html",
+        "performance": 1,
+        "accessibility": 0.87,
+        "bestPractices": 0.96,
+        "seo": 0.64
+      },
+      {
+        "url": "https://foobos.scottfriedman.ooo/by-band.html",
+        "performance": 0.99,
+        "accessibility": 0.89,
+        "bestPractices": 0.96,
+        "seo": 0.64
+      },
+      {
+        "url": "https://foobos.scottfriedman.ooo/by-band.html",
+        "performance": 0.99,
+        "accessibility": 0.89,
+        "bestPractices": 0.96,
+        "seo": 0.64
+      },
+      {
+        "url": "https://foobos.scottfriedman.ooo/",
+        "performance": 1,
+        "accessibility": 0.82,
+        "bestPractices": 0.93,
+        "seo": 0.64
+      },
+      {
+        "url": "https://foobos.scottfriedman.ooo/by-date.0.html",
+        "performance": 1,
+        "accessibility": 0.87,
+        "bestPractices": 0.96,
+        "seo": 0.64
+      },
+      {
+        "url": "https://foobos.scottfriedman.ooo/by-band.html",
+        "performance": 0.99,
+        "accessibility": 0.89,
+        "bestPractices": 0.96,
+        "seo": 0.64
+      }
+    ]
   }
 ]
