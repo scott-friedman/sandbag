@@ -2,6 +2,36 @@
 <html>
 <head>
 <title>foobos - Club Directory</title>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6XNS24W12"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z6XNS24W12');
+
+  // Track page load performance
+  window.addEventListener('load', function() {
+    if (window.performance) {
+      var timing = performance.timing;
+      var pageLoadTime = timing.loadEventEnd - timing.navigationStart;
+      gtag('event', 'page_load_time', {
+        'value': pageLoadTime,
+        'event_category': 'Performance'
+      });
+    }
+  });
+
+  // Track JavaScript errors
+  window.onerror = function(msg, url, lineNo, columnNo, error) {
+    gtag('event', 'exception', {
+      'description': msg + ' at ' + url + ':' + lineNo,
+      'fatal': false
+    });
+    return false;
+  };
+</script>
+
 </head>
 <body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080">
 
@@ -160,6 +190,7 @@ Venues that frequently book punk, hardcore, and metal shows in the Greater Bosto
 <hr>
 
 <p><a href="list.html">Back to The List</a></p>
+
 
 </body>
 </html>

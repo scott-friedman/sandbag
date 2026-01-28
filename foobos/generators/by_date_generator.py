@@ -11,7 +11,7 @@ from collections import defaultdict
 from ..models import Concert
 from ..config import OUTPUT_DIR, WEEKS_AHEAD
 from ..utils.date_utils import get_week_range, get_week_label, get_week_number, get_adjusted_week_label
-from .helpers import format_concert_line
+from .helpers import format_concert_line, html_header, html_footer
 
 logger = logging.getLogger(__name__)
 
@@ -84,13 +84,8 @@ def _generate_week_page(week_num: int, concerts: List[Concert], reference_date: 
         by_day[day_key].append(concert)
 
     # Generate HTML
-    html = f'''<!DOCTYPE html>
-<html>
-<head>
-<title>Listing By Date - {week_label}</title>
-</head>
-<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080">
-
+    html = html_header(f"Listing By Date - {week_label}")
+    html += f'''
 <h2><i>Listing By Date</i></h2>
 
 <h3>{week_label}</h3>
@@ -128,9 +123,8 @@ def _generate_week_page(week_num: int, concerts: List[Concert], reference_date: 
 
 <p>[ <a href="list.html">Back</a> | <a href="mailto:sf@scottfriedman.ooo">Email Me</a> ]</p>
 
-</body>
-</html>
 '''
+    html += html_footer()
 
     # Write file
     output_path = Path(OUTPUT_DIR) / f"by-date.{week_num}.html"

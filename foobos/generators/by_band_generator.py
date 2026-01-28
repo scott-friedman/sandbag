@@ -11,6 +11,7 @@ from collections import defaultdict
 
 from ..models import Concert
 from ..config import OUTPUT_DIR
+from .helpers import html_header, html_footer
 
 logger = logging.getLogger(__name__)
 
@@ -83,13 +84,8 @@ def _venue_to_anchor(venue_id: str) -> str:
 
 def _generate_band_page(bands: Dict[str, List[Concert]]) -> None:
     """Generate the single by-band.html page in foopee format."""
-    html = '''<!DOCTYPE html>
-<html>
-<head>
-<title>Listing By Band</title>
-</head>
-<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080">
-
+    html = html_header("Listing By Band")
+    html += '''
 <h2><i>Listing By Band</i></h2>
 
 <p><a href="list.html">Back to The List</a></p>
@@ -153,9 +149,8 @@ def _generate_band_page(bands: Dict[str, List[Concert]]) -> None:
 
 <p><a href="list.html">Back to The List</a></p>
 
-</body>
-</html>
 '''
+    html += html_footer()
 
     output_path = Path(OUTPUT_DIR) / "by-band.html"
     with open(output_path, "w") as f:

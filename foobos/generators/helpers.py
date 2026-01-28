@@ -5,6 +5,60 @@ Helper functions for HTML generation.
 from html import escape
 
 from ..models import Concert
+from ..config import GA4_MEASUREMENT_ID, ANALYTICS_ENABLED
+
+
+def html_header(title: str) -> str:
+    """Generate HTML header with retro styling and optional analytics."""
+    analytics_script = ""
+    if ANALYTICS_ENABLED and GA4_MEASUREMENT_ID:
+        analytics_script = f'''
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA4_MEASUREMENT_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', '{GA4_MEASUREMENT_ID}');
+
+  // Track page load performance
+  window.addEventListener('load', function() {{
+    if (window.performance) {{
+      var timing = performance.timing;
+      var pageLoadTime = timing.loadEventEnd - timing.navigationStart;
+      gtag('event', 'page_load_time', {{
+        'value': pageLoadTime,
+        'event_category': 'Performance'
+      }});
+    }}
+  }});
+
+  // Track JavaScript errors
+  window.onerror = function(msg, url, lineNo, columnNo, error) {{
+    gtag('event', 'exception', {{
+      'description': msg + ' at ' + url + ':' + lineNo,
+      'fatal': false
+    }});
+    return false;
+  }};
+</script>
+'''
+
+    return f'''<!DOCTYPE html>
+<html>
+<head>
+<title>{title}</title>{analytics_script}
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080">
+'''
+
+
+def html_footer() -> str:
+    """Generate HTML footer."""
+    return '''
+</body>
+</html>
+'''
 
 
 def _venue_to_anchor(venue_id: str) -> str:

@@ -7,6 +7,7 @@ import shutil
 from pathlib import Path
 
 from ..config import OUTPUT_DIR, PROJECT_ROOT
+from .helpers import html_header, html_footer
 
 logger = logging.getLogger(__name__)
 
@@ -14,10 +15,8 @@ logger = logging.getLogger(__name__)
 def generate_landing_page() -> None:
     """Generate the simple index.html landing page."""
 
-    html = '''<html>
-<head><title>foobos</title></head>
-<body bgcolor="white">
-
+    html = html_header("foobos")
+    html += '''
 <center>
 
 <br><br><br><br><br>
@@ -31,9 +30,8 @@ def generate_landing_page() -> None:
 
 </center>
 
-</body>
-</html>
 '''
+    html += html_footer()
 
     output_path = Path(OUTPUT_DIR) / "index.html"
     with open(output_path, "w") as f:
@@ -42,30 +40,46 @@ def generate_landing_page() -> None:
     logger.info("Generated index.html (landing page)")
 
     # Generate fool.html - in-sane.JPG on black background
-    fool_html = '''<!DOCTYPE html>
+    # This page uses custom styling so we build it manually but still include analytics
+    from ..config import GA4_MEASUREMENT_ID, ANALYTICS_ENABLED
+
+    analytics_script = ""
+    if ANALYTICS_ENABLED and GA4_MEASUREMENT_ID:
+        analytics_script = f'''
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA4_MEASUREMENT_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', '{GA4_MEASUREMENT_ID}');
+</script>
+'''
+
+    fool_html = f'''<!DOCTYPE html>
 <html>
 <head>
-<title>what is foobos?</title>
+<title>what is foobos?</title>{analytics_script}
 <style>
-html, body {
+html, body {{
   background: #000000;
   margin: 0;
   padding: 0;
   min-height: 100%;
   width: 100%;
-}
-body {
+}}
+body {{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-}
-img {
+}}
+img {{
   max-width: 100%;
   max-height: 100vh;
   width: auto;
   height: auto;
-}
+}}
 </style>
 </head>
 <body>

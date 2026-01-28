@@ -12,6 +12,7 @@ from pathlib import Path
 from ..models import Concert
 from ..config import OUTPUT_DIR, SITE_NAME, SITE_TITLE, SITE_DESCRIPTION, SITE_EMAIL, WEEKS_AHEAD
 from ..utils.date_utils import get_week_range, get_week_label, get_adjusted_week_label
+from .helpers import html_header, html_footer
 
 logger = logging.getLogger(__name__)
 
@@ -38,13 +39,8 @@ def generate_index(
     bands_list = _generate_bands_list(band_info) if band_info else ""
     venues_list = _generate_venues_list(venue_info) if venue_info else ""
 
-    html = f'''<!DOCTYPE html>
-<html>
-<head>
-<title>The List (updated {update_date})</title>
-</head>
-<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080">
-
+    html = html_header(f"The List (updated {update_date})")
+    html += f'''
 <h2><i>The List (updated {update_date})</i></h2>
 
 <p>
@@ -198,9 +194,8 @@ Here's what the symbols at the end of each listing might mean:
 }})();
 </script>
 
-</body>
-</html>
 '''
+    html += html_footer()
 
     output_path = Path(OUTPUT_DIR) / "list.html"
     with open(output_path, "w") as f:

@@ -7,6 +7,7 @@ import logging
 from pathlib import Path
 
 from ..config import OUTPUT_DIR, DATA_DIR
+from .helpers import html_header, html_footer
 
 logger = logging.getLogger(__name__)
 
@@ -27,13 +28,8 @@ def generate_clubs_page() -> None:
     # Sort venues alphabetically
     venues = sorted(venues, key=lambda v: v.get("name", "").lower())
 
-    html = '''<!DOCTYPE html>
-<html>
-<head>
-<title>foobos - Club Directory</title>
-</head>
-<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080">
-
+    html = html_header("foobos - Club Directory")
+    html += '''
 <h2><i>Club Directory</i></h2>
 
 <p><a href="list.html">Back to The List</a></p>
@@ -85,9 +81,8 @@ Venues that frequently book punk, hardcore, and metal shows in the Greater Bosto
 
 <p><a href="list.html">Back to The List</a></p>
 
-</body>
-</html>
 '''
+    html += html_footer()
 
     output_path = Path(OUTPUT_DIR) / "clubs.html"
     with open(output_path, "w") as f:
