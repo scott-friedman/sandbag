@@ -12,7 +12,8 @@ from pathlib import Path
 from datetime import datetime
 
 from foobos.config import OUTPUT_DIR, DATA_DIR, CACHE_DIR
-from foobos.fetchers import TicketmasterFetcher, SeatGeekFetcher
+from foobos.parsers import NaturalLanguageConcertParser
+from foobos.fetchers import TicketmasterFetcher, SeatGeekFetcher, WallysCafeGenerator
 from foobos.fetchers.scrapers import (
     SafeInACrowdScraper,
     AXSVenuesScraper,
@@ -51,6 +52,85 @@ def setup_directories():
     """Ensure required directories exist."""
     for dir_path in [OUTPUT_DIR, DATA_DIR, CACHE_DIR]:
         Path(dir_path).mkdir(parents=True, exist_ok=True)
+
+
+def cmd_add(args):
+    """Add concert via natural language description."""
+    import json
+
+    parser = NaturalLanguageConcertParser()
+    manual_path = Path(DATA_DIR) / "manual_concerts.json"
+
+    # Load existing manual concerts
+    existing = []
+    if manual_path.exists():
+        with open(manual_path) as f:
+            existing = json.load(f)
+
+    concerts_to_add = []
+
+    # Determine input source
+    if args.file:
+        # Read from file
+        file_path = Path(args.file)
+        if not file_path.exists():
+            logger.error(f"File not found: {args.file}")
+            return 1
+        with open(file_path) as f:
+            lines = [line.strip() for line in f if line.strip()]
+        for line in lines:
+            concerts_to_add.append(line)
+    elif args.text:
+        # Single concert from command line
+        concerts_to_add.append(args.text)
+    else:
+        # Interactive mode
+        print("Enter concerts (one per line, 'done' to finish):")
+        while True:
+            try:
+                line = input("> ").strip()
+                if line.lower() == "done" or not line:
+                    break
+                concerts_to_add.append(line)
+            except EOFError:
+                break
+
+    if not concerts_to_add:
+        logger.info("No concerts to add.")
+        return 0
+
+    added = []
+    for text in concerts_to_add:
+        try:
+            result = parser.parse(text)
+            concert = parser.to_concert(result)
+
+            if args.verbose:
+                print(f"\nParsed: {text}")
+                print(f"  Bands: {', '.join(result.bands)}")
+                print(f"  Venue: {result.venue}")
+                print(f"  Location: {result.location or 'Boston'}")
+                print(f"  Date: {result.date.strftime('%a %b %-d, %Y') if result.date else 'Unknown'}")
+                print(f"  Time: {result.time}")
+                if result.price_advance:
+                    price = f"${result.price_advance}"
+                    if result.price_door:
+                        price += f"/${result.price_door}"
+                    print(f"  Price: {price}")
+                print(f"  Age: {result.age_requirement}")
+
+            existing.append(concert.to_dict())
+            added.append(concert)
+            logger.info(f"Added: {concert.headliner} at {concert.venue_name} on {concert.date_display}")
+        except Exception as e:
+            logger.error(f"Failed to parse '{text}': {e}")
+
+    # Save updated manual concerts
+    with open(manual_path, "w") as f:
+        json.dump(existing, f, indent=2)
+
+    logger.info(f"Saved {len(added)} concert(s) to {manual_path}")
+    return 0
 
 
 def cmd_fetch(args):
@@ -238,6 +318,30 @@ def cmd_fetch(args):
     except Exception as e:
         logger.error(f"Fallout Shelter scrape failed: {e}")
 
+    # Wally's Cafe Jazz Club (recurring events)
+    try:
+        logger.info("Generating Wally's Cafe recurring events...")
+        wallys_generator = WallysCafeGenerator()
+        wallys_concerts = wallys_generator.generate()
+        logger.info(f"Wally's Cafe: {len(wallys_concerts)} concerts")
+        all_concerts.extend(wallys_concerts)
+    except Exception as e:
+        logger.error(f"Wally's Cafe generation failed: {e}")
+
+    # Load manually added concerts
+    manual_path = Path(DATA_DIR) / "manual_concerts.json"
+    if manual_path.exists():
+        try:
+            import json
+            from foobos.models import Concert
+            with open(manual_path) as f:
+                manual_data = json.load(f)
+            manual_concerts = [Concert.from_dict(d) for d in manual_data]
+            logger.info(f"Manual concerts: {len(manual_concerts)} concerts")
+            all_concerts.extend(manual_concerts)
+        except Exception as e:
+            logger.error(f"Failed to load manual concerts: {e}")
+
     logger.info(f"Total raw concerts fetched: {len(all_concerts)}")
 
     # Save raw data
@@ -412,10 +516,19 @@ Examples:
   python main.py process          # Only process data
   python main.py generate         # Only generate HTML
   python main.py clear-cache      # Clear API cache
+  python main.py add "Ratboys at Middle East 1/29 8pm"  # Add concert
+  python main.py add              # Interactive mode
+  python main.py add -f shows.txt # Add from file
         """
     )
 
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
+
+    # add command
+    add_parser = subparsers.add_parser("add", help="Add concert via natural language")
+    add_parser.add_argument("text", nargs="?", help="Concert description")
+    add_parser.add_argument("-f", "--file", help="File with concerts (one per line)")
+    add_parser.add_argument("-v", "--verbose", action="store_true", help="Show parsed details")
 
     # fetch command
     fetch_parser = subparsers.add_parser("fetch", help="Fetch concert data from all sources")
@@ -460,6 +573,7 @@ Examples:
     setup_directories()
 
     commands = {
+        "add": cmd_add,
         "fetch": cmd_fetch,
         "process": cmd_process,
         "generate": cmd_generate,

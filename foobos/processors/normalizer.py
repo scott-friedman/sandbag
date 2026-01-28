@@ -307,6 +307,10 @@ def _normalize_venue_id(venue_id: str) -> str:
 
         # Wally's variants
         "wallys_pub": "wallys",
+        "wally's_cafe": "wallys",
+        "wally's_cafe_jazz_club": "wallys",
+        "wallys_cafe": "wallys",
+        "wallys_cafe_jazz_club": "wallys",
 
         # Xfinity Center variants
         "xfinity_center": "xfinity_center_-_ma",
@@ -406,6 +410,12 @@ def _normalize_venue_name(name: str) -> str:
         # Symphony Hall
         "symphony hall": "Symphony Hall",
         "boston symphony orchestra": "Symphony Hall",
+
+        # Wally's Cafe Jazz Club
+        "wally's cafe": "Wally's Cafe Jazz Club",
+        "wally's cafe jazz club": "Wally's Cafe Jazz Club",
+        "wallys cafe": "Wally's Cafe Jazz Club",
+        "wallys cafe jazz club": "Wally's Cafe Jazz Club",
     }
 
     name_lower = name.lower().strip()

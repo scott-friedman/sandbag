@@ -213,6 +213,13 @@
       "location": "Boston",
       "address": "528 Commonwealth Ave, Boston, MA",
       "notes": "CLOSED - Legendary punk venue 1974-1997"
+    },
+    {
+      "id": "wallys",
+      "name": "Wally's Cafe Jazz Club",
+      "location": "Boston",
+      "address": "427 Massachusetts Ave, Boston, MA 02118",
+      "website": "https://wallyscafe.com"
     }
   ]
 }
