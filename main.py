@@ -407,7 +407,7 @@ def cmd_process(args):
         json.dump([c.to_dict() for c in concerts], f, indent=2)
     logger.info(f"Saved processed data to {processed_path}")
 
-    return 0
+    return len(concerts)
 
 
 def cmd_generate(args):
