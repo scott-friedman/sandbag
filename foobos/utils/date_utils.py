@@ -54,16 +54,14 @@ def format_date(dt: datetime, fmt: str = "short") -> str:
 
 def get_week_range(dt: datetime) -> Tuple[datetime, datetime]:
     """
-    Get the Sunday-Saturday week range containing the given date.
+    Get the Monday-Sunday week range containing the given date.
 
     Returns (start_date, end_date) tuple.
     """
-    # Find the previous Sunday (or same day if already Sunday)
-    days_since_sunday = dt.weekday() + 1  # Monday=0, so Sunday=-1+1=0... wait
-    # Actually weekday(): Monday=0, Sunday=6
-    # We want Sunday as start of week
-    days_since_sunday = (dt.weekday() + 1) % 7
-    start = dt - timedelta(days=days_since_sunday)
+    # Find the previous Monday (or same day if already Monday)
+    # weekday(): Monday=0, Tuesday=1, ..., Sunday=6
+    days_since_monday = dt.weekday()
+    start = dt - timedelta(days=days_since_monday)
     end = start + timedelta(days=6)
 
     # Normalize to start of day
@@ -105,16 +103,16 @@ def get_adjusted_week_label(week_start: datetime, week_end: datetime, today: dat
     """
     Generate week label, adjusting start date to today if today falls within the week.
 
-    For the current week, if today is after the week start (Sunday), use today
+    For the current week, if today is after the week start (Monday), use today
     as the display start date. This prevents showing past dates in the range.
 
     Args:
-        week_start: The Sunday start of the week
-        week_end: The Saturday end of the week
+        week_start: The Monday start of the week
+        week_end: The Sunday end of the week
         today: Today's date
 
     Returns:
-        Week label like "Jan 19 - Jan 25" with adjusted start if applicable
+        Week label like "Jan 20 - Jan 26" with adjusted start if applicable
     """
     # Normalize dates for comparison
     today_normalized = today.replace(hour=0, minute=0, second=0, microsecond=0)
