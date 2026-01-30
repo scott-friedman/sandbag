@@ -6,9 +6,9 @@ on:
     workflows: ["Update foobos Concert Listings"]
     types:
       - completed
-  # Also run weekly on Sundays for historical tracking
+  # Run daily at 12pm UTC (after the 11am UTC concert update)
   schedule:
-    - cron: '0 12 * * 0'
+    - cron: '0 12 * * *'
   # Allow manual trigger
   workflow_dispatch:
 
@@ -18,7 +18,9 @@ permissions:
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+    # Run if update workflow succeeded, or on schedule/manual trigger
+    # Also run if update workflow completed (even with failure) to catch the site state
+    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' || github.event.workflow_run.conclusion == 'failure' }}
 
     steps:
       - name: Checkout repository
