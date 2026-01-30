@@ -31,6 +31,7 @@ from foobos.fetchers.scrapers import (
     NarrowsCenterScraper,
     ClubDelfScraper,
     FalloutShelterScraper,
+    CityWineryScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre, filter_past_events
 from foobos.generators import generate_all_html
@@ -317,6 +318,16 @@ def cmd_fetch(args):
         all_concerts.extend(fallout_concerts)
     except Exception as e:
         logger.error(f"Fallout Shelter scrape failed: {e}")
+
+    # City Winery Boston (direct scrape - more complete than Songkick)
+    try:
+        logger.info("Scraping City Winery Boston...")
+        city_winery_scraper = CityWineryScraper()
+        city_winery_concerts = city_winery_scraper.fetch()
+        logger.info(f"City Winery: {len(city_winery_concerts)} concerts")
+        all_concerts.extend(city_winery_concerts)
+    except Exception as e:
+        logger.error(f"City Winery scrape failed: {e}")
 
     # Wally's Cafe Jazz Club (recurring events)
     try:

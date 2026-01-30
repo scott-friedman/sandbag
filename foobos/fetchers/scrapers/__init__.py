@@ -17,6 +17,7 @@ from .jazzboston import JazzBostonScraper
 from .narrows_center import NarrowsCenterScraper
 from .club_delf import ClubDelfScraper
 from .fallout_shelter import FalloutShelterScraper
+from .city_winery import CityWineryScraper
 
 __all__ = [
     "BaseScraper",
@@ -38,4 +39,5 @@ __all__ = [
     "NarrowsCenterScraper",
     "ClubDelfScraper",
     "FalloutShelterScraper",
+    "CityWineryScraper",
 ]
