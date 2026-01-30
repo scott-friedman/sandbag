@@ -115,8 +115,14 @@ class TicketmasterFetcher(BaseFetcher):
     def _parse_event(self, event: dict) -> Optional[Concert]:
         """Parse Ticketmaster event into Concert object."""
         try:
-            # Extract date
+            # Check event status - skip cancelled, postponed, rescheduled events
             dates = event.get("dates", {})
+            status_code = dates.get("status", {}).get("code", "").lower()
+            if status_code in ("cancelled", "postponed", "rescheduled"):
+                logger.debug(f"Skipping {status_code} event: {event.get('name', 'Unknown')}")
+                return None
+
+            # Extract date
             start = dates.get("start", {})
             date_str = start.get("localDate")
             if not date_str:
@@ -223,15 +229,9 @@ class TicketmasterFetcher(BaseFetcher):
         """Determine event flags (sellout, mosh, etc.)."""
         flags = []
 
-        # Check for sold out / limited availability
-        dates = event.get("dates", {})
-        status = dates.get("status", {}).get("code", "")
-        if status in ("offsale", "cancelled"):
-            return flags  # Don't include cancelled events
-
-        # Check for likely sellout (high demand indicators)
-        # This is a heuristic based on event properties
-        if event.get("dates", {}).get("status", {}).get("code") == "limited":
+        # Check for limited availability (high demand indicator)
+        status = event.get("dates", {}).get("status", {}).get("code", "").lower()
+        if status == "limited":
             flags.append("$")
 
         return flags
