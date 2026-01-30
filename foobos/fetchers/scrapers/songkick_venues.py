@@ -47,13 +47,7 @@ SONGKICK_VENUES = [
         "songkick_id": "4447493",
         "age": "a/a",
     },
-    {
-        "name": "City Winery Boston",
-        "id": "citywinery",
-        "location": "Boston",
-        "songkick_id": "3548799",
-        "age": "21+",
-    },
+    # City Winery removed - has dedicated CityWineryScraper with more complete data
     {
         "name": "Club Passim",
         "id": "clubpassim",

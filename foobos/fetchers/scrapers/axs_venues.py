@@ -63,21 +63,8 @@ MUSIC_KEYWORDS = [
 
 
 # Venue configurations - using venue websites
+# Note: Royale and Sinclair removed - covered by BoweryBostonScraper
 BOSTON_VENUES = {
-    "royale": {
-        "name": "Royale",
-        "location": "Boston",
-        "url": "https://royaleboston.com/events/",
-        "capacity": 1200,
-        "parser": "json_ld",
-    },
-    "sinclair": {
-        "name": "The Sinclair",
-        "location": "Cambridge",
-        "url": "https://www.sinclaircambridge.com/events/",
-        "capacity": 525,
-        "parser": "sinclair",
-    },
     # Berklee performances - scrapes all venues from their performances page
     "berklee": {
         "name": "Berklee",  # Will be overridden by actual venue from page
@@ -130,21 +117,13 @@ class AXSVenuesScraper(BaseScraper):
     def _scrape_venue(self, venue_id: str, venue_config: Dict) -> List[Concert]:
         """Scrape events from a venue website."""
         concerts = []
-        parser_type = venue_config.get("parser", "json_ld")
+        parser_type = venue_config.get("parser", "berklee")
 
         try:
             soup = self._get_soup(venue_config["url"])
 
-            if parser_type == "sinclair":
-                concerts = self._parse_sinclair(soup, venue_id, venue_config)
-            elif parser_type == "json_ld":
-                concerts = self._parse_json_ld(soup, venue_id, venue_config)
-            elif parser_type == "berklee":
+            if parser_type == "berklee":
                 concerts = self._parse_berklee(soup, venue_id, venue_config)
-
-            # Fallback to generic parsing if no results (except berklee which has specific format)
-            if not concerts and parser_type != "berklee":
-                concerts = self._parse_event_page(soup, venue_id, venue_config)
 
         except Exception as e:
             logger.debug(f"Error scraping {venue_config['name']}: {e}")
@@ -682,28 +661,8 @@ class AXSVenuesScraper(BaseScraper):
     def _is_music_event(self, event_name: str, venue_id: str) -> bool:
         """Check if an event is likely a music performance.
 
-        For multi-purpose venues like Arts at the Armory, we need to filter out
-        non-music events since there's no downstream genre filtering.
-
-        Returns True if the event appears to be music-related.
+        All current venues in this scraper are dedicated music venues,
+        so we always return True. The NON_MUSIC_KEYWORDS and MUSIC_KEYWORDS
+        lists are kept for potential future use with multi-purpose venues.
         """
-        # For dedicated music venues, assume all events are music
-        # (all current venues in this scraper are music venues)
-        return True
-
-        name_lower = event_name.lower()
-
-        # First check for music keywords - if present, it's likely music
-        for keyword in MUSIC_KEYWORDS:
-            if keyword in name_lower:
-                return True
-
-        # Then check for non-music keywords
-        for keyword in NON_MUSIC_KEYWORDS:
-            if keyword in name_lower:
-                logger.debug(f"Filtering out non-music event: {event_name} (matched: {keyword})")
-                return False
-
-        # Default to including the event if uncertain
-        # Better to have some false positives than miss real concerts
         return True

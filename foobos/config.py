@@ -57,18 +57,6 @@ PRIORITY_BANDS = [
     "Speedy Ortiz", "Palehound", "Vein.fm", "Knocked Loose"
 ]
 
-# Scraper URLs
-SCRAPE_SOURCES = {
-    "safe_in_a_crowd": "https://safeinacrowd.com/",
-    "do617": "https://do617.com/",
-    "ohmyrockness": "https://boston.ohmyrockness.com/",
-    "middle_east": "https://www.mideastoffers.com/",
-    "sinclair": "https://www.sinclaircambridge.com/events",
-    "paradise": "https://crossroadspresents.com/pages/paradise-rock-club",
-    "brighton": "https://www.brightonmusichall.com/events",
-    "great_scott": "https://www.greatscottboston.com/events",
-}
-
 # Venue ID mappings (our slug -> Ticketmaster venue ID)
 VENUE_TICKETMASTER_IDS = {
     "paradise": "KovZpZAEekIA",

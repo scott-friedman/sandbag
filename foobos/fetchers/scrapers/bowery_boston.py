@@ -11,8 +11,9 @@ Bowery Boston (boweryboston.com) manages multiple Boston-area venues:
 Their /see-all-shows page contains JSON-LD structured data for all events.
 """
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import List, Dict, Optional
+from zoneinfo import ZoneInfo
 import logging
 import re
 import json
@@ -163,10 +164,13 @@ class BoweryBostonScraper(BaseScraper):
 
             try:
                 if "T" in str(start_date):
-                    # Parse UTC time and convert to Eastern (UTC-5)
-                    utc_dt = datetime.fromisoformat(start_date.replace("Z", "").split("+")[0])
-                    from datetime import timedelta
-                    event_date = utc_dt - timedelta(hours=5)
+                    # Parse UTC time and convert to Eastern (handles DST automatically)
+                    utc_str = start_date.replace("Z", "+00:00")
+                    if "+" not in utc_str and "-" not in utc_str[10:]:
+                        utc_str += "+00:00"
+                    utc_dt = datetime.fromisoformat(utc_str.split("+")[0]).replace(tzinfo=timezone.utc)
+                    eastern = ZoneInfo("America/New_York")
+                    event_date = utc_dt.astimezone(eastern).replace(tzinfo=None)
                 else:
                     event_date = parse_date(start_date)
             except ValueError:
