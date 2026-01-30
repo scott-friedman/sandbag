@@ -227,6 +227,13 @@
       "location": "Hampton",
       "address": "144 Ashworth Ave, Hampton, NH 03842",
       "website": "https://wallyspub.com"
+    },
+    {
+      "id": "sofar_sounds",
+      "name": "Sofar Sounds",
+      "location": "Boston",
+      "website": "https://www.sofarsounds.com/cities/boston",
+      "notes": "Secret intimate concerts at various locations. Venue revealed 36 hours before show."
     }
   ]
 }

@@ -32,6 +32,7 @@ from foobos.fetchers.scrapers import (
     ClubDelfScraper,
     FalloutShelterScraper,
     CityWineryScraper,
+    SofarSoundsScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre, filter_past_events
 from foobos.generators import generate_all_html
@@ -328,6 +329,16 @@ def cmd_fetch(args):
         all_concerts.extend(city_winery_concerts)
     except Exception as e:
         logger.error(f"City Winery scrape failed: {e}")
+
+    # Sofar Sounds Boston (secret intimate concerts)
+    try:
+        logger.info("Scraping Sofar Sounds Boston...")
+        sofar_scraper = SofarSoundsScraper()
+        sofar_concerts = sofar_scraper.fetch()
+        logger.info(f"Sofar Sounds: {len(sofar_concerts)} concerts")
+        all_concerts.extend(sofar_concerts)
+    except Exception as e:
+        logger.error(f"Sofar Sounds scrape failed: {e}")
 
     # Wally's Cafe Jazz Club (recurring events)
     try:
