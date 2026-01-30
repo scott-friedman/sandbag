@@ -146,7 +146,10 @@ def _are_duplicates(a: Concert, b: Concert) -> bool:
                            token_score >= 95)
 
     # If venue and headliner both match, it's a duplicate
+    # BUT only if times are similar (within 1 hour) - preserves multi-show nights
     if headliner_similar:
+        if a.time and b.time and not _times_similar(a.time, b.time):
+            return False  # Different showtimes = different events
         return True
 
     # If venue matches but headliner doesn't, check majority of other info
@@ -205,7 +208,7 @@ def _are_duplicates(a: Concert, b: Concert) -> bool:
 
 
 def _times_similar(time_a: str, time_b: str) -> bool:
-    """Check if two times are similar (same or within 30 minutes)."""
+    """Check if two times are similar (same or within 60 minutes)."""
     import re
 
     def parse_time(t: str) -> int:
@@ -231,7 +234,7 @@ def _times_similar(time_a: str, time_b: str) -> bool:
     if mins_a < 0 or mins_b < 0:
         return time_a.lower() == time_b.lower()
 
-    return abs(mins_a - mins_b) <= 30
+    return abs(mins_a - mins_b) <= 60
 
 
 def _info_richness_score(concert: Concert) -> int:

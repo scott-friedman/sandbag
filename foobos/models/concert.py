@@ -72,7 +72,9 @@ class Concert:
         # Take first 30 chars to focus on core band name
         normalized = normalized[:30].strip()
 
-        unique_str = f"{date_str}|{self.venue_id}|{normalized}"
+        # Include time to differentiate multi-show nights (e.g., 7pm and 10pm shows)
+        time_str = self.time or "tba"
+        unique_str = f"{date_str}|{self.venue_id}|{normalized}|{time_str}"
         return hashlib.md5(unique_str.encode()).hexdigest()[:12]
 
     @property
