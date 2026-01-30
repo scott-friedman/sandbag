@@ -2,6 +2,9 @@
 Scraper for venues that have pages on Songkick.
 Currently supports: Deep Cuts, Groton Hill Music Center, City Winery,
 Club Passim, The Lilypad, ONCE venues, The 4th Wall, Warehouse XI
+
+Uses Playwright when available to handle JavaScript-driven "Load More" pagination.
+Falls back to static scraping if Playwright unavailable.
 """
 
 from datetime import datetime, timedelta
@@ -9,12 +12,22 @@ from typing import List, Optional
 import logging
 import re
 
+from bs4 import BeautifulSoup
+
 from .base import BaseScraper
 from ...models import Concert
 from ...config import WEEKS_AHEAD
 from ...utils import get_cached, save_cache
 
 logger = logging.getLogger(__name__)
+
+# Try to import Playwright - it may not be available in all environments
+try:
+    from playwright.sync_api import sync_playwright
+    PLAYWRIGHT_AVAILABLE = True
+except ImportError:
+    PLAYWRIGHT_AVAILABLE = False
+    logger.info("Playwright not available - Songkick will use static scraping (limited events)")
 
 
 # Venues with Songkick pages
@@ -139,45 +152,102 @@ class SongkickVenuesScraper(BaseScraper):
 
     def _fetch_venue_events(self, venue: dict) -> List[Concert]:
         """Fetch events from a Songkick venue calendar page."""
-        concerts = []
-        seen_events = set()  # Track (date, headliner) to avoid duplicates
+        # Use Playwright if available for full event loading
+        if PLAYWRIGHT_AVAILABLE:
+            return self._fetch_venue_with_playwright(venue)
+        else:
+            return self._fetch_venue_static(venue)
 
-        # Use /calendar endpoint which shows more events than the main venue page
+    def _fetch_venue_with_playwright(self, venue: dict) -> List[Concert]:
+        """Fetch venue events using Playwright for JavaScript pagination."""
+        concerts = []
+        seen_events = set()
+        venue_url = f"https://www.songkick.com/venues/{venue['songkick_id']}/calendar"
+
+        try:
+            with sync_playwright() as p:
+                browser = p.chromium.launch(headless=True)
+                page = browser.new_page()
+
+                # Navigate and wait for content
+                page.goto(venue_url, wait_until="networkidle", timeout=30000)
+                page.wait_for_timeout(2000)
+
+                # Click "Load more" button repeatedly to get all events
+                max_clicks = 20  # Safety limit
+                clicks = 0
+                while clicks < max_clicks:
+                    try:
+                        load_more = page.locator('button:has-text("Load more"), a:has-text("Load more")')
+                        if load_more.count() > 0 and load_more.first.is_visible():
+                            load_more.first.click()
+                            page.wait_for_timeout(1500)
+                            clicks += 1
+                        else:
+                            break
+                    except Exception:
+                        break
+
+                # Get final page content
+                content = page.content()
+                browser.close()
+
+                # Parse with BeautifulSoup
+                soup = BeautifulSoup(content, 'lxml')
+                concerts = self._parse_venue_events(soup, venue, seen_events)
+
+        except Exception as e:
+            logger.warning(f"[{self.source_name}] Playwright failed for {venue['name']}: {e}")
+            # Fall back to static scraping
+            return self._fetch_venue_static(venue)
+
+        return concerts
+
+    def _fetch_venue_static(self, venue: dict) -> List[Concert]:
+        """Fetch venue events using static HTTP request (limited events)."""
+        concerts = []
+        seen_events = set()
         venue_url = f"https://www.songkick.com/venues/{venue['songkick_id']}/calendar"
 
         try:
             soup = self._get_soup(venue_url)
-
-            # Find the upcoming concerts section (avoid past concerts)
-            upcoming_section = soup.select_one('#calendar-summary')
-            if not upcoming_section:
-                # Try finding the event listings ul directly
-                upcoming_section = soup
-
-            # Find event listings - look for li elements with title attribute (date)
-            # Structure: <li title="Saturday 31 January 2026">
-            event_lists = upcoming_section.select('ul.event-listings')
-            for event_list in event_lists:
-                # Skip if this is the past concerts section
-                parent_header = event_list.find_previous('h2')
-                if parent_header and 'past' in parent_header.get_text().lower():
-                    continue
-
-                for event in event_list.select('li[title]'):
-                    try:
-                        concert = self._parse_event(event, venue)
-                        if concert:
-                            # Deduplicate within this venue (same date + headliner)
-                            event_key = (concert.date.strftime('%Y-%m-%d'),
-                                        concert.bands[0].lower() if concert.bands else '')
-                            if event_key not in seen_events:
-                                seen_events.add(event_key)
-                                concerts.append(concert)
-                    except Exception as e:
-                        logger.debug(f"Error parsing Songkick event: {e}")
-
+            concerts = self._parse_venue_events(soup, venue, seen_events)
         except Exception as e:
             logger.error(f"Error fetching Songkick venue {venue['name']}: {e}")
+
+        return concerts
+
+    def _parse_venue_events(self, soup, venue: dict, seen_events: set) -> List[Concert]:
+        """Parse events from Songkick venue page HTML."""
+        concerts = []
+
+        # Find the upcoming concerts section (avoid past concerts)
+        upcoming_section = soup.select_one('#calendar-summary')
+        if not upcoming_section:
+            # Try finding the event listings ul directly
+            upcoming_section = soup
+
+        # Find event listings - look for li elements with title attribute (date)
+        # Structure: <li title="Saturday 31 January 2026">
+        event_lists = upcoming_section.select('ul.event-listings')
+        for event_list in event_lists:
+            # Skip if this is the past concerts section
+            parent_header = event_list.find_previous('h2')
+            if parent_header and 'past' in parent_header.get_text().lower():
+                continue
+
+            for event in event_list.select('li[title]'):
+                try:
+                    concert = self._parse_event(event, venue)
+                    if concert:
+                        # Deduplicate within this venue (same date + headliner)
+                        event_key = (concert.date.strftime('%Y-%m-%d'),
+                                    concert.bands[0].lower() if concert.bands else '')
+                        if event_key not in seen_events:
+                            seen_events.add(event_key)
+                            concerts.append(concert)
+                except Exception as e:
+                    logger.debug(f"Error parsing Songkick event: {e}")
 
         return concerts
 

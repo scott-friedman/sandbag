@@ -261,6 +261,25 @@ class SeatGeekFetcher(BaseFetcher):
             "cafe-939-at-berklee": "cafe_939",
             "regattabar": "regattabar",
             "scullers-jazz-club": "scullers",
+            # Additional Boston-area venues
+            "agganis-arena": "agganis",
+            "the-wilbur": "wilbur",
+            "wilbur-theatre": "wilbur",
+            "gillette-stadium": "gillette",
+            "club-passim": "clubpassim",
+            "sonia": "sonia",
+            "sonia-cambridge": "sonia",
+            "crystal-ballroom-somerville": "crystal_ballroom",
+            "crystal-ballroom---somerville": "crystal_ballroom",
+            "hampton-beach-casino-ballroom": "hampton_beach",
+            "indian-ranch-amphitheatre": "indian_ranch",
+            "indian-ranch": "indian_ranch",
+            "boch-center-shubert-theatre": "shubert",
+            "shubert-theatre": "shubert",
+            "emerson-colonial-theatre": "colonial",
+            "colonial-theatre": "colonial",
+            "tsongas-center": "tsongas",
+            "tsongas-center-at-umass-lowell": "tsongas",
         }
 
         # Try slug from venue name
