@@ -407,7 +407,7 @@ def cmd_process(args):
         json.dump([c.to_dict() for c in concerts], f, indent=2)
     logger.info(f"Saved processed data to {processed_path}")
 
-    return len(concerts)
+    return 0
 
 
 def cmd_generate(args):
@@ -441,6 +441,8 @@ def cmd_generate(args):
 
 def cmd_all(args):
     """Run full pipeline: fetch, process, generate."""
+    import json
+
     logger.info("=" * 60)
     logger.info("foobos - Full Pipeline")
     logger.info(f"Started at {datetime.now().isoformat()}")
@@ -449,13 +451,32 @@ def cmd_all(args):
     setup_directories()
 
     # Fetch
-    concerts = cmd_fetch(args)
-    if not concerts:
-        logger.warning("No concerts fetched. Checking for cached data...")
+    fetch_result = cmd_fetch(args)
+    if fetch_result != 0:
+        logger.error("Fetch command failed.")
+        return 1
+
+    # Check if raw data exists
+    raw_path = Path(DATA_DIR) / "raw_concerts.json"
+    if not raw_path.exists():
+        logger.error("No raw data found after fetch. Aborting.")
+        return 1
 
     # Process
-    concerts = cmd_process(args)
-    if not concerts:
+    process_result = cmd_process(args)
+    if process_result != 0:
+        logger.error("Process command failed.")
+        return 1
+
+    # Check if processed data exists and has concerts
+    processed_path = Path(DATA_DIR) / "processed_concerts.json"
+    if not processed_path.exists():
+        logger.error("No processed data found. Aborting.")
+        return 1
+
+    with open(processed_path) as f:
+        processed_data = json.load(f)
+    if not processed_data:
         logger.error("No concerts to process. Aborting.")
         return 1
 
