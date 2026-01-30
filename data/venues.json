@@ -215,11 +215,18 @@
       "notes": "CLOSED - Legendary punk venue 1974-1997"
     },
     {
-      "id": "wallys",
+      "id": "wallys_cafe",
       "name": "Wally's Cafe Jazz Club",
       "location": "Boston",
       "address": "427 Massachusetts Ave, Boston, MA 02118",
       "website": "https://wallyscafe.com"
+    },
+    {
+      "id": "wallys_pub_hampton",
+      "name": "Wally's Pub",
+      "location": "Hampton",
+      "address": "144 Ashworth Ave, Hampton, NH 03842",
+      "website": "https://wallyspub.com"
     }
   ]
 }

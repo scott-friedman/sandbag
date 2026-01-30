@@ -305,12 +305,16 @@ def _normalize_venue_id(venue_id: str) -> str:
         "the_vets": "veterans_memorial_auditorium",
         "the_vets_-_veterans_memorial_a": "veterans_memorial_auditorium",
 
-        # Wally's variants
-        "wallys_pub": "wallys",
-        "wally's_cafe": "wallys",
-        "wally's_cafe_jazz_club": "wallys",
-        "wallys_cafe": "wallys",
-        "wallys_cafe_jazz_club": "wallys",
+        # Wally's Cafe Jazz Club (Boston) - NOT Wally's Pub (Hampton)
+        "wally's_cafe": "wallys_cafe",
+        "wally's_cafe_jazz_club": "wallys_cafe",
+        "wallys_cafe": "wallys_cafe",
+        "wallys_cafe_jazz_club": "wallys_cafe",
+        "wallys": "wallys_cafe",  # Default "wallys" to Boston jazz club
+
+        # Wally's Pub (Hampton) - separate venue
+        "wallys_pub": "wallys_pub_hampton",
+        "wally's_pub": "wallys_pub_hampton",
 
         # Xfinity Center variants
         "xfinity_center": "xfinity_center_-_ma",
@@ -411,11 +415,16 @@ def _normalize_venue_name(name: str) -> str:
         "symphony hall": "Symphony Hall",
         "boston symphony orchestra": "Symphony Hall",
 
-        # Wally's Cafe Jazz Club
+        # Wally's Cafe Jazz Club (Boston)
         "wally's cafe": "Wally's Cafe Jazz Club",
         "wally's cafe jazz club": "Wally's Cafe Jazz Club",
         "wallys cafe": "Wally's Cafe Jazz Club",
         "wallys cafe jazz club": "Wally's Cafe Jazz Club",
+
+        # Wally's Pub (Hampton) - different venue
+        "wally's pub": "Wally's Pub",
+        "wallys pub": "Wally's Pub",
+        "wally's": "Wally's Pub",  # Plain "Wally's" from Ticketmaster is Hampton
     }
 
     name_lower = name.lower().strip()

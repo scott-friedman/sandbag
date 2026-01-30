@@ -48,7 +48,7 @@ class WallysCafeGenerator(RecurringEventGenerator):
 
     def get_venue_info(self) -> Dict[str, str]:
         return {
-            'id': 'wallys',
+            'id': 'wallys_cafe',
             'name': "Wally's Cafe Jazz Club",
             'location': 'Boston',
         }
