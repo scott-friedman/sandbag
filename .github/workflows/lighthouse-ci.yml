@@ -35,9 +35,9 @@ jobs:
       - name: Run Lighthouse audit
         run: |
           lhci autorun \
-            --collect.url=https://foobos.scottfriedman.ooo/ \
-            --collect.url=https://foobos.scottfriedman.ooo/by-date.0.html \
-            --collect.url=https://foobos.scottfriedman.ooo/by-band.html \
+            --collect.url=https://foobos.net/ \
+            --collect.url=https://foobos.net/by-date.0.html \
+            --collect.url=https://foobos.net/by-band.html \
             --collect.numberOfRuns=3 \
             --assert.preset=lighthouse:recommended \
             --assert.assertions.categories:performance=warn:min=0.5 \

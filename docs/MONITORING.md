@@ -37,7 +37,7 @@ This guide explains how to set up comprehensive monitoring for foobos, including
 2. **Get Your Measurement ID**
    - In Admin, go to "Data Streams"
    - Click "Add stream" → "Web"
-   - Enter URL: `https://foobos.scottfriedman.ooo`
+   - Enter URL: `https://foobos.net`
    - Enter stream name: "foobos Website"
    - Click "Create stream"
    - Copy the **Measurement ID** (format: `G-XXXXXXXXXX`)
@@ -130,7 +130,7 @@ The `lighthouse-ci.yml` workflow runs:
    - Click "Add New Monitor"
    - Monitor Type: **HTTP(s)**
    - Friendly Name: `foobos`
-   - URL: `https://foobos.scottfriedman.ooo`
+   - URL: `https://foobos.net`
    - Monitoring Interval: 5 minutes (free) or 1 minute (paid)
    - Click "Create Monitor"
 
