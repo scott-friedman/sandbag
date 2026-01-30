@@ -350,7 +350,7 @@ class SongkickVenuesScraper(BaseScraper):
         """Extract band names from event element."""
         bands = []
 
-        # Songkick structure: <p class="artists summary"> -> <strong>Artist Name</strong>
+        # Songkick structure: <p class="artists summary"> -> <span><strong>Headliner</strong> Support1, Support2, and Support3</span>
         artists_elem = event_elem.select_one('p.artists')
         if artists_elem:
             # Get main artist from strong tag
@@ -358,6 +358,25 @@ class SongkickVenuesScraper(BaseScraper):
                 band_name = self._clean_text(strong.get_text())
                 if band_name and band_name not in bands and len(band_name) > 1:
                     bands.append(band_name)
+
+            # Get supporting acts - they're plain text after the strong tag
+            # Structure: <span><strong>Headliner</strong> Support1, Support2, and Support3</span>
+            span_elem = artists_elem.select_one('span')
+            if span_elem:
+                # Get full text and remove the headliner part
+                full_text = self._clean_text(span_elem.get_text())
+                if bands:
+                    # Remove headliner from start of text
+                    headliner = bands[0]
+                    if full_text.startswith(headliner):
+                        support_text = full_text[len(headliner):].strip()
+                        if support_text:
+                            # Parse comma-separated list with "and"
+                            # e.g., "Emi McSwain, Hey, I'm Outside, and Tiberius"
+                            support_bands = self._parse_support_acts(support_text)
+                            for band in support_bands:
+                                if band and band not in bands:
+                                    bands.append(band)
 
         # Try headliner/support structure
         if not bands:
@@ -386,6 +405,24 @@ class SongkickVenuesScraper(BaseScraper):
                     # Avoid "Buy tickets" type links
                     if 'ticket' not in link_text.lower():
                         bands.append(link_text)
+
+        return bands
+
+    def _parse_support_acts(self, text: str) -> List[str]:
+        """Parse supporting acts from text like 'Emi McSwain, Hey, I'm Outside, and Tiberius'."""
+        if not text:
+            return []
+
+        bands = []
+        # Replace " and " with comma for easier splitting
+        text = re.sub(r',?\s+and\s+', ', ', text)
+        # Split by comma
+        parts = text.split(',')
+        for part in parts:
+            band = part.strip()
+            # Filter out empty strings and common non-band text
+            if band and len(band) > 1 and 'ticket' not in band.lower():
+                bands.append(band)
 
         return bands
 
