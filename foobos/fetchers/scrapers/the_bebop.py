@@ -81,6 +81,10 @@ class TheBebopScraper(BaseScraper):
         all_text = soup.get_text(separator='\n', strip=True)
         lines = [l.strip() for l in all_text.split('\n') if l.strip()]
 
+        # Skip patterns for venue info - these are exact matches or line starts
+        skip_exact = ['the bebop', 'google maps', 'view map', 'add to calendar']
+        skip_contains = ['boylston', 'boston, ma', 'united states']
+
         i = 0
         while i < len(lines):
             line = lines[i]
@@ -93,7 +97,6 @@ class TheBebopScraper(BaseScraper):
             )
 
             if date_match:
-                day_of_week = date_match.group(1)
                 month = date_match.group(2)
                 day = int(date_match.group(3))
                 year = int(date_match.group(4))
@@ -123,31 +126,38 @@ class TheBebopScraper(BaseScraper):
                     i += 1
                     continue
 
-                # Look for event title in subsequent lines
-                # Skip venue info lines (The Bebop, address, etc.)
+                # Look for event title in PRECEDING lines (title comes before date on this site)
                 title = None
-                skip_patterns = ['the bebop', 'boylston', 'boston, ma', 'united states',
-                                 'google maps', 'view map', 'add to calendar']
-
-                j = i + 1
-                while j < len(lines) and j < i + 10:
+                j = i - 1
+                while j >= 0 and j > i - 5:
                     candidate = lines[j].strip()
+                    candidate_lower = candidate.lower()
 
-                    # Skip empty or venue info
-                    if not candidate or any(p in candidate.lower() for p in skip_patterns):
-                        j += 1
+                    # Skip empty lines
+                    if not candidate:
+                        j -= 1
                         continue
 
-                    # Skip if it looks like another date
+                    # Skip exact venue info matches (e.g., "The Bebop" by itself)
+                    if candidate_lower in skip_exact:
+                        j -= 1
+                        continue
+
+                    # Skip lines containing address/location info
+                    if any(p in candidate_lower for p in skip_contains):
+                        j -= 1
+                        continue
+
+                    # Skip if it looks like another date/time line
                     if re.match(r'(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),', candidate):
                         break
 
-                    # Skip pure numbers (like addresses)
-                    if re.match(r'^\d+$', candidate):
-                        j += 1
+                    # Skip pure numbers (like addresses) or short strings
+                    if re.match(r'^\d+$', candidate) or len(candidate) <= 2:
+                        j -= 1
                         continue
 
-                    # This might be the title
+                    # This is likely the title
                     title = candidate
                     break
 
@@ -155,6 +165,7 @@ class TheBebopScraper(BaseScraper):
                     # Clean up title - remove common suffixes
                     title = re.sub(r'\s*-\s*Tickets?\s*$', '', title, flags=re.I)
                     title = re.sub(r'\s*\|\s*The Bebop\s*$', '', title, flags=re.I)
+                    title = re.sub(r'\s+at The Bebop!?\s*$', '', title, flags=re.I)
 
                     bands = self._split_bands(title)
                     if not bands:
