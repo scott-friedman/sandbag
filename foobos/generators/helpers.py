@@ -96,10 +96,24 @@ def html_header(
     if structured_data:
         json_ld = f'\n<script type="application/ld+json">\n{json.dumps(structured_data, indent=2)}\n</script>\n'
 
+    # Mobile-only CSS - doesn't affect desktop layout
+    mobile_css = '''
+<style>
+@media (max-width: 600px) {
+  body { margin: 4px 8px; }
+  ul { padding-left: 16px; margin: 4px 0; }
+  li { margin-bottom: 6px; line-height: 1.4; }
+  ul ul { padding-left: 12px; }
+  h2, h3 { margin: 8px 0; }
+  p { margin: 8px 0; }
+  pre { font-size: 12px; overflow-x: auto; }
+}
+</style>'''
+
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
-{meta_tags}<title>{title}</title>{analytics_script}{json_ld}
+{meta_tags}<title>{title}</title>{mobile_css}{analytics_script}{json_ld}
 </head>
 <body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080">
 '''
@@ -166,7 +180,15 @@ def format_concert_line(concert: Concert, link_venue: bool = True, link_bands: b
     if concert.flags:
         parts.append(" ".join(escape(flag) for flag in concert.flags))
 
-    return " ".join(parts)
+    result = " ".join(parts)
+
+    # Event link - subtle arrow to source/ticket page
+    # Padding increases tap target for mobile (44px minimum recommended)
+    # &nbsp; attaches arrow to previous text, preventing solo line wrap
+    if concert.source_url:
+        result += f'&nbsp;<a href="{escape(concert.source_url)}" title="Event info" style="text-decoration:none;padding:8px 12px;margin:-8px -4px">→</a>'
+
+    return result
 
 
 def _band_to_anchor(band: str) -> str:
