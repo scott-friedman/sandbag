@@ -1,6 +1,6 @@
 """
 Scraper for venues that provide iCal feeds.
-Currently supports: Lizard Lounge, The Rockwell
+Currently supports: Lizard Lounge, The Rockwell, Firehouse Center
 """
 
 from datetime import datetime, timedelta
@@ -19,6 +19,7 @@ logger = logging.getLogger(__name__)
 
 # Venues with iCal feeds
 # For monthly_url venues, we iterate over multiple months to get all events
+# skip_patterns: regex patterns to filter out non-music events
 ICAL_VENUES = [
     {
         "name": "Lizard Lounge",
@@ -34,6 +35,32 @@ ICAL_VENUES = [
         "location": "Somerville",
         "url": "https://therockwell.org/calendar/?ical=1",
         "age": "a/a",
+    },
+    {
+        "name": "Firehouse Center for the Arts",
+        "id": "firehouse",
+        "location": "Newburyport",
+        "state": "MA",
+        "url": "https://firehouse.org/events/?ical=1",
+        "age": "a/a",
+        # Filter out non-music events (theater, film, dance, etc.)
+        "skip_patterns": [
+            r"film series",
+            r"murder mystery",
+            r"junie b",
+            r"kids? show",
+            r"children'?s",
+            r"story ?time",
+            r"book club",
+            r"art exhibit",
+            r"gallery",
+            r"workshop",
+            r"class\b",
+            r"lecture",
+            r"talk\b",
+            r"dance company",
+            r"ballet",
+        ],
     },
 ]
 
@@ -112,7 +139,7 @@ class ICalVenuesScraper(BaseScraper):
 
                 for event in events:
                     # Skip non-music events or placeholder events
-                    if self._should_skip_event(event):
+                    if self._should_skip_event(event, venue):
                         continue
 
                     # Create unique key to avoid duplicates across months
@@ -159,7 +186,7 @@ class ICalVenuesScraper(BaseScraper):
 
         return events
 
-    def _should_skip_event(self, event: dict) -> bool:
+    def _should_skip_event(self, event: dict, venue: dict) -> bool:
         """Check if an event should be skipped."""
         summary = event.get('SUMMARY', '').lower()
 
@@ -175,6 +202,13 @@ class ICalVenuesScraper(BaseScraper):
 
         for phrase in skip_phrases:
             if phrase in summary:
+                return True
+
+        # Check venue-specific skip patterns (for filtering non-music events)
+        skip_patterns = venue.get('skip_patterns', [])
+        for pattern in skip_patterns:
+            if re.search(pattern, summary, re.IGNORECASE):
+                logger.debug(f"Skipping non-music event: {summary}")
                 return True
 
         return False
