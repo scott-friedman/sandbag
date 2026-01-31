@@ -136,6 +136,9 @@ class BeehiveScraper(BaseScraper):
             # Get description for additional context
             description = self._unescape_ical(event.get('DESCRIPTION', ''))
 
+            # Extract price from description
+            price_advance, price_door = self._extract_price(description)
+
             return Concert(
                 date=date,
                 venue_id="beehive",
@@ -143,8 +146,8 @@ class BeehiveScraper(BaseScraper):
                 venue_location="Boston",
                 bands=bands,
                 age_requirement="21+",
-                price_advance=None,
-                price_door=None,
+                price_advance=price_advance,
+                price_door=price_door,
                 time=time_str,
                 flags=[],
                 source=self.source_name,
@@ -244,3 +247,14 @@ class BeehiveScraper(BaseScraper):
         text = text.replace('\\:', ':')
         text = text.replace('\\\\', '\\')
         return text
+
+    def _extract_price(self, description: str) -> tuple:
+        """Extract price from event description."""
+        if self._is_free_text(description):
+            return (0, 0)
+        match = re.search(r'\$(\d+)(?:\s*/\s*\$?(\d+))?', description)
+        if match:
+            advance = int(match.group(1))
+            door = int(match.group(2)) if match.group(2) else advance
+            return (advance, door)
+        return (None, None)

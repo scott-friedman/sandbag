@@ -136,6 +136,13 @@ class BaseScraper(BaseFetcher):
 
         return "a/a"
 
+    def _is_free_text(self, text: str) -> bool:
+        """Check if text indicates a free event."""
+        if not text:
+            return False
+        text_lower = text.lower()
+        return any(p in text_lower for p in ['free', 'no cover', 'donation', 'pwyc'])
+
     def _split_bands(self, bands_str: str) -> List[str]:
         """
         Split band string into list of band names.

@@ -10,6 +10,7 @@ import re
 
 from .base import BaseScraper
 from ...models import Concert
+from ...config import WEEKS_AHEAD
 from ...utils import get_cached, save_cache
 
 logger = logging.getLogger(__name__)
@@ -36,18 +37,41 @@ class TheBebopScraper(BaseScraper):
             logger.info(f"[{self.source_name}] Using cached data ({len(cached)} events)")
             return [Concert.from_dict(c) for c in cached]
 
-        try:
-            soup = self._get_soup()
-            concerts = self._parse_events(soup)
-        except Exception as e:
-            logger.error(f"Failed to fetch The Bebop events: {e}")
-            return []
+        all_concerts = []
+
+        # Fetch multiple months based on WEEKS_AHEAD config
+        now = datetime.now()
+        months_ahead = (WEEKS_AHEAD // 4) + 1
+
+        for month_offset in range(months_ahead):
+            target_month = now.month + month_offset
+            target_year = now.year
+            while target_month > 12:
+                target_month -= 12
+                target_year += 1
+
+            try:
+                url = f"{BEBOP_URL}?view=calendar&month={target_month:02d}-{target_year}"
+                soup = self._get_soup(url)
+                concerts = self._parse_events(soup)
+                all_concerts.extend(concerts)
+            except Exception as e:
+                logger.warning(f"[{self.source_name}] Error fetching {target_month:02d}-{target_year}: {e}")
+
+        # Deduplicate by date + bands
+        seen = set()
+        unique_concerts = []
+        for c in all_concerts:
+            key = f"{c.date.strftime('%Y-%m-%d')}-{'-'.join(c.bands)}"
+            if key not in seen:
+                seen.add(key)
+                unique_concerts.append(c)
 
         # Cache the results
-        save_cache("scrape_the_bebop", [c.to_dict() for c in concerts])
-        self._log_fetch_complete(len(concerts))
+        save_cache("scrape_the_bebop", [c.to_dict() for c in unique_concerts])
+        self._log_fetch_complete(len(unique_concerts))
 
-        return concerts
+        return unique_concerts
 
     def _parse_events(self, soup) -> List[Concert]:
         """Parse events from the Squarespace events page."""

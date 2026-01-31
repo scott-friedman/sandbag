@@ -34,6 +34,10 @@ from foobos.fetchers.scrapers import (
     CityWineryScraper,
     SofarSoundsScraper,
     BeehiveScraper,
+    ClubPassimScraper,
+    McCarthysToadScraper,
+    SanctuaryMaynardScraper,
+    HobgoblinScraper,
 )
 from foobos.processors import normalize_concerts, deduplicate_concerts, filter_by_genre, filter_past_events
 from foobos.generators import generate_all_html
@@ -350,6 +354,46 @@ def cmd_fetch(args):
         all_concerts.extend(beehive_concerts)
     except Exception as e:
         logger.error(f"The Beehive scrape failed: {e}")
+
+    # Club Passim (folk venue in Cambridge)
+    try:
+        logger.info("Scraping Club Passim...")
+        passim_scraper = ClubPassimScraper()
+        passim_concerts = passim_scraper.fetch()
+        logger.info(f"Club Passim: {len(passim_concerts)} concerts")
+        all_concerts.extend(passim_concerts)
+    except Exception as e:
+        logger.error(f"Club Passim scrape failed: {e}")
+
+    # McCarthy's & Toad (Somerville venues)
+    try:
+        logger.info("Scraping McCarthy's & Toad...")
+        mccarthys_scraper = McCarthysToadScraper()
+        mccarthys_concerts = mccarthys_scraper.fetch()
+        logger.info(f"McCarthy's & Toad: {len(mccarthys_concerts)} concerts")
+        all_concerts.extend(mccarthys_concerts)
+    except Exception as e:
+        logger.error(f"McCarthy's & Toad scrape failed: {e}")
+
+    # Sanctuary Maynard (Maynard concert venue)
+    try:
+        logger.info("Scraping Sanctuary Maynard...")
+        sanctuary_scraper = SanctuaryMaynardScraper()
+        sanctuary_concerts = sanctuary_scraper.fetch()
+        logger.info(f"Sanctuary Maynard: {len(sanctuary_concerts)} concerts")
+        all_concerts.extend(sanctuary_concerts)
+    except Exception as e:
+        logger.error(f"Sanctuary Maynard scrape failed: {e}")
+
+    # Hobgoblin Bar (Brookline jazz bar)
+    try:
+        logger.info("Scraping Hobgoblin Bar...")
+        hobgoblin_scraper = HobgoblinScraper()
+        hobgoblin_concerts = hobgoblin_scraper.fetch()
+        logger.info(f"Hobgoblin Bar: {len(hobgoblin_concerts)} concerts")
+        all_concerts.extend(hobgoblin_concerts)
+    except Exception as e:
+        logger.error(f"Hobgoblin Bar scrape failed: {e}")
 
     # Wally's Cafe Jazz Club (recurring events)
     try:

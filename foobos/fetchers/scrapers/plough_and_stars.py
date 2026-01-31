@@ -140,6 +140,10 @@ class PloughAndStarsScraper(BaseScraper):
             # Parse bands from event name
             bands = self._parse_bands(event_name)
 
+            # Extract price from row text
+            row_text = row.get_text()
+            price_advance, price_door = self._parse_price_from_text(row_text)
+
             return Concert(
                 date=date,
                 venue_id="ploughandstars",
@@ -147,8 +151,8 @@ class PloughAndStarsScraper(BaseScraper):
                 venue_location="Cambridge",
                 bands=bands,
                 age_requirement="21+",
-                price_advance=None,
-                price_door=None,
+                price_advance=price_advance,
+                price_door=price_door,
                 time=time,
                 flags=[],
                 source=self.source_name,
@@ -192,3 +196,14 @@ class PloughAndStarsScraper(BaseScraper):
             bands = [event_name.strip()]
 
         return [b for b in bands if b and len(b) > 1]
+
+    def _parse_price_from_text(self, text: str) -> tuple:
+        """Extract price from row text."""
+        if self._is_free_text(text):
+            return (0, 0)
+        match = re.search(r'\$(\d+)(?:\s*/\s*\$?(\d+))?', text)
+        if match:
+            advance = int(match.group(1))
+            door = int(match.group(2)) if match.group(2) else advance
+            return (advance, door)
+        return (None, None)

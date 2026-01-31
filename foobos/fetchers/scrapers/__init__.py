@@ -20,6 +20,10 @@ from .fallout_shelter import FalloutShelterScraper
 from .city_winery import CityWineryScraper
 from .sofar_sounds import SofarSoundsScraper
 from .beehive import BeehiveScraper
+from .club_passim import ClubPassimScraper
+from .mccarthys_toad import McCarthysToadScraper
+from .sanctuary_maynard import SanctuaryMaynardScraper
+from .hobgoblin import HobgoblinScraper
 
 __all__ = [
     "BaseScraper",
@@ -44,4 +48,8 @@ __all__ = [
     "CityWineryScraper",
     "SofarSoundsScraper",
     "BeehiveScraper",
+    "ClubPassimScraper",
+    "McCarthysToadScraper",
+    "SanctuaryMaynardScraper",
+    "HobgoblinScraper",
 ]

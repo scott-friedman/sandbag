@@ -298,6 +298,11 @@ class BostonGroupieNewsScraper(BaseScraper):
 
     def _extract_price(self, text: str) -> Optional[int]:
         """Extract price from text."""
+        if not text:
+            return None
+        # Handle FREE events
+        if self._is_free_text(text):
+            return 0
         price_match = re.search(r'\$(\d+)', text)
         return int(price_match.group(1)) if price_match else None
 

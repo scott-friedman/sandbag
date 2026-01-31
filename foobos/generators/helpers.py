@@ -23,6 +23,19 @@ def is_livenation_venue(concert: Concert) -> bool:
     return concert.venue_id in LIVE_NATION_VENUES
 
 
+def is_free_event(concert: Concert) -> bool:
+    """Check if concert is a free event (price is $0 or explicitly free)."""
+    # If either price is 0, it's free
+    if concert.price_advance == 0 or concert.price_door == 0:
+        return True
+    # Check price_display for free indicators
+    if concert.price_display:
+        display_lower = concert.price_display.lower()
+        if 'free' in display_lower or display_lower == '$0':
+            return True
+    return False
+
+
 def html_header(
     title: str,
     description: Optional[str] = None,
