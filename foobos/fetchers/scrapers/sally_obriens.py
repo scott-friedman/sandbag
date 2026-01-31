@@ -88,13 +88,20 @@ class SallyOBriensScraper(BaseScraper):
         while i < len(parts) - 3:  # Need at least 4 parts for an event
             part = parts[i].lower()
 
-            # Look for day of week
-            if part in DAYS_OF_WEEK:
-                day_of_week = part
+            # Look for day of week (may be concatenated with month, e.g., "Sunday Febr")
+            day_of_week = None
+            for day in DAYS_OF_WEEK:
+                if part.startswith(day):
+                    day_of_week = day
+                    break
 
+            if day_of_week:
                 # Next should be "Month Day" (e.g., "January 19")
+                # But month might be split across parts (e.g., "Sunday Febr" + "uary 1")
                 if i + 1 < len(parts):
-                    date_part = parts[i + 1]
+                    # Check if day of week part has extra text (start of month)
+                    extra = part[len(day_of_week):].strip()
+                    date_part = extra + parts[i + 1] if extra else parts[i + 1]
                     date = self._parse_month_day(date_part, current_year)
 
                     if date:
