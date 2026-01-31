@@ -11,7 +11,8 @@ from ..models import Concert
 def generate_email_html(
     concerts: List[Concert],
     mode: str = "new",
-    date_str: str = None
+    date_str: str = None,
+    total_count: int = None
 ) -> str:
     """
     Generate HTML email with concert table.
@@ -20,6 +21,7 @@ def generate_email_html(
         concerts: Concerts to include in email
         mode: "new" for new concerts only, "upcoming" for next 3 days fallback
         date_str: Date string for subject (defaults to today)
+        total_count: Total number of concerts in the system
 
     Returns:
         HTML string for email body
@@ -33,7 +35,10 @@ def generate_email_html(
     # Generate subtitle based on mode
     if mode == "new":
         title = "New Shows"
-        subtitle = f"{len(sorted_concerts)} new show{'s' if len(sorted_concerts) != 1 else ''} added"
+        new_count = len(sorted_concerts)
+        subtitle = f"{new_count} new show{'s' if new_count != 1 else ''} added"
+        if total_count is not None:
+            subtitle += f" &middot; {total_count:,} total shows listed"
     else:
         # Upcoming mode - show date range
         today = datetime.now().date()
@@ -175,7 +180,7 @@ def generate_email_html(
     return html
 
 
-def generate_email_subject(mode: str = "new", count: int = 0, date_str: str = None) -> str:
+def generate_email_subject(mode: str = "new", count: int = 0, date_str: str = None, total_count: int = None) -> str:
     """
     Generate email subject line.
 
@@ -183,6 +188,7 @@ def generate_email_subject(mode: str = "new", count: int = 0, date_str: str = No
         mode: "new" for new concerts, "upcoming" for next 3 days fallback
         count: Number of shows
         date_str: Date string (defaults to today)
+        total_count: Total number of concerts in the system
 
     Returns:
         Email subject string
@@ -191,9 +197,10 @@ def generate_email_subject(mode: str = "new", count: int = 0, date_str: str = No
         date_str = datetime.now().strftime("%b %d")
 
     if mode == "new":
+        total_str = f", {total_count:,} total" if total_count is not None else ""
         if count == 1:
-            return f"foobos: 1 new show added ({date_str})"
+            return f"foobos: 1 new show added{total_str} ({date_str})"
         else:
-            return f"foobos: {count} new shows added ({date_str})"
+            return f"foobos: {count} new shows added{total_str} ({date_str})"
     else:
         return f"foobos: Upcoming shows ({date_str})"

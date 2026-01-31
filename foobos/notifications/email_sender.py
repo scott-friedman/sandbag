@@ -69,8 +69,9 @@ def send_daily_notification(
         logger.info(f"No new concerts - showing {len(display_concerts)} concerts in next 3 days")
 
     # Generate email content
-    html_content = generate_email_html(display_concerts, mode=mode)
-    subject = generate_email_subject(mode=mode, count=len(display_concerts))
+    total_count = len(concerts)
+    html_content = generate_email_html(display_concerts, mode=mode, total_count=total_count)
+    subject = generate_email_subject(mode=mode, count=len(display_concerts), total_count=total_count)
 
     if dry_run:
         # Save preview instead of sending
