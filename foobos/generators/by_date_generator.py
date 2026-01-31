@@ -9,7 +9,7 @@ from pathlib import Path
 from collections import defaultdict
 
 from ..models import Concert
-from ..config import OUTPUT_DIR, WEEKS_AHEAD
+from ..config import OUTPUT_DIR, WEEKS_AHEAD, SITE_URL
 from ..utils.date_utils import get_week_range, get_week_label, get_week_number, get_adjusted_week_label
 from .helpers import format_concert_line, html_header, html_footer
 
@@ -83,8 +83,48 @@ def _generate_week_page(week_num: int, concerts: List[Concert], reference_date: 
         day_key = concert.date.strftime("%Y-%m-%d")
         by_day[day_key].append(concert)
 
+    # SEO description and structured data
+    description = f"Boston concerts {week_label}. {len(concerts)} shows at local venues."
+
+    # Build ItemList of MusicEvent schemas
+    event_items = []
+    for i, concert in enumerate(sorted(concerts, key=lambda c: c.date)):
+        event_item = {
+            "@type": "ListItem",
+            "position": i + 1,
+            "item": {
+                "@type": "MusicEvent",
+                "name": f"{', '.join(concert.bands[:3])} at {concert.venue_name}" if concert.bands else concert.venue_name,
+                "startDate": concert.date.strftime("%Y-%m-%d"),
+                "location": {
+                    "@type": "MusicVenue",
+                    "name": concert.venue_name,
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": concert.venue_location,
+                        "addressRegion": "MA"
+                    }
+                },
+                "performer": [{"@type": "MusicGroup", "name": band} for band in concert.bands] if concert.bands else []
+            }
+        }
+        event_items.append(event_item)
+
+    structured_data = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": f"Boston Concerts {week_label}",
+        "numberOfItems": len(concerts),
+        "itemListElement": event_items[:50]  # Limit to 50 items for reasonable size
+    } if concerts else None
+
     # Generate HTML
-    html = html_header(f"Listing By Date - {week_label}")
+    html = html_header(
+        title=f"Listing By Date - {week_label}",
+        description=description,
+        canonical_url=f"{SITE_URL}/by-date.{week_num}.html",
+        structured_data=structured_data
+    )
     html += f'''
 <h2><i>Listing By Date</i></h2>
 

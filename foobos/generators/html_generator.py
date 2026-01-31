@@ -16,6 +16,8 @@ from .by_club_generator import generate_by_club_pages
 from .by_band_generator import generate_by_band_pages
 from .clubs_generator import generate_clubs_page
 from .landing_generator import generate_landing_page
+from .sitemap_generator import generate_sitemap
+from .robots_generator import generate_robots
 
 logger = logging.getLogger(__name__)
 
@@ -43,6 +45,10 @@ def generate_all_html(concerts: List[Concert]) -> None:
     generate_by_date_pages(concerts)
     generate_clubs_page()
     generate_landing_page()
+
+    # Generate SEO files
+    generate_sitemap()
+    generate_robots()
 
     # Save concert data as JSON for reference
     _save_concerts_json(concerts)

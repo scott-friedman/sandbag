@@ -6,7 +6,7 @@ import logging
 import shutil
 from pathlib import Path
 
-from ..config import OUTPUT_DIR, PROJECT_ROOT
+from ..config import OUTPUT_DIR, PROJECT_ROOT, SITE_URL, SITE_NAME
 from .helpers import html_header, html_footer
 
 logger = logging.getLogger(__name__)
@@ -15,7 +15,21 @@ logger = logging.getLogger(__name__)
 def generate_landing_page() -> None:
     """Generate the simple index.html landing page."""
 
-    html = html_header("foobos")
+    # WebSite structured data
+    structured_data = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": SITE_NAME,
+        "url": SITE_URL,
+        "description": "Boston area concert listings and live music guide"
+    }
+
+    html = html_header(
+        title="foobos",
+        description="foobos - Boston area concert listings and live music guide",
+        canonical_url=f"{SITE_URL}/index.html",
+        structured_data=structured_data
+    )
     html += '''
 <center>
 

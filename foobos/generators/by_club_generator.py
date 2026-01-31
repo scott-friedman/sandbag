@@ -10,7 +10,7 @@ from pathlib import Path
 from collections import defaultdict
 
 from ..models import Concert
-from ..config import OUTPUT_DIR
+from ..config import OUTPUT_DIR, SITE_URL
 from .helpers import html_header, html_footer
 
 logger = logging.getLogger(__name__)
@@ -67,7 +67,14 @@ def _band_to_anchor(band: str) -> str:
 
 def _generate_club_page(venues: Dict[str, List[Concert]]) -> None:
     """Generate the single by-club.html page in foopee format."""
-    html = html_header("Listing By Club")
+    venue_count = len([v for v in venues.values() if v])
+    description = f"All {venue_count} venues hosting live music in the Boston area."
+
+    html = html_header(
+        title="Listing By Club",
+        description=description,
+        canonical_url=f"{SITE_URL}/by-club.html"
+    )
     html += '''
 <h2><i>Listing By Club</i></h2>
 

@@ -6,7 +6,7 @@ import json
 import logging
 from pathlib import Path
 
-from ..config import OUTPUT_DIR, DATA_DIR
+from ..config import OUTPUT_DIR, DATA_DIR, SITE_URL
 from .helpers import html_header, html_footer
 
 logger = logging.getLogger(__name__)
@@ -28,7 +28,43 @@ def generate_clubs_page() -> None:
     # Sort venues alphabetically
     venues = sorted(venues, key=lambda v: v.get("name", "").lower())
 
-    html = html_header("foobos - Club Directory")
+    # SEO description
+    description = f"Directory of {len(venues)} live music venues in Greater Boston with addresses and info."
+
+    # Build ItemList of MusicVenue schemas
+    venue_items = []
+    for i, venue in enumerate(venues):
+        venue_item = {
+            "@type": "ListItem",
+            "position": i + 1,
+            "item": {
+                "@type": "MusicVenue",
+                "name": venue.get("name", ""),
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": venue.get("address", ""),
+                    "addressLocality": venue.get("location", "")
+                }
+            }
+        }
+        if venue.get("website"):
+            venue_item["item"]["url"] = venue.get("website")
+        venue_items.append(venue_item)
+
+    structured_data = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Boston Live Music Venues",
+        "numberOfItems": len(venues),
+        "itemListElement": venue_items
+    }
+
+    html = html_header(
+        title="foobos - Club Directory",
+        description=description,
+        canonical_url=f"{SITE_URL}/clubs.html",
+        structured_data=structured_data
+    )
     html += '''
 <h2><i>Club Directory</i></h2>
 

@@ -2,14 +2,32 @@
 Helper functions for HTML generation.
 """
 
+import json
 from html import escape
+from typing import Optional, Dict, Any
 
 from ..models import Concert
-from ..config import GA4_MEASUREMENT_ID, ANALYTICS_ENABLED
+from ..config import GA4_MEASUREMENT_ID, ANALYTICS_ENABLED, SITE_URL, DEFAULT_OG_IMAGE, SITE_NAME
 
 
-def html_header(title: str) -> str:
-    """Generate HTML header with retro styling and optional analytics."""
+def html_header(
+    title: str,
+    description: Optional[str] = None,
+    canonical_url: Optional[str] = None,
+    og_type: str = "website",
+    og_image: Optional[str] = None,
+    structured_data: Optional[Dict[str, Any]] = None
+) -> str:
+    """Generate HTML header with retro styling, SEO meta tags, and optional analytics.
+
+    Args:
+        title: Page title
+        description: Meta description for SEO
+        canonical_url: Canonical URL for the page
+        og_type: Open Graph type (default: "website")
+        og_image: Open Graph image URL (defaults to DEFAULT_OG_IMAGE)
+        structured_data: JSON-LD structured data dict for schema.org
+    """
     analytics_script = ""
     if ANALYTICS_ENABLED and GA4_MEASUREMENT_ID:
         analytics_script = f'''
@@ -41,13 +59,47 @@ def html_header(title: str) -> str:
     }});
     return false;
   }};
-</script>
-'''
+</script>'''
+
+    # SEO meta tags
+    meta_tags = '<meta charset="UTF-8">\n'
+    meta_tags += '<meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
+
+    if description:
+        meta_tags += f'<meta name="description" content="{escape(description)}">\n'
+
+    if canonical_url:
+        meta_tags += f'<link rel="canonical" href="{canonical_url}">\n'
+
+    # Open Graph tags
+    og_image_url = og_image or DEFAULT_OG_IMAGE
+    og_url = canonical_url or SITE_URL
+    og_desc = description or ""
+
+    meta_tags += f'<meta property="og:title" content="{escape(title)}">\n'
+    if og_desc:
+        meta_tags += f'<meta property="og:description" content="{escape(og_desc)}">\n'
+    meta_tags += f'<meta property="og:type" content="{og_type}">\n'
+    meta_tags += f'<meta property="og:url" content="{og_url}">\n'
+    meta_tags += f'<meta property="og:site_name" content="{SITE_NAME}">\n'
+    meta_tags += f'<meta property="og:image" content="{og_image_url}">\n'
+
+    # Twitter Card tags
+    meta_tags += '<meta name="twitter:card" content="summary_large_image">\n'
+    meta_tags += f'<meta name="twitter:title" content="{escape(title)}">\n'
+    if og_desc:
+        meta_tags += f'<meta name="twitter:description" content="{escape(og_desc)}">\n'
+    meta_tags += f'<meta name="twitter:image" content="{og_image_url}">\n'
+
+    # JSON-LD structured data
+    json_ld = ""
+    if structured_data:
+        json_ld = f'\n<script type="application/ld+json">\n{json.dumps(structured_data, indent=2)}\n</script>\n'
 
     return f'''<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>{title}</title>{analytics_script}
+{meta_tags}<title>{title}</title>{analytics_script}{json_ld}
 </head>
 <body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080">
 '''

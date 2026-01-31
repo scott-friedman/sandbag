@@ -84,6 +84,10 @@ SITE_TITLE = "foobos"
 SITE_DESCRIPTION = "Boston area punk/hardcore/ska/indie shows"
 SITE_EMAIL = "foobos@example.com"
 
+# SEO Configuration
+SITE_URL = "https://foobos.net"
+DEFAULT_OG_IMAGE = f"{SITE_URL}/in-sane.JPG"
+
 # Analytics Configuration
 # Set your Google Analytics 4 Measurement ID (format: G-XXXXXXXXXX)
 # Get this from: Google Analytics > Admin > Data Streams > Web > Measurement ID

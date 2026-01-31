@@ -10,7 +10,7 @@ import logging
 from pathlib import Path
 
 from ..models import Concert
-from ..config import OUTPUT_DIR, SITE_NAME, SITE_TITLE, SITE_DESCRIPTION, SITE_EMAIL, WEEKS_AHEAD
+from ..config import OUTPUT_DIR, SITE_NAME, SITE_TITLE, SITE_DESCRIPTION, SITE_EMAIL, WEEKS_AHEAD, SITE_URL
 from ..utils.date_utils import get_week_range, get_week_label, get_adjusted_week_label
 from .helpers import html_header, html_footer
 
@@ -39,7 +39,14 @@ def generate_index(
     bands_list = _generate_bands_list(band_info) if band_info else ""
     venues_list = _generate_venues_list(venue_info) if venue_info else ""
 
-    html = html_header(f"The List (updated {update_date})")
+    # SEO description
+    description = f"Boston concert listings - {len(concerts)} upcoming shows at local venues. Updated {update_date}."
+
+    html = html_header(
+        title=f"The List (updated {update_date})",
+        description=description,
+        canonical_url=f"{SITE_URL}/list.html"
+    )
     html += f'''
 <h2><i>The List (updated {update_date})</i></h2>
 
