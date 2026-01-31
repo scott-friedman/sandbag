@@ -8,6 +8,7 @@ from pathlib import Path
 
 from ..config import OUTPUT_DIR, DATA_DIR, SITE_URL
 from .helpers import html_header, html_footer
+from ..utils.venue_registry import format_location
 
 logger = logging.getLogger(__name__)
 
@@ -28,8 +29,12 @@ def generate_clubs_page() -> None:
     # Sort venues alphabetically
     venues = sorted(venues, key=lambda v: v.get("name", "").lower())
 
+    # Separate active and closed venues for counting
+    active_venues = [v for v in venues if v.get("status") != "closed"]
+    closed_venues = [v for v in venues if v.get("status") == "closed"]
+
     # SEO description
-    description = f"Directory of {len(venues)} live music venues in Greater Boston with addresses and info."
+    description = f"Directory of {len(active_venues)} live music venues across New England with addresses and info."
 
     # Build ItemList of MusicVenue schemas
     venue_items = []
@@ -73,7 +78,7 @@ def generate_clubs_page() -> None:
 <hr>
 
 <p>
-Venues that frequently book punk, hardcore, and metal shows in the Greater Boston area.
+Live music venues across New England.
 </p>
 
 '''
@@ -82,15 +87,35 @@ Venues that frequently book punk, hardcore, and metal shows in the Greater Bosto
         venue_id = venue.get("id", "")
         name = venue.get("name", "Unknown Venue")
         location = venue.get("location", "")
+        state = venue.get("state", "MA")
         address = venue.get("address", "")
         phone = venue.get("phone", "")
         website = venue.get("website", "")
         capacity = venue.get("capacity", "")
         notes = venue.get("notes", "")
+        status = venue.get("status", "")
+        closed_year = venue.get("closed_year", "")
 
-        html += f'<p><a name="{venue_id}"><b>{name}</b></a>'
-        if location:
-            html += f", {location}"
+        # Format location with state for non-MA venues
+        display_location = format_location(venue_id)
+        if not display_location:
+            # Fallback: add state suffix for non-MA
+            if state and state != "MA" and location:
+                display_location = f"{location}, {state}"
+            else:
+                display_location = location
+
+        # Build venue name with closed indicator
+        display_name = name
+        if status == "closed":
+            if closed_year:
+                display_name = f"{name} (Closed {closed_year})"
+            else:
+                display_name = f"{name} (Closed)"
+
+        html += f'<p><a name="{venue_id}"><b>{display_name}</b></a>'
+        if display_location:
+            html += f", {display_location}"
         html += "<br>\n"
 
         if address:
@@ -99,13 +124,13 @@ Venues that frequently book punk, hardcore, and metal shows in the Greater Bosto
         details = []
         if phone:
             details.append(phone)
-        if capacity:
+        if capacity and status != "closed":
             details.append(f"Capacity: {capacity}")
 
         if details:
             html += f"&nbsp;&nbsp;&nbsp;{' | '.join(details)}<br>\n"
 
-        if website:
+        if website and status != "closed":
             html += f'&nbsp;&nbsp;&nbsp;<a href="{website}">{website}</a><br>\n'
 
         if notes:

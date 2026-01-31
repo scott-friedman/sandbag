@@ -4,236 +4,1523 @@
       "id": "middleeast",
       "name": "Middle East",
       "location": "Cambridge",
+      "state": "MA",
       "address": "472-480 Massachusetts Ave, Cambridge, MA 02139",
       "phone": "(617) 864-3278",
       "website": "https://mideastclub.com",
       "capacity": 575,
       "rooms": ["Downstairs", "Upstairs", "Corner", "Zuzu"],
-      "ticketmaster_id": "KovZpZAJeldA"
+      "ticketmaster_id": "KovZpZAJeldA",
+      "id_variants": ["middleeast", "middle_east", "middle-east", "themiddleeast", "the_middle_east"]
+    },
+    {
+      "id": "middleeast_down",
+      "name": "Middle East Downstairs",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "472-480 Massachusetts Ave, Cambridge, MA 02139",
+      "capacity": 575,
+      "id_variants": ["middleeast_down", "middleeast_downstairs", "middle_east_-_downstairs", "middle_east-_downstairs", "middle_east_downstairs"]
+    },
+    {
+      "id": "middleeast_up",
+      "name": "Middle East Upstairs",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "472-480 Massachusetts Ave, Cambridge, MA 02139",
+      "capacity": 194,
+      "id_variants": ["middleeast_up", "middleeast_upstairs", "middle_east_-_upstairs", "middle_east_upstairs"]
+    },
+    {
+      "id": "middleeast_corner",
+      "name": "Middle East Corner",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "472-480 Massachusetts Ave, Cambridge, MA 02139",
+      "capacity": 100,
+      "id_variants": ["middleeast_corner", "middle_east_-_corner/bakery", "middle_east_corner", "middleeast_bakery"]
+    },
+    {
+      "id": "middleeast_zuzu",
+      "name": "Middle East ZuZu",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "472-480 Massachusetts Ave, Cambridge, MA 02139",
+      "capacity": 150,
+      "id_variants": ["middleeast_zuzu", "middle_east_-_zuzu", "zuzu"]
     },
     {
       "id": "paradise",
       "name": "Paradise Rock Club",
       "location": "Boston",
+      "state": "MA",
       "address": "967 Commonwealth Ave, Boston, MA 02215",
       "phone": "(617) 562-8800",
       "website": "https://crossroadspresents.com/paradise-rock-club",
       "capacity": 933,
-      "ticketmaster_id": "KovZpZAJek7A"
+      "ticketmaster_id": "KovZpZAJek7A",
+      "id_variants": ["paradise", "paradise_rock_club", "paradise_rock", "paradiserock", "paradise_rock_club_presented_b"]
     },
     {
       "id": "sinclair",
       "name": "The Sinclair",
       "location": "Cambridge",
+      "state": "MA",
       "address": "52 Church St, Cambridge, MA 02138",
       "phone": "(617) 547-5200",
       "website": "https://sinclaircambridge.com",
       "capacity": 525,
-      "ticketmaster_id": "KovZpZAJekdA"
+      "ticketmaster_id": "KovZpZAJekdA",
+      "id_variants": ["sinclair", "thesinclair", "the_sinclair", "sinclair_cambridge", "the_sinclair_music_hall", "the_sinclair_-_cambridge"]
     },
     {
-      "id": "greatscott",
-      "name": "Great Scott",
-      "location": "Allston",
-      "address": "1222 Commonwealth Ave, Boston, MA 02134",
-      "capacity": 240,
-      "notes": "Closed 2020, reopened location TBD"
-    },
-    {
-      "id": "brightonmusichall",
+      "id": "brighton",
       "name": "Brighton Music Hall",
       "location": "Allston",
+      "state": "MA",
       "address": "158 Brighton Ave, Allston, MA 02134",
       "phone": "(617) 779-0140",
       "website": "https://crossroadspresents.com/brighton-music-hall",
       "capacity": 450,
-      "ticketmaster_id": "KovZpZAJelJA"
+      "ticketmaster_id": "KovZpZAJelJA",
+      "id_variants": ["brighton", "brightonmusichall", "brighton_music_hall", "brightonmusic", "brighton_music_hall_presented_"]
     },
     {
       "id": "royale",
       "name": "Royale",
       "location": "Boston",
+      "state": "MA",
       "address": "279 Tremont St, Boston, MA 02116",
       "phone": "(617) 338-7699",
       "website": "https://royaleboston.com",
       "capacity": 1200,
-      "ticketmaster_id": "KovZpZAJe61A"
+      "ticketmaster_id": "KovZpZAJe61A",
+      "id_variants": ["royale", "royale_boston", "royaleboston"]
     },
     {
       "id": "palladium",
       "name": "The Palladium",
       "location": "Worcester",
+      "state": "MA",
       "address": "261 Main St, Worcester, MA 01608",
       "phone": "(508) 797-9696",
       "website": "https://thepalladium.net",
       "capacity": 2000,
       "rooms": ["Mainstage", "Upstairs"],
-      "ticketmaster_id": "KovZpZAJeAaA"
+      "ticketmaster_id": "KovZpZAJeAaA",
+      "id_variants": ["palladium", "thepalladium", "the_palladium", "palladium-ma"]
     },
     {
       "id": "obriens",
       "name": "O'Brien's Pub",
       "location": "Allston",
+      "state": "MA",
       "address": "3 Harvard Ave, Allston, MA 02134",
       "phone": "(617) 782-6245",
       "capacity": 100,
-      "notes": "Key DIY/punk venue"
+      "notes": "Key DIY/punk venue",
+      "id_variants": ["obriens", "obriens_pub", "obrien", "o'brien's_pub", "o'briens"]
     },
     {
       "id": "sallyobriens",
       "name": "Sally O'Brien's",
       "location": "Somerville",
+      "state": "MA",
       "address": "335 Somerville Ave, Somerville, MA 02143",
       "phone": "(617) 666-3589",
       "website": "https://www.sallyobriensbar.com",
       "capacity": 75,
-      "notes": "Live music venue in Union Square"
+      "notes": "Live music venue in Union Square",
+      "id_variants": ["sallyobriens", "sally_obriens", "sallyobrien", "sally_obrien", "sally_o'brien's"]
     },
     {
       "id": "midway",
       "name": "The Midway Cafe",
       "location": "Jamaica Plain",
+      "state": "MA",
       "address": "3496 Washington St, Jamaica Plain, MA 02130",
       "phone": "(617) 524-9038",
       "website": "https://midwaycafe.com",
       "capacity": 100,
-      "notes": "Long-running punk/queer venue"
+      "notes": "Long-running punk/queer venue",
+      "id_variants": ["midway", "midway_cafe", "midwaycafe", "themidway", "themidwaycafe"]
     },
     {
       "id": "oncesomerville",
       "name": "ONCE Somerville",
       "location": "Somerville",
+      "state": "MA",
       "address": "156 Highland Ave, Somerville, MA 02143",
       "website": "https://oncesomerville.com",
-      "capacity": 400
+      "capacity": 400,
+      "id_variants": ["oncesomerville", "once_somerville", "once"]
     },
     {
-      "id": "crystalballroom",
+      "id": "crystal",
       "name": "Crystal Ballroom",
       "location": "Somerville",
+      "state": "MA",
       "address": "55 Davis Square, Somerville, MA 02144",
-      "capacity": 400
+      "capacity": 400,
+      "id_variants": ["crystal", "crystalballroom", "crystal_ballroom", "crystal_ballroom_at_somerville"]
     },
     {
-      "id": "cit",
+      "id": "cuisineenlocale",
       "name": "Cuisine en Locale",
       "location": "Somerville",
+      "state": "MA",
       "address": "156 Highland Ave, Somerville, MA 02143",
       "capacity": 200,
-      "notes": "DIY all-ages space"
+      "notes": "DIY all-ages space",
+      "id_variants": ["cuisineenlocale", "cuisine_en_locale", "cit"]
     },
     {
       "id": "bignight",
       "name": "Big Night Live",
       "location": "Boston",
+      "state": "MA",
       "address": "110 Causeway St, Boston, MA 02114",
       "website": "https://bignightlive.com",
       "capacity": 1500,
-      "ticketmaster_id": "KovZpakA7e"
+      "ticketmaster_id": "KovZpakA7e",
+      "id_variants": ["bignight", "bignightlive", "big_night_live"]
     },
     {
       "id": "roadrunner",
       "name": "Roadrunner",
       "location": "Boston",
+      "state": "MA",
       "address": "89 Guest St, Boston, MA 02135",
       "website": "https://roadrunnerboston.com",
       "capacity": 3500,
-      "ticketmaster_id": "KovZpakS6e"
+      "ticketmaster_id": "KovZpakS6e",
+      "id_variants": ["roadrunner", "roadrunner-boston", "roadrunnerboston"]
     },
     {
-      "id": "mgh",
+      "id": "mgm",
       "name": "MGM Music Hall",
       "location": "Boston",
+      "state": "MA",
       "address": "2 Lansdowne St, Boston, MA 02215",
       "website": "https://mgmmusichall.com",
       "capacity": 5000,
-      "ticketmaster_id": "KovZ917ALf7"
+      "ticketmaster_id": "KovZ917ALf7",
+      "id_variants": ["mgm", "mgh", "mgm_music_hall", "mgm_music_hall_at_fenway", "mgmmusichall"]
     },
     {
       "id": "td",
       "name": "TD Garden",
       "location": "Boston",
+      "state": "MA",
       "address": "100 Legends Way, Boston, MA 02114",
       "website": "https://tdgarden.com",
       "capacity": 19580,
-      "ticketmaster_id": "KovZpZAE6elA"
+      "ticketmaster_id": "KovZpZAE6elA",
+      "id_variants": ["td", "tdgarden", "td_garden"]
     },
     {
       "id": "orpheum",
       "name": "Orpheum Theatre",
       "location": "Boston",
+      "state": "MA",
       "address": "1 Hamilton Pl, Boston, MA 02108",
       "capacity": 2700,
-      "ticketmaster_id": "KovZpZAJellA"
+      "ticketmaster_id": "KovZpZAJellA",
+      "id_variants": ["orpheum", "orpheum_theatre", "orpheum_theatre_presented_by_c"]
     },
     {
-      "id": "houseoflues",
+      "id": "hob",
       "name": "House of Blues",
       "location": "Boston",
+      "state": "MA",
       "address": "15 Lansdowne St, Boston, MA 02215",
       "phone": "(888) 693-2583",
       "website": "https://houseofblues.com/boston",
       "capacity": 2425,
-      "ticketmaster_id": "KovZpZAJekAA"
+      "ticketmaster_id": "KovZpZAJekAA",
+      "id_variants": ["hob", "hob_boston", "houseoflues", "houseofblues", "house_of_blues", "citizens_house_of_blues_boston"]
     },
     {
       "id": "sonia",
       "name": "Sonia",
       "location": "Cambridge",
+      "state": "MA",
       "address": "10 Brookline St, Cambridge, MA 02139",
       "capacity": 350,
-      "notes": "Above Middle East"
+      "notes": "Above Middle East",
+      "id_variants": ["sonia", "sonia_live_music_venue"]
     },
     {
       "id": "lilypad",
       "name": "The Lilypad",
       "location": "Cambridge",
+      "state": "MA",
       "address": "1353 Cambridge St, Cambridge, MA 02139",
       "capacity": 75,
-      "notes": "Intimate experimental/noise venue"
+      "notes": "Intimate experimental/noise venue",
+      "id_variants": ["lilypad", "thelilypad", "the_lilypad"]
     },
     {
-      "id": "thetamworth",
-      "name": "The Tamworth Lyceum",
-      "location": "Tamworth",
-      "address": "3 Depot Rd, Tamworth, NH 03886",
-      "capacity": 200,
-      "notes": "NH venue - punk-friendly"
-    },
-    {
-      "id": "thechannel",
-      "name": "The Channel",
-      "location": "Boston",
-      "address": "25 Necco St, Boston, MA",
-      "notes": "CLOSED - Historic punk venue"
-    },
-    {
-      "id": "therathskeller",
-      "name": "The Rat",
-      "location": "Boston",
-      "address": "528 Commonwealth Ave, Boston, MA",
-      "notes": "CLOSED - Legendary punk venue 1974-1997"
-    },
-    {
-      "id": "wallys_cafe",
+      "id": "wallys",
       "name": "Wally's Cafe Jazz Club",
       "location": "Boston",
+      "state": "MA",
       "address": "427 Massachusetts Ave, Boston, MA 02118",
-      "website": "https://wallyscafe.com"
+      "website": "https://wallyscafe.com",
+      "id_variants": ["wallys", "wallys_cafe", "wallys_cafe_jazz_club", "wally's_cafe", "wally's_cafe_jazz_club"]
     },
     {
       "id": "wallys_pub_hampton",
       "name": "Wally's Pub",
       "location": "Hampton",
+      "state": "NH",
       "address": "144 Ashworth Ave, Hampton, NH 03842",
-      "website": "https://wallyspub.com"
+      "website": "https://wallyspub.com",
+      "id_variants": ["wallys_pub_hampton", "wallys_pub", "wally's_pub"]
     },
     {
-      "id": "sofar_sounds",
+      "id": "sofar",
       "name": "Sofar Sounds",
       "location": "Boston",
+      "state": "MA",
       "website": "https://www.sofarsounds.com/cities/boston",
-      "notes": "Secret intimate concerts at various locations. Venue revealed 36 hours before show."
+      "notes": "Secret intimate concerts at various locations. Venue revealed 36 hours before show.",
+      "id_variants": ["sofar", "sofar_sounds", "sofarsounds"]
+    },
+    {
+      "id": "lizardlounge",
+      "name": "Lizard Lounge",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "1667 Massachusetts Ave, Cambridge, MA 02138",
+      "phone": "(617) 547-0759",
+      "website": "https://lizardloungeclub.com",
+      "capacity": 100,
+      "id_variants": ["lizardlounge", "lizard_lounge", "thelizardlounge"]
+    },
+    {
+      "id": "jungle",
+      "name": "Jungle",
+      "location": "Somerville",
+      "state": "MA",
+      "address": "6 Sanborn Ct, Somerville, MA 02143",
+      "website": "https://www.junglesomerville.com",
+      "capacity": 250,
+      "id_variants": ["jungle", "jungle_tix", "junglesomerville"]
+    },
+    {
+      "id": "deepcuts",
+      "name": "Deep Cuts",
+      "location": "Medford",
+      "state": "MA",
+      "address": "196 Boston Ave, Medford, MA 02155",
+      "capacity": 100,
+      "id_variants": ["deepcuts", "deep_cuts", "deep-cuts"]
+    },
+    {
+      "id": "grotonhill",
+      "name": "Groton Hill Music Center",
+      "location": "Groton",
+      "state": "MA",
+      "address": "122 Old Ayer Rd, Groton, MA 01450",
+      "website": "https://grotonhill.org",
+      "capacity": 1000,
+      "id_variants": ["grotonhill", "groton_hill_music_center", "groton-hill", "groton_hill"]
+    },
+    {
+      "id": "symphonyhall",
+      "name": "Symphony Hall",
+      "location": "Boston",
+      "state": "MA",
+      "address": "301 Massachusetts Ave, Boston, MA 02115",
+      "website": "https://www.bso.org",
+      "capacity": 2625,
+      "id_variants": ["symphonyhall", "symphony_hall", "symphony-hall", "bso", "boston_symphony_orchestra", "boston_symphony_hall"]
+    },
+    {
+      "id": "berklee",
+      "name": "Berklee Performance Center",
+      "location": "Boston",
+      "state": "MA",
+      "address": "136 Massachusetts Ave, Boston, MA 02115",
+      "website": "https://www.berklee.edu/bpc",
+      "capacity": 1200,
+      "id_variants": ["berklee", "berklee_bpc", "berklee_performing_arts_center", "berklee_performance_center"]
+    },
+    {
+      "id": "cafe939",
+      "name": "Cafe 939",
+      "location": "Boston",
+      "state": "MA",
+      "address": "939 Boylston St, Boston, MA 02115",
+      "website": "https://www.berklee.edu/cafe939",
+      "capacity": 200,
+      "notes": "Berklee student-run venue",
+      "id_variants": ["cafe939", "cafe_939", "red_room_at_cafe_939", "redroom"]
+    },
+    {
+      "id": "bijou",
+      "name": "Bijou",
+      "location": "Boston",
+      "state": "MA",
+      "address": "51 Stuart St, Boston, MA 02116",
+      "website": "https://bijouboston.com",
+      "capacity": 600,
+      "id_variants": ["bijou", "bijou_nightclub", "bijouboston"]
+    },
+    {
+      "id": "citywinery",
+      "name": "City Winery",
+      "location": "Boston",
+      "state": "MA",
+      "address": "80 Beverly St, Boston, MA 02114",
+      "website": "https://citywinery.com/boston",
+      "capacity": 300,
+      "id_variants": ["citywinery", "city_winery", "citywinery_boston"]
+    },
+    {
+      "id": "rockwell",
+      "name": "The Rockwell",
+      "location": "Somerville",
+      "state": "MA",
+      "address": "255 Elm St, Somerville, MA 02144",
+      "website": "https://therockwell.org",
+      "capacity": 200,
+      "id_variants": ["rockwell", "therockwell", "the_rockwell"]
+    },
+    {
+      "id": "scullers",
+      "name": "Scullers Jazz Club",
+      "location": "Boston",
+      "state": "MA",
+      "address": "400 Soldiers Field Rd, Boston, MA 02134",
+      "website": "https://scullersjazz.com",
+      "capacity": 200,
+      "id_variants": ["scullers", "scullers_jazz_club", "scullersjazz"]
+    },
+    {
+      "id": "fenway",
+      "name": "Fenway Park",
+      "location": "Boston",
+      "state": "MA",
+      "address": "4 Jersey St, Boston, MA 02215",
+      "website": "https://www.mlb.com/redsox/ballpark",
+      "capacity": 37755,
+      "id_variants": ["fenway", "fenway_park", "fenwaypark"]
+    },
+    {
+      "id": "pavilion",
+      "name": "Leader Bank Pavilion",
+      "location": "Boston",
+      "state": "MA",
+      "address": "290 Northern Ave, Boston, MA 02210",
+      "website": "https://www.livenation.com/venue/KovZpZAE6klA",
+      "capacity": 5000,
+      "id_variants": ["pavilion", "leader_bank_pavilion", "leaderbankpavilion", "rockland_trust_bank_pavilion", "blue_hills_bank_pavilion"]
+    },
+    {
+      "id": "xfinity",
+      "name": "Xfinity Center",
+      "location": "Mansfield",
+      "state": "MA",
+      "address": "885 S Main St, Mansfield, MA 02048",
+      "website": "https://www.livenation.com/venue/KovZpZAE6e6A",
+      "capacity": 19900,
+      "id_variants": ["xfinity", "xfinity_center", "xfinity_center_-_ma", "greatlawn", "greatwoods"]
+    },
+    {
+      "id": "blueocean",
+      "name": "Blue Ocean Music Hall",
+      "location": "Salisbury",
+      "state": "MA",
+      "address": "4 Ocean Front North, Salisbury, MA 01952",
+      "website": "https://blueoceanmusichall.com",
+      "capacity": 500,
+      "id_variants": ["blueocean", "blue_ocean", "blue_ocean_music_hall", "blueoceanmusichall"]
+    },
+    {
+      "id": "chevalier",
+      "name": "Chevalier Theatre",
+      "location": "Medford",
+      "state": "MA",
+      "address": "30 Forest St, Medford, MA 02155",
+      "website": "https://chevaliertheatre.com",
+      "capacity": 1900,
+      "id_variants": ["chevalier", "chevalier_theatre", "chevaliertheatre"]
+    },
+    {
+      "id": "lynn",
+      "name": "Lynn Auditorium",
+      "location": "Lynn",
+      "state": "MA",
+      "address": "3 City Hall Square, Lynn, MA 01901",
+      "website": "https://lynnauditorium.com",
+      "capacity": 2000,
+      "id_variants": ["lynn", "lynn_auditorium", "lynn_memorial_auditorium", "lynnauditorium"]
+    },
+    {
+      "id": "memoire",
+      "name": "Memoire",
+      "location": "Boston",
+      "state": "MA",
+      "address": "1 Broadway, Boston, MA 02127",
+      "capacity": 400,
+      "id_variants": ["memoire", "memoire_boston"]
+    },
+    {
+      "id": "centro",
+      "name": "Centro Nightclub",
+      "location": "Boston",
+      "state": "MA",
+      "address": "11 Lansdowne St, Boston, MA 02215",
+      "capacity": 500,
+      "id_variants": ["centro", "centro_nightclub", "centro_night_club"]
+    },
+    {
+      "id": "thegrand",
+      "name": "The Grand",
+      "location": "Boston",
+      "state": "MA",
+      "address": "58 Seaport Blvd, Boston, MA 02210",
+      "website": "https://thegrandboston.com",
+      "capacity": 2000,
+      "id_variants": ["thegrand", "the_grand", "the_grand_(boston)", "grandboston"]
+    },
+    {
+      "id": "hanover",
+      "name": "Hanover Theatre",
+      "location": "Worcester",
+      "state": "MA",
+      "address": "2 Southbridge St, Worcester, MA 01608",
+      "website": "https://thehanovertheatre.org",
+      "capacity": 2300,
+      "id_variants": ["hanover", "hanover_theatre", "the_hanover_theatre", "hanovertheatre"]
+    },
+    {
+      "id": "bochcenter",
+      "name": "Boch Center - Wang Theatre",
+      "location": "Boston",
+      "state": "MA",
+      "address": "270 Tremont St, Boston, MA 02116",
+      "website": "https://www.bochcenter.org",
+      "capacity": 3500,
+      "id_variants": ["bochcenter", "boch_center", "wang", "wang_theatre", "wangtheatre"]
+    },
+    {
+      "id": "shubert",
+      "name": "Boch Center - Shubert Theatre",
+      "location": "Boston",
+      "state": "MA",
+      "address": "265 Tremont St, Boston, MA 02116",
+      "website": "https://www.bochcenter.org",
+      "capacity": 1500,
+      "id_variants": ["shubert", "shubert_theatre", "shuberttheatre", "boch_shubert"]
+    },
+    {
+      "id": "wilbur",
+      "name": "Wilbur Theatre",
+      "location": "Boston",
+      "state": "MA",
+      "address": "246 Tremont St, Boston, MA 02116",
+      "website": "https://thewilbur.com",
+      "capacity": 1200,
+      "id_variants": ["wilbur", "wilbur_theatre", "thewilbur", "wilburtheatre"]
+    },
+    {
+      "id": "regattabar",
+      "name": "Regattabar",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "1 Bennett St, Cambridge, MA 02138",
+      "website": "https://regattabarjazz.com",
+      "capacity": 200,
+      "notes": "Jazz club in Charles Hotel",
+      "id_variants": ["regattabar", "regatta_bar"]
+    },
+    {
+      "id": "passim",
+      "name": "Club Passim",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "47 Palmer St, Cambridge, MA 02138",
+      "phone": "(617) 492-7679",
+      "website": "https://passim.org",
+      "capacity": 100,
+      "notes": "Historic folk venue since 1958",
+      "id_variants": ["passim", "clubpassim", "club_passim"]
+    },
+    {
+      "id": "redroom",
+      "name": "Red Room at Cafe 939",
+      "location": "Boston",
+      "state": "MA",
+      "address": "939 Boylston St, Boston, MA 02115",
+      "capacity": 200,
+      "id_variants": ["redroom", "red_room", "red_room_at_cafe_939"]
+    },
+    {
+      "id": "artsemerson",
+      "name": "Emerson Cutler Majestic Theatre",
+      "location": "Boston",
+      "state": "MA",
+      "address": "219 Tremont St, Boston, MA 02116",
+      "website": "https://artsemerson.org",
+      "capacity": 1700,
+      "id_variants": ["artsemerson", "cutlermajestic", "cutler_majestic", "majestic_theatre"]
+    },
+    {
+      "id": "burren",
+      "name": "The Burren",
+      "location": "Somerville",
+      "state": "MA",
+      "address": "247 Elm St, Somerville, MA 02144",
+      "phone": "(617) 776-6896",
+      "website": "https://burren.com",
+      "capacity": 120,
+      "notes": "Irish pub with backroom venue",
+      "id_variants": ["burren", "theburren", "the_burren"]
+    },
+    {
+      "id": "atwoods",
+      "name": "Atwood's Tavern",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "877 Cambridge St, Cambridge, MA 02141",
+      "website": "https://atwoodstavern.com",
+      "capacity": 80,
+      "id_variants": ["atwoods", "atwoods_tavern", "atwoodstavern"]
+    },
+    {
+      "id": "cantab",
+      "name": "Cantab Lounge",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "738 Massachusetts Ave, Cambridge, MA 02139",
+      "capacity": 100,
+      "notes": "Bluegrass and rock venue",
+      "id_variants": ["cantab", "cantablounge", "cantab_lounge"]
+    },
+    {
+      "id": "plough",
+      "name": "The Plough & Stars",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "912 Massachusetts Ave, Cambridge, MA 02139",
+      "phone": "(617) 576-0032",
+      "website": "https://ploughandstars.com",
+      "capacity": 80,
+      "id_variants": ["plough", "ploughstars", "plough_and_stars", "ploughandstars"]
+    },
+    {
+      "id": "charlies",
+      "name": "Charlie's Kitchen",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "10 Eliot St, Cambridge, MA 02138",
+      "capacity": 100,
+      "notes": "Harvard Square dive bar with live music",
+      "id_variants": ["charlies", "charlies_kitchen", "charlieskitchen"]
+    },
+    {
+      "id": "aeronaut",
+      "name": "Aeronaut Brewing",
+      "location": "Somerville",
+      "state": "MA",
+      "address": "14 Tyler St, Somerville, MA 02143",
+      "website": "https://aeronautbrewing.com",
+      "capacity": 200,
+      "id_variants": ["aeronaut", "aeronaut_brewing", "aeronautbrewing"]
+    },
+    {
+      "id": "nightshift",
+      "name": "Night Shift Brewing",
+      "location": "Everett",
+      "state": "MA",
+      "address": "87 Santilli Highway, Everett, MA 02149",
+      "website": "https://nightshiftbrewing.com",
+      "capacity": 300,
+      "id_variants": ["nightshift", "night_shift", "nightshiftbrewing"]
+    },
+    {
+      "id": "trillium",
+      "name": "Trillium Brewing",
+      "location": "Boston",
+      "state": "MA",
+      "address": "50 Thomson Pl, Boston, MA 02210",
+      "website": "https://www.trilliumbrewing.com",
+      "capacity": 200,
+      "id_variants": ["trillium", "trillium_brewing", "trilliumbrewing"]
+    },
+    {
+      "id": "notch",
+      "name": "Notch Brewery",
+      "location": "Salem",
+      "state": "MA",
+      "address": "283 Derby St, Salem, MA 01970",
+      "website": "https://notchbrewing.com",
+      "capacity": 150,
+      "id_variants": ["notch", "notch_brewery", "notchbrewing"]
+    },
+    {
+      "id": "jacksabbey",
+      "name": "Jack's Abby",
+      "location": "Framingham",
+      "state": "MA",
+      "address": "100 Clinton St, Framingham, MA 01702",
+      "website": "https://jacksabby.com",
+      "capacity": 300,
+      "id_variants": ["jacksabbey", "jacks_abby", "jacksabby"]
+    },
+    {
+      "id": "hopkinsville",
+      "name": "Hopkinton Center for the Arts",
+      "location": "Hopkinton",
+      "state": "MA",
+      "address": "98 Hayden Rowe St, Hopkinton, MA 01748",
+      "website": "https://www.hopartscenter.org",
+      "capacity": 250,
+      "id_variants": ["hopkinsville", "hopkinton_center", "hopartscenter"]
+    },
+    {
+      "id": "narrows",
+      "name": "Narrows Center for the Arts",
+      "location": "Fall River",
+      "state": "MA",
+      "address": "16 Anawan St, Fall River, MA 02721",
+      "website": "https://narrowscenter.org",
+      "capacity": 350,
+      "id_variants": ["narrows", "narrowscenter", "narrows_center"]
+    },
+    {
+      "id": "gandco",
+      "name": "G&C Music Factory",
+      "location": "Boston",
+      "state": "MA",
+      "address": "157 Brighton Ave, Allston, MA 02134",
+      "capacity": 100,
+      "notes": "DIY space",
+      "id_variants": ["gandco", "gcmusicfactory", "g_and_c"]
+    },
+    {
+      "id": "cambridgecommon",
+      "name": "Cambridge Common",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "1667 Massachusetts Ave, Cambridge, MA 02138",
+      "capacity": 60,
+      "id_variants": ["cambridgecommon", "cambridge_common"]
+    },
+    {
+      "id": "precinct",
+      "name": "Precinct",
+      "location": "Somerville",
+      "state": "MA",
+      "address": "70 Union Square, Somerville, MA 02143",
+      "capacity": 100,
+      "id_variants": ["precinct", "the_precinct", "precinctbar"]
+    },
+    {
+      "id": "thunder",
+      "name": "Thunder Road",
+      "location": "Somerville",
+      "state": "MA",
+      "address": "379 Somerville Ave, Somerville, MA 02143",
+      "capacity": 200,
+      "status": "closed",
+      "closed_year": 2020,
+      "notes": "Closed during pandemic",
+      "id_variants": ["thunder", "thunderroad", "thunder_road"]
+    },
+    {
+      "id": "zuzu",
+      "name": "ZuZu",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "474 Massachusetts Ave, Cambridge, MA 02139",
+      "capacity": 100,
+      "notes": "Part of Middle East complex",
+      "id_variants": ["zuzu"]
+    },
+    {
+      "id": "kowloon",
+      "name": "Kowloon",
+      "location": "Saugus",
+      "state": "MA",
+      "address": "948 Broadway, Saugus, MA 01906",
+      "website": "https://kowloonrestaurant.com",
+      "capacity": 600,
+      "notes": "Tiki restaurant with comedy/music room",
+      "id_variants": ["kowloon", "kowloon_saugus"]
+    },
+    {
+      "id": "samadams",
+      "name": "Sam Adams Boston Taproom",
+      "location": "Boston",
+      "state": "MA",
+      "address": "60 State St, Boston, MA 02109",
+      "website": "https://www.samueladams.com",
+      "capacity": 150,
+      "id_variants": ["samadams", "sam_adams", "samadamstaproom"]
+    },
+    {
+      "id": "tupelo",
+      "name": "Tupelo Music Hall",
+      "location": "Derry",
+      "state": "NH",
+      "address": "10 A St, Derry, NH 03038",
+      "website": "https://tupelomusichall.com",
+      "capacity": 400,
+      "id_variants": ["tupelo", "tupelo_music_hall", "tupeloderry", "tupelomusichall"]
+    },
+    {
+      "id": "hamptonbeach",
+      "name": "Hampton Beach Casino Ballroom",
+      "location": "Hampton",
+      "state": "NH",
+      "address": "169 Ocean Blvd, Hampton, NH 03842",
+      "website": "https://casinoballroom.com",
+      "capacity": 2500,
+      "id_variants": ["hamptonbeach", "hampton_beach_casino", "casinoballroom", "hampton_casino"]
+    },
+    {
+      "id": "stonechurch",
+      "name": "The Stone Church",
+      "location": "Newmarket",
+      "state": "NH",
+      "address": "5 Granite St, Newmarket, NH 03857",
+      "website": "https://stonechurchrocks.com",
+      "capacity": 200,
+      "id_variants": ["stonechurch", "stone_church", "thestonechurch"]
+    },
+    {
+      "id": "peterborough",
+      "name": "The Colonial Theatre",
+      "location": "Keene",
+      "state": "NH",
+      "address": "95 Main St, Keene, NH 03431",
+      "website": "https://thecolonial.org",
+      "capacity": 900,
+      "id_variants": ["peterborough", "colonialkeene", "colonial_theatre_keene"]
+    },
+    {
+      "id": "tamworth",
+      "name": "The Tamworth Lyceum",
+      "location": "Tamworth",
+      "state": "NH",
+      "address": "3 Depot Rd, Tamworth, NH 03886",
+      "capacity": 200,
+      "notes": "NH venue - punk-friendly",
+      "id_variants": ["tamworth", "thetamworth", "tamworth_lyceum"]
+    },
+    {
+      "id": "manchvets",
+      "name": "Manchester Veterans Memorial Park",
+      "location": "Manchester",
+      "state": "NH",
+      "address": "Veterans Park, Manchester, NH 03104",
+      "capacity": 5000,
+      "notes": "Outdoor summer shows",
+      "id_variants": ["manchvets", "manchester_vets", "vetsparkmanchester"]
+    },
+    {
+      "id": "jewelmusicconcord",
+      "name": "Jewel Music Venue",
+      "location": "Manchester",
+      "state": "NH",
+      "address": "61 Canal St, Manchester, NH 03101",
+      "website": "https://www.jewelmusicvenue.com",
+      "capacity": 800,
+      "id_variants": ["jewelmusicconcord", "jewel_music", "jewelmusic"]
+    },
+    {
+      "id": "alchemy",
+      "name": "Alchemy",
+      "location": "Providence",
+      "state": "RI",
+      "address": "171 Chestnut St, Providence, RI 02903",
+      "website": "https://alchemyri.com",
+      "capacity": 200,
+      "id_variants": ["alchemy", "alchemyri", "alchemy_providence"]
+    },
+    {
+      "id": "fete",
+      "name": "Fete Music Hall",
+      "location": "Providence",
+      "state": "RI",
+      "address": "103 Dike St, Providence, RI 02909",
+      "website": "https://fetemusic.com",
+      "capacity": 1000,
+      "id_variants": ["fete", "fetemusic", "fete_music_hall"]
+    },
+    {
+      "id": "as220",
+      "name": "AS220",
+      "location": "Providence",
+      "state": "RI",
+      "address": "115 Empire St, Providence, RI 02903",
+      "website": "https://as220.org",
+      "capacity": 150,
+      "notes": "DIY arts space",
+      "id_variants": ["as220"]
+    },
+    {
+      "id": "columbustheatre",
+      "name": "Columbus Theatre",
+      "location": "Providence",
+      "state": "RI",
+      "address": "270 Broadway, Providence, RI 02903",
+      "website": "https://columbustheatre.com",
+      "capacity": 800,
+      "id_variants": ["columbustheatre", "columbus_theatre", "columbusprov"]
+    },
+    {
+      "id": "dunkdonuts",
+      "name": "Dunkin' Donuts Center",
+      "location": "Providence",
+      "state": "RI",
+      "address": "1 La Salle Square, Providence, RI 02903",
+      "website": "https://dunkindonutscenter.com",
+      "capacity": 14000,
+      "id_variants": ["dunkdonuts", "dunkindonutscenter", "dunkin_center", "providencecivic"]
+    },
+    {
+      "id": "ppac",
+      "name": "Providence Performing Arts Center",
+      "location": "Providence",
+      "state": "RI",
+      "address": "220 Weybosset St, Providence, RI 02903",
+      "website": "https://ppacri.org",
+      "capacity": 3100,
+      "id_variants": ["ppac", "providence_performing_arts", "providence_performing_arts_cen"]
+    },
+    {
+      "id": "vets_ri",
+      "name": "Veterans Memorial Auditorium",
+      "location": "Providence",
+      "state": "RI",
+      "address": "1 Avenue of the Arts, Providence, RI 02903",
+      "website": "https://vfrwf.org",
+      "capacity": 1900,
+      "id_variants": ["vets_ri", "veterans_memorial_auditorium", "the_vets", "the_vets_-_veterans_memorial_a"]
+    },
+    {
+      "id": "strand_ri",
+      "name": "The Strand Ballroom & Theatre",
+      "location": "Providence",
+      "state": "RI",
+      "address": "79 Washington St, Providence, RI 02903",
+      "website": "https://thestrandri.com",
+      "capacity": 1100,
+      "id_variants": ["strand_ri", "thestrandri", "strand_theatre-ri", "the_strand_theatre_-_providenc"]
+    },
+    {
+      "id": "knickerbocker",
+      "name": "Knickerbocker Music Center",
+      "location": "Westerly",
+      "state": "RI",
+      "address": "35 Railroad Ave, Westerly, RI 02891",
+      "website": "https://knickmusic.com",
+      "capacity": 300,
+      "id_variants": ["knickerbocker", "knickmusic", "knickerbocker_westerly"]
+    },
+    {
+      "id": "chancery",
+      "name": "The Chancery",
+      "location": "Providence",
+      "state": "RI",
+      "address": "12 Bassett St, Providence, RI 02903",
+      "capacity": 100,
+      "notes": "DIY punk space",
+      "id_variants": ["chancery", "thechancery", "the_chancery"]
+    },
+    {
+      "id": "newsound",
+      "name": "News Cafe",
+      "location": "Providence",
+      "state": "RI",
+      "address": "43 Peck St, Providence, RI 02903",
+      "capacity": 75,
+      "id_variants": ["newsound", "newscafe", "news_cafe"]
+    },
+    {
+      "id": "toadstool",
+      "name": "Toad's Place",
+      "location": "New Haven",
+      "state": "CT",
+      "address": "300 York St, New Haven, CT 06511",
+      "website": "https://toadsplace.com",
+      "capacity": 1500,
+      "id_variants": ["toadstool", "toads", "toads_place", "toadsplace"]
+    },
+    {
+      "id": "college_street",
+      "name": "College Street Music Hall",
+      "location": "New Haven",
+      "state": "CT",
+      "address": "238 College St, New Haven, CT 06510",
+      "website": "https://collegestreetmusichall.com",
+      "capacity": 1400,
+      "id_variants": ["college_street", "collegestreet", "college_street_music_hall"]
+    },
+    {
+      "id": "webster",
+      "name": "Webster Theater",
+      "location": "Hartford",
+      "state": "CT",
+      "address": "31 Webster St, Hartford, CT 06114",
+      "website": "https://webstertheater.com",
+      "capacity": 1500,
+      "id_variants": ["webster", "webstertheater", "webster_theater"]
+    },
+    {
+      "id": "mohegan",
+      "name": "Mohegan Sun Arena",
+      "location": "Uncasville",
+      "state": "CT",
+      "address": "1 Mohegan Sun Blvd, Uncasville, CT 06382",
+      "website": "https://mohegansun.com",
+      "capacity": 10000,
+      "id_variants": ["mohegan", "mohegansun", "mohegan_sun_arena"]
+    },
+    {
+      "id": "foxwoods",
+      "name": "Foxwoods Resort Casino",
+      "location": "Mashantucket",
+      "state": "CT",
+      "address": "350 Trolley Line Blvd, Mashantucket, CT 06338",
+      "website": "https://foxwoods.com",
+      "capacity": 5500,
+      "id_variants": ["foxwoods", "foxwoodscasino", "foxwoods_resort"]
+    },
+    {
+      "id": "ridgefield",
+      "name": "Ridgefield Playhouse",
+      "location": "Ridgefield",
+      "state": "CT",
+      "address": "80 E Ridge, Ridgefield, CT 06877",
+      "website": "https://ridgefieldplayhouse.org",
+      "capacity": 500,
+      "id_variants": ["ridgefield", "ridgefieldplayhouse", "ridgefield_playhouse"]
+    },
+    {
+      "id": "warner",
+      "name": "Warner Theatre",
+      "location": "Torrington",
+      "state": "CT",
+      "address": "68 Main St, Torrington, CT 06790",
+      "website": "https://warnertheatre.org",
+      "capacity": 1800,
+      "id_variants": ["warner", "warnertheatre", "warner_theatre"]
+    },
+    {
+      "id": "flynn",
+      "name": "Flynn Center for the Performing Arts",
+      "location": "Burlington",
+      "state": "VT",
+      "address": "153 Main St, Burlington, VT 05401",
+      "website": "https://flynnvt.org",
+      "capacity": 1400,
+      "id_variants": ["flynn", "flynnvt", "flynn_center"]
+    },
+    {
+      "id": "higherlevel",
+      "name": "Higher Ground",
+      "location": "South Burlington",
+      "state": "VT",
+      "address": "1214 Williston Rd, South Burlington, VT 05403",
+      "website": "https://highergroundmusic.com",
+      "capacity": 700,
+      "id_variants": ["higherlevel", "higherground", "higher_ground"]
+    },
+    {
+      "id": "nectar",
+      "name": "Nectar's",
+      "location": "Burlington",
+      "state": "VT",
+      "address": "188 Main St, Burlington, VT 05401",
+      "website": "https://liveatnectars.com",
+      "capacity": 250,
+      "notes": "Where Phish got their start",
+      "id_variants": ["nectar", "nectars", "nectars_vt"]
+    },
+    {
+      "id": "radiobean",
+      "name": "Radio Bean",
+      "location": "Burlington",
+      "state": "VT",
+      "address": "8 N Winooski Ave, Burlington, VT 05401",
+      "website": "https://radiobean.com",
+      "capacity": 75,
+      "id_variants": ["radiobean", "radio_bean"]
+    },
+    {
+      "id": "statetheatre_portland",
+      "name": "State Theatre",
+      "location": "Portland",
+      "state": "ME",
+      "address": "609 Congress St, Portland, ME 04101",
+      "website": "https://statetheatreportland.com",
+      "capacity": 1400,
+      "id_variants": ["statetheatre_portland", "state_theatre_portland", "statetheatreportland"]
+    },
+    {
+      "id": "portcitymusic",
+      "name": "Port City Music Hall",
+      "location": "Portland",
+      "state": "ME",
+      "address": "504 Congress St, Portland, ME 04101",
+      "website": "https://portcitymusichall.com",
+      "capacity": 650,
+      "id_variants": ["portcitymusic", "portcitymusichall", "port_city_music_hall"]
+    },
+    {
+      "id": "genos",
+      "name": "Geno's Rock Club",
+      "location": "Portland",
+      "state": "ME",
+      "address": "625 Congress St, Portland, ME 04101",
+      "capacity": 150,
+      "notes": "Portland's punk/dive bar",
+      "id_variants": ["genos", "genos_rock_club", "genosportland"]
+    },
+    {
+      "id": "onelongfellow",
+      "name": "One Longfellow Square",
+      "location": "Portland",
+      "state": "ME",
+      "address": "181 State St, Portland, ME 04101",
+      "website": "https://onelongfellowsquare.com",
+      "capacity": 175,
+      "id_variants": ["onelongfellow", "one_longfellow_square", "longfellowsquare"]
+    },
+    {
+      "id": "merrill",
+      "name": "Merrill Auditorium",
+      "location": "Portland",
+      "state": "ME",
+      "address": "20 Myrtle St, Portland, ME 04101",
+      "website": "https://porttix.com",
+      "capacity": 1900,
+      "id_variants": ["merrill", "merrillauditorium", "merrill_auditorium"]
+    },
+    {
+      "id": "aura",
+      "name": "Aura",
+      "location": "Portland",
+      "state": "ME",
+      "address": "121 Center St, Portland, ME 04101",
+      "website": "https://alohaauramaine.com",
+      "capacity": 1500,
+      "id_variants": ["aura", "aura_portland", "auraporltand"]
+    },
+    {
+      "id": "stonesea",
+      "name": "Stone Mountain Arts Center",
+      "location": "Brownfield",
+      "state": "ME",
+      "address": "695 Dugway Rd, Brownfield, ME 04010",
+      "website": "https://stonemountainartscenter.com",
+      "capacity": 200,
+      "id_variants": ["stonesea", "stonemountain", "stone_mountain"]
+    },
+    {
+      "id": "greatnorth",
+      "name": "Great North Music & Arts",
+      "location": "Portland",
+      "state": "ME",
+      "address": "230 Commercial St, Portland, ME 04101",
+      "website": "https://greatnorthme.org",
+      "capacity": 200,
+      "notes": "DIY venue",
+      "id_variants": ["greatnorth", "great_north", "greatnorthme"]
+    },
+    {
+      "id": "therathskeller",
+      "name": "The Rathskeller (The Rat)",
+      "location": "Boston",
+      "state": "MA",
+      "address": "528 Commonwealth Ave, Boston, MA",
+      "status": "closed",
+      "closed_year": 1997,
+      "notes": "Legendary punk venue. The Cars, Police, Talking Heads played here.",
+      "id_variants": ["therathskeller", "therat", "the_rat", "rathskeller"]
+    },
+    {
+      "id": "thechannel",
+      "name": "The Channel",
+      "location": "Boston",
+      "state": "MA",
+      "address": "25 Necco St, Boston, MA",
+      "status": "closed",
+      "closed_year": 1995,
+      "notes": "Fort Point rock club, 1980-1995",
+      "id_variants": ["thechannel", "the_channel", "channelboston"]
+    },
+    {
+      "id": "bunrattys",
+      "name": "Bunratty's",
+      "location": "Allston",
+      "state": "MA",
+      "address": "Brighton Ave, Allston, MA",
+      "status": "closed",
+      "closed_year": 1995,
+      "notes": "Irish rock bar, closed mid-90s",
+      "id_variants": ["bunrattys", "bunrattys_allston"]
+    },
+    {
+      "id": "axis",
+      "name": "Axis/Avalon",
+      "location": "Boston",
+      "state": "MA",
+      "address": "13 Lansdowne St, Boston, MA",
+      "status": "closed",
+      "closed_year": 2007,
+      "notes": "Lansdowne St twin clubs, became HOB",
+      "id_variants": ["axis", "avalon", "axis_avalon", "axisboston"]
+    },
+    {
+      "id": "manray",
+      "name": "ManRay",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "21 Brookline St, Cambridge, MA",
+      "status": "closed",
+      "closed_year": 2005,
+      "notes": "Legendary goth/industrial club",
+      "id_variants": ["manray", "man_ray", "manraycambridge"]
+    },
+    {
+      "id": "ttthebears",
+      "name": "TT the Bear's",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "10 Brookline St, Cambridge, MA",
+      "status": "closed",
+      "closed_year": 2015,
+      "notes": "Indie rock mainstay 1985-2015, now Sonia",
+      "id_variants": ["ttthebears", "tt_the_bears", "ttbears", "tts"]
+    },
+    {
+      "id": "greatscott",
+      "name": "Great Scott",
+      "location": "Allston",
+      "state": "MA",
+      "address": "1222 Commonwealth Ave, Boston, MA 02134",
+      "status": "closed",
+      "closed_year": 2020,
+      "notes": "COVID casualty. Reopened briefly 2022, now closed.",
+      "id_variants": ["greatscott", "great_scott", "greatscottboston"]
+    },
+    {
+      "id": "harpers",
+      "name": "Harper's Ferry",
+      "location": "Allston",
+      "state": "MA",
+      "address": "158 Brighton Ave, Allston, MA",
+      "status": "closed",
+      "closed_year": 2010,
+      "notes": "Became Brighton Music Hall",
+      "id_variants": ["harpers", "harpersferry", "harpers_ferry"]
+    },
+    {
+      "id": "billsbar",
+      "name": "Bill's Bar",
+      "location": "Boston",
+      "state": "MA",
+      "address": "5 Lansdowne St, Boston, MA",
+      "status": "closed",
+      "closed_year": 2019,
+      "notes": "Lansdowne Street club",
+      "id_variants": ["billsbar", "bills_bar", "billsbarboston"]
+    },
+    {
+      "id": "westernfront",
+      "name": "Western Front",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "343 Western Ave, Cambridge, MA",
+      "status": "closed",
+      "closed_year": 2018,
+      "notes": "Reggae venue, closed 2018",
+      "id_variants": ["westernfront", "western_front"]
+    },
+    {
+      "id": "kirkland",
+      "name": "Kirkland Cafe",
+      "location": "Cambridge",
+      "state": "MA",
+      "address": "425 Washington St, Cambridge, MA",
+      "status": "closed",
+      "closed_year": 2013,
+      "notes": "Jazz/experimental venue",
+      "id_variants": ["kirkland", "kirklandcafe", "kirkland_cafe"]
+    },
+    {
+      "id": "johnnyds",
+      "name": "Johnny D's",
+      "location": "Somerville",
+      "state": "MA",
+      "address": "17 Holland St, Somerville, MA",
+      "status": "closed",
+      "closed_year": 2016,
+      "notes": "Davis Square staple since 1969",
+      "id_variants": ["johnnyds", "johnny_ds", "johnnyd"]
+    },
+    {
+      "id": "thespace",
+      "name": "The Space",
+      "location": "Hamden",
+      "state": "CT",
+      "address": "295 Treadwell St, Hamden, CT 06514",
+      "capacity": 150,
+      "notes": "DIY all-ages venue",
+      "id_variants": ["thespace", "the_space", "spacehamden"]
+    },
+    {
+      "id": "willimantic",
+      "name": "The Willimantic Records",
+      "location": "Willimantic",
+      "state": "CT",
+      "address": "805 Main St, Willimantic, CT 06226",
+      "capacity": 100,
+      "notes": "Record shop with shows",
+      "id_variants": ["willimantic", "willimanticrecords", "willimantic_records"]
+    },
+    {
+      "id": "cafe9",
+      "name": "Cafe Nine",
+      "location": "New Haven",
+      "state": "CT",
+      "address": "250 State St, New Haven, CT 06510",
+      "website": "https://cafenine.com",
+      "capacity": 150,
+      "id_variants": ["cafe9", "cafenine", "cafe_nine"]
+    },
+    {
+      "id": "pacificstandard",
+      "name": "Pacific Standard Tavern",
+      "location": "New Haven",
+      "state": "CT",
+      "address": "509 Pacific St, New Haven, CT 06511",
+      "capacity": 75,
+      "id_variants": ["pacificstandard", "pacific_standard", "pacificstandardtavern"]
+    },
+    {
+      "id": "infinity",
+      "name": "Infinity Hall",
+      "location": "Norfolk",
+      "state": "CT",
+      "address": "20 Greenwoods Rd, Norfolk, CT 06058",
+      "website": "https://infinityhall.com",
+      "capacity": 325,
+      "id_variants": ["infinity", "infinityhall", "infinity_hall"]
+    },
+    {
+      "id": "stafford",
+      "name": "Palace Theater",
+      "location": "Stafford Springs",
+      "state": "CT",
+      "address": "125 Main St, Stafford Springs, CT 06076",
+      "website": "https://thestaffordpalace.com",
+      "capacity": 600,
+      "id_variants": ["stafford", "staffordpalace", "stafford_palace"]
+    },
+    {
+      "id": "oakdale",
+      "name": "Toyota Oakdale Theatre",
+      "location": "Wallingford",
+      "state": "CT",
+      "address": "95 S Turnpike Rd, Wallingford, CT 06492",
+      "website": "https://oakdale.com",
+      "capacity": 5700,
+      "id_variants": ["oakdale", "oakdaletheatre", "toyota_oakdale"]
+    },
+    {
+      "id": "onceball",
+      "name": "ONCE Ballroom",
+      "location": "Somerville",
+      "state": "MA",
+      "address": "156 Highland Ave, Somerville, MA 02143",
+      "website": "https://oncesomerville.com",
+      "capacity": 400,
+      "notes": "Main room at ONCE",
+      "id_variants": ["onceball", "once_ballroom", "onceballroom"]
+    },
+    {
+      "id": "oncelounge",
+      "name": "ONCE Lounge",
+      "location": "Somerville",
+      "state": "MA",
+      "address": "156 Highland Ave, Somerville, MA 02143",
+      "capacity": 100,
+      "notes": "Smaller room at ONCE",
+      "id_variants": ["oncelounge", "once_lounge"]
+    },
+    {
+      "id": "boynton",
+      "name": "The Boynton",
+      "location": "Worcester",
+      "state": "MA",
+      "address": "117 Highland St, Worcester, MA 01609",
+      "capacity": 150,
+      "id_variants": ["boynton", "theboynton", "the_boynton"]
+    },
+    {
+      "id": "vincents",
+      "name": "Vincent's",
+      "location": "Worcester",
+      "state": "MA",
+      "address": "31 Millbury St, Worcester, MA 01610",
+      "capacity": 100,
+      "id_variants": ["vincents", "vincentsclub", "vincents_worcester"]
+    },
+    {
+      "id": "ralphs",
+      "name": "Ralph's Rock Diner",
+      "location": "Worcester",
+      "state": "MA",
+      "address": "148 Grove St, Worcester, MA 01605",
+      "capacity": 100,
+      "notes": "DIY punk venue",
+      "id_variants": ["ralphs", "ralphsrockdiner", "ralphs_rock_diner"]
+    },
+    {
+      "id": "electrician",
+      "name": "Electric Haze",
+      "location": "Worcester",
+      "state": "MA",
+      "address": "2 Millbury St, Worcester, MA 01610",
+      "capacity": 200,
+      "id_variants": ["electrician", "electrichaze", "electric_haze"]
+    },
+    {
+      "id": "bullrun",
+      "name": "Bull Run Restaurant",
+      "location": "Shirley",
+      "state": "MA",
+      "address": "215 Great Rd, Shirley, MA 01464",
+      "website": "https://bullrunrestaurant.com",
+      "capacity": 300,
+      "id_variants": ["bullrun", "bull_run", "bullrunshirley"]
+    },
+    {
+      "id": "cabot",
+      "name": "The Cabot",
+      "location": "Beverly",
+      "state": "MA",
+      "address": "286 Cabot St, Beverly, MA 01915",
+      "website": "https://thecabot.org",
+      "capacity": 850,
+      "id_variants": ["cabot", "thecabot", "the_cabot"]
+    },
+    {
+      "id": "larcom",
+      "name": "Larcom Theatre",
+      "location": "Beverly",
+      "state": "MA",
+      "address": "13 Wallis St, Beverly, MA 01915",
+      "website": "https://thelarcom.org",
+      "capacity": 550,
+      "id_variants": ["larcom", "larcomtheatre", "larcom_theatre"]
+    },
+    {
+      "id": "zeiterion",
+      "name": "Zeiterion Performing Arts Center",
+      "location": "New Bedford",
+      "state": "MA",
+      "address": "684 Purchase St, New Bedford, MA 02740",
+      "website": "https://zeiterion.org",
+      "capacity": 1200,
+      "id_variants": ["zeiterion", "zeiterionpac", "the_z"]
+    },
+    {
+      "id": "spirearts",
+      "name": "Spire Center for Performing Arts",
+      "location": "Plymouth",
+      "state": "MA",
+      "address": "25 1/2 Court St, Plymouth, MA 02360",
+      "website": "https://spirecenter.org",
+      "capacity": 300,
+      "id_variants": ["spirearts", "spirecenter", "spire_center"]
+    },
+    {
+      "id": "oasis",
+      "name": "Oasis Pub",
+      "location": "Haverhill",
+      "state": "MA",
+      "address": "45 Essex St, Haverhill, MA 01832",
+      "capacity": 100,
+      "notes": "Haverhill punk venue",
+      "id_variants": ["oasis", "oasispub", "oasis_haverhill"]
+    },
+    {
+      "id": "offthsrails",
+      "name": "Off The Rails Music Venue",
+      "location": "Hopedale",
+      "state": "MA",
+      "address": "30 Freedom St, Hopedale, MA 01747",
+      "capacity": 200,
+      "id_variants": ["offthsrails", "offtherails", "off_the_rails", "off_the_rails_music_venue"]
+    },
+    {
+      "id": "thebreakaway",
+      "name": "The Breakaway",
+      "location": "Danvers",
+      "state": "MA",
+      "address": "32 Cherry Hill Dr, Danvers, MA 01923",
+      "website": "https://breakawayonline.com",
+      "capacity": 300,
+      "id_variants": ["thebreakaway", "breakaway", "the_breakaway"]
+    },
+    {
+      "id": "newburyport",
+      "name": "The Firehouse Center for the Arts",
+      "location": "Newburyport",
+      "state": "MA",
+      "address": "1 Market Square, Newburyport, MA 01950",
+      "website": "https://firehouse.org",
+      "capacity": 200,
+      "id_variants": ["newburyport", "firehouse", "firehouse_newburyport"]
+    },
+    {
+      "id": "norwell",
+      "name": "South Shore Music Circus",
+      "location": "Cohasset",
+      "state": "MA",
+      "address": "130 Sohier St, Cohasset, MA 02025",
+      "website": "https://themusiccircus.org",
+      "capacity": 2200,
+      "notes": "Summer tent venue",
+      "id_variants": ["norwell", "ssmc", "south_shore_music_circus", "musiccircus"]
+    },
+    {
+      "id": "capecod",
+      "name": "Cape Cod Melody Tent",
+      "location": "Hyannis",
+      "state": "MA",
+      "address": "21 W Main St, Hyannis, MA 02601",
+      "website": "https://melodytent.org",
+      "capacity": 2300,
+      "notes": "Summer tent venue",
+      "id_variants": ["capecod", "melodytent", "melody_tent", "cape_cod_melody_tent"]
+    },
+    {
+      "id": "wellfleet",
+      "name": "Wellfleet Preservation Hall",
+      "location": "Wellfleet",
+      "state": "MA",
+      "address": "335 Main St, Wellfleet, MA 02667",
+      "capacity": 200,
+      "id_variants": ["wellfleet", "wellfleetpres", "wellfleet_preservation"]
+    },
+    {
+      "id": "ptown",
+      "name": "Provincetown Town Hall",
+      "location": "Provincetown",
+      "state": "MA",
+      "address": "260 Commercial St, Provincetown, MA 02657",
+      "capacity": 400,
+      "id_variants": ["ptown", "provincetown", "ptown_town_hall"]
     }
   ]
 }

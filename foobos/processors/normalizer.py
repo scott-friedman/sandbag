@@ -7,6 +7,7 @@ from typing import List
 import logging
 
 from ..models import Concert
+from ..utils.venue_registry import get_canonical_id, get_venue_info, format_location
 
 logger = logging.getLogger(__name__)
 
@@ -138,7 +139,7 @@ def _normalize_venue_id_with_name(venue_id: str, venue_name: str) -> str:
 
 
 def _normalize_venue_id(venue_id: str) -> str:
-    """Normalize venue ID to standard slug."""
+    """Normalize venue ID to standard slug using venue registry."""
     if not venue_id:
         return "unknown"
 
@@ -147,180 +148,13 @@ def _normalize_venue_id(venue_id: str) -> str:
     # Normalize apostrophes and special characters
     venue_id = venue_id.replace("'", "'").replace("'", "'")  # Curly to straight
 
-    # Standard mappings - consolidate duplicates
-    id_map = {
-        # Middle East variants
-        "middle_east": "middleeast",
-        "middle-east": "middleeast",
-        "themiddleeast": "middleeast",
-        "middle_east_-_upstairs": "middleeast_up",
-        "middle_east_-_downstairs": "middleeast_down",
-        "middle_east-_downstairs": "middleeast_down",
-        "middle_east_-_corner/bakery": "middleeast_corner",
-        "middle_east_-_zuzu": "middleeast_zuzu",
+    # Use venue registry to get canonical ID
+    canonical = get_canonical_id(venue_id)
+    if canonical:
+        return canonical
 
-        # Paradise variants
-        "paradise_rock_club": "paradise",
-        "paradise_rock": "paradise",
-        "paradiserock": "paradise",
-        "paradise_rock_club_presented_b": "paradise",
-
-        # Sinclair variants
-        "sinclair_cambridge": "sinclair",
-        "thesinclair": "sinclair",
-        "the_sinclair_music_hall": "sinclair",
-        "the_sinclair_-_cambridge": "sinclair",
-
-        # Royale variants
-        "royale_boston": "royale",
-
-        # Roadrunner variants
-        "roadrunner-boston": "roadrunner",
-
-        # Lizard Lounge variants
-        "lizard_lounge": "lizardlounge",
-
-        # House of Blues variants
-        "house_of_blues": "hob_boston",
-        "houseofblues": "hob_boston",
-        "citizens_house_of_blues_boston": "hob_boston",
-        "hob": "hob_boston",
-
-        # O'Brien's variants (note the curly apostrophe and straight apostrophe)
-        "obriens_pub": "obriens",
-        "obrien": "obriens",
-        "o'brien's_pub": "obriens",
-        "o'brien's_pub": "obriens",
-
-        # Crystal Ballroom variants
-        "crystal_ballroom_at_somerville": "crystal",
-
-        # Jungle variants
-        "jungle_tix": "jungle",
-
-        # Brighton Music Hall
-        "brighton_music_hall": "brighton",
-        "brightonmusic": "brighton",
-        "brighton_music_hall_presented_": "brighton",
-
-        # Orpheum Theatre
-        "orpheum_theatre_presented_by_c": "orpheum",
-
-        # Great Scott
-        "great_scott": "greatscott",
-        "greatscottboston": "greatscott",
-
-        # Midway Cafe
-        "midway_cafe": "midway",
-        "midwaycafe": "midway",
-
-        # Deep Cuts
-        "deep_cuts": "deepcuts",
-        "deep-cuts": "deepcuts",
-
-        # Groton Hill Music Center
-        "groton_hill_music_center": "grotonhill",
-        "groton-hill": "grotonhill",
-        "groton_hill": "grotonhill",
-
-        # Symphony Hall / BSO
-        "symphony_hall": "symphonyhall",
-        "symphony-hall": "symphonyhall",
-        "bso": "symphonyhall",
-        "boston_symphony_orchestra": "symphonyhall",
-        "boston_symphony_hall": "symphonyhall",
-
-        # Berklee Performance Center variants
-        "berklee": "berklee_bpc",
-        "berklee_performing_arts_center": "berklee_bpc",
-
-        # Big Night Live variants
-        "bignightlive": "big_night_live",
-
-        # Bijou variants
-        "bijou_nightclub": "bijou",
-
-        # Blue Ocean Music Hall variants
-        "blue_ocean": "blue_ocean_music_hall",
-
-        # Cafe 939 / Red Room variants
-        "cafe_939": "cafe939",
-        "red_room_at_cafe_939": "cafe939",
-
-        # Centro Nightclub variants
-        "centro_night_club": "centro_nightclub",
-
-        # Chevalier Theatre variants
-        "chevalier": "chevalier_theatre",
-
-        # City Winery variants
-        "citywinery": "city_winery",
-
-        # Fenway Park variants
-        "fenway": "fenway_park",
-
-        # Lynn Auditorium variants
-        "lynn_memorial_auditorium": "lynn_auditorium",
-
-        # Memoire variants
-        "memoire_boston": "memoire",
-
-        # MGM Music Hall variants
-        "mgm_music_hall_at_fenway": "mgm_music_hall",
-
-        # Off The Rails variants
-        "off_the_rails": "off_the_rails_music_venue",
-
-        # Palladium variants
-        "palladium-ma": "palladium",
-
-        # Leader Bank Pavilion variants
-        "pavilion": "leader_bank_pavilion",
-
-        # Providence Performing Arts Center variants
-        "providence_performing_arts": "providence_performing_arts_cen",
-
-        # Rockwell variants
-        "the_rockwell": "rockwell",
-
-        # Scullers Jazz Club variants
-        "scullers": "scullers_jazz_club",
-
-        # Sonia variants
-        "sonia_live_music_venue": "sonia",
-
-        # TD Garden variants
-        "tdgarden": "td_garden",
-
-        # The Grand variants
-        "the_grand_(boston)": "the_grand",
-
-        # Hanover Theatre variants
-        "the_hanover_theatre": "hanover_theatre",
-
-        # Strand Theatre variants
-        "strand_theatre-ri": "the_strand_theatre_-_providenc",
-
-        # The VETS / Veterans Memorial variants
-        "the_vets": "veterans_memorial_auditorium",
-        "the_vets_-_veterans_memorial_a": "veterans_memorial_auditorium",
-
-        # Wally's Cafe Jazz Club (Boston) - NOT Wally's Pub (Hampton)
-        "wally's_cafe": "wallys_cafe",
-        "wally's_cafe_jazz_club": "wallys_cafe",
-        "wallys_cafe": "wallys_cafe",
-        "wallys_cafe_jazz_club": "wallys_cafe",
-        "wallys": "wallys_cafe",  # Default "wallys" to Boston jazz club
-
-        # Wally's Pub (Hampton) - separate venue
-        "wallys_pub": "wallys_pub_hampton",
-        "wally's_pub": "wallys_pub_hampton",
-
-        # Xfinity Center variants
-        "xfinity_center": "xfinity_center_-_ma",
-    }
-
-    return id_map.get(venue_id, venue_id)
+    # Fall back to basic normalization for unknown venues
+    return venue_id.replace(" ", "_")
 
 
 def _normalize_venue_name(name: str) -> str:
@@ -432,21 +266,29 @@ def _normalize_venue_name(name: str) -> str:
 
 
 def _normalize_location(location: str, venue_id: str = None) -> str:
-    """Normalize city/location name."""
+    """Normalize city/location name, adding state abbreviation for non-MA venues."""
     if not location:
         return "Boston"
 
     location = location.strip()
 
-    # Fix known wrong locations based on venue
+    # Try to get location from venue registry (includes state for non-MA)
     if venue_id:
-        venue_location_fixes = {
-            "hob_boston": "Boston",  # House of Blues often has wrong Orlando location
-        }
-        if venue_id in venue_location_fixes:
-            return venue_location_fixes[venue_id]
+        registry_location = format_location(venue_id)
+        if registry_location:
+            return registry_location
 
-    # Standard locations
+        # Fix known wrong locations based on venue
+        venue_info = get_venue_info(venue_id)
+        if venue_info:
+            loc = venue_info.get("location", "")
+            state = venue_info.get("state", "MA")
+            if loc:
+                if state != "MA":
+                    return f"{loc}, {state}"
+                return loc
+
+    # Standard MA locations (no state suffix needed)
     loc_map = {
         "boston": "Boston",
         "boston, ma": "Boston",
@@ -460,12 +302,34 @@ def _normalize_location(location: str, venue_id: str = None) -> str:
         "jp": "Jamaica Plain",
         "brookline": "Brookline",
         "worcester": "Worcester",
-        "providence": "Providence",
-        "providence, ri": "Providence",
         "orlando": "Boston",  # Fix wrong Orlando locations
     }
 
-    return loc_map.get(location.lower(), location)
+    # Check for non-MA locations that need state suffix
+    non_ma_map = {
+        "providence": "Providence, RI",
+        "providence, ri": "Providence, RI",
+        "derry": "Derry, NH",
+        "derry, nh": "Derry, NH",
+        "hampton": "Hampton, NH",
+        "hampton, nh": "Hampton, NH",
+        "portland": "Portland, ME",
+        "portland, me": "Portland, ME",
+        "burlington": "Burlington, VT",
+        "burlington, vt": "Burlington, VT",
+        "new haven": "New Haven, CT",
+        "new haven, ct": "New Haven, CT",
+        "hartford": "Hartford, CT",
+        "hartford, ct": "Hartford, CT",
+    }
+
+    location_lower = location.lower()
+
+    # Check non-MA first
+    if location_lower in non_ma_map:
+        return non_ma_map[location_lower]
+
+    return loc_map.get(location_lower, location)
 
 
 def _normalize_time(time: str) -> str:
