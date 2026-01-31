@@ -164,7 +164,7 @@ class SongkickVenuesScraper(BaseScraper):
                 page = browser.new_page()
 
                 # Navigate and wait for content
-                page.goto(venue_url, wait_until="networkidle", timeout=30000)
+                page.goto(venue_url, wait_until="domcontentloaded", timeout=30000)
                 page.wait_for_timeout(2000)
 
                 # Click "Load more" button repeatedly to get all events
