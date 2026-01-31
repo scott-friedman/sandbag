@@ -9,6 +9,19 @@ from typing import Optional, Dict, Any
 from ..models import Concert
 from ..config import GA4_MEASUREMENT_ID, ANALYTICS_ENABLED, SITE_URL, DEFAULT_OG_IMAGE, SITE_NAME
 
+# Live Nation / Ticketmaster operated venues (excludes Middle East which is independent)
+LIVE_NATION_VENUES = {
+    'bignightlive', 'brighton', 'hob', 'mgmmusichall',
+    'orpheum', 'palladium', 'paradise', 'roadrunner', 'royale',
+    'tdgarden', 'sinclair', 'wilbur',
+    'higherground',  # VT - Live Nation operated
+}
+
+
+def is_livenation_venue(concert: Concert) -> bool:
+    """Check if concert is at a Live Nation/Ticketmaster operated venue."""
+    return concert.venue_id in LIVE_NATION_VENUES
+
 
 def html_header(
     title: str,

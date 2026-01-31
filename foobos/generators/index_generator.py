@@ -73,6 +73,10 @@ Here's what the symbols at the end of each listing might mean:
 <hr>
 
 <p>
+<label><input type="checkbox" id="hide-ln" onchange="toggleLN()"> Hide Ticketmaster Venues</label>
+</p>
+
+<p>
 <b>Concerts By Date</b><br>
 {week_links}
 </p>
@@ -199,6 +203,20 @@ Here's what the symbols at the end of each listing might mean:
     }}
   }}, 3000);
 }})();
+</script>
+
+<script>
+function toggleLN() {{
+  var hide = document.getElementById('hide-ln').checked;
+  sessionStorage.setItem('hideLN', hide ? 'true' : 'false');
+}}
+
+function applyLNFilter() {{
+  var hide = sessionStorage.getItem('hideLN') === 'true';
+  document.getElementById('hide-ln').checked = hide;
+}}
+
+document.addEventListener('DOMContentLoaded', applyLNFilter);
 </script>
 
 '''

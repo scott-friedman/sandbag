@@ -11,7 +11,7 @@ from collections import defaultdict
 from ..models import Concert
 from ..config import OUTPUT_DIR, WEEKS_AHEAD, SITE_URL
 from ..utils.date_utils import get_week_range, get_week_label, get_week_number, get_adjusted_week_label
-from .helpers import format_concert_line, html_header, html_footer
+from .helpers import format_concert_line, html_header, html_footer, is_livenation_venue
 
 logger = logging.getLogger(__name__)
 
@@ -126,9 +126,13 @@ def _generate_week_page(week_num: int, concerts: List[Concert], reference_date: 
         structured_data=structured_data
     )
     html += f'''
+<p>[ <a href="list.html">Back</a> | <a href="mailto:sf@scottfriedman.ooo">Email Me</a> ]</p>
+
 <h2><i>Listing By Date</i></h2>
 
 <h3>{week_label}</h3>
+
+<p><label><input type="checkbox" id="hide-ln" onchange="toggleLN()"> Hide Ticketmaster Venues</label></p>
 
 <ul>
 '''
@@ -147,7 +151,8 @@ def _generate_week_page(week_num: int, concerts: List[Concert], reference_date: 
             sorted_concerts = sorted(day_concerts, key=lambda c: (c.venue_name or "").lower())
             for concert in sorted_concerts:
                 line = format_concert_line(concert)
-                html += f'<li>{line}</li>\n'
+                ln_attr = ' data-livenation="true"' if is_livenation_venue(concert) else ''
+                html += f'<li{ln_attr}>{line}</li>\n'
 
             html += '</ul>\n</li>\n\n'
 
@@ -162,6 +167,25 @@ def _generate_week_page(week_num: int, concerts: List[Concert], reference_date: 
 <p>{date_shortcuts}</p>
 
 <p>[ <a href="list.html">Back</a> | <a href="mailto:sf@scottfriedman.ooo">Email Me</a> ]</p>
+
+<script>
+function toggleLN() {{
+  var hide = document.getElementById('hide-ln').checked;
+  sessionStorage.setItem('hideLN', hide ? 'true' : 'false');
+  applyLNFilter();
+}}
+
+function applyLNFilter() {{
+  var hide = sessionStorage.getItem('hideLN') === 'true';
+  document.getElementById('hide-ln').checked = hide;
+  var items = document.querySelectorAll('[data-livenation="true"]');
+  items.forEach(function(item) {{
+    item.style.display = hide ? 'none' : '';
+  }});
+}}
+
+document.addEventListener('DOMContentLoaded', applyLNFilter);
+</script>
 
 '''
     html += html_footer()
