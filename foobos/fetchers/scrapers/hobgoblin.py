@@ -19,7 +19,7 @@ HOBGOBLIN_URL = "https://www.hobgoblinbar.com/events/"
 
 
 class HobgoblinScraper(BaseScraper):
-    """Scraper for Hobgoblin Bar in Brookline."""
+    """Scraper for Hobgoblin Bar in Boston."""
 
     source_name = "hobgoblin"
 
@@ -122,7 +122,7 @@ class HobgoblinScraper(BaseScraper):
                 date=date,
                 venue_id="hobgoblin",
                 venue_name="Hobgoblin",
-                venue_location="Brookline",
+                venue_location="Boston",
                 bands=bands,
                 age_requirement="21+",
                 price_advance=None,
