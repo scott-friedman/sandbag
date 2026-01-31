@@ -142,6 +142,9 @@ def _generate_club_page(venues: Dict[str, List[Concert]]) -> None:
             line = f'<li><b>{date_str}</b> {bands_str} {details}'
             if flags_str:
                 line += f" {flags_str}"
+            # Event link - subtle arrow to source/ticket page
+            if concert.source_url:
+                line += f'&nbsp;<a href="{escape(concert.source_url)}" title="Event info" style="text-decoration:none;padding:8px 12px;margin:-8px -4px">→</a>'
             line += '</li>\n'
 
             html += line

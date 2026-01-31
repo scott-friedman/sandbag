@@ -11,7 +11,7 @@ from collections import defaultdict
 from ..models import Concert
 from ..config import OUTPUT_DIR, WEEKS_AHEAD, SITE_URL
 from ..utils.date_utils import get_week_range, get_week_label, get_week_number, get_adjusted_week_label
-from .helpers import format_concert_line, html_header, html_footer, is_livenation_venue
+from .helpers import format_concert_line, html_header, html_footer, is_livenation_venue, is_free_event
 
 logger = logging.getLogger(__name__)
 
@@ -147,12 +147,33 @@ def _generate_week_page(week_num: int, concerts: List[Concert], reference_date: 
             day_label = current_date.strftime("%a %b %-d")
             html += f'<li><b>{day_label}</b>\n<ul>\n'
 
-            # Sort by venue name alphabetically
-            sorted_concerts = sorted(day_concerts, key=lambda c: (c.venue_name or "").lower())
+            # Sort by time, then venue name alphabetically
+            def _parse_time_for_sort(time_str: str) -> int:
+                """Convert time string to minutes since midnight for sorting."""
+                if not time_str:
+                    return 1200  # Default noon
+                import re
+                match = re.match(r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)?', time_str.lower())
+                if not match:
+                    return 1200
+                hour = int(match.group(1))
+                minute = int(match.group(2) or 0)
+                ampm = match.group(3)
+                if ampm == 'pm' and hour != 12:
+                    hour += 12
+                elif ampm == 'am' and hour == 12:
+                    hour = 0
+                return hour * 60 + minute
+
+            sorted_concerts = sorted(day_concerts, key=lambda c: (
+                _parse_time_for_sort(c.time),
+                (c.venue_name or "").lower()
+            ))
             for concert in sorted_concerts:
                 line = format_concert_line(concert)
                 ln_attr = ' data-livenation="true"' if is_livenation_venue(concert) else ''
-                html += f'<li{ln_attr}>{line}</li>\n'
+                free_attr = ' data-free="true"' if is_free_event(concert) else ''
+                html += f'<li{ln_attr}{free_attr}>{line}</li>\n'
 
             html += '</ul>\n</li>\n\n'
 

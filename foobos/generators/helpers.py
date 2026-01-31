@@ -11,9 +11,10 @@ from ..config import GA4_MEASUREMENT_ID, ANALYTICS_ENABLED, SITE_URL, DEFAULT_OG
 
 # Live Nation / Ticketmaster operated venues (excludes Middle East which is independent)
 LIVE_NATION_VENUES = {
-    'bignightlive', 'brighton', 'hob', 'mgmmusichall',
-    'orpheum', 'palladium', 'paradise', 'roadrunner', 'royale',
-    'tdgarden', 'sinclair', 'wilbur',
+    'bignight', 'brighton', 'hob', 'mgm',
+    'orpheum', 'palladium', 'paradise', 'pavilion',
+    'roadrunner', 'royale', 'sinclair', 'td',
+    'thegrand', 'wilbur', 'xfinity',
     'higherground',  # VT - Live Nation operated
 }
 
