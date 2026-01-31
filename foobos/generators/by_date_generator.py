@@ -166,8 +166,8 @@ def _generate_week_page(week_num: int, concerts: List[Concert], reference_date: 
                 return hour * 60 + minute
 
             sorted_concerts = sorted(day_concerts, key=lambda c: (
-                _parse_time_for_sort(c.time),
-                (c.venue_name or "").lower()
+                (c.venue_name or "").lower(),
+                _parse_time_for_sort(c.time)
             ))
             for concert in sorted_concerts:
                 line = format_concert_line(concert)
