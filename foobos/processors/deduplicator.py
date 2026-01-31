@@ -282,6 +282,16 @@ def _info_richness_score(concert: Concert) -> int:
     return score
 
 
+def _is_venue_url(source: str) -> bool:
+    """Check if source is a venue-specific source (not ticketmaster/seatgeek)."""
+    source_lower = source.lower()
+    return (
+        'ticketmaster' not in source_lower and
+        'seatgeek' not in source_lower and
+        source_lower not in ('', 'unknown')
+    )
+
+
 def _merge_concerts(concerts: List[Concert]) -> Concert:
     """Merge multiple duplicate concerts into the best single record.
 
@@ -348,6 +358,12 @@ def _merge_concerts(concerts: List[Concert]) -> Concert:
         # Use age requirement if more specific
         if best.age_requirement == "a/a" and concert.age_requirement != "a/a":
             best.age_requirement = concert.age_requirement
+
+        # Prefer venue URLs over ticketmaster/seatgeek
+        if concert.source_url and _is_venue_url(concert.source):
+            if not best.source_url or not _is_venue_url(best.source):
+                best.source_url = concert.source_url
+                logger.debug(f"Using venue URL from {concert.source} over {best.source}")
 
     # Update source to indicate merge
     sources = list(set(c.source for c in concerts))
