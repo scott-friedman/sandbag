@@ -1562,5 +1562,73 @@
         "seo": 1
       }
     ]
+  },
+  {
+    "date": "2026-01-31T19:52:25Z",
+    "scores": [
+      {
+        "url": "https://foobos.net/",
+        "performance": 0.78,
+        "accessibility": 1,
+        "bestPractices": 0.96,
+        "seo": 1
+      },
+      {
+        "url": "https://foobos.net/",
+        "performance": 1,
+        "accessibility": 1,
+        "bestPractices": 0.96,
+        "seo": 1
+      },
+      {
+        "url": "https://foobos.net/by-date.0.html",
+        "performance": 0.99,
+        "accessibility": 1,
+        "bestPractices": 0.96,
+        "seo": 1
+      },
+      {
+        "url": "https://foobos.net/by-date.0.html",
+        "performance": 1,
+        "accessibility": 1,
+        "bestPractices": 0.96,
+        "seo": 1
+      },
+      {
+        "url": "https://foobos.net/by-band.html",
+        "performance": 0.91,
+        "accessibility": 1,
+        "bestPractices": 0.96,
+        "seo": 1
+      },
+      {
+        "url": "https://foobos.net/by-band.html",
+        "performance": 0.93,
+        "accessibility": 1,
+        "bestPractices": 0.96,
+        "seo": 1
+      },
+      {
+        "url": "https://foobos.net/",
+        "performance": 1,
+        "accessibility": 1,
+        "bestPractices": 0.96,
+        "seo": 1
+      },
+      {
+        "url": "https://foobos.net/by-date.0.html",
+        "performance": 0.99,
+        "accessibility": 1,
+        "bestPractices": 0.96,
+        "seo": 1
+      },
+      {
+        "url": "https://foobos.net/by-band.html",
+        "performance": 0.89,
+        "accessibility": 1,
+        "bestPractices": 0.96,
+        "seo": 1
+      }
+    ]
   }
 ]
