@@ -2177,7 +2177,7 @@
     "time": "6pm",
     "flags": [],
     "source": "scrape:boston_venues",
-    "source_url": "https://www.berklee.edu/events/dont-skip-a-beat",
+    "source_url": "https://college.berklee.edu/events/dont-skip-a-beat-sponsored-by-bbirth-berklee",
     "genre_tags": [],
     "last_updated": "2026-01-29T21:39:19.655677"
   },
@@ -2202,7 +2202,7 @@
     "time": "7pm",
     "flags": [],
     "source": "scrape:boston_venues",
-    "source_url": "https://www.berklee.edu/events/international-championship-of-collegiate-a-cappella-northeast-quarterfinal-1",
+    "source_url": "https://www.berklee.edu/BPC/events/international-championship-of-collegiate-a-cappella-northeast-quarterfinal-1",
     "genre_tags": [],
     "last_updated": "2026-01-29T21:39:19.655827"
   },
@@ -3679,8 +3679,8 @@
     "source": "scrape:safe_in_a_crowd",
     "source_url": "https://safeinacrowd.com/",
     "genre_tags": [
-      "punk",
-      "hardcore"
+      "hardcore",
+      "punk"
     ],
     "last_updated": "2026-01-29T21:39:10.045999"
   },
@@ -4440,8 +4440,8 @@
     },
     "time": "6pm",
     "flags": [
-      "@",
-      "SOLD OUT"
+      "SOLD OUT",
+      "@"
     ],
     "source": "scrape:safe_in_a_crowd",
     "source_url": "https://safeinacrowd.com/",
@@ -4917,8 +4917,8 @@
     },
     "time": "6pm",
     "flags": [
-      "@",
-      "SOLD OUT"
+      "SOLD OUT",
+      "@"
     ],
     "source": "scrape:safe_in_a_crowd",
     "source_url": "https://safeinacrowd.com/",
@@ -15180,6 +15180,7 @@
     "source": "scrape:plough_and_stars",
     "source_url": "https://calendar.ploughandstars.com/events/calendar",
     "genre_tags": [
+      "classic rock",
       "rock",
       "blues",
       "folk"

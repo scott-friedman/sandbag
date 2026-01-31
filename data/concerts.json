@@ -1163,7 +1163,7 @@
       "time": "1pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/international-folk-festival-contemporary-stage-china",
+      "source_url": "https://college.berklee.edu/ensemble/events/international-folk-festival-contemporary-stage-china",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:13.015622"
     },
@@ -1188,7 +1188,7 @@
       "time": "7pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/international-folk-festival-contemporary-stage-europe",
+      "source_url": "https://college.berklee.edu/ensemble/events/international-folk-festival-contemporary-stage-europe",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:13.015779"
     },
@@ -1345,7 +1345,7 @@
       "time": "1pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/international-folk-festival-contemporary-stage-india",
+      "source_url": "https://college.berklee.edu/ensemble/events/international-folk-festival-contemporary-stage-india",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:13.016108"
     },
@@ -1877,9 +1877,10 @@
         "location": "Boston"
       },
       "bands": [
-        "40th Annual Berklee International Folk Festival featuring Arooj Aftab '10"
+        "40th Annual Berklee International Folk Festival featuring Arooj Aftab '10",
+        "Arooj Aftab"
       ],
-      "age_requirement": "a/a",
+      "age_requirement": "18+",
       "price": {
         "advance": null,
         "door": null,
@@ -3499,7 +3500,7 @@
       "last_updated": "2026-01-29T21:39:19.654587"
     },
     {
-      "id": "8aaa88e2107c",
+      "id": "8dfa8045ec30",
       "date": "2026-02-10T19:00:00",
       "day_of_week": "Tue",
       "venue": {
@@ -3508,7 +3509,7 @@
         "location": "Boston"
       },
       "bands": [
-        "Berklee in the Round"
+        "Berklee Songwriters Round"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -3544,7 +3545,7 @@
       "time": "8pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/montano-big-band-0",
+      "source_url": "https://college.berklee.edu/jazz-composition/events/montano-big-band",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:19.654872"
     },
@@ -3569,7 +3570,7 @@
       "time": "8pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/the-paramore-ensemble-the-final-riot",
+      "source_url": "https://www.berklee.edu/BPC/events/paramore-ensemble-the-final-riot",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:19.655011"
     },
@@ -4148,7 +4149,7 @@
       "time": "8pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/chinese-new-year-concert-4",
+      "source_url": "https://www.berklee.edu/BPC/events/chinese-new-year-concert-2026",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:19.655397"
     },
@@ -4297,7 +4298,8 @@
         "location": "Pembroke"
       },
       "bands": [
-        "Mike Mattison & Trash Magic"
+        "Mike Mattison & Trash Magic",
+        "Aldous Collins Duo"
       ],
       "age_requirement": "a/a",
       "price": {
@@ -4502,7 +4504,7 @@
       "time": "7pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/eleri-ward",
+      "source_url": "https://www.berklee.edu/red-room-cafe-939/events/eleri-ward",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:19.655530"
     },
@@ -4982,7 +4984,7 @@
       "time": "6pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/dont-skip-a-beat",
+      "source_url": "https://college.berklee.edu/events/dont-skip-a-beat-sponsored-by-bbirth-berklee",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:19.655677"
     },
@@ -5007,7 +5009,7 @@
       "time": "7pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/international-championship-of-collegiate-a-cappella-northeast-quarterfinal-1",
+      "source_url": "https://www.berklee.edu/BPC/events/international-championship-of-collegiate-a-cappella-northeast-quarterfinal-1",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:19.655827"
     },
@@ -5308,7 +5310,7 @@
       "time": "3pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/international-championship-of-collegiate-a-cappella-northeast-quarterfinal-2",
+      "source_url": "https://www.berklee.edu/BPC/events/international-championship-of-collegiate-a-cappella-northeast-quarterfinal-2-2",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:23.451997"
     },
@@ -5443,7 +5445,7 @@
       "time": "7pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/fresh-prospects-luvwander-camila-quintero",
+      "source_url": "https://www.berklee.edu/red-room-cafe-939/events/fresh-prospects-luvwander-camila-quintero",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:23.452221"
     },
@@ -5468,7 +5470,7 @@
       "time": "7:30pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/the-singing-tribe-reimagined-tribute-to-bobby-mcferrin",
+      "source_url": "https://college.berklee.edu/voice/events/the-singing-tribe-reimagined-tribute-to-bobby-mcferrin",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:23.452393"
     },
@@ -5629,7 +5631,7 @@
       "time": "7:30pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/matthew-nicholl-and-friends",
+      "source_url": "https://college.berklee.edu/cwp/events/matthew-nicholl-and-friends",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:23.452561"
     },
@@ -5873,7 +5875,7 @@
       "time": "8pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/unified-the-art-of-the-diaspora",
+      "source_url": "https://www.berklee.edu/BPC/events/unified-the-art-of-the-diaspora",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:23.452719"
     },
@@ -6246,7 +6248,7 @@
       "time": "8pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/tango-after-dark",
+      "source_url": "https://www.berklee.edu/BPC/events/tango-after-dark",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:23.453053"
     },
@@ -7312,7 +7314,7 @@
       "time": "8pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/berklee-global-jazz-institutes-17th-anniversary-celebration-concert",
+      "source_url": "https://www.berklee.edu/BPC/events/the-berklee-global-jazz-institute-bgji-17th-annual-summit-concert",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:27.369898"
     },
@@ -7416,7 +7418,7 @@
       "time": "7pm",
       "flags": [],
       "source": "scrape:boston_venues",
-      "source_url": "https://www.berklee.edu/events/i-sing-funny",
+      "source_url": "https://college.berklee.edu/voice/events/adi-uppal-a-tribute-to-chris-cornell",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:39:27.370102"
     },
@@ -8210,8 +8212,8 @@
       "source": "scrape:safe_in_a_crowd",
       "source_url": "https://safeinacrowd.com/",
       "genre_tags": [
-        "punk",
-        "hardcore"
+        "hardcore",
+        "punk"
       ],
       "last_updated": "2026-01-29T21:39:10.045999"
     },
@@ -11446,8 +11448,8 @@
       "last_updated": "2026-01-29T21:47:18.593809"
     },
     {
-      "id": "8d4800c6b99c",
-      "date": "2026-03-22T00:00:00",
+      "id": "b424863bb982",
+      "date": "2026-03-22T18:30:00",
       "day_of_week": "Sun",
       "venue": {
         "id": "citywinery",
@@ -11457,22 +11459,22 @@
       "bands": [
         "Destin Conrad"
       ],
-      "age_requirement": "21+",
+      "age_requirement": "18+",
       "price": {
         "advance": null,
         "door": null,
         "display": ""
       },
-      "time": "9:30pm",
+      "time": "6pm",
       "flags": [],
-      "source": "city_winery",
-      "source_url": "https://tickets.citywinery.com/event/destin-conrad-vgv5td",
+      "source": "merged:city_winery+seatgeek",
+      "source_url": "https://seatgeek.com/destin-conrad-tickets/boston-massachusetts-city-winery-boston-2026-03-22-6-30-pm/concert/18043978",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:47:18.593965"
     },
     {
-      "id": "0e789da20bbf",
-      "date": "2026-03-23T00:00:00",
+      "id": "3879ac1bc451",
+      "date": "2026-03-23T19:30:00",
       "day_of_week": "Mon",
       "venue": {
         "id": "citywinery",
@@ -11482,16 +11484,16 @@
       "bands": [
         "Surfrajettes"
       ],
-      "age_requirement": "21+",
+      "age_requirement": "18+",
       "price": {
         "advance": null,
         "door": null,
         "display": ""
       },
-      "time": "7:30pm",
+      "time": "7pm",
       "flags": [],
-      "source": "city_winery",
-      "source_url": "https://tickets.citywinery.com/event/the-surfrajettes-6lzewi",
+      "source": "merged:city_winery+seatgeek",
+      "source_url": "https://seatgeek.com/the-surfrajettes-tickets/boston-massachusetts-city-winery-boston-2026-03-23-7-30-pm/concert/18043983",
       "genre_tags": [],
       "last_updated": "2026-01-29T21:47:18.594120"
     },
@@ -11935,7 +11937,7 @@
       "last_updated": "2026-01-29T21:45:40.791862"
     },
     {
-      "id": "a51284f1f45c",
+      "id": "00ba1e21f7bf",
       "date": "2026-03-27T00:00:00",
       "day_of_week": "Fri",
       "venue": {
@@ -11944,7 +11946,7 @@
         "location": "Boston"
       },
       "bands": [
-        "Ben Katzman's Degreaser and Friends"
+        "Katzman & Coach w/ special guests Makeout Palace and Noah Britton"
       ],
       "age_requirement": "21+",
       "price": {
@@ -13142,8 +13144,8 @@
       },
       "time": "6pm",
       "flags": [
-        "@",
-        "SOLD OUT"
+        "SOLD OUT",
+        "@"
       ],
       "source": "scrape:safe_in_a_crowd",
       "source_url": "https://safeinacrowd.com/",
@@ -13619,8 +13621,8 @@
       },
       "time": "6pm",
       "flags": [
-        "@",
-        "SOLD OUT"
+        "SOLD OUT",
+        "@"
       ],
       "source": "scrape:safe_in_a_crowd",
       "source_url": "https://safeinacrowd.com/",
